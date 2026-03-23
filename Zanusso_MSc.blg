@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2025)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Zanusso_MSc.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+Warning--empty title in ablikim2021
+Warning--empty title in serk2022
+Warning--empty title in donato2000
+Warning--empty title in denuccio2019
+You've used 33 entries,
+            1791 wiz_defined-function locations,
+            663 strings with 7428 characters,
+and the built_in function-call counts, 6956 in all, are:
+= -- 653
+> -- 229
+< -- 2
++ -- 92
+- -- 59
+* -- 462
+:= -- 1128
+add.period$ -- 96
+call.type$ -- 33
+change.case$ -- 29
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 303
+empty$ -- 714
+format.name$ -- 59
+if$ -- 1520
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 32
+newline$ -- 165
+num.names$ -- 33
+pop$ -- 46
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 126
+stack$ -- 0
+substring$ -- 586
+swap$ -- 43
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 77
+width$ -- 35
+write$ -- 357
+(There were 4 warnings)

@@ -1,0 +1,87 @@
+\documentclass{article} 
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor} 
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}  \usepackage{enumitem}
+\usepackage{chngcntr}  
+\counterwithin{figure}{section}  
+
+
+
+\pagestyle{fancy}
+\fancyhead[RO]{}
+\fancyhead[LO]{\scriptsize  {Hadronic Shower Characterization in the Belle II Electromagnetic Calorimeter - Emanuele Zanusso}}
+
+\title{\textbf {Hadronic Shower Characterization in the Belle II Electromagnetic Calorimeter}}
+\author{\textbf{Emanuele Zanusso} \\  \\ Dipartimento di Fisica di Torino \\ Master of Science in Physics Thesis \\ \\ Supervisor: Professor Stefano Spataro }
+\date{April 2026}
+\renewcommand*\contentsname{Index}
+
+\begin{document}
+
+% --- Copertina senza numero visibile ---
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+    %\includegraphics[width=4cm, height=4cm]{logos/belleii_logo.jpeg}
+    \includegraphics[width=0.4 \textwidth]{logos/unito_logo.png}
+\end{center}
+
+\clearpage
+\
+\thispagestyle{empty}
+\clearpage
+%Abstract
+\clearpage
+
+\thispagestyle{empty}
+\begin{abstract}
+% INSERISCI TESTO ABSTRACT (200-300 parole)
+\end{abstract}
+\clearpage
+\thispagestyle{empty}
+\begin{abstract}
+% INSERISCI TESTO ABSTRACT (200-300 parole)
+\end{abstract}
+\clearpage
+
+
+% --- Indice (in numeri romani) ---
+\setcounter{page}{1} % l'indice diventa "i"
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+
+% --- Cambio a numeri arabi per il corpo ---
+\setcounter{section}{-1}
+\input{nbar_exp/nbar_eng.tex}
+\clearpage
+\input{belleII_det/belleII_det_eng}
+\clearpage
+\input{nbar_MC/nbar_MC_eng.tex}
+\clearpage
+\input{nbar_cocktail/nbar_cocktail_eng.tex}
+\clearpage
+
+
+
+
+
+\appendix
+\input{appendix/appendix_eng.tex}
+\clearpage
+
+\bibliographystyle{unsrt} % oppure plain, ieeetr, abbrv
+\bibliography{references}
+
+\end{document}
