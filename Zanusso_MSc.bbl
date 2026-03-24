@@ -10,12 +10,6 @@ T.~Ueda.
 \newblock Theoretical study of $\bar{N}n$ interactions.
 \newblock {\em Progress of Theoretical Physics}, 72(6):1670--1682, 1979.
 
-\bibitem{kikuchi2005}
-M.~Kikuchi.
-\newblock Design of damping ring for superkekb.
-\newblock In {\em Proceedings of 2005 Particle Accelerator Conference
-  (PAC'05)}, pages 773--775, 2005.
-
 \bibitem{nedilko2009}
 S~G Nedilko et~al.
 \newblock Properties of scintillators.
@@ -129,6 +123,12 @@ Kazunori Akai, Kazuro Furukawa, and Haruyo Koiso.
 \newblock {\em Nuclear Instruments and Methods in Physics Research A},
   907:188--199, 2018.
 
+\bibitem{kikuchi2005}
+M.~Kikuchi.
+\newblock Design of damping ring for superkekb.
+\newblock In {\em Proceedings of 2005 Particle Accelerator Conference
+  (PAC'05)}, pages 773--775, 2005.
+
 \bibitem{YE2021164875}
 H.~Ye et~al..
 \newblock Commissioning and performance of the belle ii pixel detector.
@@ -159,6 +159,13 @@ Yosuke Yusa.
 \newblock {The ARICH detector at Belle II experiment}.
 \newblock {\em PoS}, EPS-HEP2013:556, 2013.
 
+\bibitem{Abe2006}
+T.~Abe et~al.
+\newblock The {Belle} detector.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  550(2-3):329--402, 2005.
+
 \bibitem{KUZMIN2020162235}
 A.~Kuzmin.
 \newblock Electromagnetic calorimeter of belle ii.
@@ -166,6 +173,17 @@ A.~Kuzmin.
   Accelerators, Spectrometers, Detectors and Associated Equipment}, 958:162235,
   2020.
 \newblock Proceedings of the Vienna Conference on Instrumentation 2019.
+
+\bibitem{2016APS}
+Leo Piilonen.
+\newblock Belle ii klm detector.
+\newblock jun 2022.
+\newblock Belle II Week, 13-17 June 2022.
+
+\bibitem{Kuhr_2018}
+T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
+\newblock The belle {II} core software.
+\newblock {\em Computing and Software for Big Science}, 3(1), 11 2018.
 
 \bibitem{denuccio2019}
 Michael De~Nuccio et~al.
