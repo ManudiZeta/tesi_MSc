@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2024)
+This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Zanusso_MSc.aux
 The style file: unsrt.bst
@@ -8,45 +8,45 @@ Warning--empty title in serk2022
 Warning--empty title in donato2000
 Warning--empty journal in 2016APS
 Warning--empty title in denuccio2019
-You've used 36 entries,
+You've used 37 entries,
             1791 wiz_defined-function locations,
-            683 strings with 7788 characters,
-and the built_in function-call counts, 7531 in all, are:
-= -- 702
-> -- 258
+            689 strings with 8023 characters,
+and the built_in function-call counts, 7669 in all, are:
+= -- 715
+> -- 262
 < -- 2
-+ -- 103
-- -- 67
-* -- 503
-:= -- 1227
-add.period$ -- 106
-call.type$ -- 36
-change.case$ -- 32
++ -- 105
+- -- 68
+* -- 504
+:= -- 1249
+add.period$ -- 110
+call.type$ -- 37
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 328
-empty$ -- 767
-format.name$ -- 67
-if$ -- 1641
+cite$ -- 42
+duplicate$ -- 333
+empty$ -- 785
+format.name$ -- 68
+if$ -- 1674
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 37
 missing$ -- 35
-newline$ -- 181
-num.names$ -- 36
-pop$ -- 52
+newline$ -- 187
+num.names$ -- 37
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 137
+skip$ -- 139
 stack$ -- 0
 substring$ -- 611
-swap$ -- 45
+swap$ -- 46
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 82
-width$ -- 38
-write$ -- 390
+while$ -- 83
+width$ -- 39
+write$ -- 402
 (There were 5 warnings)

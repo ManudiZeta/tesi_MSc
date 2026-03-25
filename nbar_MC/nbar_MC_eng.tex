@@ -1,4 +1,5 @@
-\section{Study of the signal sample channel}
+\setcounter{subsection}{0} 
+\part{Study of the Monte Carlo signal channel}
  
 The first part of the present work aims to characterize the kinematics of the $\bar{n}$, using a Monte Carlo signal sample generated specifically for the selected reference channel:  
 
@@ -6,31 +7,54 @@ The first part of the present work aims to characterize the kinematics of the $\
 $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} \  (+ \ \gamma_{\rm ISR})$
 \end{center}
 
-This is selected because it features simple kinematics, with the $\bar{n}$ as the only missing particle, enabling a semi-exclusive analysis.
+This is selected because it features simple kinematics, with the $\bar{n}$ as the only missing particle, enabling a semi-exclusive analysis. 
+$\\$
+The Feynman diagram for this process, without and with ISR emission, is shown in Fig.~\ref{fig:diag_F}.
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{nbar_MC/images/channel_art}
-    \caption{Feynman Diagram of the analyzed channel. The ISR gamma is a pre-interaction radiation emitted by the $e^+$ and/or $e^-$ bunches. The recoil system is made of $p \pi^- (\gamma_{ISR})$}
+    \includegraphics[width=1\textwidth]{nbar_MC/images/channel_art}
+    \caption{Feynman Diagram of the channel of interest. The ISR gamma is a pre-interaction radiation emitted by the $e^+$ and/or $e^-$. The recoil system is made of $p \pi^- (\gamma_{ISR})$.}
+    \label{fig:diag_F}
 \end{figure}
 
-In particular, the kinematic relation between the $\bar{n}$ and the recoil system $p \pi^- (\gamma_{ISR})$ will be exploited, considering both configurations: in the presence of Initial State Radiation (ISR) photon emission and in its absence. The ISR is emitted by electrons and positrons in the initial bunches, which lose energy before the collision. This phenomenon induces a lowering of center-of-mass energy, which will no longer be the usual $\sim 10.58$ GeV. The ISR energy and angle distributions will be discussed in detail, providing a comparison with a simple phase space model emission.
+In particular, the kinematic relation between the $\bar{n}$ and the recoil system $p \pi^- (\gamma_{ISR})$ will be exploited, considering both configurations: in the presence of Initial State Radiation (ISR) photon emission and in its absence. ISR corresponds to the emission of photons from incoming particles before they collide in high-energy physics experiments. This reduces the effective center-of-mass energy available, which will no longer be $\sim 10.58$ GeV, in the Belle II case. The ISR energy and angle distributions will be discussed in detail, providing a comparison with a simple phase space model emission.
 $\\$
-Then the effect of a one constraint (1C) kinematic fit over the recoil mass will be discussed, in order to obtain an higher recoil momentum resolution.
+Then, the effect of a one constraint (1C) kinematic fit over the recoil mass will be discussed, in order to obtain a higher recoil momentum resolution.
 $\\$
-100000 events are generated for the selected channel and to perform the event generation and the analysis the aforementioned \textbf{Belle II Analysis Software Framework} (\textbf{basf2}) is employed. To check the script code highlights related to this section and the adopted \emph{phokhara\_evtgen\_combination} generator, please refer to \hyperref[app:A]{Appendix~\ref*{app:A}}, where the decay file, the Monte Carlo generation file and the steering file are explained in detail.
+In total, 100000 events are generated and to perform the event generation and the analysis,  \textbf{basf2} is employed. Script code highlights for this section are shown in Appendix~\hyperref[app:A]{\ref*{app:A}}, where the decay file, MC generation file, and steering file are explained in detail.
+$\\$
+The basf2 \textbf{Phokhara\_evtgen\_combination} generator has been adopted. It is made of two generators: \textbf{Phokhara} and \textbf{EvtGen}.
+$\\$
+Phokhara is a Monte Carlo event generator that simulates $e^+e^-$ annihilation into hadrons at next-to-leading order (NLO) accuracy. This includes virtual and soft photon corrections to single-photon events, plus double hard photon emission. 
+$\\$
+EvtGen is a Monte Carlo event generator that simulates decays of heavy-flavor particles, primarily B and D mesons. It includes decay models for intermediate and final states with scalar, vector, and tensor mesons/resonances, as well as leptons, photons, and baryons. Decay amplitudes generate each branch of the full decay tree, accounting for angular and time-dependent correlations to simulate CP-violating processes.
+$\\$
+Therefore, these two generators have been adopted as depicted in Fig.~\ref{fig:diag_F_colors}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{nbar_MC/images/channel_art_colors}
+    \caption{Feynman diagram of the channel of interest. \textit{Phokhara} handles the initial hard photon emission (red), while \textit{EvtGen} simulates the decay to final-state particles (blue).}
+    \label{fig:diag_F_colors}
+\end{figure}
+
+
+
 
 \subsection{Kinematic variables comparison}
-As a first step, the kinematic variables are studied through the recoil system consisting of $p \pi^- (\gamma_{ISR})$, where these particles are reconstructed. In parallel, the neutral cluster associated to the $\bar{n}$ is reconstructed and its properties are compared to those from the recoil, comparing different kinematic variables. Through the recoil analysis, the antineutron is be identified as the missing particle in the final state. 
-$\\$
-Before discussing the analysis results, an overview of the generated events is provided using the Belle II \textbf{TopoAna} software display:
+Two scenarios can be studied. If the reconstructed final state particles are a proton ($p$), a negative pion ($\pi^-$) and an anti-neutron ($\bar{n}$), it is referred to as the \textbf{NO ISR case}. If the ISR photon ($\gamma_\text{ISR}$) is also reconstructed, it is referred to as the \textbf{ISR case}. Therefore, in the NO ISR case, the recoil system is defined as the $p\pi^-$ system, while in the ISR case it is defined as the $p\pi^-\gamma_\text{ISR}$ system. Importantly, the generators produce both events with and without ISR emission, as illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{nbar_MC/images/topoana_100k}
-    \caption{Topology Analysis (TopoAna) output of the generated 100k events. The first column denotes the row number, the second the decay tree (decay chain), the third the decay final state, the fourth the unambiguous decay tree index, the fifth the number of entries per channel, and the last the cumulative number of entries}
+    \includegraphics[width=1\textwidth]{nbar_MC/images/topoana_100k}
+    \caption{Topology Analysis (TopoAna) output of the generated 100k events. The fourth column is the unambiguous decay tree index associated to the correspondent channel, the fifth the number of entries per channel, and the last the cumulative number of entries.}
+    \label{fig:topo_signal0}
 \end{figure}
 
+As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$, where these particles are reconstructed. In parallel, the neutral cluster associated to the $\bar{n}$ is reconstructed and its properties are compared to those from the recoil, comparing different kinematic variables. Through the recoil analysis, the antineutron is be identified as the missing particle in the final state.
+$\\$
 It is interesting to note that events without ISR emission are the most frequently generated ($\sim 35\%$), followed by those with two ($\gamma^I\gamma^I$) ($\sim 23\%$)and one ($\gamma^I$) ISR photon ($\sim 19\%$). 
 $\\$
 The $vpho$ (virtual photon) is a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (evt\_gen) the selected decay channel, approaching the following scheme:

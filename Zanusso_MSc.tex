@@ -12,7 +12,7 @@
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}  \usepackage{enumitem}
 \usepackage{chngcntr}  
-\counterwithin{figure}{section}  
+\counterwithin{figure}{part}  
 
 
 
@@ -24,6 +24,12 @@
 \author{\textbf{Emanuele Zanusso} \\  \\ Dipartimento di Fisica di Torino \\ Master of Science in Physics Thesis \\ \\ Supervisor: Professor Stefano Spataro }
 \date{April 2026}
 \renewcommand*\contentsname{Index}
+\renewcommand{\thepart}{\arabic{part}}     % Numerazione araba: 1, non I
+\renewcommand{\partname}{Chapter}          % "Chapter" invece di "Part"
+
+% Numerazione subsection: part.section (es. 1.1 anche senza section)
+\renewcommand{\thesubsection}{\thepart.\arabic{subsection}}
+\setcounter{tocdepth}{3}  % Includi subsection in TOC
 
 \begin{document}
 
@@ -63,7 +69,8 @@
 \clearpage
 
 % --- Cambio a numeri arabi per il corpo ---
-\setcounter{section}{-1}
+\setcounter{part}{-1}
+\setcounter{section}{+1}
 \input{nbar_exp/nbar_eng.tex}
 \clearpage
 \input{belleII_det/belleII_det_eng}
