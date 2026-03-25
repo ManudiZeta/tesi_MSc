@@ -8,45 +8,45 @@ Warning--empty title in serk2022
 Warning--empty title in donato2000
 Warning--empty journal in 2016APS
 Warning--empty title in denuccio2019
-You've used 37 entries,
+You've used 38 entries,
             1791 wiz_defined-function locations,
-            689 strings with 8023 characters,
-and the built_in function-call counts, 7669 in all, are:
-= -- 715
-> -- 262
+            696 strings with 8168 characters,
+and the built_in function-call counts, 7855 in all, are:
+= -- 731
+> -- 270
 < -- 2
-+ -- 105
-- -- 68
-* -- 504
-:= -- 1249
-add.period$ -- 110
-call.type$ -- 37
-change.case$ -- 33
++ -- 108
+- -- 70
+* -- 515
+:= -- 1281
+add.period$ -- 113
+call.type$ -- 38
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 333
-empty$ -- 785
-format.name$ -- 68
-if$ -- 1674
+cite$ -- 43
+duplicate$ -- 342
+empty$ -- 804
+format.name$ -- 70
+if$ -- 1715
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 35
-newline$ -- 187
-num.names$ -- 37
-pop$ -- 58
+int.to.str$ -- 38
+missing$ -- 36
+newline$ -- 192
+num.names$ -- 38
+pop$ -- 59
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 139
+skip$ -- 143
 stack$ -- 0
-substring$ -- 611
-swap$ -- 46
+substring$ -- 620
+swap$ -- 47
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 83
-width$ -- 39
-write$ -- 402
+while$ -- 85
+width$ -- 40
+write$ -- 413
 (There were 5 warnings)

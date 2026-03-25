@@ -385,3 +385,37 @@ void recoil_vs_n (TString file_1 = "../../../../vpho_nog_ranked.root")
     tela->SaveAs(title_out);
     
 }
+
+
+void isr (TString file_1 = "../../../../gamma_ISR_tesi.root")
+{
+    gStyle->SetOptStat(0);
+    TFile *myf_1 = new TFile(file_1);
+    
+    TTree *tree_1 = (TTree*)myf_1->Get("tree");
+    
+    TCanvas *c1 = new TCanvas("c1", "c1",800,600);
+
+    tree_1->Draw("theta>>h");
+   
+    delete c1;
+    TH1D *h = (TH1D*)gDirectory->Get("h");
+
+    h->SetLineColor(kBlue);
+    
+    TString title_x = "#theta [rad]";
+    h->GetXaxis()->SetTitle(title_x);
+    h->GetYaxis()->SetTitle("counts");
+    TString title = " ";
+    h->SetTitle(title);
+    
+    TCanvas *tela = new TCanvas("tela", "tela");
+    tela->SetLogy();
+    
+    h->DrawCopy("HIST");
+
+    
+    TString title_out = "../images/ISR_theta.pdf";
+    tela->SaveAs(title_out);
+    
+}

@@ -39,10 +39,21 @@ Therefore, these two generators have been adopted as depicted in Fig.~\ref{fig:d
     \caption{Feynman diagram of the channel of interest. \textit{Phokhara} handles the initial hard photon emission (red), while \textit{EvtGen} simulates the decay to final-state particles (blue).}
     \label{fig:diag_F_colors}
 \end{figure}
-Importantly, the generators produce both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}.
+Importantly, the Phokhara\_evtgen\_combination generator produces both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}.
+$\\$
+A $vpho$ (virtual photon) is now introduced as a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (evt\_gen) the selected decay channel, approaching the following scheme:
+
+\begin{center}
+$e^+ \ + \  e^- \rightarrow vpho +  \ \gamma_{ISR} $ (Phokhara generator)
+
+\vspace{0.3cm}
+
+$vpho \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ (EvtGen generator)
+\end{center}
+Figuratively, it can be represented as the blob shown in the Feynman diagram.
 
 \subsection{Kinematic variables comparison}
-Two scenarios can be studied. If the reconstructed final state particles are a proton ($p$), a negative pion ($\pi^-$) and an anti-neutron ($\bar{n}$), it is referred to as the \textbf{NO ISR case}. If the ISR photon ($\gamma_\text{ISR}$) is also reconstructed, it is referred to as the \textbf{ISR case}. Therefore, in the NO ISR case, the recoil system is defined as the $p\pi^-$ system, while in the ISR case it is defined as the $p\pi^-\gamma_\text{ISR}$ system. A TopoAna overview of the generated events is presented in Fig.~\ref{fig:topo_signal0}. 
+Two scenarios can be studied. If the reconstructed final state particles are a proton ($p$), a negative pion ($\pi^-$) and an anti-neutron ($\bar{n}$), it is referred to as the \textbf{NO ISR case}. If the ISR photon ($\gamma_\text{ISR}$) is also reconstructed, it is referred to as the \textbf{ISR case}. Therefore, in the NO ISR case, the recoil system is defined as the $p\pi^-$ system, while in the ISR case it is defined as the $p\pi^-\gamma_\text{ISR}$ system. 
 
 \begin{figure}[H]
     \centering
@@ -51,23 +62,40 @@ Two scenarios can be studied. If the reconstructed final state particles are a p
     \label{fig:topo_signal0}
 \end{figure}
 
-As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$, where these particles are reconstructed. In parallel, the neutral cluster associated to the $\bar{n}$ is reconstructed and its properties are compared to those from the recoil, comparing different kinematic variables. Through the recoil analysis, the antineutron is be identified as the missing particle in the final state.
+As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$, where these particles are reconstructed. In parallel, the neutral $\bar{n}$ cluster candidate is reconstructed and its properties are compared to those from the recoil, comparing different kinematic variables. Through the recoil analysis, the antineutron can be identified as the missing particle in the final state.
 $\\$
-It is interesting to note that events without ISR emission are the most frequently generated ($\sim 35\%$), followed by those with two ($\gamma^I\gamma^I$) ($\sim 23\%$)and one ($\gamma^I$) ISR photon ($\sim 19\%$). 
+The first three contributes in Fig.~\ref{fig:topo_signal0} shows that events without ISR emission are the most frequently generated ($\sim 35\%$), followed by those with two ($\gamma^I\gamma^I$) ($\sim 23\%$) and one ($\gamma^I$) ISR photon ($\sim 19\%$). 
 $\\$
-The $vpho$ (virtual photon) is a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (evt\_gen) the selected decay channel, approaching the following scheme:
-
-\begin{center}
-$e^+ \ + \  e^- \rightarrow vpho +  \ \gamma_{ISR} $ (powered by Phokhara generator)
-\vspace{0.5 cm}
-$vpho \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ (powered by evt\_gen generator)
-\end{center}
 Additionally, numerous Final State Radiation (FSR) photons are emitted by the charged final state particles due to next order perturbative QED processes.
 
-\subsubsection{Applied selections and cuts}
-In the ISR case the reconstructed particle are $p \pi^- \bar{n} \gamma_{ISR}$ and the recoil system is made of $p \pi^- \gamma_{ISR}$, while in the NO ISR case the reconstructed particle are $p \pi^- \bar{n}$ and the recoil system is made of $p \pi^-$.
+\subsubsection{ISR distributions}
+The ISR energy and angular distributions are discussed below. The primary effect of ISR emission is the reduction of the center-of-mass energy $\sqrt{s}$ below the $\Upsilon(4S)$ resonance.
 $\\$
-In order to achieve a proper selection to select the signal in the recoil mass distribution, several cuts and Monte Carlo selections are applied within the steering file as follow:
+Therefore, the energy E and $\theta$ distributions of ISR radiation are shown if Fig.~\ref{fig:isr_distro}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_energy.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_theta.pdf}
+    \caption{(a) ISR energy distribution. (b) ISR $\theta$ distribution. Both distributions are shown on a logarithmic $y$-axis scale.}
+    \label{fig:isr_distro}
+\end{figure}
+
+The conjugate energy E and $\theta$ distribution of ISR radiation are shown if Fig.~\ref{fig:isr_distro_conj}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.70\textwidth]{nbar_MC/images/ISR_energy_vs_theta.pdf}
+    \caption{Conjugate energy E and $\theta$ distribution of ISR radiation.}
+    \label{fig:isr_distro_conj}
+\end{figure}
+
+The ISR energy distribution mainly consists of photons in the $[0,1]$ GeV energy. Two peaks are observed slightly below 4 GeV and 7 GeV, corresponding to the energies of the $e^+$ and $e^-$ beams, respectively. The angular distribution present a U-shape, indicating that forward and backward directions are the most probable. 
+$\\$
+Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher the energy of the ISR radiation, the closer $|cos(\theta)|$ is to 1, indicating that high-energy $\gamma_{ISR}$ photons are emitted preferentially in the forward and backward directions. The peak at low $\theta$ values (forward direction) is higher than the backward peak, consistent with the detector asymmetry with respect to the interaction point.
+
+\subsubsection{Event selections}
+In the ISR case, the final state $p\pi^-\bar{n}\gamma_\text{ISR}$ is reconstructed; the recoil of $p\pi^-\gamma_{ISR}$ is then built. In the NO ISR case, the final state $p\pi^-\bar{n}$ is reconstructed; the recoil of $p\pi^-$ is then built. Therefore, the $\bar{n}$ can be identified through the recoil mass peak at the anti-neutron mass. 
+$\\$
+To properly select the signal in the recoil mass distribution, several cuts are applied in the steering file as follows:
 
 \begin{enumerate}
 \item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$
@@ -76,81 +104,87 @@ In order to achieve a proper selection to select the signal in the recoil mass d
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm 
 \end{enumerate}
 
-The first one is a cut that selects the region of interest in the energy spectrum, corresponding to the interval [0,2] $GeV/c^2$ around the antineutron mass ($\sim 939,56$ $MeV/c^2$) with the positive mass constraint. 
+The first one is a cut that selects the region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the antineutron mass ($\sim 939,56$ $MeV/c^2$). 
 $\\$
-In order to analyze only $\bar{n}$ signals from the calorimeter, the second selection requires that the neutral cluster associated to a $\bar{n}$ candidate originates from the electromagnetic calorimeter (ECL).
+To analyze only $\bar{n}$ signals from the calorimeter, the second selection requires that the neutral $\bar{n}$ cluster candidates are reconstructed within the electromagnetic calorimeter (ECL), avoiding the $\bar{n}$ candidates from other detectors (mainly from KLM).
 $\\$
 The third and fourth criteria are standard selections recommended by the basf2 framework. The ID requirement imposes a constraint on the protonID or pionID based on a maximum likelihood criterion as follows:
 \begin{center}
 $protonID = \frac{L_p}{L_e + L{\mu} + L{\pi} +L_K + L_d }$
 \hspace{0.3cm}
-$pionID = \frac{L_\pi}{L_e + L{\mu} + L{p} +L_K + L_d }$
+$pionID = \frac{L_\pi}{L_e + L{\mu} + L{p} +L_K + L_d }$,
 \end{center}
-The cuts on $dr$ and $|dz|$ select only tracks originating from the interaction point (IP).
+where $L_p$ is the likelihood for the proton hypothesis, $L_{\pi}$ is the likelihood for the pion hypothesis, and so on.
 $\\$
-Further cut is imposed using the basf2 \textbf{rankByLowest} method. It allows to select only the highest rank candidates, based on the angle between the neutral cluster and the recoil vector. In order to achieve a proper selection over $\bar{n}$ candidates, rankByLowest method is used (\hyperref[app:A]{Appendix~\ref*{app:A}}). Since the recoil vector can have several neutral cluster, in $\bar{n}$ list candidates, associated with it, only the $\bar{n}$ candidates with the smallest angle $\alpha$ relative to the recoil is selected. Using spherical coordinate system, after some algebraic steps, the 3D angle $\alpha$ between the two vectors can be obtained:
+The cuts on $dr$ and $|dz|$ select only tracks originating from the interaction point (IP) area, where $dr$ is defined as the transverse distance with respect to IP and $dz$ is defined as the axial distance, along the z-axis, with respect to IP.
+$\\$
+Since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 \textbf{rankByLowest} method. It allows to select only the highest rank candidates, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
+$\\$
+Using spherical coordinate system, after some algebraic steps, the 3D angle $\alpha$ between the two vectors can be obtained:
 
 \begin{center}
 $\alpha = arcos[sin(\theta_1)sin(\theta_2)cos(\phi_1 - \phi_2) + cos(\theta_1)cos(\theta_2) ]$
 \end{center}
 
-Here vector \textbf{1} denotes the recoil vector and the vector \textbf{2} denotes the $\bar{n}$ direction vector. The formula is, of course, symmetric under the exchange $1 \leftrightarrow 2$. The respective distributions, before and after the aforementioned selection, are shown below in both ISR and NO ISR cases:
+Here vector \textbf{1} denotes the recoil vector and the vector \textbf{2} denotes the $\bar{n}$ direction vector. The respective $\alpha$ distributions, before and after the aforementioned selection, are shown in Fig.~\ref{fig:alpha_pre_post}, in both ISR and NO ISR cases:
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/alpha_uncorr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/alpha.pdf}
-    \caption{(a) $\alpha$ distribution (b) $\alpha$ distribution after the rank selection}
+    \caption{(a) $\alpha$ distribution. (b) $\alpha$ distribution after the rank selection.}
+    \label{fig:alpha_pre_post}
 \end{figure}
 
-In order to have a cleaner sample, only the candidates with $\alpha < 0.35 \ (\sim 20^{\circ})$ are stored. After the cut and the ranking selection, the $\alpha$ distribution is scattered in the interval [0, 0.35] rad.
+To select the most probable $\bar{n}$ candidates, only those with $\alpha < 0.35$ ($\sim 20^\circ$) are stored.
 $\\$
-20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, leading to an efficiency respectively of: 
+The efficiency $\epsilon$  is defined as follows:
 \begin{center}
-  $\epsilon = \frac{n^{\circ} \ of \ reconstructed \ candidates}{n^{\circ}  \ of \ generated \ events} \sim 20\%$ and $25\%$
+  $\epsilon = \frac{n^{\circ} \ of \ reconstructed \ candidates}{n^{\circ}  \ of \ generated \ events} $
 \end{center}
-Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is slightly lower than in the NO ISR case. The ISR distributions are described below.
 
-\subsubsection{ISR distributions}
-Since ISR emission is independent of the analyzed channel, its energy and angular distributions are preliminary discussed. The lowering of the center-of-mass energy is the main effect of ISR emission, which leads to energy below the $\Upsilon(4S)$ resonance.
+Referring to Fig.~\ref{fig:topo_signal0}, 46969 events are generated without ISR emission ($iDcyTr \in {0,3,7,9,14,13}$) and 53031 with ISR emission ($iDcyTr \in {2,1,6,4,8,5,12,10,11,15,16}$) .
 $\\$
-Therefore, the relative distributions are shown below:
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_energy.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_theta.pdf}
-    \caption{(a) ISR energy distribution (b) ISR $\theta$ distribution}
-    \label{fig:isr_distro}
-\end{figure}
+Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 53\%$ and $38\%$ can be observed.
+Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is slightly lower than in the NO ISR case.
 
-The ISR energy spectrum mainly consists of photons in the $[0,1]$ GeV range. The angular distributions present a U-shape, indicating that forward and backward directions are the most probable, as anticipated before. Since electrons (7 GeV beam) go towards forward direction and positrons (4 GeV beam) go towards backward direction, ISR $\theta$ distribution reflects the intrinsic forward Lorentz boost which helps the $B^+ \ B^-$ (or $B_0 \ \bar{B}_0$) secondary vertexes identification.
+\subsubsection{Recoil mass distribution}
+To select events with anti-neutron, the recoil system $p \pi^- (\gamma_{ISR})$ is studied through the recoil mass. Specifically, the recoil mass should peak at the nominal anti-neutron mass, since no background channels are present in this sample. The only background consists of secondary particles produced during the propagation of primary particles through the detectors. 
 $\\$
-Furthermore, the peak at low $\theta$ values (forward direction) is higher than the backward peak, consistent with the detector asymmetry with respect to the interaction point.
-
-\subsubsection{The recoil mass}
-It is necessary to check that the recoil system $p \pi^- (\gamma_{ISR})$ is properly described. Specifically, the reconstructed recoil mass should peak at the nominal anti-neutron mass, since no background channels are present in this sample. The only background consist of secondary particles produced during the propagation through the apparatus. The result for both ISR and NO ISR cases is shown:
+The recoil mass distribution, for both ISR and NO ISR cases, is shown in Fig.~\ref{fig:recMass_distro_isr_noisr}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{nbar_MC/images/vpho_mRecoil.pdf}
-    \caption{Recoil mass distribution, in both ISR and NO ISR cases}
+    \caption{Recoil mass distribution, in both ISR and NO ISR cases.}
+    \label{fig:recMass_distro_isr_noisr}
 \end{figure}
 
-It is easy to notice that the distribution peaks above the $\bar{n}$ mass ($\sim 939.56$ MeV), indicating that the the recoil mass is well reconstructed in both ISR ($p \ \pi^-  \ \gamma_{ISR}$) and NO ISR ($p \ \pi^-$) cases. Therefore the variables associated with the $\bar{n}$ clusters can be compared with the reconstructed recoil variables ($p, \ \theta$).
+The recoil mass distribution peaks on the $\bar{n}$ mass ($\sim 939.56$ MeV), indicating that the the recoil mass is well reconstructed in both ISR ($p \ \pi^-  \ \gamma_{ISR}$) and NO ISR ($p \ \pi^-$) cases. Therefore, the variables associated with the $\bar{n}$ clusters can be compared with the reconstructed recoil variables ($p, \ \theta$).
 $\\$
-As said before, there is more than one $\gamma_{ISR}$ per event. Then the {\color{blue} blue distribution} shows more entries in the left tail, since only the most energetic gamma is involved in the recoil reconstruction, while the others are neglected. 
+In the event simulation the generator produces more than one $\gamma_{ISR}$ per event, reflecting into the obtained recoil mass distribution; the one obtained in ISR case shows more entries in the left tail, since only the most energetic gamma is considered in the recoil reconstruction, while the others are not considered. 
 $\\$
-On the other hand, since many ISR photons end up in the forward or backward regions with poor detector coverage, the {\color{red} red distribution} exhibits a higher peak as the recoil system reconstruction is only made of $p \ \pi^-$.
-
+The distribution obtained in the NO ISR case exhibits a higher peak as the recoil system reconstruction consists only of $p\pi^-$, allowing better resolution than the ISR case, since fewer tracks are considered.
+$\\$
+By selecting events around the peak, $\bar{n}$ candidates events can be identified. The recoil direction is expected to provide a good estimate of the $\bar{n}$ momentum.
 
 \subsubsection{The recoil kinematic}
-Before analyzing the recoil momentum distribution, it may be useful to examine the reconstructed and generator-level momenta for each particle which compose the recoil system. The relative reconstructed momenta are shown below:
+Before analyzing the recoil momentum distribution, the reconstructed momentum of each particle composing the recoil system is examined. For particles with MC association, the MC variables can be studied for a given list of candidates as well. 
+$\\$
+For example, considering the proton candidate list, both the \textbf{reconstructed} momentum of the proton list and the Monte Carlo (\textbf{generated}) momentum of the proton list -which is not affected by the reconstruction process- are available. The latter will be referred to as the "generated" momentum.
+$\\$
+Since a candidate list is the result of the reconstruction process, it also contains particles that have been mis-identified as the main particle (for example, $\pi^+$ mis-identified as $p$ or $\gamma$ mis-identified as $\bar{n}$).
+$\\$
+Therefore, the considered "generated" variables represent the Monte Carlo values for a given reconstructed particle list, which differs from the Monte Carlo values for a generator-level particle list that contains only the selected particle type.
+
+The relative reconstructed momenta are shown in FIg.~\ref{fig:rec_p_pi_mom}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/p_p.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/pi_p.pdf}
     \caption{Reconstructed momentum distribution of proton and pion, in both ISR and NO ISR cases}
+    \label{fig:rec_p_pi_mom}
 \end{figure}
 
 The distributions clearly exhibit the typical phase-space shapes, as expected from the adopted generator model (\hyperref[app:A]{Appendix~\ref*{app:A}}). Similarly, these distributions can be obtained directly at the generator level, yielding:
