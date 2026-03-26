@@ -447,7 +447,6 @@ The production vertex variable is now examined, dividing each contribute from th
 In the forward and backward regions, the two peaks located at the TOP edges disappear, as expected, since the TOP provides no coverage in those regions. The same conclusions hold for the first structures in the vertex detector region, where the PXD and SVD are located.
 
 
-
 \subsection{Kinematic Fit effects}
 A \textbf{Kinematic Fit} is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
 $\\$
@@ -467,88 +466,11 @@ No significant improvement in recoil momentum resolution was observed post 1C Ki
 \subsection{Shower shape variables in the signal sample}
 The following paragraph introduces the analysis of the \textbf{shower shape variables} of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
 
-\subsubsection{The analyzed shower shape variables}
-The selected variables are the \textbf{cluster energy}, the \textbf{E1E9} variable, the \textbf{E9E21} variable, \textbf{Lateral Momentum}, \textbf{Second Moment}, \textbf{Zernike Moments} (50 and 41), and \textbf{Number of Hits}, which are described first. 
-
-\paragraph{Cluster Energy}
-$\\$
-The Cluster Energy (\emph{clusterE} in the basf2 software), as the name suggests, represents the total energy deposited by the cluster associated with a given candidate particle, in this case the anti-neutron. It has units of GeV and only clusters with Cluster Energy above 20 MeV are stored by the reconstruction software.
-
-\paragraph{Cluster E1E9 and E9E21}
-In order to provide a proper definition of these variables (respectively \emph{clusterE1E9} and \emph{clusterE9E21} in the basf2 software), the following figure is shown below:
-
-\begin{figure}[H]
-    \centering
-     \includegraphics[width=0.50\textwidth]{nbar_MC/images/cluster}
-     \caption{Ideal representation of a cluster pattern, consisting of a 5×5 matrix in which each cell corresponds to a single crystal}
-\end{figure}
-
-Cluster E1E9 and cluster E9E21 are defined as follow:
-
-\begin{center}
-$E1E9 = \frac{E_1}{\sum_{i=1}^{9} E_i}$ \hspace{0.2cm} $E9E21 = \frac{\sum_{j=1}^{9} E_j}{\sum_{j=10}^{25} E_j}$, with $j \ne 10,14,18,22$
-\end{center}
-
-The first one returns the ratio of the energy in the central crystal ($E_1$) to the total energy in the surrounding 3$\times$3 crystal grid ($E_9$). The second one returns the ratio of the energy in the 3x3 crystal grid around the central crystal ($E_1$) to the total energy in the 5$\times$5 crystal grid around the central crystal, excluding the corners. 
- $\\$
-These ratios are always less than 1 and tend toward larger values for photons and smaller values for hadrons, as the latter produce more spread-out showers. These variables are dimensionless and are included within the range $[0,1]$.
-
-\paragraph{Lateral Momentum}
-$\\$
-The cluster Lateral Momentum or Lateral Energy distribution (\emph{clusterLAT} in the basf2 software) is defined as follow:
-
-\begin{center}
-$C_{LM} = \frac{ \sum\limits_{i=2}^n E_i r_i^2} {  E_0 r_0^2 + E_1 r_0^2+ \sum\limits_{i=2}^n E_i r_i^2}$, 
-\end{center}
-with $r_0 \simeq 5$ cm (average distance between two crystals centres).  
-$\\$
-$n$ is the number of crystals associated to the shower, $E_i = (E_0,E_1,...)$  are the crystal energies sorted by descending energy and $r_i$ is the distance of the i-th digit to the shower center projected onto a plane perpendicular to the shower axis. For radially-symmetric electromagnetic showers, this variable peaks at $\sim 0.3$, where it is larger for hadronic particles. This variable is dimensionless and it is included within the range $[0,1]$.
-
-\paragraph{Second Moment}
-$\\$
-The cluster Second Moment (\emph{clusterSecondMoment} in the basf2 software) is defined as follow:
-
-\begin{center}
-$C_{SM} = \frac{1}{S_0}\frac{ \sum\limits_{i=0}^n  E_i r_i^2} { \sum\limits_{i=0}^n E_i}$,
-\end{center}
-where $E_i$ and $r_i$ are the same variables as used for the lateral momentum, while $S_0$ is a normalization factor that normalizes to 1 for isolated photons, making $C_{SM}$ dimensionless. The Second Moment measures the dispersion of cluster size.
-
-\paragraph{Zernike Moments}
-$\\$
-The Zernike Moments (Zernike Polynomials) are a set of orthogonal functions which are defined on the unit disk. Since each moment represents a specific pattern shape, they are widely used to represent smooth, two‑dimensional functions (especially wavefronts) over circular apertures. 
-$\\$
-On the unit disk parametrized by polar coordinates $(\rho,\phi)$ with $0 \le \rho \le 1$, the Zernike modes are usually written as:
-
-   \begin{center}
-	    $Z^{m}_n(\rho,\phi) = R^m_n(\rho)\,\cos(m\,\phi)$
-	    
-	    \vspace{0.3cm}
-	    
-	    $Z^{-m}_n(\rho,\phi) = R^m_n(\rho)\,\sin(m\,\phi)$	
-     \end{center}  
-    
-Where:   
-\begin{center}
- 	$R^m_n(\rho) = \sum_{k=0}^{\tfrac{n-m}{2}} \frac{(-1)^k\,(n-k)!}{k!\left (\tfrac{n+m}{2}-k \right )! \left (\tfrac{n-m}{2}-k \right)!} \;\rho^{n-2\,k}$
- \end{center} 
- 
-$n$ represents the radial degree and $m$ represents the azimuthal frequency ($m = 0$ for spherical Zernike polynomials). A figure of the Zernike polynomials is given below:
-\begin{figure}[H]
-    \centering
-     \includegraphics[width=0.60\textwidth]{nbar_MC/images/zernike}
-     \caption{Zernike Polynomials representation. Moments $Z^0_4$ and $Z^1_5$ are widely discussed in this thesis}
-\end{figure}
-
-Precisely, Zernike Moments  $Z^0_4$ and $Z^1_5$ (\emph{clusterAbsZernikeMomen40} and \emph{clusterAbsZernikeMoment51} in the basf2 software) are studied in this thesis, where the first one represents the radial spread distribution structure, while the second one represents the level of dipolar asymmetry.
-
-\paragraph{Number of Crystals hit}
-$\\$
-The variable Number of Crystals hit (\emph{clusterNhits} in the basf2 software) returns sum of weights $w_i$, with $w_i \le 1$ of all crystals in the cluster. For non-overlapping clusters this is equal to the number of crystals in the cluster. However, in the case of overlapping clusters where individual crystal energies are split among them, this can be a non-integer value.
-
 \subsubsection{Anti-neutrons ECL cluster variables}
-In order to isolate the contribution of the neutral clusters which are correctly associated with $\bar{n}$ particles (Monte Carlo PDG = -2112) ({\color{red} red distribution}) from all $\bar{n}$ candidates ({\color{blue} blue distribution}), the two distributions are overlaid for each cluster variable. The former is naturally included within the latter, naturally.
+To isolate the contribution of neutral clusters correctly associated with $\bar{n}$ particles (selected using Monte Carlo PDG = $-2112$) from all $\bar{n}$ candidates, the two distributions are overlaid for each cluster variable.
+
 \newpage
-The obtained cluster variables in ISR case are shown below:
+The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_1}:
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_isr.pdf}
@@ -560,12 +482,12 @@ The obtained cluster variables in ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_isr.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates versus those associated with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (ISR case). The selection is performed using the Monte Carlo PDG code ($-2112$), as previously discussed}
-
+     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates (blue) with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (red), in ISR case.}
+     \label{fig:clus_vars_1}
 \end{figure}
 
 \newpage
-The obtained cluster variables in NO ISR case are shown below:
+The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_2}:
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_nog.pdf}
@@ -577,14 +499,15 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates versus those associated with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (NO ISR case). The selection is performed using the Monte Carlo PDG code ($-2112$), as previously discussed}
+     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates (blue) with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (red), in NO ISR case.}
+     \label{fig:clus_vars_2}
 
 \end{figure}
 
 \newpage
-First, it is important to highlight that the ISR and non-ISR distributions carry the same information, as expected. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively.
+The ISR and NO ISR distributions carry the same information, suggesting no distinction between the two cases. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively.
 $\\$
-It is also noteworthy that the {\color{blue} blue distribution} shows some peculiar structures respect the {\color{red} red distribution}. The reconstructed cluster energy for all $\bar{n}$ candidates exhibits a first structure at low energy values that resembles those discussed for the anti-neutron momentum distributions. This is also evident in the second moment distribution, where a low-energy structure is clearly visible. The most prominent difference appears in the number of hits ($N \ Hit$) distribution, where a distinct structure at $N \ Hit < 10$ is evident.
+The cluster variable distributions of all candidates show peculiar structures compared to those correctly associated with $\bar{n}$ particles. For example, the reconstructed cluster energy for all $\bar{n}$ candidates exhibits a first structure at low energy values that resembles those discussed for the anti-neutron momentum distributions. Another structure is also evident in the second moment distribution, where a structure at low values is clearly visible. The most prominent difference appears in the number of hits ($N \ Hit$) distribution, where a distinct structure at $N \ Hit < 10$ is evident.
 $\\$
 The nature of these characteristic structures is analyzed in the following sub-paragraph.
 
