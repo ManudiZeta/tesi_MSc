@@ -10,36 +10,36 @@ Warning--empty journal in 2016APS
 Warning--empty title in denuccio2019
 You've used 38 entries,
             1791 wiz_defined-function locations,
-            696 strings with 8168 characters,
-and the built_in function-call counts, 7855 in all, are:
-= -- 731
+            696 strings with 8169 characters,
+and the built_in function-call counts, 7890 in all, are:
+= -- 736
 > -- 270
 < -- 2
 + -- 108
 - -- 70
-* -- 515
-:= -- 1281
-add.period$ -- 113
+* -- 517
+:= -- 1286
+add.period$ -- 114
 call.type$ -- 38
 change.case$ -- 34
 chr.to.int$ -- 0
 cite$ -- 43
 duplicate$ -- 342
-empty$ -- 804
+empty$ -- 807
 format.name$ -- 70
-if$ -- 1715
+if$ -- 1723
 int.to.chr$ -- 0
 int.to.str$ -- 38
 missing$ -- 36
-newline$ -- 192
+newline$ -- 193
 num.names$ -- 38
-pop$ -- 59
+pop$ -- 58
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 143
 stack$ -- 0
-substring$ -- 620
+substring$ -- 629
 swap$ -- 47
 text.length$ -- 2
 text.prefix$ -- 0
@@ -48,5 +48,5 @@ type$ -- 0
 warning$ -- 5
 while$ -- 85
 width$ -- 40
-write$ -- 413
+write$ -- 415
 (There were 5 warnings)
