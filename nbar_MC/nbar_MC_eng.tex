@@ -367,7 +367,7 @@ Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncest
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/mc_pdg_hasAncestor=2.pdf}
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/mc_pdg_hasAncestor=3.pdf}
      \caption{Monte Carlo PDG codes of candidates with degrees of ancestry selection.}
-     \label{fig:mc_pdg_hasAncestor=}
+     \label{fig:mc_pdg_hasAncestor}
 \end{figure}
 
 \begin{itemize}
@@ -409,32 +409,44 @@ This can be summarized using the meta-variable (mcErrors), which encodes as a bi
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{nbar_MC/images/mcErrors.pdf}
-    \caption{Monte Carlo Erros code. 0 corresponds to a prefectly reconstructed particle, while 512 correpsonds to a non valid MC match.}
+    \caption{Monte Carlo Error code. 0 corresponds to a perfectly reconstructed particle, while 512 corresponds to a non valid MC match.}
     \label{fig:mcErrors}
 \end{figure}
 where the first peak is on the code \textbf{0}, which means that "\emph{This particle and all its daughters are perfectly reconstructed}", while the second peak is on the code \textbf{512}, which confirms that "\emph{There was an error in MC matching. Not a valid match. Might indicate fake/background track or cluster}", as expected.
 
 \subsubsection{$\bar{n}$ production vertex}
-Eventually, in order to a comprehensive ancestor analysis, it could be useful to discuss the generator-level radial production distance $\rho = \sqrt{x^2 + y^2}$ -the vertex production- of $\bar{n}$ candidates, from the z-axis. 
+To verify the $\bar{n}$ production position, the Monte Carlo production vertex of the $\bar{n}$ is studied. To address it, the radial production distance $\rho$ is introduced, defined as follows:
+\begin{center}
+$\rho = \sqrt{x^2 + y^2}$,
+ \end{center}
+which is the Monte Carlo radial distance of $\bar{n}$ candidates, from the z-axis. 
 $\\$
-To provide a clear overview of $\rho$, the distribution is splitted in two parts: the left part -close to the collision diamond- ($\rho \in [0,0.1]$ cm) and the right part -far from the collision diamond- ($\rho \in (0.1,220]$ cm). The obtained result is shown below:
+The distribution is splitted in two parts: the left part -close to the IP- ($\rho \in [0,0.1]$ cm) and the right part -far from the IP- ($\rho \in (0.1,220]$ cm). The obtained result is shown Fig.~\ref{fig:mcDistance}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/mcDistance_sx.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/mcDistance_dx.pdf}
-    \caption{$\bar{n}$ production vertex: (left) close to the IP (right) far from the IP}
+    \caption{$\bar{n}$ production vertex: (left) close to the IP; (right) far from the IP. Blue distribution: all $\bar{n}$ associated by Monte Carlo matching; red: $\bar{n}$ candidates correctly associated to true $\bar{n}$; green: $\bar{n}$ candidates with no $\bar{n}$ relatives; yellow: $\bar{n}$ candidates with an $\bar{n}$ mother particle.}
+    \label{fig:mcDistance}
 \end{figure}
 
-As expected, the correctly associated anti-neutrons ({\color{red} red distribution}) overlay the $\bar{n}$ candidates without an anti-neutron ancestor ({\color{green} green distribution}) and they are from the interaction point (left part). 
+The correctly associated anti-neutrons overlay the $\bar{n}$ candidates without an anti-neutron ancestor $\bar{n}$ ancestor = 0), originating from the interaction point (left panel). This distribution is not centered around zero because the generator uses a default non-zero starting radial distance.
 $\\$
-As seen before, the $\bar{n}$ candidates with a $\bar{n}$ as mother are mainly photons and they are produced around the detector ({\color{yellow} yellow distribution}). It is interesting to note that the first structure is in the vertex detectors region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster split-off and pre-showering events occur in the events.
+The $\bar{n}$ candidates with an $\bar{n}$ mother particle -that are mainly photons (Fig.~\ref{fig:mc_pdg_hasAncestor})- are produced throughout the Belle II detector.
 $\\$
-To compare the height comparison between the left and right contributes, the full distribution is shown below:
+The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster split-off and pre-showering events occur in the events. In fact, $\bar{n}$ candidates with $\bar{n}$ ($\bar{n}$ ancestor = 1), may be produced before the ECL (pre-showering) or within the ECL (split-off).
+$\\$
+The production vertex variable is now examined, dividing each contribute from the different ECL regions; backward region, barrel region and forward region. The obtained result is shown Fig.~\ref{fig:mcDistance_region}.
  \begin{figure}[H]
     \centering
-    \includegraphics[width=0.70\textwidth]{nbar_MC/images/mcDistance_full.pdf}
-     \caption{$\bar{n}$ production vertex showing the IP peak is the main one}
+    \includegraphics[width=0.49\textwidth]{nbar_MC/images/mcDistance_sx_regionSep.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_MC/images/mcDistance_dx_regionSep.pdf}
+    \caption{$\bar{n}$ production vertex: (left) close to the IP; (right) far from the IP. Blue distribution: $\bar{n}$ candidates detected in the forward region; red: $\bar{n}$ candidates detected in the barrel region; green: $\bar{n}$ candidates detected in the backward region.}
+    \label{fig:mcDistance_region}
 \end{figure}
+In the forward and backward regions, the two peaks located at the TOP edges disappear, as expected, since the TOP provides no coverage in those regions. The same conclusions hold for the first structures in the vertex detector region, where the PXD and SVD are located.
+
+
 
 \subsection{Kinematic Fit effects}
 A \textbf{Kinematic Fit} is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of event particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with resolution-limited errors from detectors. The fit adjusts these within their error bars to best satisfy the imposed constraint.

@@ -10,7 +10,7 @@
 #include "TLine.h"
 #include "TString.h"
 
-static TString file_str = "../../../../vpho_isr_ranked.root";
+static TString file_str = "../../../../mother_26032026.root";
 
 void ancestor()
 {
@@ -221,15 +221,15 @@ void vertex_ancestor()
     
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
     
-    tree->Draw(d + ">>h1(180,0,220)","","goff");
-    tree->Draw(d + ">>h2(180,0,220)","nbar_mcPDG == -2112 && !TMath::IsNaN(nbar_mcPDG)","goff");
-    tree->Draw(d + ">>h3(180,0,220)","nbar_hasAncestor_2112_1 == 0 && !TMath::IsNaN(nbar_mcPDG)","goff");
-    tree->Draw(d + ">>h4(180,0,220)","nbar_hasAncestor_2112_1 == 1 && !TMath::IsNaN(nbar_mcPDG)","goff");
+    tree->Draw(d + ">>h1(180,0,0.1)","nbar_clusterReg == 1","goff");
+    tree->Draw(d + ">>h2(180,0,0.1)","nbar_clusterReg == 2","goff");
+    tree->Draw(d + ">>h3(180,0,0.1)","nbar_clusterReg == 3","goff");
+    //tree->Draw(d + ">>h4(180,0,220)","nbar_hasAncestor_2112_1 == 1 && !TMath::IsNaN(nbar_mcPDG)","goff");
     
     TH1D *h1 = (TH1D*)gDirectory->Get("h1");
     TH1D *h2 = (TH1D*)gDirectory->Get("h2");
     TH1D *h3 = (TH1D*)gDirectory->Get("h3");
-    TH1D *h4 = (TH1D*)gDirectory->Get("h4");
+    //TH1D *h4 = (TH1D*)gDirectory->Get("h4");
     
 
     delete c1;
@@ -237,28 +237,28 @@ void vertex_ancestor()
     h1->SetLineColor(kBlue);
     h2->SetLineColor(kRed);
     h3->SetLineColor(kGreen);
-    h4->SetLineColor(kYellow -6);
+    //h4->SetLineColor(kYellow -6);
     
      
-    h1->SetXTitle("#rho = #sqrt{x^2 + y^2} [cm]");
-    h1->SetYTitle("counts");
-    h1->SetTitle("MC vertex production of #bar{n} candidates");
+    h2->SetXTitle("#rho = #sqrt{x^2 + y^2} [cm]");
+    h2->SetYTitle("counts");
+    h2->SetTitle("MC vertex production of #bar{n} candidates");
     
     TLegend *leg = new TLegend(0.6,0.6,0.78,0.78);
-    leg->AddEntry(h1,"All MC associated  #bar{n} candidates","l");
-    leg->AddEntry(h2,"#bar{n} mcPDG = -2112","l");
-    leg->AddEntry(h3,"#bar{n} ancestor = 0","l");
-    leg->AddEntry(h4,"#bar{n} ancestor = 1","l");
+    leg->AddEntry(h1,"Forward direction","l");
+    leg->AddEntry(h2,"Barrel region","l");
+    leg->AddEntry(h3,"Backward region","l");
+    //leg->AddEntry(h4,"#bar{n} ancestor = 1","l");
     
     TCanvas *tela = new TCanvas("tela", "tela");
     
-    h1->DrawCopy("HIST");
-    h2->DrawCopy("HIST SAMES");
+    h2->DrawCopy("HIST");
+    h1->DrawCopy("HIST SAMES");
     h3->DrawCopy("HIST SAMES");
-    h4->DrawCopy("HIST SAMES");
+    //h4->DrawCopy("HIST SAMES");
     leg->Draw("SAME");
     
-    TString title_out = "../images/mcDistance_full.pdf";
+    TString title_out = "../images/mcDistance_sx_regionSep.pdf";
     tela->SaveAs(title_out);
     
 }
