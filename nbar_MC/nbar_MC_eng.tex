@@ -436,7 +436,7 @@ The $\bar{n}$ candidates with an $\bar{n}$ mother particle -that are mainly phot
 $\\$
 The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster split-off and pre-showering events occur in the events. In fact, $\bar{n}$ candidates with $\bar{n}$ as mother particle ($\bar{n}$ ancestor = 1), may be produced before the ECL (pre-showering) or within the ECL (split-off).
 $\\$
-The production vertex variable is now examined, dividing each contribute from the different ECL regions; backward region, barrel region and forward region. The obtained result is shown Fig.~\ref{fig:mcDistance_region}.
+The production vertex variable is now examined, dividing each contribute from the different ECL regions; backward region, barrel region and forward region. The obtained result is shown in Fig.~\ref{fig:mcDistance_region}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/mcDistance_sx_regionSep.pdf}
@@ -449,10 +449,9 @@ In the forward and backward regions, the two peaks located at the TOP edges disa
 
 
 \subsection{Kinematic Fit effects}
-A \textbf{Kinematic Fit} is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of event particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with resolution-limited errors from detectors. The fit adjusts these within their error bars to best satisfy the imposed constraint.
+A \textbf{Kinematic Fit} is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
 $\\$
-There are several type of Kinematic Fit that could yield improved resolution. The one constraint \textbf{1C Kinematic Fit} has been tested over the $p \pi^- (\gamma_{ISR})$ system recoil mass, forcing it to the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The obtained residuals are shown below:
-
+A one constraint \textbf{1C Kinematic Fit} has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The obtained residuals are shown  in Fig.~\ref{fig:kin_fit}.
 \begin{figure}[H]
     \centering
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc.pdf}
@@ -460,12 +459,13 @@ There are several type of Kinematic Fit that could yield improved resolution. Th
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_mc.pdf}
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_rec.pdf}
      \caption{Momentum and $\theta$ angle residuals distribution between recoil system and anti-neutron candidate, after the 1C Kinematic Fit procedure}
+     \label{fig:kin_fit}
 \end{figure}
 
-As can be easily seen from the distributions, no significant improvement in recoil momentum resolution was observed post 1C Kinematic Fit compared to the unconstrained baseline ~\ref{fig:pRecoil-nP} . This confirms that the recoil system was already optimally reconstructed in the signal sample Monte Carlo. Further kinematic fit studies using a Monte Carlo cocktail are discussed in the next section.
+No significant improvement in recoil momentum resolution was observed post 1C Kinematic Fit compared to the unconstrained baseline ~\ref{fig:residuals_distros} . This confirms that the recoil system was already optimally reconstructed in the signal sample Monte Carlo. Further kinematic fit studies using a Monte Carlo cocktail are discussed in the next section.
 
 \subsection{Shower shape variables in the signal sample}
-The following chapter introduces the core of this thesis: the analysis of the \textbf{shower shape variables} of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in an MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
+The following paragraph introduces the analysis of the \textbf{shower shape variables} of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
 
 \subsubsection{The analyzed shower shape variables}
 The selected variables are the \textbf{cluster energy}, the \textbf{E1E9} variable, the \textbf{E9E21} variable, \textbf{Lateral Momentum}, \textbf{Second Moment}, \textbf{Zernike Moments} (50 and 41), and \textbf{Number of Hits}, which are described first. 
