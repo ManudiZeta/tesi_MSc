@@ -221,9 +221,9 @@ void vertex_ancestor()
     
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
     
-    tree->Draw(d + ">>h1(180,0,0.1)","nbar_clusterReg == 1","goff");
-    tree->Draw(d + ">>h2(180,0,0.1)","nbar_clusterReg == 2","goff");
-    tree->Draw(d + ">>h3(180,0,0.1)","nbar_clusterReg == 3","goff");
+    tree->Draw(d + ">>h1(180,0.1,220)","nbar_clusterReg == 1","goff");
+    tree->Draw(d + ">>h2(180,0.1,220)","nbar_clusterReg == 2","goff");
+    tree->Draw(d + ">>h3(180,0.1,220)","nbar_clusterReg == 3","goff");
     //tree->Draw(d + ">>h4(180,0,220)","nbar_hasAncestor_2112_1 == 1 && !TMath::IsNaN(nbar_mcPDG)","goff");
     
     TH1D *h1 = (TH1D*)gDirectory->Get("h1");
@@ -242,7 +242,7 @@ void vertex_ancestor()
      
     h2->SetXTitle("#rho = #sqrt{x^2 + y^2} [cm]");
     h2->SetYTitle("counts");
-    h2->SetTitle("MC vertex production of #bar{n} candidates");
+    h2->SetTitle("MC vertex production of #bar{n} candidates (RIGHT)");
     
     TLegend *leg = new TLegend(0.6,0.6,0.78,0.78);
     leg->AddEntry(h1,"Forward direction","l");
@@ -258,7 +258,7 @@ void vertex_ancestor()
     //h4->DrawCopy("HIST SAMES");
     leg->Draw("SAME");
     
-    TString title_out = "../images/mcDistance_sx_regionSep.pdf";
+    TString title_out = "../images/mcDistance_dx_regionSep.pdf.pdf";
     tela->SaveAs(title_out);
     
 }
