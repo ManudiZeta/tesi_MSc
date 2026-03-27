@@ -505,44 +505,30 @@ The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_
 \end{figure}
 
 \newpage
-The ISR and NO ISR distributions carry the same information, suggesting no distinction between the two cases. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively.
+The ISR and NO ISR distributions carry the same information, suggesting no distinction between the two cases. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively. Therefore, only the NO ISR case will be discussed in the rest of the chapter.
 $\\$
 The cluster variable distributions of all candidates show peculiar structures compared to those correctly associated with $\bar{n}$ particles. For example, the reconstructed cluster energy for all $\bar{n}$ candidates exhibits a first structure at low energy values that resembles those discussed for the anti-neutron momentum distributions. Another structure is also evident in the second moment distribution, where a structure at low values is clearly visible. The most prominent difference appears in the number of hits ($N \ Hit$) distribution, where a distinct structure at $N \ Hit < 10$ is evident.
 $\\$
 The nature of these characteristic structures is analyzed in the following sub-paragraph.
 
-\subsubsection{Ancestor cluster variables}
-It would be interesting to investigate the nature of this structure using the same approach as before, namely studying the ancestor contributions. The shower shapes with the following selections are compared:
+\subsubsection{Study of cluster structures with ancestor variable}
+The nature of these structures is now investigated using the same approach as before, namely by studying the ancestor contributions. This allows to determine whether a specific structure originates directly from primary $\bar{n}$ annihilation or from its annihilation products.
+$\\$ 
+The shower shapes with the following selections are compared:
 \begin{itemize}
-\item $\bar{n}$ Monte Carlo PDG = -2112 (neutral clusters correctly associated with $\bar{n}$ particles)
-\item $\bar{n}$ Monte Carlo PDG = NaN (neutral clusters not associated with any particles)
-\item $\bar{n}$ hasAncestor = 0 (neutral clusters with no $\bar{n}$ as relative)
-\item $\bar{n}$ hasAncestor != 0 (neutral clusters with $\bar{n}$ as relative)
+\item $\bar{n}$ Monte Carlo PDG = -2112 (neutral clusters correctly associated with $\bar{n}$ particles),
+\item $\bar{n}$ Monte Carlo PDG = NaN (neutral clusters not associated with any particles),
+\item $\bar{n}$ hasAncestor = 0 (neutral clusters with no $\bar{n}$ as relative),
+\item $\bar{n}$ hasAncestor != 0 (neutral clusters with $\bar{n}$ as relative).
 \end{itemize}
 
-Referring to figures ~\ref{fig:cluster_ISR} and ~\ref{fig:cluster_NOISR}, as expected the neutral clusters correctly associated with $\bar{n}$ particles carry the same information of those without $\bar{n}$ as relative, in bot ISR and NO ISR cases.
+Referring to figures ~\ref{fig:cluster_NOISR} and ~\ref{fig:cluster_ISR} (ISR case in appendix) the neutral clusters correctly associated with $\bar{n}$ particles carry the same information of those without $\bar{n}$ as relative, in both ISR and NO ISR cases.
 $\\$
-Furthermore, it is evident how reconstructed neutral clusters not associated with any particles by the Monte Carlo and those with $\bar{n}$ as relative are primarily responsible for the structures observed at low values of energy, second moment, and number of crystals.
+Furthermore, reconstructed neutral clusters not associated with any particles by the Monte Carlo and those with $\bar{n}$ as relative are primarily responsible for the structures observed at low values of energy, second moment, and number of crystals.
 $\\$
-A further selection on number of crystals ($clusterNHits > 10$) can be performed to study the corresponding cluster variables. The result is shown in figure  ~\ref{fig:cluster_ISR_NHits} and ~\ref{fig:cluster_NOISR_NHits}. 
+A further selection on number of crystals ($clusterNHits > 10$) can be performed to study the corresponding cluster variables. The result is shown in figure  ~\ref{fig:cluster_NOISR_NHits} and ~\ref{fig:cluster_ISR_NHits} (ISR case in appendix).
 $\\$
-As observed, these structures arise from small-sized clusters produced by $\bar{n}$ particles that undergo phenomena -such as cluster split-off and pre-showering- prior to neutral cluster formation for $\bar{n}$ candidates, as confirmed by ancestor studies. The requirement of at least 10 crystals eliminates these structures.
-\newpage
-The obtained cluster variables in  ISR case are shown below:
- \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE1E9_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE9E21_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterLAT_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_isr_ancestor.pdf}
-   
-     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates with different ancestor selection (ISR case)}
-     \label{fig:cluster_ISR}
-\end{figure}
+As observed, these structures arise from small-sized clusters produced by $\bar{n}$ particles that undergo phenomena -such as cluster split-off and pre-showering- prior to neutral cluster formation for $\bar{n}$ candidates, as confirmed by ancestor studies. The requirement of at least 10 crystals eliminates these structures,  without reducing the signal.
 
 \newpage
 The obtained cluster variables in NO ISR case are shown below:
@@ -557,28 +543,8 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog_ancestor.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates with different ancestor selection (NO ISR case)}
+     \caption{\footnotesize{Comparison of reconstructed cluster variables for $\bar{n}$ candidates with different ancestor selection (no ISR case). Red: $\bar{n}$ candidates associated with true $\bar{n}$ by Monte Carlo matching; blue: $\bar{n}$ candidates not associated with any particle (NaN); green: $\bar{n}$ candidates without $\bar{n}$ relatives; yellow: $\bar{n}$ candidates with $\bar{n}$ relative. The third contribution (green) is barely visible as it lies beneath the first distribution (red). NO ISR case.}}
      \label{fig:cluster_NOISR}
-
-\end{figure}
-
-
-\newpage
-The obtained cluster variables in ISR case are shown below:
- \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE1E9_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE9E21_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterLAT_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment40_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_hitscut_isr.pdf}
-   
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates versus those associated with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (ISR case). Cut $clusterNHits > 10$ is performed}
-     
-     \label{fig:cluster_ISR_NHits}
 
 \end{figure}
 
@@ -595,7 +561,7 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_hitscut_nog.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates versus those associated with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (NO ISR case). Cut $clusterNHits > 10$ is performed}
+     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates (blue) and those associated with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112  (red) (NO ISR case). Cut $clusterNHits > 10$ is performed.}
      
      \label{fig:cluster_NOISR_NHits}
 
@@ -604,20 +570,20 @@ The obtained cluster variables in NO ISR case are shown below:
 \newpage
 
 \subsubsection{Cluster variables in different ECL regions}
-As described in Chapter 3, the Belle II detector is divided into barrel and forward/backward end-cap regions. It would be interesting to study the reconstructed cluster variables in each ECL region separately. Since the ISR and NO ISR cases exhibit analogous shower shapes, only the latter is discussed here.
+The Belle II detector is divided into barrel and forward/backward end-cap regions. The reconstructed cluster variables are now studied in each ECL region separately. Since the ISR and NO ISR cases exhibit analogous shower shapes, only the latter is discussed here, with the applied cut $clusterNHits > 10$.
 $\\$
-The region hit distribution is shown below:
+The region hit distribution is shown in Fig. ~\ref{fig:clus_reg123}:
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{nbar_MC/images/cluster_region.pdf}
-
-     \caption{Different ECL regions contribution in neutral cluster associated to $\bar{n}$ candidates, where 1 is the forward region, 2 is the barrel region and 3 is the backward region. As expected, the barrel region is the most involved}
+     \caption{Different ECL regions contribution in neutral cluster associated to $\bar{n}$ candidates, where 1 is the forward region, 2 is the barrel region and 3 is the backward region. The barrel region is the most involved.}
+     \label{fig:clus_reg123}
 
 \end{figure}
 
 As observed in Fig.~\ref{fig:cluster_region}, the cluster variable associated to all the reconstructed  $\bar{n}$ shapes are consistent across all ECL regions. 
 $\\$
-However a slight difference can be noted for cluster energy and number of hits variables. In fact, these two exhibit a shift toward lower values in the forward region, reflecting the Lorentz boost of the center-of-mass. In any case, the barrel region contains the majority of ECL clusters, as expected.
+However a slight difference can be noted for cluster energy and number of hits variables. In fact, these two exhibit a shift toward lower values in the forward region, reflecting the Lorentz boost of the center-of-mass. In any case, the barrel region contains the majority of ECL clusters.
 
 \newpage
 The obtained cluster variables in NO ISR case are shown below:
@@ -632,7 +598,7 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog_region.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates in different ECL regions. The distributions are normalized to unit value}
+     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates in different ECL regions. Blue: forward region. Red: barrel region. Green: backward region. The distributions are normalized to unit value}
       \label{fig:cluster_region}
 \end{figure}
 

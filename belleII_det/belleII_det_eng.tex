@@ -259,3 +259,33 @@ TopoAna is an offline tool independent of basf2. It extracts human-readable topo
      \label{fig:topoproc_b}
 \end{figure}
 
+\subsection{Introduction to the Belle II Distributed Computing}
+Belle II datasets are categorized into two main types: \textbf{Data} and \textbf{Monte Carlo}. The Data are obtained from calibrated collision events processed by the experiment. Monte Carlo samples are generated using the Monte Carlo method according to various event generators, as discussed in Chapter 2. These are further classified into \textbf{Signal MC}- a specific process generated with a dedicated decay file upon analyst request (as in the previous chapter)- and \textbf{Generic MC}, or "cocktail'', containing all processes expected in data with their correct relative fractions (as in the present chapter). These are usually in mdst (Mini Data Summary Table) format. There is cdst (Calibration Data Summary Table) as well, but it is used mainly to address calibration tasks.
+$\\$
+Data and Monte Carlo samples can be ``skimmed'' by applying analysis-dependent offline pre-selections called ``skims''. Skims reduce data volume by selecting events of interest for specific analyses and retaining only the necessary information, producing smaller, more manageable datasets.
+$\\$
+Using these Data and MC collections, analyses are performed via custom steering files with basf2, producing final ROOT ntuples. Subsequent offline analysis is then conducted outside the basf2 framework using ROOT, matplotlib, etc.
+$\\$
+A scheme of the Belle II Data Model is shown in Fig. ~\ref{fig:datafiles_fig}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{nbar_cocktail/images/datafiles}
+    \caption{A scheme of the Belle II Data Model, starting from the nature processes information to the final results. As described, Monte Carlo truth information bypasses reconstruction, since the information is directly picked at generator level.}
+    \label{fig:datafiles_fig}
+\end{figure}
+
+Belle II Data and Monte Carlo samples are distributed across numerous storage sites worldwide. This Distributed Computing System, known as \textbf{the Grid}, consists of a network of loosely coupled computers with varying local conditions (operating systems, resources, etc.). 
+$\\$
+Two full copies of the raw data are maintained at dedicated data centers. Raw data is processed, skimmed, and distributed over other storage sites. A scheme of the Belle II Distributed Computing (The Grid) is shown in Fig. ~\ref{fig:grid_fig}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{nbar_cocktail/images/grid_distribution}
+    \caption{A scheme of the Belle II Distributed Computing (The Grid) sites.}
+    \label{fig:grid_fig}
+\end{figure}
+
+Each site interact with \textbf{DIRAC}, an interware that manages interactions between Belle II and its computing resources. \textbf{BelleDIRAC} is an extension that enables users to interact with DIRAC for job submission, data placement, monitoring, and other tasks.
+
+

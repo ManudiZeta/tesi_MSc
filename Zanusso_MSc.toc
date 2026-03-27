@@ -23,39 +23,41 @@
 \contentsline {subsection}{\numberline {3.1}Monte Carlo simulation and reconstruction}{28}{subsection.1.1}%
 \contentsline {subsection}{\numberline {3.2}basf2 modules and path}{29}{subsection.1.2}%
 \contentsline {subsection}{\numberline {3.3}TopoAna: Topology Analysis}{30}{subsection.1.3}%
-\contentsline {part}{4\hspace {1em}ECL chracteristics and cluster variables}{33}{part.4}%
-\contentsline {subsection}{\numberline {4.1}The ECL reconstruction algorithm}{33}{subsection.1.1}%
-\contentsline {subsection}{\numberline {4.2}ECL performance}{34}{subsection.1.2}%
-\contentsline {subsection}{\numberline {4.3}ECL cluster variables}{35}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Cluster Energy}{35}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Cluster E1E9 and E9E21}{36}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Lateral Momentum}{37}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Second Moment}{38}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {4.3.5}Zernike Moments}{39}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {4.3.6}Number of Crystals hit}{40}{subsubsection.1.3.6}%
-\contentsline {part}{5\hspace {1em}Study of the Monte Carlo signal channel}{41}{part.5}%
-\contentsline {subsection}{\numberline {5.1}Kinematic variables comparison}{43}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}ISR distributions}{43}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Event selections}{45}{subsubsection.1.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Recoil mass distribution}{46}{subsubsection.1.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}The recoil kinematic}{47}{subsubsection.1.1.4}%
-\contentsline {subsection}{\numberline {5.2}The $\bar {n}$ relatives analysis}{54}{subsection.1.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}The basf2 ancestor variables}{55}{subsubsection.1.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Ancestor momentum}{57}{subsubsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}$\bar {n}$ production vertex}{59}{subsubsection.1.2.3}%
-\contentsline {subsection}{\numberline {5.3}Kinematic Fit effects}{61}{subsection.1.3}%
-\contentsline {subsection}{\numberline {5.4}Shower shape variables in the signal sample}{62}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Anti-neutrons ECL cluster variables}{62}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Ancestor cluster variables}{65}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {3.4}Introduction to the Belle II Distributed Computing}{32}{subsection.1.4}%
+\contentsline {part}{4\hspace {1em}ECL chracteristics and cluster variables}{35}{part.4}%
+\contentsline {subsection}{\numberline {4.1}The ECL reconstruction algorithm}{35}{subsection.1.1}%
+\contentsline {subsection}{\numberline {4.2}ECL performance}{36}{subsection.1.2}%
+\contentsline {subsection}{\numberline {4.3}ECL cluster variables}{37}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Cluster Energy}{37}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Cluster E1E9 and E9E21}{38}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Lateral Momentum}{39}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Second Moment}{40}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Zernike Moments}{41}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Number of Crystals hit}{42}{subsubsection.1.3.6}%
+\contentsline {part}{5\hspace {1em}Study of the Monte Carlo signal channel}{43}{part.5}%
+\contentsline {subsection}{\numberline {5.1}Kinematic variables comparison}{45}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}ISR distributions}{45}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Event selections}{47}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Recoil mass distribution}{48}{subsubsection.1.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}The recoil kinematic}{49}{subsubsection.1.1.4}%
+\contentsline {subsection}{\numberline {5.2}The $\bar {n}$ relatives analysis}{56}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}The basf2 ancestor variables}{57}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Ancestor momentum}{59}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}$\bar {n}$ production vertex}{61}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {5.3}Kinematic Fit effects}{63}{subsection.1.3}%
+\contentsline {subsection}{\numberline {5.4}Shower shape variables in the signal sample}{64}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Anti-neutrons ECL cluster variables}{64}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Study of cluster structures with ancestor variable}{67}{subsubsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {5.4.3}Cluster variables in different ECL regions}{70}{subsubsection.1.4.3}%
 \contentsline {subsection}{\numberline {5.5}Summary of Signal Channel Analysis}{72}{subsection.1.5}%
 \contentsline {part}{6\hspace {1em}Study of the Monte Carlo cocktail production}{73}{part.6}%
-\contentsline {subsection}{\numberline {6.1}Introduction to the Belle II Distributed Computing}{73}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Types of processes at the Belle experiment enviroment}{75}{subsubsection.1.1.1}%
-\contentsline {subsection}{\numberline {6.2}Applied selections and cuts}{76}{subsection.1.2}%
-\contentsline {subsection}{\numberline {6.3}Recoil mass in $u\bar {u}$ cocktail production (NO ISR case)}{78}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Recoil mass components analysis}{79}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Performance metrics study on $\alpha $ cut}{82}{subsubsection.1.3.2}%
-\contentsline {subsection}{\numberline {6.4}$q\bar {q}$ cocktail production (NO ISR case)}{85}{subsection.1.4}%
-\contentsline {part}{7\hspace {1em}Signal sample analysis scripts}{87}{part.7}%
-\contentsline {subsection}{\numberline {7.1}The decay file and the generation steering file}{87}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {6.1}Types of processes at the Belle experiment enviroment}{73}{subsection.1.1}%
+\contentsline {subsection}{\numberline {6.2}Applied selections and cuts}{74}{subsection.1.2}%
+\contentsline {subsection}{\numberline {6.3}Recoil mass in $u\bar {u}$ cocktail production (NO ISR case)}{77}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Recoil mass components analysis}{78}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Performance metrics study on $\alpha $ cut}{80}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {6.4}$q\bar {q}$ cocktail production (NO ISR case)}{84}{subsection.1.4}%
+\contentsline {part}{7\hspace {1em}Appendix}{86}{part.7}%
+\contentsline {section}{\numberline {A}Signal sample analysis scripts}{86}{appendix.A}%
+\contentsline {subsection}{\numberline {7.1}The decay file and the generation steering file}{86}{subsection.A.1}%
+\contentsline {section}{\numberline {B}Cluster variables in ISR case}{90}{appendix.B}%
