@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  30 MAR 2026 01:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  30 MAR 2026 01:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1024,23 +1024,23 @@ Package pdftex.def Info: nbar_MC/images/zernike.png  used on input line 156.
 [43 <./nbar_MC/images/SMexample.png>])
 
 [44 <./nbar_MC/images/zernike.png>] (./nbar_MC/nbar_MC_eng.tex
-<nbar_MC/images/channel_art.png, id=1097, 1085.05376pt x 439.6425pt>
+<nbar_MC/images/channel_art.png, id=1097, 1037.8775pt x 397.485pt>
 File: nbar_MC/images/channel_art.png Graphic file (type png)
 <use nbar_MC/images/channel_art.png>
 Package pdftex.def Info: nbar_MC/images/channel_art.png  used on input line 17.
 
-(pdftex.def)             Requested size: 345.0pt x 139.78954pt.
+(pdftex.def)             Requested size: 345.0pt x 132.12874pt.
 
 
 [45
 
  <./nbar_MC/images/channel_art.png>]
-<nbar_MC/images/channel_art_colors.png, id=1105, 1043.9pt x 413.545pt>
+<nbar_MC/images/channel_art_colors.png, id=1105, 1023.825pt x 432.61626pt>
 File: nbar_MC/images/channel_art_colors.png Graphic file (type png)
 <use nbar_MC/images/channel_art_colors.png>
 Package pdftex.def Info: nbar_MC/images/channel_art_colors.png  used on input l
 ine 38.
-(pdftex.def)             Requested size: 345.0pt x 136.67218pt.
+(pdftex.def)             Requested size: 345.0pt x 145.78055pt.
 
 Overfull \hbox (10.8674pt too wide) in paragraph at lines 42--45
 []\OT1/cmr/m/n/10 Importantly, the Phokhara[]evtgen[]combination gen-er-a-tor p
@@ -1896,12 +1896,12 @@ l.51 \subsection{Event selections}
                                   
 
 [76 <./nbar_cocktail/images/BelleII_processes.png>]
-<nbar_cocktail/images/ROE_diag.png, id=5231, 486.81876pt x 521.95pt>
+<nbar_cocktail/images/ROE_diag.png, id=5231, 651.43375pt x 757.83125pt>
 File: nbar_cocktail/images/ROE_diag.png Graphic file (type png)
 <use nbar_cocktail/images/ROE_diag.png>
 Package pdftex.def Info: nbar_cocktail/images/ROE_diag.png  used on input line 
 72.
-(pdftex.def)             Requested size: 155.24895pt x 166.45398pt.
+(pdftex.def)             Requested size: 155.24895pt x 180.59966pt.
 <nbar_cocktail/images/clusterEnergy_isr.pdf, id=5233, 569.12625pt x 387.4475pt>
 
 File: nbar_cocktail/images/clusterEnergy_isr.pdf Graphic file (type pdf)
@@ -3023,7 +3023,7 @@ Package rerunfilecheck Info: File `Zanusso_MSc.out' has not changed.
 Here is how much of TeX's memory you used:
  16140 strings out of 473190
  315017 string characters out of 5715800
- 665176 words of memory out of 5000000
+ 665181 words of memory out of 5000000
  38858 multiletter control sequences out of 15000+600000
  570016 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3056,7 +3056,7 @@ s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Zanusso_MSc.pdf (118 pages, 8924227 bytes).
+Output written on Zanusso_MSc.pdf (118 pages, 8943532 bytes).
 PDF statistics:
  9605 PDF objects out of 10688 (max. 8388607)
  4645 compressed objects within 47 object streams
