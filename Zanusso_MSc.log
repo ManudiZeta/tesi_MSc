@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  27 MAR 2026 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  30 MAR 2026 01:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,7 +459,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<logos/unito_logo.png, id=217, 223.83624pt x 281.05pt>
+<logos/unito_logo.png, id=240, 223.83624pt x 281.05pt>
 File: logos/unito_logo.png Graphic file (type png)
 <use logos/unito_logo.png>
 Package pdftex.def Info: logos/unito_logo.png  used on input line 42.
@@ -482,6 +482,41 @@ Package pdftex.def Info: logos/unito_logo.png  used on input line 42.
 
 [4
 
+]
+Overfull \hbox (0.58688pt too wide) in paragraph at lines 78--90
+\OT1/cmr/m/n/9 In-oltre, i mod-elli fisici alla base della sim-u-lazione GEANT4
+ dell'interazione
+ []
+
+
+Overfull \hbox (1.62831pt too wide) in paragraph at lines 78--90
+\OT1/cmr/m/n/9 neutrone tramite i clus-ter da esso prodotti nel calorimetro. L'
+anti-neutrone
+ []
+
+
+Overfull \hbox (0.21887pt too wide) in paragraph at lines 78--90
+\OT1/cmr/m/n/9 prin-ci-pal-mente a causa dalla fram-men-tazione del clus-ter pr
+i-mario prodotto
+ []
+
+
+Overfull \hbox (10.9998pt too wide) in paragraph at lines 78--90
+\OT1/cmr/m/n/9 dall'annichilazione dell'anti-neutrone. Questo si riversa an-che
+ sulle grandezze
+ []
+
+
+Overfull \hbox (0.39873pt too wide) in paragraph at lines 78--90
+\OT1/cmr/m/n/9 Si con-clude svol-gendo un con-fronto dati e Monte Carlo per qua
+nto riguarda
+ []
+
+
+
+[5
+
+
 ] (./Zanusso_MSc.toc
 
 
@@ -489,7 +524,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.39 ...SR distributions}{45}{subsubsection.1.1.1}
+l.43 ...SR distributions}{47}{subsubsection.1.1.1}
                                                   % [1
 
 ])
@@ -503,7 +538,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.67 \clearpage
+l.97 \clearpage
                 [2] (./Zanusso_MSc.lof
 
 
@@ -511,7 +546,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...a single crystal.}}{38}{figure.caption.33}
+l.25 ...a single crystal.}}{40}{figure.caption.37}
                                                   % [3
 
 ]
@@ -527,46 +562,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...and NO ISR cases.}}{55}{figure.caption.51}
+l.43 ...and NO ISR cases.}}{57}{figure.caption.55}
                                                   % [4{/usr/local/texlive/2025/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
-[5]
 
-[6])
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...d). NO ISR case.}}}{71}{figure.caption.68}
+                                                  % [5]
+
+[6]
+
+[7])
 \tf@lof=\write5
 \openout5 = `Zanusso_MSc.lof'.
 
 
 
-[7] (./nbar_exp/nbar_eng.tex
+[8] (./nbar_exp/nbar_eng.tex
+Overfull \hbox (1.91724pt too wide) in paragraph at lines 13--16
+\OT1/cmr/m/n/10 Clus-ter split-off and pre-showering ef-fects are in-ves-ti-gat
+ed study-ing anti-neutrons
+ []
 
-[8
+
+
+[9
 
 ]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 26.
-
-
-
-[9]
-
 [10]
-<nbar_exp/images/DoverRichard.png, id=670, 418.56375pt x 416.05438pt>
-File: nbar_exp/images/DoverRichard.png Graphic file (type png)
-<use nbar_exp/images/DoverRichard.png>
-Package pdftex.def Info: nbar_exp/images/DoverRichard.png  used on input line 7
-2.
-(pdftex.def)             Requested size: 241.49895pt x 240.04836pt.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 34.
+
 
 
 [11]
-<nbar_exp/images/cross_section.png, id=687, 747.79375pt x 627.34375pt>
+
+[12]
+<nbar_exp/images/DoverRichard.png, id=791, 418.56375pt x 416.05438pt>
+File: nbar_exp/images/DoverRichard.png Graphic file (type png)
+<use nbar_exp/images/DoverRichard.png>
+Package pdftex.def Info: nbar_exp/images/DoverRichard.png  used on input line 8
+0.
+(pdftex.def)             Requested size: 241.49895pt x 240.04836pt.
+
+
+[13]
+<nbar_exp/images/cross_section.png, id=808, 747.79375pt x 627.34375pt>
 File: nbar_exp/images/cross_section.png Graphic file (type png)
 <use nbar_exp/images/cross_section.png>
 Package pdftex.def Info: nbar_exp/images/cross_section.png  used on input line 
-113.
+121.
 (pdftex.def)             Requested size: 189.75105pt x 159.1808pt.
 
 
@@ -577,30 +628,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[12 <./nbar_exp/images/DoverRichard.png>]
+[14 <./nbar_exp/images/DoverRichard.png>]
 
-[13 <./nbar_exp/images/cross_section.png>]
+[15 <./nbar_exp/images/cross_section.png>]
 
-[14]
-<nbar_exp/images/gamma_vs_hadronic.png, id=716, 454.69875pt x 257.96375pt>
+[16]
+<nbar_exp/images/gamma_vs_hadronic.png, id=838, 454.69875pt x 257.96375pt>
 File: nbar_exp/images/gamma_vs_hadronic.png Graphic file (type png)
 <use nbar_exp/images/gamma_vs_hadronic.png>
 Package pdftex.def Info: nbar_exp/images/gamma_vs_hadronic.png  used on input l
-ine 160.
+ine 168.
 (pdftex.def)             Requested size: 207.0021pt x 117.4406pt.
 
 
-[15 <./nbar_exp/images/gamma_vs_hadronic.png>]
-Overfull \hbox (2.92963pt too wide) in paragraph at lines 175--190
+[17 <./nbar_exp/images/gamma_vs_hadronic.png>]
+Overfull \hbox (2.92963pt too wide) in paragraph at lines 183--196
 \OT1/cmr/m/n/10 This the-sis fits in the larger con-text of the \OT1/cmr/bx/n/1
 0 MANTRA \OT1/cmr/m/n/10 (Mea-sur-ing Anti-Neutron:
  []
 
 
 
-[16])
+[18])
 
-[17] (./belleII_det/belleII_det_eng.tex
+[19] (./belleII_det/belleII_det_eng.tex
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 1}) has been already used, duplicate ignored
 <to be read again> 
@@ -611,23 +662,23 @@ l.5 \subsection{The SuperKEKB collider}
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5.
 
-<belleII_det/images/superkekb.png, id=736, 853.1875pt x 614.295pt>
+<belleII_det/images/superkekb.png, id=857, 853.1875pt x 614.295pt>
 File: belleII_det/images/superkekb.png Graphic file (type png)
 <use belleII_det/images/superkekb.png>
-Package pdftex.def Info: belleII_det/images/superkekb.png  used on input line 1
-0.
+Package pdftex.def Info: belleII_det/images/superkekb.png  used on input line 9
+.
 (pdftex.def)             Requested size: 345.0pt x 248.4038pt.
 
 
-[18
+[20
 
  <./belleII_det/images/superkekb.png>]
-<belleII_det/images/SuperKEKB_operation.png, id=745, 867.24pt x 867.24pt>
+<belleII_det/images/SuperKEKB_operation.png, id=867, 867.24pt x 867.24pt>
 File: belleII_det/images/SuperKEKB_operation.png Graphic file (type png)
 <use belleII_det/images/SuperKEKB_operation.png>
 Package pdftex.def Info: belleII_det/images/SuperKEKB_operation.png  used on in
 put line 22.
-(pdftex.def)             Requested size: 276.00105pt x 276.00067pt.
+(pdftex.def)             Requested size: 310.4979pt x 310.49911pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -640,8 +691,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 l.27 \subsection{The Belle II detector}
                                        
 
-[19]
-<belleII_det/images/belleii_dets.png, id=758, 284.39583pt x 132.495pt>
+[21]
+<belleII_det/images/belleii_dets.png, id=879, 284.39583pt x 132.495pt>
 File: belleII_det/images/belleii_dets.png Graphic file (type png)
 <use belleII_det/images/belleii_dets.png>
 Package pdftex.def Info: belleII_det/images/belleii_dets.png  used on input lin
@@ -649,14 +700,14 @@ e 52.
 (pdftex.def)             Requested size: 345.0pt x 160.73993pt.
 
 
-[20 <./belleII_det/images/SuperKEKB_operation.png>]
+[22 <./belleII_det/images/SuperKEKB_operation.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .1.2.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.57 \subsubsection{The vertex detector VXD}
                                             
-<belleII_det/images/VXD.png, id=771, 975.645pt x 359.3425pt>
+<belleII_det/images/VXD.png, id=893, 975.645pt x 359.3425pt>
 File: belleII_det/images/VXD.png Graphic file (type png)
 <use belleII_det/images/VXD.png>
 Package pdftex.def Info: belleII_det/images/VXD.png  used on input line 66.
@@ -668,14 +719,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
                    \relax 
 l.73 ...ubsection{The Central Drift Chamber (CDC)}
                                                   
-<belleII_det/images/CDC.jpeg, id=774, 217.24362pt x 175.03793pt>
+<belleII_det/images/CDC.jpeg, id=896, 217.24362pt x 175.03793pt>
 File: belleII_det/images/CDC.jpeg Graphic file (type jpg)
 <use belleII_det/images/CDC.jpeg>
 Package pdftex.def Info: belleII_det/images/CDC.jpeg  used on input line 81.
 (pdftex.def)             Requested size: 345.0pt x 278.00449pt.
 
 
-[21 <./belleII_det/images/belleii_dets.png> <./belleII_det/images/VXD.png>]
+[23 <./belleII_det/images/belleii_dets.png> <./belleII_det/images/VXD.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .1.2.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -683,13 +734,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 l.86 \subsubsection{PID systems: TOP and ARICH}
                                                
 
-[22 <./belleII_det/images/CDC.jpeg>]
-<belleII_det/images/top.png, id=792, 853.1875pt x 368.37625pt>
+[24 <./belleII_det/images/CDC.jpeg>]
+<belleII_det/images/top.png, id=913, 853.1875pt x 368.37625pt>
 File: belleII_det/images/top.png Graphic file (type png)
 <use belleII_det/images/top.png>
 Package pdftex.def Info: belleII_det/images/top.png  used on input line 100.
 (pdftex.def)             Requested size: 276.00105pt x 119.17pt.
-<belleII_det/images/top2.jpeg, id=793, 378.41376pt x 138.5175pt>
+<belleII_det/images/top2.jpeg, id=914, 378.41376pt x 138.5175pt>
 File: belleII_det/images/top2.jpeg Graphic file (type jpg)
 <use belleII_det/images/top2.jpeg>
 Package pdftex.def Info: belleII_det/images/top2.jpeg  used on input line 107.
@@ -698,12 +749,12 @@ Package pdftex.def Info: belleII_det/images/top2.jpeg  used on input line 107.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<belleII_det/images/ARICH.png, id=797, 725.71124pt x 553.06625pt>
+<belleII_det/images/ARICH.png, id=918, 725.71124pt x 553.06625pt>
 File: belleII_det/images/ARICH.png Graphic file (type png)
 <use belleII_det/images/ARICH.png>
 Package pdftex.def Info: belleII_det/images/ARICH.png  used on input line 118.
 (pdftex.def)             Requested size: 169.0519pt x 128.8313pt.
-<belleII_det/images/mu_ring.png, id=798, 808.01875pt x 609.27625pt>
+<belleII_det/images/mu_ring.png, id=919, 808.01875pt x 609.27625pt>
 File: belleII_det/images/mu_ring.png Graphic file (type png)
 <use belleII_det/images/mu_ring.png>
 Package pdftex.def Info: belleII_det/images/mu_ring.png  used on input line 119
@@ -711,8 +762,8 @@ Package pdftex.def Info: belleII_det/images/mu_ring.png  used on input line 119
 (pdftex.def)             Requested size: 169.0519pt x 127.46835pt.
 
 
-[23 <./belleII_det/images/top.png>]
-<belleII_det/images/shower_ECL.png, id=808, 967.615pt x 336.25626pt>
+[25 <./belleII_det/images/top.png>]
+<belleII_det/images/shower_ECL.png, id=929, 967.615pt x 336.25626pt>
 File: belleII_det/images/shower_ECL.png Graphic file (type png)
 <use belleII_det/images/shower_ECL.png>
 Package pdftex.def Info: belleII_det/images/shower_ECL.png  used on input line 
@@ -724,9 +775,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[24 <./belleII_det/images/top2.jpeg> <./belleII_det/images/ARICH.png> <./belleI
+[26 <./belleII_det/images/top2.jpeg> <./belleII_det/images/ARICH.png> <./belleI
 I_det/images/mu_ring.png>]
-<belleII_det/images/Properties-of-scintillators.png, id=818, 853.1875pt x 314.1
+<belleII_det/images/Properties-of-scintillators.png, id=940, 853.1875pt x 314.1
 7375pt>
 File: belleII_det/images/Properties-of-scintillators.png Graphic file (type png
 )
@@ -736,9 +787,9 @@ ed on input line 149.
 (pdftex.def)             Requested size: 345.0pt x 127.0431pt.
 
 
-[25 <./belleII_det/images/shower_ECL.png> <./belleII_det/images/Properties-of-s
+[27 <./belleII_det/images/shower_ECL.png> <./belleII_det/images/Properties-of-s
 cintillators.png>]
-<belleII_det/images/ECL.png, id=829, 1095.09125pt x 702.625pt>
+<belleII_det/images/ECL.png, id=951, 1095.09125pt x 702.625pt>
 File: belleII_det/images/ECL.png Graphic file (type png)
 <use belleII_det/images/ECL.png>
 Package pdftex.def Info: belleII_det/images/ECL.png  used on input line 160.
@@ -748,7 +799,7 @@ Overfull \hbox (17.25105pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
-<belleII_det/images/ECL_division.png, id=831, 877.77937pt x 179.67125pt>
+<belleII_det/images/ECL_division.png, id=953, 877.77937pt x 179.67125pt>
 File: belleII_det/images/ECL_division.png Graphic file (type png)
 <use belleII_det/images/ECL_division.png>
 Package pdftex.def Info: belleII_det/images/ECL_division.png  used on input lin
@@ -756,7 +807,7 @@ e 171.
 (pdftex.def)             Requested size: 345.0pt x 70.61707pt.
 
 
-[26 <./belleII_det/images/ECL.png> <./belleII_det/images/ECL_division.png>]
+[28 <./belleII_det/images/ECL.png> <./belleII_det/images/ECL_division.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 182.
@@ -771,8 +822,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[27]
-<belleII_det/images/b2logo.pdf, id=847, 391.90964pt x 257.91437pt>
+[29]
+<belleII_det/images/b2logo.pdf, id=968, 391.90964pt x 257.91437pt>
 File: belleII_det/images/b2logo.pdf Graphic file (type pdf)
 <use belleII_det/images/b2logo.pdf>
 Package pdftex.def Info: belleII_det/images/b2logo.pdf  used on input line 194.
@@ -791,20 +842,20 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 
-[28 <./belleII_det/images/b2logo.pdf>]
+[30 <./belleII_det/images/b2logo.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.211 \subsection{basf2 modules and path}
                                          
-<belleII_det/images/basf2_1.png, id=858, 1279.78125pt x 498.86375pt>
+<belleII_det/images/basf2_1.png, id=979, 1279.78125pt x 498.86375pt>
 File: belleII_det/images/basf2_1.png Graphic file (type png)
 <use belleII_det/images/basf2_1.png>
 Package pdftex.def Info: belleII_det/images/basf2_1.png  used on input line 218
 .
 (pdftex.def)             Requested size: 241.49895pt x 94.13806pt.
-<belleII_det/images/basf2_2.png, id=859, 1425.325pt x 606.265pt>
+<belleII_det/images/basf2_2.png, id=980, 1425.325pt x 606.265pt>
 File: belleII_det/images/basf2_2.png Graphic file (type png)
 <use belleII_det/images/basf2_2.png>
 Package pdftex.def Info: belleII_det/images/basf2_2.png  used on input line 219
@@ -812,14 +863,14 @@ Package pdftex.def Info: belleII_det/images/basf2_2.png  used on input line 219
 (pdftex.def)             Requested size: 241.49895pt x 102.7214pt.
 
 
-[29]
+[31]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.230 \subsection{TopoAna: Topology Analysis}
                                              
-<belleII_det/images/topology_diagrams.png, id=865, 722.7pt x 333.245pt>
+<belleII_det/images/topology_diagrams.png, id=986, 722.7pt x 333.245pt>
 File: belleII_det/images/topology_diagrams.png Graphic file (type png)
 <use belleII_det/images/topology_diagrams.png>
 Package pdftex.def Info: belleII_det/images/topology_diagrams.png  used on inpu
@@ -827,14 +878,15 @@ t line 237.
 (pdftex.def)             Requested size: 327.74895pt x 151.12839pt.
 
 
-[30 <./belleII_det/images/basf2_1.png> <./belleII_det/images/basf2_2.png>]
-<belleII_det/images/topology_diagrams_2.png, id=875, 746.79pt x 466.74374pt>
+[32 <./belleII_det/images/basf2_1.png> <./belleII_det/images/basf2_2.png>]
+<belleII_det/images/topology_diagrams_2.png, id=997, 746.79pt x 466.74374pt>
 File: belleII_det/images/topology_diagrams_2.png Graphic file (type png)
 <use belleII_det/images/topology_diagrams_2.png>
 Package pdftex.def Info: belleII_det/images/topology_diagrams_2.png  used on in
 put line 250.
 (pdftex.def)             Requested size: 189.75105pt x 118.59431pt.
-<belleII_det/images/topology_diagrams_3.png, id=878, 625.33624pt x 279.0425pt>
+<belleII_det/images/topology_diagrams_3.png, id=1000, 625.33624pt x 279.0425pt>
+
 File: belleII_det/images/topology_diagrams_3.png Graphic file (type png)
 <use belleII_det/images/topology_diagrams_3.png>
 Package pdftex.def Info: belleII_det/images/topology_diagrams_3.png  used on in
@@ -842,14 +894,14 @@ put line 257.
 (pdftex.def)             Requested size: 276.00105pt x 123.16228pt.
 
 
-[31 <./belleII_det/images/topology_diagrams.png> <./belleII_det/images/topology
+[33 <./belleII_det/images/topology_diagrams.png> <./belleII_det/images/topology
 _diagrams_2.png>]
 Overfull \hbox (5.16736pt too wide) in paragraph at lines 263--270
 \OT1/cmr/m/n/10 Data and Monte Carlo sam-ples can be ``skimmed'' by ap-ply-ing 
 analysis-dependent
  []
 
-<nbar_cocktail/images/datafiles.png, id=888, 1200.485pt x 619.31375pt>
+<nbar_cocktail/images/datafiles.png, id=1010, 1200.485pt x 619.31375pt>
 File: nbar_cocktail/images/datafiles.png Graphic file (type png)
 <use nbar_cocktail/images/datafiles.png>
 Package pdftex.def Info: nbar_cocktail/images/datafiles.png  used on input line
@@ -857,8 +909,9 @@ Package pdftex.def Info: nbar_cocktail/images/datafiles.png  used on input line
 (pdftex.def)             Requested size: 345.0pt x 177.98044pt.
 
 
-[32 <./belleII_det/images/topology_diagrams_3.png>]
-<nbar_cocktail/images/grid_distribution.png, id=896, 1571.8725pt x 684.5575pt>
+[34 <./belleII_det/images/topology_diagrams_3.png>]
+<nbar_cocktail/images/grid_distribution.png, id=1017, 1571.8725pt x 684.5575pt>
+
 File: nbar_cocktail/images/grid_distribution.png Graphic file (type png)
 <use nbar_cocktail/images/grid_distribution.png>
 Package pdftex.def Info: nbar_cocktail/images/grid_distribution.png  used on in
@@ -866,10 +919,10 @@ put line 284.
 (pdftex.def)             Requested size: 345.0pt x 150.24796pt.
 
 
-[33 <./nbar_cocktail/images/datafiles.png> <./nbar_cocktail/images/grid_distrib
+[35 <./nbar_cocktail/images/datafiles.png> <./nbar_cocktail/images/grid_distrib
 ution.png>])
 
-[34] (./cluster_vars/cluster_vars.tex
+[36] (./cluster_vars/cluster_vars.tex
 Overfull \hbox (10.44502pt too wide) in paragraph at lines 3--6
 \OT1/cmr/m/n/10 The fol-low-ing chap-ter de-scribes the main fea-tures of the E
 lec-tro-mag-netic Calorime-
@@ -886,13 +939,13 @@ l.7 \subsection{The ECL reconstruction algorithm}
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 7.
 
-<belleII_det/images/ECL_algo.png, id=909, 1172.38pt x 310.66063pt>
+<belleII_det/images/ECL_algo.png, id=1029, 1172.38pt x 310.66063pt>
 File: belleII_det/images/ECL_algo.png Graphic file (type png)
 <use belleII_det/images/ECL_algo.png>
 Package pdftex.def Info: belleII_det/images/ECL_algo.png  used on input line 27
 .
 (pdftex.def)             Requested size: 345.0pt x 91.41655pt.
-<belleII_det/images/ConnectedRegions.png, id=911, 716.17563pt x 562.60187pt>
+<belleII_det/images/ConnectedRegions.png, id=1031, 716.17563pt x 562.60187pt>
 File: belleII_det/images/ConnectedRegions.png Graphic file (type png)
 <use belleII_det/images/ConnectedRegions.png>
 Package pdftex.def Info: belleII_det/images/ConnectedRegions.png  used on input
@@ -900,7 +953,7 @@ Package pdftex.def Info: belleII_det/images/ConnectedRegions.png  used on input
 (pdftex.def)             Requested size: 172.5pt x 135.50793pt.
 
 
-[35
+[37
 
  <./belleII_det/images/ECL_algo.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
@@ -910,8 +963,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 l.49 \subsection{ECL performance}
                                  
 
-[36 <./belleII_det/images/ConnectedRegions.png>]
-<belleII_det/images/energy-res.png, id=926, 556.0775pt x 312.66812pt>
+[38 <./belleII_det/images/ConnectedRegions.png>]
+<belleII_det/images/energy-res.png, id=1048, 556.0775pt x 312.66812pt>
 File: belleII_det/images/energy-res.png Graphic file (type png)
 <use belleII_det/images/energy-res.png>
 Package pdftex.def Info: belleII_det/images/energy-res.png  used on input line 
@@ -925,8 +978,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 l.66 \subsection{ECL cluster variables}
                                        
 
-[37 <./belleII_det/images/energy-res.png>]
-<nbar_MC/images/cluster.png, id=936, 508.90125pt x 438.63875pt>
+[39 <./belleII_det/images/energy-res.png>]
+<nbar_MC/images/cluster.png, id=1058, 508.90125pt x 438.63875pt>
 File: nbar_MC/images/cluster.png Graphic file (type png)
 <use nbar_MC/images/cluster.png>
 Package pdftex.def Info: nbar_MC/images/cluster.png  used on input line 84.
@@ -936,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--87
 
  []
 
-<nbar_MC/images/E1E9example.png, id=938, 1007.26312pt x 342.78062pt>
+<nbar_MC/images/E1E9example.png, id=1060, 1007.26312pt x 342.78062pt>
 File: nbar_MC/images/E1E9example.png Graphic file (type png)
 <use nbar_MC/images/E1E9example.png>
 Package pdftex.def Info: nbar_MC/images/E1E9example.png  used on input line 94.
@@ -944,34 +997,34 @@ Package pdftex.def Info: nbar_MC/images/E1E9example.png  used on input line 94.
 (pdftex.def)             Requested size: 345.0pt x 117.40688pt.
 
 
-[38 <./nbar_MC/images/cluster.png>]
-<nbar_MC/images/LATBabar.png, id=947, 466.74374pt x 483.8075pt>
+[40 <./nbar_MC/images/cluster.png>]
+<nbar_MC/images/LATBabar.png, id=1069, 466.74374pt x 483.8075pt>
 File: nbar_MC/images/LATBabar.png Graphic file (type png)
 <use nbar_MC/images/LATBabar.png>
 Package pdftex.def Info: nbar_MC/images/LATBabar.png  used on input line 112.
 (pdftex.def)             Requested size: 207.0021pt x 214.5665pt.
 
 
-[39 <./nbar_MC/images/E1E9example.png>]
-<nbar_MC/images/SMexample.png, id=956, 742.27313pt x 538.51187pt>
+[41 <./nbar_MC/images/E1E9example.png>]
+<nbar_MC/images/SMexample.png, id=1077, 742.27313pt x 538.51187pt>
 File: nbar_MC/images/SMexample.png Graphic file (type png)
 <use nbar_MC/images/SMexample.png>
 Package pdftex.def Info: nbar_MC/images/SMexample.png  used on input line 129.
 (pdftex.def)             Requested size: 207.0021pt x 150.17422pt.
 
 
-[40 <./nbar_MC/images/LATBabar.png>]
-<nbar_MC/images/zernike.png, id=963, 803.0pt x 803.0pt>
+[42 <./nbar_MC/images/LATBabar.png>]
+<nbar_MC/images/zernike.png, id=1084, 803.0pt x 803.0pt>
 File: nbar_MC/images/zernike.png Graphic file (type png)
 <use nbar_MC/images/zernike.png>
 Package pdftex.def Info: nbar_MC/images/zernike.png  used on input line 156.
 (pdftex.def)             Requested size: 207.0021pt x 206.99843pt.
 
 
-[41 <./nbar_MC/images/SMexample.png>])
+[43 <./nbar_MC/images/SMexample.png>])
 
-[42 <./nbar_MC/images/zernike.png>] (./nbar_MC/nbar_MC_eng.tex
-<nbar_MC/images/channel_art.png, id=975, 1085.05376pt x 439.6425pt>
+[44 <./nbar_MC/images/zernike.png>] (./nbar_MC/nbar_MC_eng.tex
+<nbar_MC/images/channel_art.png, id=1097, 1085.05376pt x 439.6425pt>
 File: nbar_MC/images/channel_art.png Graphic file (type png)
 <use nbar_MC/images/channel_art.png>
 Package pdftex.def Info: nbar_MC/images/channel_art.png  used on input line 17.
@@ -979,10 +1032,10 @@ Package pdftex.def Info: nbar_MC/images/channel_art.png  used on input line 17.
 (pdftex.def)             Requested size: 345.0pt x 139.78954pt.
 
 
-[43
+[45
 
  <./nbar_MC/images/channel_art.png>]
-<nbar_MC/images/channel_art_colors.png, id=983, 1043.9pt x 413.545pt>
+<nbar_MC/images/channel_art_colors.png, id=1105, 1043.9pt x 413.545pt>
 File: nbar_MC/images/channel_art_colors.png Graphic file (type png)
 <use nbar_MC/images/channel_art_colors.png>
 Package pdftex.def Info: nbar_MC/images/channel_art_colors.png  used on input l
@@ -1013,8 +1066,8 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 
-[44 <./nbar_MC/images/channel_art_colors.png>]
-<nbar_MC/images/topoana_100k.png, id=990, 824.07875pt x 443.6575pt>
+[46 <./nbar_MC/images/channel_art_colors.png>]
+<nbar_MC/images/topoana_100k.png, id=1112, 824.07875pt x 443.6575pt>
 File: nbar_MC/images/topoana_100k.png Graphic file (type png)
 <use nbar_MC/images/topoana_100k.png>
 Package pdftex.def Info: nbar_MC/images/topoana_100k.png  used on input line 62
@@ -1025,20 +1078,20 @@ Package pdftex.def Info: nbar_MC/images/topoana_100k.png  used on input line 62
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 73.
 
-<nbar_MC/images/ISR_energy.pdf, id=993, 569.12625pt x 387.4475pt>
+<nbar_MC/images/ISR_energy.pdf, id=1115, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/ISR_energy.pdf Graphic file (type pdf)
 <use nbar_MC/images/ISR_energy.pdf>
 Package pdftex.def Info: nbar_MC/images/ISR_energy.pdf  used on input line 79.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/ISR_theta.pdf, id=994, 569.12625pt x 387.4475pt>
+<nbar_MC/images/ISR_theta.pdf, id=1116, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/ISR_theta.pdf Graphic file (type pdf)
 <use nbar_MC/images/ISR_theta.pdf>
 Package pdftex.def Info: nbar_MC/images/ISR_theta.pdf  used on input line 80.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[45 <./nbar_MC/images/topoana_100k.png>]
-<nbar_MC/images/ISR_energy_vs_theta.pdf, id=1002, 569.12625pt x 422.57875pt>
+[47 <./nbar_MC/images/topoana_100k.png>]
+<nbar_MC/images/ISR_energy_vs_theta.pdf, id=1123, 569.12625pt x 422.57875pt>
 File: nbar_MC/images/ISR_energy_vs_theta.pdf Graphic file (type pdf)
 <use nbar_MC/images/ISR_energy_vs_theta.pdf>
 Package pdftex.def Info: nbar_MC/images/ISR_energy_vs_theta.pdf  used on input 
@@ -1046,30 +1099,30 @@ line 88.
 (pdftex.def)             Requested size: 241.49895pt x 179.3131pt.
 
 
-[46 <./nbar_MC/images/ISR_energy.pdf, page is rotated 90 degrees> <./nbar_MC/im
+[48 <./nbar_MC/images/ISR_energy.pdf, page is rotated 90 degrees> <./nbar_MC/im
 ages/ISR_theta.pdf, page is rotated 90 degrees> <./nbar_MC/images/ISR_energy_vs
 _theta.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/alpha_uncorr.pdf, id=1139, 569.12625pt x 387.4475pt>
+<nbar_MC/images/alpha_uncorr.pdf, id=1260, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/alpha_uncorr.pdf Graphic file (type pdf)
 <use nbar_MC/images/alpha_uncorr.pdf>
 Package pdftex.def Info: nbar_MC/images/alpha_uncorr.pdf  used on input line 13
 6.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/alpha.pdf, id=1140, 569.12625pt x 387.4475pt>
+<nbar_MC/images/alpha.pdf, id=1261, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/alpha.pdf Graphic file (type pdf)
 <use nbar_MC/images/alpha.pdf>
 Package pdftex.def Info: nbar_MC/images/alpha.pdf  used on input line 137.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[47]
+[49]
 Overfull \hbox (76.08643pt too wide) in paragraph at lines 149--153
 \OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 iDcyTr \OMS/cmsy/m/n/10 2 []$\OT1/cmr/m/n/10
  ) and 53031 with ISR emis-sion ($\OML/cmm/m/it/10 iDcyTr \OMS/cmsy/m/n/10 2 []
 $\OT1/cmr/m/n/10 )
  []
 
-<nbar_MC/images/vpho_mRecoil.pdf, id=1151, 569.12625pt x 387.4475pt>
+<nbar_MC/images/vpho_mRecoil.pdf, id=1272, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/vpho_mRecoil.pdf Graphic file (type pdf)
 <use nbar_MC/images/vpho_mRecoil.pdf>
 Package pdftex.def Info: nbar_MC/images/vpho_mRecoil.pdf  used on input line 16
@@ -1077,46 +1130,46 @@ Package pdftex.def Info: nbar_MC/images/vpho_mRecoil.pdf  used on input line 16
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
 
 
-[48 <./nbar_MC/images/alpha_uncorr.pdf, page is rotated 90 degrees> <./nbar_MC/
+[50 <./nbar_MC/images/alpha_uncorr.pdf, page is rotated 90 degrees> <./nbar_MC/
 images/alpha.pdf, page is rotated 90 degrees>]
 
-[49 <./nbar_MC/images/vpho_mRecoil.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/p_p.pdf, id=1293, 569.12625pt x 387.4475pt>
+[51 <./nbar_MC/images/vpho_mRecoil.pdf, page is rotated 90 degrees>]
+<nbar_MC/images/p_p.pdf, id=1415, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/p_p.pdf Graphic file (type pdf)
 <use nbar_MC/images/p_p.pdf>
 Package pdftex.def Info: nbar_MC/images/p_p.pdf  used on input line 194.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/pi_p.pdf, id=1294, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pi_p.pdf, id=1416, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pi_p.pdf Graphic file (type pdf)
 <use nbar_MC/images/pi_p.pdf>
 Package pdftex.def Info: nbar_MC/images/pi_p.pdf  used on input line 195.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/p_theta.pdf, id=1295, 569.12625pt x 387.4475pt>
+<nbar_MC/images/p_theta.pdf, id=1417, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/p_theta.pdf Graphic file (type pdf)
 <use nbar_MC/images/p_theta.pdf>
 Package pdftex.def Info: nbar_MC/images/p_theta.pdf  used on input line 196.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/pi_theta.pdf, id=1296, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pi_theta.pdf, id=1418, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pi_theta.pdf Graphic file (type pdf)
 <use nbar_MC/images/pi_theta.pdf>
 Package pdftex.def Info: nbar_MC/images/pi_theta.pdf  used on input line 197.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/p_mcP.pdf, id=1297, 569.12625pt x 387.4475pt>
+<nbar_MC/images/p_mcP.pdf, id=1419, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/p_mcP.pdf Graphic file (type pdf)
 <use nbar_MC/images/p_mcP.pdf>
 Package pdftex.def Info: nbar_MC/images/p_mcP.pdf  used on input line 204.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/pi_mcP.pdf, id=1298, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pi_mcP.pdf, id=1420, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pi_mcP.pdf Graphic file (type pdf)
 <use nbar_MC/images/pi_mcP.pdf>
 Package pdftex.def Info: nbar_MC/images/pi_mcP.pdf  used on input line 205.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/p_mcTheta.pdf, id=1299, 569.12625pt x 387.4475pt>
+<nbar_MC/images/p_mcTheta.pdf, id=1421, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/p_mcTheta.pdf Graphic file (type pdf)
 <use nbar_MC/images/p_mcTheta.pdf>
 Package pdftex.def Info: nbar_MC/images/p_mcTheta.pdf  used on input line 206.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/pi_mcTheta.pdf, id=1300, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pi_mcTheta.pdf, id=1422, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pi_mcTheta.pdf Graphic file (type pdf)
 <use nbar_MC/images/pi_mcTheta.pdf>
 Package pdftex.def Info: nbar_MC/images/pi_mcTheta.pdf  used on input line 207.
@@ -1124,10 +1177,10 @@ Package pdftex.def Info: nbar_MC/images/pi_mcTheta.pdf  used on input line 207.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[50 <./nbar_MC/images/p_p.pdf, page is rotated 90 degrees> <./nbar_MC/images/pi
+[52 <./nbar_MC/images/p_p.pdf, page is rotated 90 degrees> <./nbar_MC/images/pi
 _p.pdf, page is rotated 90 degrees> <./nbar_MC/images/p_theta.pdf, page is rota
 ted 90 degrees> <./nbar_MC/images/pi_theta.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/proton_p_costheta.pdf, id=1478, 569.12625pt x 343.2825pt>
+<nbar_MC/images/proton_p_costheta.pdf, id=1600, 569.12625pt x 343.2825pt>
 File: nbar_MC/images/proton_p_costheta.pdf Graphic file (type pdf)
 <use nbar_MC/images/proton_p_costheta.pdf>
 Package pdftex.def Info: nbar_MC/images/proton_p_costheta.pdf  used on input li
@@ -1135,35 +1188,35 @@ ne 216.
 (pdftex.def)             Requested size: 241.49895pt x 145.66527pt.
 
 
-[51 <./nbar_MC/images/p_mcP.pdf, page is rotated 90 degrees> <./nbar_MC/images/
+[53 <./nbar_MC/images/p_mcP.pdf, page is rotated 90 degrees> <./nbar_MC/images/
 pi_mcP.pdf, page is rotated 90 degrees> <./nbar_MC/images/p_mcTheta.pdf, page i
 s rotated 90 degrees> <./nbar_MC/images/pi_mcTheta.pdf, page is rotated 90 degr
 ees> <./nbar_MC/images/proton_p_costheta.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/pRecoil.pdf, id=1701, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pRecoil.pdf, id=1822, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pRecoil.pdf Graphic file (type pdf)
 <use nbar_MC/images/pRecoil.pdf>
 Package pdftex.def Info: nbar_MC/images/pRecoil.pdf  used on input line 230.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-<nbar_MC/images/nbar_p.pdf, id=1703, 569.12625pt x 387.4475pt>
+<nbar_MC/images/nbar_p.pdf, id=1824, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/nbar_p.pdf Graphic file (type pdf)
 <use nbar_MC/images/nbar_p.pdf>
 Package pdftex.def Info: nbar_MC/images/nbar_p.pdf  used on input line 247.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/nbar_mcP.pdf, id=1704, 569.12625pt x 387.4475pt>
+<nbar_MC/images/nbar_mcP.pdf, id=1825, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/nbar_mcP.pdf Graphic file (type pdf)
 <use nbar_MC/images/nbar_mcP.pdf>
 Package pdftex.def Info: nbar_MC/images/nbar_mcP.pdf  used on input line 248.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[52 <./nbar_MC/images/pRecoil.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/pRecoil_nmcP_isr.pdf, id=1754, 569.12625pt x 387.4475pt>
+[54 <./nbar_MC/images/pRecoil.pdf, page is rotated 90 degrees>]
+<nbar_MC/images/pRecoil_nmcP_isr.pdf, id=1875, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pRecoil_nmcP_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/pRecoil_nmcP_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/pRecoil_nmcP_isr.pdf  used on input lin
 e 259.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/pRecoil_nmcP_nog.pdf, id=1755, 569.12625pt x 387.4475pt>
+<nbar_MC/images/pRecoil_nmcP_nog.pdf, id=1876, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/pRecoil_nmcP_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/pRecoil_nmcP_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/pRecoil_nmcP_nog.pdf  used on input lin
@@ -1171,53 +1224,53 @@ e 260.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[53 <./nbar_MC/images/nbar_p.pdf, page is rotated 90 degrees> <./nbar_MC/images
+[55 <./nbar_MC/images/nbar_p.pdf, page is rotated 90 degrees> <./nbar_MC/images
 /nbar_mcP.pdf, page is rotated 90 degrees> <./nbar_MC/images/pRecoil_nmcP_isr.p
 df, page is rotated 90 degrees> <./nbar_MC/images/pRecoil_nmcP_nog.pdf, page is
  rotated 90 degrees>]
-<nbar_MC/images/gen_mc_theta_corr_isr.pdf, id=1933, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_mc_theta_corr_isr.pdf, id=2054, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_mc_theta_corr_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_mc_theta_corr_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_mc_theta_corr_isr.pdf  used on inpu
 t line 287.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_mc_theta_corr_nog.pdf, id=1934, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_mc_theta_corr_nog.pdf, id=2055, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_mc_theta_corr_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_mc_theta_corr_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_mc_theta_corr_nog.pdf  used on inpu
 t line 288.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_rec_theta_corr_isr.pdf, id=1935, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_rec_theta_corr_isr.pdf, id=2056, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_rec_theta_corr_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_rec_theta_corr_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_rec_theta_corr_isr.pdf  used on inp
 ut line 289.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_rec_theta_corr_nog.pdf, id=1936, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_rec_theta_corr_nog.pdf, id=2057, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_rec_theta_corr_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_rec_theta_corr_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_rec_theta_corr_nog.pdf  used on inp
 ut line 290.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_mc_p_corr_isr.pdf, id=1937, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_mc_p_corr_isr.pdf, id=2058, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_mc_p_corr_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_mc_p_corr_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_mc_p_corr_isr.pdf  used on input li
 ne 292.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_mc_p_corr_nog.pdf, id=1938, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_mc_p_corr_nog.pdf, id=2059, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_mc_p_corr_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_mc_p_corr_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_mc_p_corr_nog.pdf  used on input li
 ne 293.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_rec_p_corr_isr.pdf, id=1939, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_rec_p_corr_isr.pdf, id=2060, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_rec_p_corr_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_rec_p_corr_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_rec_p_corr_isr.pdf  used on input l
 ine 294.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/gen_rec_p_corr_nog.pdf, id=1940, 569.12625pt x 387.4475pt>
+<nbar_MC/images/gen_rec_p_corr_nog.pdf, id=2061, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_rec_p_corr_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_rec_p_corr_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/gen_rec_p_corr_nog.pdf  used on input l
@@ -1225,28 +1278,28 @@ ine 295.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[54]
-<nbar_MC/images/diff_thetaREC_ntheta_mc.pdf, id=1946, 569.12625pt x 387.4475pt>
+[56]
+<nbar_MC/images/diff_thetaREC_ntheta_mc.pdf, id=2068, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/diff_thetaREC_ntheta_mc.pdf Graphic file (type pdf)
 <use nbar_MC/images/diff_thetaREC_ntheta_mc.pdf>
 Package pdftex.def Info: nbar_MC/images/diff_thetaREC_ntheta_mc.pdf  used on in
 put line 303.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/diff_thetaREC_ntheta_rec.pdf, id=1947, 569.12625pt x 387.4475pt
+<nbar_MC/images/diff_thetaREC_ntheta_rec.pdf, id=2069, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/diff_thetaREC_ntheta_rec.pdf Graphic file (type pdf)
 <use nbar_MC/images/diff_thetaREC_ntheta_rec.pdf>
 Package pdftex.def Info: nbar_MC/images/diff_thetaREC_ntheta_rec.pdf  used on i
 nput line 304.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/diff_pREC_np_mc.pdf, id=1948, 569.12625pt x 387.4475pt>
+<nbar_MC/images/diff_pREC_np_mc.pdf, id=2070, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/diff_pREC_np_mc.pdf Graphic file (type pdf)
 <use nbar_MC/images/diff_pREC_np_mc.pdf>
 Package pdftex.def Info: nbar_MC/images/diff_pREC_np_mc.pdf  used on input line
  305.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/diff_pREC_np_rec.pdf, id=1949, 569.12625pt x 387.4475pt>
+<nbar_MC/images/diff_pREC_np_rec.pdf, id=2071, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/diff_pREC_np_rec.pdf Graphic file (type pdf)
 <use nbar_MC/images/diff_pREC_np_rec.pdf>
 Package pdftex.def Info: nbar_MC/images/diff_pREC_np_rec.pdf  used on input lin
@@ -1254,7 +1307,7 @@ e 306.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[55 <./nbar_MC/images/gen_mc_theta_corr_isr.pdf, page is rotated 90 degrees> <.
+[57 <./nbar_MC/images/gen_mc_theta_corr_isr.pdf, page is rotated 90 degrees> <.
 /nbar_MC/images/gen_mc_theta_corr_nog.pdf, page is rotated 90 degrees> <./nbar_
 MC/images/gen_rec_theta_corr_isr.pdf, page is rotated 90 degrees> <./nbar_MC/im
 ages/gen_rec_theta_corr_nog.pdf, page is rotated 90 degrees> <./nbar_MC/images/
@@ -1278,11 +1331,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[56 <./nbar_MC/images/diff_thetaREC_ntheta_mc.pdf, page is rotated 90 degrees> 
+[58 <./nbar_MC/images/diff_thetaREC_ntheta_mc.pdf, page is rotated 90 degrees> 
 <./nbar_MC/images/diff_thetaREC_ntheta_rec.pdf, page is rotated 90 degrees> <./
 nbar_MC/images/diff_pREC_np_mc.pdf, page is rotated 90 degrees> <./nbar_MC/imag
 es/diff_pREC_np_rec.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/spoff_pshow.jpg, id=2480, 801.99625pt x 615.29875pt>
+<nbar_MC/images/spoff_pshow.jpg, id=2602, 801.99625pt x 615.29875pt>
 File: nbar_MC/images/spoff_pshow.jpg Graphic file (type jpg)
 <use nbar_MC/images/spoff_pshow.jpg>
 Package pdftex.def Info: nbar_MC/images/spoff_pshow.jpg  used on input line 324
@@ -1296,37 +1349,37 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 l.331 \subsubsection{The basf2 ancestor variables}
                                                   
 
-[57 <./nbar_MC/images/spoff_pshow.jpg>]
+[59 <./nbar_MC/images/spoff_pshow.jpg>]
 Overfull \hbox (35.53745pt too wide) in paragraph at lines 348--349
 []\OT1/cmr/m/n/10 The vari-ables \OT1/cmr/bx/n/10 varForFirstMCAncestorOfType(a
 nti-n0, p) \OT1/cmr/m/n/10 and \OT1/cmr/bx/n/10 hasAncestor(-
  []
 
-<nbar_MC/images/hasAncestor.pdf, id=2489, 569.12625pt x 387.4475pt>
+<nbar_MC/images/hasAncestor.pdf, id=2610, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/hasAncestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/hasAncestor.pdf>
 Package pdftex.def Info: nbar_MC/images/hasAncestor.pdf  used on input line 352
 .
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-<nbar_MC/images/mc_pdg_hasAncestor=0.pdf, id=2492, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mc_pdg_hasAncestor=0.pdf, id=2613, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mc_pdg_hasAncestor=0.pdf Graphic file (type pdf)
 <use nbar_MC/images/mc_pdg_hasAncestor=0.pdf>
 Package pdftex.def Info: nbar_MC/images/mc_pdg_hasAncestor=0.pdf  used on input
  line 365.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/mc_pdg_hasAncestor=1.pdf, id=2493, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mc_pdg_hasAncestor=1.pdf, id=2614, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mc_pdg_hasAncestor=1.pdf Graphic file (type pdf)
 <use nbar_MC/images/mc_pdg_hasAncestor=1.pdf>
 Package pdftex.def Info: nbar_MC/images/mc_pdg_hasAncestor=1.pdf  used on input
  line 366.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/mc_pdg_hasAncestor=2.pdf, id=2494, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mc_pdg_hasAncestor=2.pdf, id=2615, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mc_pdg_hasAncestor=2.pdf Graphic file (type pdf)
 <use nbar_MC/images/mc_pdg_hasAncestor=2.pdf>
 Package pdftex.def Info: nbar_MC/images/mc_pdg_hasAncestor=2.pdf  used on input
  line 367.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/mc_pdg_hasAncestor=3.pdf, id=2495, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mc_pdg_hasAncestor=3.pdf, id=2616, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mc_pdg_hasAncestor=3.pdf Graphic file (type pdf)
 <use nbar_MC/images/mc_pdg_hasAncestor=3.pdf>
 Package pdftex.def Info: nbar_MC/images/mc_pdg_hasAncestor=3.pdf  used on input
@@ -1334,14 +1387,14 @@ Package pdftex.def Info: nbar_MC/images/mc_pdg_hasAncestor=3.pdf  used on input
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[58 <./nbar_MC/images/hasAncestor.pdf, page is rotated 90 degrees>]
+[60 <./nbar_MC/images/hasAncestor.pdf, page is rotated 90 degrees>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .1.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.379 \subsubsection{Ancestor momentum}
                                        
-<nbar_MC/images/momentum_ancestors.pdf, id=2545, 569.12625pt x 387.4475pt>
+<nbar_MC/images/momentum_ancestors.pdf, id=2666, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/momentum_ancestors.pdf Graphic file (type pdf)
 <use nbar_MC/images/momentum_ancestors.pdf>
 Package pdftex.def Info: nbar_MC/images/momentum_ancestors.pdf  used on input l
@@ -1349,11 +1402,11 @@ ine 384.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
 
 
-[59 <./nbar_MC/images/mc_pdg_hasAncestor=0.pdf, page is rotated 90 degrees> <./
+[61 <./nbar_MC/images/mc_pdg_hasAncestor=0.pdf, page is rotated 90 degrees> <./
 nbar_MC/images/mc_pdg_hasAncestor=1.pdf, page is rotated 90 degrees> <./nbar_MC
 /images/mc_pdg_hasAncestor=2.pdf, page is rotated 90 degrees> <./nbar_MC/images
 /mc_pdg_hasAncestor=3.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/deltaP_ancestors.pdf, id=2725, 569.12625pt x 387.4475pt>
+<nbar_MC/images/deltaP_ancestors.pdf, id=2846, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/deltaP_ancestors.pdf Graphic file (type pdf)
 <use nbar_MC/images/deltaP_ancestors.pdf>
 Package pdftex.def Info: nbar_MC/images/deltaP_ancestors.pdf  used on input lin
@@ -1361,8 +1414,8 @@ e 399.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
 
 
-[60 <./nbar_MC/images/momentum_ancestors.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/mcErrors.pdf, id=2774, 569.12625pt x 398.48875pt>
+[62 <./nbar_MC/images/momentum_ancestors.pdf, page is rotated 90 degrees>]
+<nbar_MC/images/mcErrors.pdf, id=2896, 569.12625pt x 398.48875pt>
 File: nbar_MC/images/mcErrors.pdf Graphic file (type pdf)
 <use nbar_MC/images/mcErrors.pdf>
 Package pdftex.def Info: nbar_MC/images/mcErrors.pdf  used on input line 411.
@@ -1386,13 +1439,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 417.
 
-<nbar_MC/images/mcDistance_sx.pdf, id=2776, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mcDistance_sx.pdf, id=2898, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mcDistance_sx.pdf Graphic file (type pdf)
 <use nbar_MC/images/mcDistance_sx.pdf>
 Package pdftex.def Info: nbar_MC/images/mcDistance_sx.pdf  used on input line 4
 27.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/mcDistance_dx.pdf, id=2777, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mcDistance_dx.pdf, id=2899, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/mcDistance_dx.pdf Graphic file (type pdf)
 <use nbar_MC/images/mcDistance_dx.pdf>
 Package pdftex.def Info: nbar_MC/images/mcDistance_dx.pdf  used on input line 4
@@ -1400,15 +1453,15 @@ Package pdftex.def Info: nbar_MC/images/mcDistance_dx.pdf  used on input line 4
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[61 <./nbar_MC/images/deltaP_ancestors.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/mcDistance_sx_regionSep.pdf, id=2827, 569.12625pt x 387.4475pt>
+[63 <./nbar_MC/images/deltaP_ancestors.pdf, page is rotated 90 degrees>]
+<nbar_MC/images/mcDistance_sx_regionSep.pdf, id=2949, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/mcDistance_sx_regionSep.pdf Graphic file (type pdf)
 <use nbar_MC/images/mcDistance_sx_regionSep.pdf>
 Package pdftex.def Info: nbar_MC/images/mcDistance_sx_regionSep.pdf  used on in
 put line 442.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/mcDistance_dx_regionSep.pdf, id=2828, 569.12625pt x 387.4475pt>
+<nbar_MC/images/mcDistance_dx_regionSep.pdf, id=2950, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/mcDistance_dx_regionSep.pdf Graphic file (type pdf)
 <use nbar_MC/images/mcDistance_dx_regionSep.pdf>
@@ -1417,7 +1470,7 @@ put line 443.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[62 <./nbar_MC/images/mcErrors.pdf, page is rotated 90 degrees> <./nbar_MC/imag
+[64 <./nbar_MC/images/mcErrors.pdf, page is rotated 90 degrees> <./nbar_MC/imag
 es/mcDistance_sx.pdf, page is rotated 90 degrees> <./nbar_MC/images/mcDistance_
 dx.pdf, page is rotated 90 degrees>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
@@ -1426,99 +1479,101 @@ pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
                    \relax 
 l.450 \subsection{Kinematic Fit effects}
                                         
-<nbar_MC/images/kin_delta_theta_mc.pdf, id=2964, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/kin_delta_theta_mc.pdf Graphic file (type pdf)
-<use nbar_MC/images/kin_delta_theta_mc.pdf>
-Package pdftex.def Info: nbar_MC/images/kin_delta_theta_mc.pdf  used on input l
-ine 456.
+<nbar_MC/images/kin_delta_theta_mc_nog.pdf, id=3086, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/kin_delta_theta_mc_nog.pdf Graphic file (type pdf)
+<use nbar_MC/images/kin_delta_theta_mc_nog.pdf>
+Package pdftex.def Info: nbar_MC/images/kin_delta_theta_mc_nog.pdf  used on inp
+ut line 456.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/kin_delta_theta_rec.pdf, id=2965, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/kin_delta_theta_rec.pdf Graphic file (type pdf)
-<use nbar_MC/images/kin_delta_theta_rec.pdf>
-Package pdftex.def Info: nbar_MC/images/kin_delta_theta_rec.pdf  used on input 
-line 457.
+<nbar_MC/images/kin_delta_p_mc_nog.pdf, id=3087, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/kin_delta_p_mc_nog.pdf Graphic file (type pdf)
+<use nbar_MC/images/kin_delta_p_mc_nog.pdf>
+Package pdftex.def Info: nbar_MC/images/kin_delta_p_mc_nog.pdf  used on input l
+ine 457.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/kin_delta_p_mc.pdf, id=2966, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/kin_delta_p_mc.pdf Graphic file (type pdf)
-<use nbar_MC/images/kin_delta_p_mc.pdf>
-Package pdftex.def Info: nbar_MC/images/kin_delta_p_mc.pdf  used on input line 
-458.
+<nbar_MC/images/kin_delta_theta_mc_isr.pdf, id=3088, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/kin_delta_theta_mc_isr.pdf Graphic file (type pdf)
+<use nbar_MC/images/kin_delta_theta_mc_isr.pdf>
+Package pdftex.def Info: nbar_MC/images/kin_delta_theta_mc_isr.pdf  used on inp
+ut line 458.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/kin_delta_p_rec.pdf, id=2967, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/kin_delta_p_rec.pdf Graphic file (type pdf)
-<use nbar_MC/images/kin_delta_p_rec.pdf>
-Package pdftex.def Info: nbar_MC/images/kin_delta_p_rec.pdf  used on input line
- 459.
+<nbar_MC/images/kin_delta_p_mc_isr.pdf, id=3089, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/kin_delta_p_mc_isr.pdf Graphic file (type pdf)
+<use nbar_MC/images/kin_delta_p_mc_isr.pdf>
+Package pdftex.def Info: nbar_MC/images/kin_delta_p_mc_isr.pdf  used on input l
+ine 459.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[63 <./nbar_MC/images/mcDistance_sx_regionSep.pdf, page is rotated 90 degrees> 
+[65 <./nbar_MC/images/mcDistance_sx_regionSep.pdf, page is rotated 90 degrees> 
 <./nbar_MC/images/mcDistance_dx_regionSep.pdf, page is rotated 90 degrees>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.466 ...wer shape variables in the signal sample}
+l.471 ...wer shape variables in the signal sample}
                                                   
 
-[64 <./nbar_MC/images/kin_delta_theta_mc.pdf, page is rotated 90 degrees> <./nb
-ar_MC/images/kin_delta_theta_rec.pdf, page is rotated 90 degrees> <./nbar_MC/im
-ages/kin_delta_p_mc.pdf, page is rotated 90 degrees> <./nbar_MC/images/kin_delt
-a_p_rec.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/clusterE_isr.pdf, id=3238, 569.12625pt x 387.4475pt>
+[66 <./nbar_MC/images/kin_delta_theta_mc_nog.pdf, page is rotated 90 degrees> <
+./nbar_MC/images/kin_delta_p_mc_nog.pdf, page is rotated 90 degrees> <./nbar_MC
+/images/kin_delta_theta_mc_isr.pdf, page is rotated 90 degrees> <./nbar_MC/imag
+es/kin_delta_p_mc_isr.pdf, page is rotated 90 degrees>]
+
+[67]
+<nbar_MC/images/clusterE_isr.pdf, id=3362, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_isr.pdf>
-Package pdftex.def Info: nbar_MC/images/clusterE_isr.pdf  used on input line 47
-6.
+Package pdftex.def Info: nbar_MC/images/clusterE_isr.pdf  used on input line 48
+1.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_isr.pdf, id=3239, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE1E9_isr.pdf, id=3363, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE1E9_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_isr.pdf  used on input line
- 477.
+ 482.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_isr.pdf, id=3240, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE9E21_isr.pdf, id=3364, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE9E21_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_isr.pdf  used on input lin
-e 478.
+e 483.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_isr.pdf, id=3241, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_isr.pdf, id=3365, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterLAT_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_isr.pdf  used on input line 
-479.
+484.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_isr.pdf, id=3242, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterSecondMoment_isr.pdf, id=3366, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterSecondMoment_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterSecondMoment_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_isr.pdf  used on in
-put line 480.
+put line 485.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf, id=3243, 569.12625pt x 387.4
+<nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf, id=3367, 569.12625pt x 387.4
 475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf  used
- on input line 481.
+ on input line 486.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf, id=3244, 569.12625pt x 387.4
+<nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf, id=3368, 569.12625pt x 387.4
 475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf  used
- on input line 482.
+ on input line 487.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_isr.pdf, id=3245, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterNHits_isr.pdf, id=3369, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterNHits_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_isr.pdf  used on input lin
-e 483.
+e 488.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[65 <./nbar_MC/images/clusterE_isr.pdf, page is rotated 90 degrees> <./nbar_MC/
+[68 <./nbar_MC/images/clusterE_isr.pdf, page is rotated 90 degrees> <./nbar_MC/
 images/clusterE1E9_isr.pdf, page is rotated 90 degrees> <./nbar_MC/images/clust
 erE9E21_isr.pdf, page is rotated 90 degrees> <./nbar_MC/images/clusterLAT_isr.p
 df, page is rotated 90 degrees> <./nbar_MC/images/clusterSecondMoment_isr.pdf, 
@@ -1526,60 +1581,60 @@ page is rotated 90 degrees> <./nbar_MC/images/clusterAbsZernikeMoment40_isr.pdf
 , page is rotated 90 degrees> <./nbar_MC/images/clusterAbsZernikeMoment51_isr.p
 df, page is rotated 90 degrees> <./nbar_MC/images/clusterNHits_isr.pdf, page is
  rotated 90 degrees>]
-<nbar_MC/images/clusterE_nog.pdf, id=3597, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE_nog.pdf, id=3721, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_nog.pdf  used on input line 49
-3.
+8.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_nog.pdf, id=3598, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE1E9_nog.pdf, id=3722, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE1E9_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_nog.pdf  used on input line
- 494.
+ 499.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_nog.pdf, id=3599, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE9E21_nog.pdf, id=3723, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE9E21_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_nog.pdf  used on input lin
-e 495.
+e 500.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_nog.pdf, id=3600, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_nog.pdf, id=3724, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterLAT_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_nog.pdf  used on input line 
-496.
+501.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_nog.pdf, id=3601, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterSecondMoment_nog.pdf, id=3725, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterSecondMoment_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterSecondMoment_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_nog.pdf  used on in
-put line 497.
+put line 502.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf, id=3602, 569.12625pt x 387.4
+<nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf, id=3726, 569.12625pt x 387.4
 475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf  used
- on input line 498.
+ on input line 503.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf, id=3603, 569.12625pt x 387.4
+<nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf, id=3727, 569.12625pt x 387.4
 475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf  used
- on input line 499.
+ on input line 504.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_nog.pdf, id=3604, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterNHits_nog.pdf, id=3728, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterNHits_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_nog.pdf  used on input lin
-e 500.
+e 505.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[66 <./nbar_MC/images/clusterE_nog.pdf, page is rotated 90 degrees> <./nbar_MC/
+[69 <./nbar_MC/images/clusterE_nog.pdf, page is rotated 90 degrees> <./nbar_MC/
 images/clusterE1E9_nog.pdf, page is rotated 90 degrees> <./nbar_MC/images/clust
 erE9E21_nog.pdf, page is rotated 90 degrees> <./nbar_MC/images/clusterLAT_nog.p
 df, page is rotated 90 degrees> <./nbar_MC/images/clusterSecondMoment_nog.pdf, 
@@ -1588,68 +1643,68 @@ page is rotated 90 degrees> <./nbar_MC/images/clusterAbsZernikeMoment40_nog.pdf
 df, page is rotated 90 degrees> <./nbar_MC/images/clusterNHits_nog.pdf, page is
  rotated 90 degrees>]
 
-[67]
-<nbar_MC/images/clusterE_nog_ancestor.pdf, id=3962, 569.12625pt x 387.4475pt>
+[70]
+<nbar_MC/images/clusterE_nog_ancestor.pdf, id=4087, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_nog_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_nog_ancestor.pdf  used on inpu
-t line 537.
+t line 542.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_nog_ancestor.pdf, id=3963, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterE1E9_nog_ancestor.pdf, id=4088, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterE1E9_nog_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_nog_ancestor.pdf  used on i
-nput line 538.
+nput line 543.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_nog_ancestor.pdf, id=3964, 569.12625pt x 387.4475p
+<nbar_MC/images/clusterE9E21_nog_ancestor.pdf, id=4089, 569.12625pt x 387.4475p
 t>
 File: nbar_MC/images/clusterE9E21_nog_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_nog_ancestor.pdf  used on 
-input line 539.
+input line 544.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_nog_ancestor.pdf, id=3965, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_nog_ancestor.pdf, id=4090, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterLAT_nog_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_nog_ancestor.pdf  used on in
-put line 540.
+put line 545.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_nog_ancestor.pdf, id=3966, 569.12625pt x 38
+<nbar_MC/images/clusterSecondMoment_nog_ancestor.pdf, id=4091, 569.12625pt x 38
 7.4475pt>
 File: nbar_MC/images/clusterSecondMoment_nog_ancestor.pdf Graphic file (type pd
 f)
 <use nbar_MC/images/clusterSecondMoment_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_nog_ancestor.pdf  u
-sed on input line 541.
+sed on input line 546.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_nog_ancestor.pdf, id=3967, 569.12625p
+<nbar_MC/images/clusterAbsZernikeMoment40_nog_ancestor.pdf, id=4092, 569.12625p
 t x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_nog_ancestor.pdf Graphic file (t
 ype pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_nog_ancestor.
-pdf  used on input line 542.
+pdf  used on input line 547.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf, id=3968, 569.12625p
+<nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf, id=4093, 569.12625p
 t x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf Graphic file (t
 ype pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.
-pdf  used on input line 543.
+pdf  used on input line 548.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_nog_ancestor.pdf, id=3969, 569.12625pt x 387.4475p
+<nbar_MC/images/clusterNHits_nog_ancestor.pdf, id=4094, 569.12625pt x 387.4475p
 t>
 File: nbar_MC/images/clusterNHits_nog_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_nog_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_nog_ancestor.pdf  used on 
-input line 544.
+input line 549.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[68 <./nbar_MC/images/clusterE_nog_ancestor.pdf, page is rotated 90 degrees> <.
+[71 <./nbar_MC/images/clusterE_nog_ancestor.pdf, page is rotated 90 degrees> <.
 /nbar_MC/images/clusterE1E9_nog_ancestor.pdf, page is rotated 90 degrees> <./nb
 ar_MC/images/clusterE9E21_nog_ancestor.pdf, page is rotated 90 degrees> <./nbar
 _MC/images/clusterLAT_nog_ancestor.pdf, page is rotated 90 degrees> <./nbar_MC/
@@ -1658,66 +1713,66 @@ r_MC/images/clusterAbsZernikeMoment40_nog_ancestor.pdf, page is rotated 90 degr
 ees> <./nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf, page is rota
 ted 90 degrees> <./nbar_MC/images/clusterNHits_nog_ancestor.pdf, page is rotate
 d 90 degrees>]
-<nbar_MC/images/clusterE_hitscut_nog.pdf, id=4320, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE_hitscut_nog.pdf, id=4445, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_hitscut_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_hitscut_nog.pdf  used on input
- line 555.
+ line 560.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_hitscut_nog.pdf, id=4321, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE1E9_hitscut_nog.pdf, id=4446, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterE1E9_hitscut_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_hitscut_nog.pdf  used on in
-put line 556.
+put line 561.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_hitscut_nog.pdf, id=4322, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterE9E21_hitscut_nog.pdf, id=4447, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterE9E21_hitscut_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_hitscut_nog.pdf  used on i
-nput line 557.
+nput line 562.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_hitscut_nog.pdf, id=4323, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_hitscut_nog.pdf, id=4448, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterLAT_hitscut_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_hitscut_nog.pdf  used on inp
-ut line 558.
+ut line 563.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_hitscut_nog.pdf, id=4324, 569.12625pt x 387
+<nbar_MC/images/clusterSecondMoment_hitscut_nog.pdf, id=4449, 569.12625pt x 387
 .4475pt>
 File: nbar_MC/images/clusterSecondMoment_hitscut_nog.pdf Graphic file (type pdf
 )
 <use nbar_MC/images/clusterSecondMoment_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_hitscut_nog.pdf  us
-ed on input line 559.
+ed on input line 564.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_hitscut_nog.pdf, id=4325, 569.12625pt
+<nbar_MC/images/clusterAbsZernikeMoment40_hitscut_nog.pdf, id=4450, 569.12625pt
  x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_hitscut_nog.pdf Graphic file (ty
 pe pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_hitscut_nog.p
-df  used on input line 560.
+df  used on input line 565.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf, id=4326, 569.12625pt
+<nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf, id=4451, 569.12625pt
  x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf Graphic file (ty
 pe pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.p
-df  used on input line 561.
+df  used on input line 566.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_hitscut_nog.pdf, id=4327, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterNHits_hitscut_nog.pdf, id=4452, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterNHits_hitscut_nog.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_hitscut_nog.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_hitscut_nog.pdf  used on i
-nput line 562.
+nput line 567.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[69 <./nbar_MC/images/clusterE_hitscut_nog.pdf, page is rotated 90 degrees> <./
+[72 <./nbar_MC/images/clusterE_hitscut_nog.pdf, page is rotated 90 degrees> <./
 nbar_MC/images/clusterE1E9_hitscut_nog.pdf, page is rotated 90 degrees> <./nbar
 _MC/images/clusterE9E21_hitscut_nog.pdf, page is rotated 90 degrees> <./nbar_MC
 /images/clusterLAT_hitscut_nog.pdf, page is rotated 90 degrees> <./nbar_MC/imag
@@ -1726,195 +1781,195 @@ images/clusterAbsZernikeMoment40_hitscut_nog.pdf, page is rotated 90 degrees> <
 ./nbar_MC/images/clusterAbsZernikeMoment51_hitscut_nog.pdf, page is rotated 90 
 degrees> <./nbar_MC/images/clusterNHits_hitscut_nog.pdf, page is rotated 90 deg
 rees>]
-<nbar_MC/images/cluster_region.pdf, id=4679, 569.12625pt x 387.4475pt>
+<nbar_MC/images/cluster_region.pdf, id=4803, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/cluster_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/cluster_region.pdf>
 Package pdftex.def Info: nbar_MC/images/cluster_region.pdf  used on input line 
-578.
+583.
 (pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
 
 
-[70 <./nbar_MC/images/cluster_region.pdf, page is rotated 90 degrees>]
-<nbar_MC/images/clusterE_nog_region.pdf, id=4728, 569.12625pt x 387.4475pt>
+[73 <./nbar_MC/images/cluster_region.pdf, page is rotated 90 degrees>]
+<nbar_MC/images/clusterE_nog_region.pdf, id=4852, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_nog_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_nog_region.pdf  used on input 
-line 592.
+line 597.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_nog_region.pdf, id=4729, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE1E9_nog_region.pdf, id=4853, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE1E9_nog_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_nog_region.pdf  used on inp
-ut line 593.
+ut line 598.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_nog_region.pdf, id=4730, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE9E21_nog_region.pdf, id=4854, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterE9E21_nog_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_nog_region.pdf  used on in
-put line 594.
+put line 599.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_nog_region.pdf, id=4731, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_nog_region.pdf, id=4855, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterLAT_nog_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_nog_region.pdf  used on inpu
-t line 595.
+t line 600.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_nog_region.pdf, id=4732, 569.12625pt x 387.
+<nbar_MC/images/clusterSecondMoment_nog_region.pdf, id=4856, 569.12625pt x 387.
 4475pt>
 File: nbar_MC/images/clusterSecondMoment_nog_region.pdf Graphic file (type pdf)
 
 <use nbar_MC/images/clusterSecondMoment_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_nog_region.pdf  use
-d on input line 596.
+d on input line 601.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_nog_region.pdf, id=4733, 569.12625pt 
+<nbar_MC/images/clusterAbsZernikeMoment40_nog_region.pdf, id=4857, 569.12625pt 
 x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_nog_region.pdf Graphic file (typ
 e pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_nog_region.pd
-f  used on input line 597.
+f  used on input line 602.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf, id=4734, 569.12625pt 
+<nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf, id=4858, 569.12625pt 
 x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf Graphic file (typ
 e pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pd
-f  used on input line 598.
+f  used on input line 603.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_nog_region.pdf, id=4735, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterNHits_nog_region.pdf, id=4859, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterNHits_nog_region.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_nog_region.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_nog_region.pdf  used on in
-put line 599.
+put line 604.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+)
 
-
-[71 <./nbar_MC/images/clusterE_nog_region.pdf, page is rotated 90 degrees> <./n
+[74 <./nbar_MC/images/clusterE_nog_region.pdf, page is rotated 90 degrees> <./n
 bar_MC/images/clusterE1E9_nog_region.pdf, page is rotated 90 degrees> <./nbar_M
 C/images/clusterE9E21_nog_region.pdf, page is rotated 90 degrees> <./nbar_MC/im
 ages/clusterLAT_nog_region.pdf, page is rotated 90 degrees> <./nbar_MC/images/c
 lusterSecondMoment_nog_region.pdf, page is rotated 90 degrees> <./nbar_MC/image
 s/clusterAbsZernikeMoment40_nog_region.pdf, page is rotated 90 degrees> <./nbar
 _MC/images/clusterAbsZernikeMoment51_nog_region.pdf, page is rotated 90 degrees
-> <./nbar_MC/images/clusterNHits_nog_region.pdf, page is rotated 90 degrees>])
-
-[72] (./nbar_cocktail/nbar_cocktail_eng.tex
-<nbar_cocktail/images/qqbar_diag.png, id=5090, 783.92876pt x 538.01pt>
+> <./nbar_MC/images/clusterNHits_nog_region.pdf, page is rotated 90 degrees>]
+(./nbar_cocktail/nbar_cocktail_eng.tex
+<nbar_cocktail/images/qqbar_diag.png, id=5212, 783.92876pt x 538.01pt>
 File: nbar_cocktail/images/qqbar_diag.png Graphic file (type png)
 <use nbar_cocktail/images/qqbar_diag.png>
 Package pdftex.def Info: nbar_cocktail/images/qqbar_diag.png  used on input lin
-e 11.
+e 13.
 (pdftex.def)             Requested size: 155.24895pt x 106.54108pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 ...cesses at the Belle experiment enviroment}
+l.18 ...cesses at the Belle experiment enviroment}
                                                   
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 16.
+(hyperref)                than one, level fixed on input line 18.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[73
-
- <./nbar_cocktail/images/qqbar_diag.png>]
-<nbar_cocktail/images/BelleII_processes.png, id=5096, 846.16125pt x 546.04pt>
+<nbar_cocktail/images/BelleII_processes.png, id=5214, 846.16125pt x 546.04pt>
 File: nbar_cocktail/images/BelleII_processes.png Graphic file (type png)
 <use nbar_cocktail/images/BelleII_processes.png>
 Package pdftex.def Info: nbar_cocktail/images/BelleII_processes.png  used on in
-put line 44.
-(pdftex.def)             Requested size: 258.75pt x 166.97104pt.
+put line 46.
+(pdftex.def)             Requested size: 310.4979pt x 200.36525pt.
 
+
+[75
+
+ <./nbar_cocktail/images/qqbar_diag.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \subsection{Applied selections and cuts}
-                                             
+l.51 \subsection{Event selections}
+                                  
 
-[74 <./nbar_cocktail/images/BelleII_processes.png>]
-<nbar_cocktail/images/ROE_diag.png, id=5106, 486.81876pt x 521.95pt>
+[76 <./nbar_cocktail/images/BelleII_processes.png>]
+<nbar_cocktail/images/ROE_diag.png, id=5231, 486.81876pt x 521.95pt>
 File: nbar_cocktail/images/ROE_diag.png Graphic file (type png)
 <use nbar_cocktail/images/ROE_diag.png>
 Package pdftex.def Info: nbar_cocktail/images/ROE_diag.png  used on input line 
-71.
+72.
 (pdftex.def)             Requested size: 155.24895pt x 166.45398pt.
-<nbar_cocktail/images/clusterEnergy_isr.pdf, id=5108, 569.12625pt x 387.4475pt>
+<nbar_cocktail/images/clusterEnergy_isr.pdf, id=5233, 569.12625pt x 387.4475pt>
 
 File: nbar_cocktail/images/clusterEnergy_isr.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/clusterEnergy_isr.pdf>
 Package pdftex.def Info: nbar_cocktail/images/clusterEnergy_isr.pdf  used on in
-put line 80.
+put line 83.
 (pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
 
 
-[75 <./nbar_cocktail/images/ROE_diag.png>]
+[77 <./nbar_cocktail/images/ROE_diag.png>]
 
-[76 <./nbar_cocktail/images/clusterEnergy_isr.pdf, page is rotated 90 degrees>]
+[78 <./nbar_cocktail/images/clusterEnergy_isr.pdf, page is rotated 90 degrees>]
 
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 ...bar{u}$ cocktail production (NO ISR case)}
+l.92 ...bar{u}$ cocktail production (NO ISR case)}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 89.
+(hyperref)                removing `math shift' on input line 92.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 89.
+(hyperref)                removing `math shift' on input line 92.
 
-<nbar_cocktail/images/recoil_mass_nog_020.pdf, id=5168, 569.12625pt x 387.4475p
+<nbar_cocktail/images/recoil_mass_nog_020.pdf, id=5292, 569.12625pt x 387.4475p
 t>
 File: nbar_cocktail/images/recoil_mass_nog_020.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/recoil_mass_nog_020.pdf>
 Package pdftex.def Info: nbar_cocktail/images/recoil_mass_nog_020.pdf  used on 
-input line 93.
+input line 96.
 (pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
-<nbar_cocktail/images/topoana_nog_020.png, id=5170, 1204.5pt x 384.43625pt>
+<nbar_cocktail/images/topoana_nog_020.png, id=5294, 1204.5pt x 384.43625pt>
 File: nbar_cocktail/images/topoana_nog_020.png Graphic file (type png)
 <use nbar_cocktail/images/topoana_nog_020.png>
 Package pdftex.def Info: nbar_cocktail/images/topoana_nog_020.png  used on inpu
-t line 101.
+t line 104.
 (pdftex.def)             Requested size: 345.0pt x 110.11101pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[77 <./nbar_cocktail/images/recoil_mass_nog_020.pdf, page is rotated 90 degrees
->]
+
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .1.3.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.108 ...bsection{Recoil mass components analysis}
+l.111 ...bsection{Recoil mass components analysis}
                                                   
-<nbar_cocktail/images/recoilM_comps_nog_020.pdf, id=5220, 569.12625pt x 387.447
+
+[79 <./nbar_cocktail/images/recoil_mass_nog_020.pdf, page is rotated 90 degrees
+>]
+<nbar_cocktail/images/recoilM_comps_nog_020.pdf, id=5343, 569.12625pt x 387.447
 5pt>
 File: nbar_cocktail/images/recoilM_comps_nog_020.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/recoilM_comps_nog_020.pdf>
 Package pdftex.def Info: nbar_cocktail/images/recoilM_comps_nog_020.pdf  used o
-n input line 124.
+n input line 127.
 (pdftex.def)             Requested size: 310.4979pt x 211.38821pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<nbar_cocktail/images/recoilM_comp0_nog_020.pdf, id=5223, 569.12625pt x 387.447
+<nbar_cocktail/images/recoilM_comp0_nog_020.pdf, id=5346, 569.12625pt x 387.447
 5pt>
 File: nbar_cocktail/images/recoilM_comp0_nog_020.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/recoilM_comp0_nog_020.pdf>
 Package pdftex.def Info: nbar_cocktail/images/recoilM_comp0_nog_020.pdf  used o
 n input line 136.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_cocktail/images/recoilM_comp3_nog_020.pdf, id=5224, 569.12625pt x 387.447
+<nbar_cocktail/images/recoilM_comp3_nog_020.pdf, id=5347, 569.12625pt x 387.447
 5pt>
 File: nbar_cocktail/images/recoilM_comp3_nog_020.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/recoilM_comp3_nog_020.pdf>
@@ -1923,8 +1978,12 @@ n input line 137.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[78 <./nbar_cocktail/images/topoana_nog_020.png>]
-<nbar_cocktail/images/recoilM_comps_nog_020_0+3.pdf, id=5236, 569.12625pt x 387
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[80 <./nbar_cocktail/images/topoana_nog_020.png>]
+<nbar_cocktail/images/recoilM_comps_nog_020_0+3.pdf, id=5361, 569.12625pt x 387
 .4475pt>
 File: nbar_cocktail/images/recoilM_comps_nog_020_0+3.pdf Graphic file (type pdf
 )
@@ -1937,254 +1996,956 @@ ed on input line 145.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-
-[79 <./nbar_cocktail/images/recoilM_comps_nog_020.pdf, page is rotated 90 degre
-es> <./nbar_cocktail/images/recoilM_comp0_nog_020.pdf, page is rotated 90 degre
-es> <./nbar_cocktail/images/recoilM_comp3_nog_020.pdf, page is rotated 90 degre
-es>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
 .1.3.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 ...erformance metrics study on $\alpha$ cut}
+l.152 ...erformance Metrics study on $\alpha$ cut}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 154.
+(hyperref)                removing `math shift' on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 154.
+(hyperref)                removing `\alpha' on input line 152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 154.
+(hyperref)                removing `math shift' on input line 152.
 
 
 
-[80 <./nbar_cocktail/images/recoilM_comps_nog_020_0+3.pdf, page is rotated 90 d
+[81 <./nbar_cocktail/images/recoilM_comps_nog_020.pdf, page is rotated 90 degre
+es> <./nbar_cocktail/images/recoilM_comp0_nog_020.pdf, page is rotated 90 degre
+es> <./nbar_cocktail/images/recoilM_comp3_nog_020.pdf, page is rotated 90 degre
+es>]
+
+[82 <./nbar_cocktail/images/recoilM_comps_nog_020_0+3.pdf, page is rotated 90 d
 egrees>]
-<nbar_cocktail/images/fom_alpha.pdf, id=5419, 569.12625pt x 387.4475pt>
+<nbar_cocktail/images/fom_alpha.pdf, id=5543, 569.12625pt x 387.4475pt>
 File: nbar_cocktail/images/fom_alpha.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/fom_alpha.pdf>
 Package pdftex.def Info: nbar_cocktail/images/fom_alpha.pdf  used on input line
- 178.
+ 174.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-<nbar_cocktail/images/roc_alpha_true.pdf, id=5421, 569.12625pt x 387.4475pt>
+<nbar_cocktail/images/roc_alpha_true.pdf, id=5545, 569.12625pt x 387.4475pt>
 File: nbar_cocktail/images/roc_alpha_true.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/roc_alpha_true.pdf>
 Package pdftex.def Info: nbar_cocktail/images/roc_alpha_true.pdf  used on input
- line 189.
+ line 185.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
 
 
-[81 <./nbar_cocktail/images/fom_alpha.pdf, page is rotated 90 degrees>]
-<nbar_cocktail/images/eff_alpha.pdf, id=5471, 569.12625pt x 387.4475pt>
+[83 <./nbar_cocktail/images/fom_alpha.pdf, page is rotated 90 degrees>]
+<nbar_cocktail/images/eff_alpha.pdf, id=5595, 569.12625pt x 387.4475pt>
 File: nbar_cocktail/images/eff_alpha.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/eff_alpha.pdf>
 Package pdftex.def Info: nbar_cocktail/images/eff_alpha.pdf  used on input line
- 203.
+ 199.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-
-
-[82 <./nbar_cocktail/images/roc_alpha_true.pdf, page is rotated 90 degrees>]
-<nbar_cocktail/images/recoilM_comps_nog_010.pdf, id=5520, 569.12625pt x 387.447
+<nbar_cocktail/images/recoilM_comps_nog_010.pdf, id=5597, 569.12625pt x 387.447
 5pt>
 File: nbar_cocktail/images/recoilM_comps_nog_010.pdf Graphic file (type pdf)
 <use nbar_cocktail/images/recoilM_comps_nog_010.pdf>
 Package pdftex.def Info: nbar_cocktail/images/recoilM_comps_nog_010.pdf  used o
-n input line 212.
-(pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-<nbar_cocktail/images/topo_uubar_010.png, id=5522, 1063.975pt x 190.7125pt>
+n input line 208.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+
+
+[84 <./nbar_cocktail/images/roc_alpha_true.pdf, page is rotated 90 degrees> <./
+nbar_cocktail/images/eff_alpha.pdf, page is rotated 90 degrees>]
+<nbar_cocktail/images/topo_uubar_010.png, id=5689, 1063.975pt x 190.7125pt>
 File: nbar_cocktail/images/topo_uubar_010.png Graphic file (type png)
 <use nbar_cocktail/images/topo_uubar_010.png>
 Package pdftex.def Info: nbar_cocktail/images/topo_uubar_010.png  used on input
- line 222.
+ line 218.
 (pdftex.def)             Requested size: 345.0pt x 61.83823pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[83 <./nbar_cocktail/images/eff_alpha.pdf, page is rotated 90 degrees> <./nbar_
-cocktail/images/recoilM_comps_nog_010.pdf, page is rotated 90 degrees>]
 pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
 4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.229 ...ar{q}$ cocktail production (NO ISR case)}
+l.225 ...ar{q}$ cocktail production (NO ISR case)}
                                                   
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 229.
+(hyperref)                removing `math shift' on input line 225.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 229.
+(hyperref)                removing `math shift' on input line 225.
 
-<nbar_cocktail/images/topoana_nog_010_qqbar.png, id=5614, 1239.63126pt x 383.43
+<nbar_cocktail/images/topoana_nog_010_qqbar.png, id=5691, 1239.63126pt x 383.43
 25pt>
 File: nbar_cocktail/images/topoana_nog_010_qqbar.png Graphic file (type png)
 <use nbar_cocktail/images/topoana_nog_010_qqbar.png>
 Package pdftex.def Info: nbar_cocktail/images/topoana_nog_010_qqbar.png  used o
-n input line 235.
+n input line 231.
 (pdftex.def)             Requested size: 345.0pt x 106.71094pt.
+
+
+[85 <./nbar_cocktail/images/recoilM_comps_nog_010.pdf, page is rotated 90 degre
+es> <./nbar_cocktail/images/topo_uubar_010.png>]
 File: nbar_cocktail/images/topo_uubar_010.png Graphic file (type png)
 <use nbar_cocktail/images/topo_uubar_010.png>
 Package pdftex.def Info: nbar_cocktail/images/topo_uubar_010.png  used on input
- line 244.
+ line 240.
 (pdftex.def)             Requested size: 345.0pt x 61.83823pt.
-<nbar_cocktail/images/topo_ddbar_010.png, id=5616, 1093.08376pt x 192.72pt>
+<nbar_cocktail/images/topo_ddbar_010.png, id=5741, 1093.08376pt x 192.72pt>
 File: nbar_cocktail/images/topo_ddbar_010.png Graphic file (type png)
 <use nbar_cocktail/images/topo_ddbar_010.png>
 Package pdftex.def Info: nbar_cocktail/images/topo_ddbar_010.png  used on input
- line 245.
+ line 241.
 (pdftex.def)             Requested size: 345.0pt x 60.82474pt.
-<nbar_cocktail/images/topo_ssbar_010.png, id=5617, 1134.2375pt x 187.70125pt>
+<nbar_cocktail/images/topo_ssbar_010.png, id=5742, 1134.2375pt x 187.70125pt>
 File: nbar_cocktail/images/topo_ssbar_010.png Graphic file (type png)
 <use nbar_cocktail/images/topo_ssbar_010.png>
 Package pdftex.def Info: nbar_cocktail/images/topo_ssbar_010.png  used on input
- line 246.
+ line 242.
 (pdftex.def)             Requested size: 345.0pt x 57.0927pt.
-<nbar_cocktail/images/topo_ccbar_010.png, id=5618, 1244.65pt x 101.37875pt>
+<nbar_cocktail/images/topo_ccbar_010.png, id=5743, 1244.65pt x 101.37875pt>
 File: nbar_cocktail/images/topo_ccbar_010.png Graphic file (type png)
 <use nbar_cocktail/images/topo_ccbar_010.png>
 Package pdftex.def Info: nbar_cocktail/images/topo_ccbar_010.png  used on input
- line 247.
+ line 243.
 (pdftex.def)             Requested size: 345.0pt x 28.10121pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<nbar_cocktail/images/recoilM_qqbar_comps_nog_010.pdf, id=5746, 569.12625pt x 3
+87.4475pt>
+File: nbar_cocktail/images/recoilM_qqbar_comps_nog_010.pdf Graphic file (type p
+df)
+<use nbar_cocktail/images/recoilM_qqbar_comps_nog_010.pdf>
+Package pdftex.def Info: nbar_cocktail/images/recoilM_qqbar_comps_nog_010.pdf  
+used on input line 257.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+
+
+[86 <./nbar_cocktail/images/topoana_nog_010_qqbar.png>]
+
+[87 <./nbar_cocktail/images/topo_ddbar_010.png> <./nbar_cocktail/images/topo_ss
+bar_010.png> <./nbar_cocktail/images/topo_ccbar_010.png> <./nbar_cocktail/image
+s/recoilM_qqbar_comps_nog_010.pdf, page is rotated 90 degrees>]
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
+.1.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.263 ...Cluster variables in $q\bar{q}$ cocktail}
+                                                  
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
+
+
+
+[88]
+<nbar_cocktail/images/clusterE_nog_qqbar.pdf, id=5816, 569.12625pt x 387.4475pt
+>
+File: nbar_cocktail/images/clusterE_nog_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE_nog_qqbar.pdf  used on i
+nput line 286.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterE1E9_nog_qqbar.pdf, id=5817, 569.12625pt x 387.447
+5pt>
+File: nbar_cocktail/images/clusterE1E9_nog_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE1E9_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE1E9_nog_qqbar.pdf  used o
+n input line 287.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterE9E21_nog_qqbar.pdf, id=5818, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/clusterE9E21_nog_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE9E21_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE9E21_nog_qqbar.pdf  used 
+on input line 288.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterLAT_nog_qqbar.pdf, id=5819, 569.12625pt x 387.4475
+pt>
+File: nbar_cocktail/images/clusterLAT_nog_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterLAT_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterLAT_nog_qqbar.pdf  used on
+ input line 289.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterSecondMoment_nog_qqbar.pdf, id=5820, 569.12625pt x
+ 387.4475pt>
+File: nbar_cocktail/images/clusterSecondMoment_nog_qqbar.pdf Graphic file (type
+ pdf)
+<use nbar_cocktail/images/clusterSecondMoment_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterSecondMoment_nog_qqbar.pdf
+  used on input line 290.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqbar.pdf, id=5821, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqbar.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqb
+ar.pdf  used on input line 291.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qqbar.pdf, id=5822, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qqbar.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qqb
+ar.pdf  used on input line 292.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterNHits_nog_qqbar.pdf, id=5823, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/clusterNHits_nog_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterNHits_nog_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterNHits_nog_qqbar.pdf  used 
+on input line 293.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsubsection
+.1.4.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.298 ...debands technique in $q\bar{q}$ cocktail}
+                                                  
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 298.
+
+
+
+[89 <./nbar_cocktail/images/clusterE_nog_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterE1E9_nog_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterE9E21_nog_qqbar.pdf, page is rotated 90 degrees
+> <./nbar_cocktail/images/clusterLAT_nog_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterSecondMoment_nog_qqbar.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqbar.pdf, page 
+is rotated 90 degrees> <./nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qq
+bar.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/clusterNHits_nog_q
+qbar.pdf, page is rotated 90 degrees>]
+<nbar_cocktail/images/recoil_mass_sidebands_nog.pdf, id=6175, 569.12625pt x 387
+.4475pt>
+File: nbar_cocktail/images/recoil_mass_sidebands_nog.pdf Graphic file (type pdf
+)
+<use nbar_cocktail/images/recoil_mass_sidebands_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/recoil_mass_sidebands_nog.pdf  us
+ed on input line 327.
+(pdftex.def)             Requested size: 207.0021pt x 140.92351pt.
+<nbar_cocktail/images/sidebands_clusterE_nog.pdf, id=6177, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/sidebands_clusterE_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterE_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE_nog.pdf  used 
+on input line 335.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterE1E9_nog.pdf, id=6178, 569.12625pt x 387
+.4475pt>
+File: nbar_cocktail/images/sidebands_clusterE1E9_nog.pdf Graphic file (type pdf
+)
+<use nbar_cocktail/images/sidebands_clusterE1E9_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE1E9_nog.pdf  us
+ed on input line 336.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterE9E21_nog.pdf, id=6179, 569.12625pt x 38
+7.4475pt>
+File: nbar_cocktail/images/sidebands_clusterE9E21_nog.pdf Graphic file (type pd
+f)
+<use nbar_cocktail/images/sidebands_clusterE9E21_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE9E21_nog.pdf  u
+sed on input line 337.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterLAT_nog.pdf, id=6180, 569.12625pt x 387.
+4475pt>
+File: nbar_cocktail/images/sidebands_clusterLAT_nog.pdf Graphic file (type pdf)
+
+<use nbar_cocktail/images/sidebands_clusterLAT_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterLAT_nog.pdf  use
+d on input line 338.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterSecondMoment_nog.pdf, id=6181, 569.12625
+pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterSecondMoment_nog.pdf Graphic file (
+type pdf)
+<use nbar_cocktail/images/sidebands_clusterSecondMoment_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterSecondMoment_nog
+.pdf  used on input line 339.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_nog.pdf, id=6182, 569
+.12625pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_nog.pdf Graphic 
+file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment
+40_nog.pdf  used on input line 340.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_nog.pdf, id=6183, 569
+.12625pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_nog.pdf Graphic 
+file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment
+51_nog.pdf  used on input line 341.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterNHits_nog.pdf, id=6184, 569.12625pt x 38
+7.4475pt>
+File: nbar_cocktail/images/sidebands_clusterNHits_nog.pdf Graphic file (type pd
+f)
+<use nbar_cocktail/images/sidebands_clusterNHits_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterNHits_nog.pdf  u
+sed on input line 342.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+
+
+[90 <./nbar_cocktail/images/recoil_mass_sidebands_nog.pdf, page is rotated 90 d
+egrees>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<nbar_cocktail/images/final_clusterE_nog.pdf, id=6234, 569.12625pt x 387.4475pt
+>
+File: nbar_cocktail/images/final_clusterE_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE_nog.pdf  used on i
+nput line 359.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterE1E9_nog.pdf, id=6235, 569.12625pt x 387.447
+5pt>
+File: nbar_cocktail/images/final_clusterE1E9_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE1E9_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE1E9_nog.pdf  used o
+n input line 360.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterE9E21_nog.pdf, id=6236, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/final_clusterE9E21_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE9E21_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE9E21_nog.pdf  used 
+on input line 361.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterLAT_nog.pdf, id=6237, 569.12625pt x 387.4475
+pt>
+File: nbar_cocktail/images/final_clusterLAT_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterLAT_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterLAT_nog.pdf  used on
+ input line 362.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterSecondMoment_nog.pdf, id=6238, 569.12625pt x
+ 387.4475pt>
+File: nbar_cocktail/images/final_clusterSecondMoment_nog.pdf Graphic file (type
+ pdf)
+<use nbar_cocktail/images/final_clusterSecondMoment_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterSecondMoment_nog.pdf
+  used on input line 363.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterAbsZernikeMoment40_nog.pdf, id=6239, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/final_clusterAbsZernikeMoment40_nog.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/final_clusterAbsZernikeMoment40_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterAbsZernikeMoment40_n
+og.pdf  used on input line 364.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterAbsZernikeMoment51_nog.pdf, id=6240, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/final_clusterAbsZernikeMoment51_nog.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/final_clusterAbsZernikeMoment51_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterAbsZernikeMoment51_n
+og.pdf  used on input line 365.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterNHits_nog.pdf, id=6241, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/final_clusterNHits_nog.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterNHits_nog.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterNHits_nog.pdf  used 
+on input line 366.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 374.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 374.
+
+<nbar_cocktail/images/topoana_isr_010_qqbar.png, id=6244, 1015.795pt x 317.185p
+t>
+File: nbar_cocktail/images/topoana_isr_010_qqbar.png Graphic file (type png)
+<use nbar_cocktail/images/topoana_isr_010_qqbar.png>
+Package pdftex.def Info: nbar_cocktail/images/topoana_isr_010_qqbar.png  used o
+n input line 380.
+(pdftex.def)             Requested size: 345.0pt x 107.72531pt.
+
+
+[91]
+<nbar_cocktail/images/topo_uubar_isr.png, id=6251, 967.615pt x 171.64125pt>
+File: nbar_cocktail/images/topo_uubar_isr.png Graphic file (type png)
+<use nbar_cocktail/images/topo_uubar_isr.png>
+Package pdftex.def Info: nbar_cocktail/images/topo_uubar_isr.png  used on input
+ line 387.
+(pdftex.def)             Requested size: 345.0pt x 61.19888pt.
+<nbar_cocktail/images/topo_ddbar_isr.png, id=6252, 1017.8025pt x 171.64125pt>
+File: nbar_cocktail/images/topo_ddbar_isr.png Graphic file (type png)
+<use nbar_cocktail/images/topo_ddbar_isr.png>
+Package pdftex.def Info: nbar_cocktail/images/topo_ddbar_isr.png  used on input
+ line 388.
+(pdftex.def)             Requested size: 345.0pt x 58.17914pt.
+<nbar_cocktail/images/topo_ssbar_isr.png, id=6253, 1067.99pt x 171.64125pt>
+File: nbar_cocktail/images/topo_ssbar_isr.png Graphic file (type png)
+<use nbar_cocktail/images/topo_ssbar_isr.png>
+Package pdftex.def Info: nbar_cocktail/images/topo_ssbar_isr.png  used on input
+ line 389.
+(pdftex.def)             Requested size: 345.0pt x 55.44487pt.
+<nbar_cocktail/images/topo_ccbar_isr.png, id=6254, 1201.48875pt x 248.93pt>
+File: nbar_cocktail/images/topo_ccbar_isr.png Graphic file (type png)
+<use nbar_cocktail/images/topo_ccbar_isr.png>
+Package pdftex.def Info: nbar_cocktail/images/topo_ccbar_isr.png  used on input
+ line 390.
+(pdftex.def)             Requested size: 345.0pt x 71.47755pt.
+<nbar_cocktail/images/recoilM_qqbar_comps_isr_010.pdf, id=6256, 569.12625pt x 3
+87.4475pt>
+File: nbar_cocktail/images/recoilM_qqbar_comps_isr_010.pdf Graphic file (type p
+df)
+<use nbar_cocktail/images/recoilM_qqbar_comps_isr_010.pdf>
+Package pdftex.def Info: nbar_cocktail/images/recoilM_qqbar_comps_isr_010.pdf  
+used on input line 397.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+
+
+[92 <./nbar_cocktail/images/topoana_isr_010_qqbar.png> <./nbar_cocktail/images/
+topo_uubar_isr.png> <./nbar_cocktail/images/topo_ddbar_isr.png> <./nbar_cocktai
+l/images/topo_ssbar_isr.png> <./nbar_cocktail/images/topo_ccbar_isr.png>]
+<nbar_cocktail/images/clusterE_isr_qqbar.pdf, id=6268, 569.12625pt x 387.4475pt
+>
+File: nbar_cocktail/images/clusterE_isr_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE_isr_qqbar.pdf  used on i
+nput line 405.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterE1E9_isr_qqbar.pdf, id=6269, 569.12625pt x 387.447
+5pt>
+File: nbar_cocktail/images/clusterE1E9_isr_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE1E9_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE1E9_isr_qqbar.pdf  used o
+n input line 406.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterE9E21_isr_qqbar.pdf, id=6270, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/clusterE9E21_isr_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterE9E21_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterE9E21_isr_qqbar.pdf  used 
+on input line 407.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterLAT_isr_qqbar.pdf, id=6271, 569.12625pt x 387.4475
+pt>
+File: nbar_cocktail/images/clusterLAT_isr_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterLAT_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterLAT_isr_qqbar.pdf  used on
+ input line 408.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterSecondMoment_isr_qqbar.pdf, id=6272, 569.12625pt x
+ 387.4475pt>
+File: nbar_cocktail/images/clusterSecondMoment_isr_qqbar.pdf Graphic file (type
+ pdf)
+<use nbar_cocktail/images/clusterSecondMoment_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterSecondMoment_isr_qqbar.pdf
+  used on input line 409.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterAbsZernikeMoment40_isr_qqbar.pdf, id=6273, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/clusterAbsZernikeMoment40_isr_qqbar.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/clusterAbsZernikeMoment40_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterAbsZernikeMoment40_isr_qqb
+ar.pdf  used on input line 410.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterAbsZernikeMoment51_isr_qqbar.pdf, id=6274, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/clusterAbsZernikeMoment51_isr_qqbar.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/clusterAbsZernikeMoment51_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterAbsZernikeMoment51_isr_qqb
+ar.pdf  used on input line 411.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/clusterNHits_isr_qqbar.pdf, id=6275, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/clusterNHits_isr_qqbar.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/clusterNHits_isr_qqbar.pdf>
+Package pdftex.def Info: nbar_cocktail/images/clusterNHits_isr_qqbar.pdf  used 
+on input line 412.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<nbar_cocktail/images/recoil_mass_sidebands_isr.pdf, id=6277, 569.12625pt x 387
+.4475pt>
+File: nbar_cocktail/images/recoil_mass_sidebands_isr.pdf Graphic file (type pdf
+)
+<use nbar_cocktail/images/recoil_mass_sidebands_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/recoil_mass_sidebands_isr.pdf  us
+ed on input line 427.
+(pdftex.def)             Requested size: 207.0021pt x 140.92351pt.
+
+
+[93 <./nbar_cocktail/images/recoilM_qqbar_comps_isr_010.pdf, page is rotated 90
+ degrees>]
+<nbar_cocktail/images/sidebands_clusterE_isr.pdf, id=6326, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/sidebands_clusterE_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterE_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE_isr.pdf  used 
+on input line 435.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterE1E9_isr.pdf, id=6327, 569.12625pt x 387
+.4475pt>
+File: nbar_cocktail/images/sidebands_clusterE1E9_isr.pdf Graphic file (type pdf
+)
+<use nbar_cocktail/images/sidebands_clusterE1E9_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE1E9_isr.pdf  us
+ed on input line 436.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterE9E21_isr.pdf, id=6328, 569.12625pt x 38
+7.4475pt>
+File: nbar_cocktail/images/sidebands_clusterE9E21_isr.pdf Graphic file (type pd
+f)
+<use nbar_cocktail/images/sidebands_clusterE9E21_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterE9E21_isr.pdf  u
+sed on input line 437.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterLAT_isr.pdf, id=6329, 569.12625pt x 387.
+4475pt>
+File: nbar_cocktail/images/sidebands_clusterLAT_isr.pdf Graphic file (type pdf)
+
+<use nbar_cocktail/images/sidebands_clusterLAT_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterLAT_isr.pdf  use
+d on input line 438.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterSecondMoment_isr.pdf, id=6330, 569.12625
+pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterSecondMoment_isr.pdf Graphic file (
+type pdf)
+<use nbar_cocktail/images/sidebands_clusterSecondMoment_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterSecondMoment_isr
+.pdf  used on input line 439.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_isr.pdf, id=6331, 569
+.12625pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_isr.pdf Graphic 
+file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment
+40_isr.pdf  used on input line 440.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_isr.pdf, id=6332, 569
+.12625pt x 387.4475pt>
+File: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_isr.pdf Graphic 
+file (type pdf)
+<use nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterAbsZernikeMoment
+51_isr.pdf  used on input line 441.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/sidebands_clusterNHits_isr.pdf, id=6333, 569.12625pt x 38
+7.4475pt>
+File: nbar_cocktail/images/sidebands_clusterNHits_isr.pdf Graphic file (type pd
+f)
+<use nbar_cocktail/images/sidebands_clusterNHits_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/sidebands_clusterNHits_isr.pdf  u
+sed on input line 442.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterE_isr.pdf, id=6335, 569.12625pt x 387.4475pt
+>
+File: nbar_cocktail/images/final_clusterE_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE_isr.pdf  used on i
+nput line 449.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterE1E9_isr.pdf, id=6336, 569.12625pt x 387.447
+5pt>
+File: nbar_cocktail/images/final_clusterE1E9_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE1E9_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE1E9_isr.pdf  used o
+n input line 450.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterE9E21_isr.pdf, id=6337, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/final_clusterE9E21_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterE9E21_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterE9E21_isr.pdf  used 
+on input line 451.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterLAT_isr.pdf, id=6338, 569.12625pt x 387.4475
+pt>
+File: nbar_cocktail/images/final_clusterLAT_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterLAT_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterLAT_isr.pdf  used on
+ input line 452.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterSecondMoment_isr.pdf, id=6339, 569.12625pt x
+ 387.4475pt>
+File: nbar_cocktail/images/final_clusterSecondMoment_isr.pdf Graphic file (type
+ pdf)
+<use nbar_cocktail/images/final_clusterSecondMoment_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterSecondMoment_isr.pdf
+  used on input line 453.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterAbsZernikeMoment40_isr.pdf, id=6340, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/final_clusterAbsZernikeMoment40_isr.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/final_clusterAbsZernikeMoment40_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterAbsZernikeMoment40_i
+sr.pdf  used on input line 454.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterAbsZernikeMoment51_isr.pdf, id=6341, 569.126
+25pt x 387.4475pt>
+File: nbar_cocktail/images/final_clusterAbsZernikeMoment51_isr.pdf Graphic file
+ (type pdf)
+<use nbar_cocktail/images/final_clusterAbsZernikeMoment51_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterAbsZernikeMoment51_i
+sr.pdf  used on input line 455.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_cocktail/images/final_clusterNHits_isr.pdf, id=6342, 569.12625pt x 387.44
+75pt>
+File: nbar_cocktail/images/final_clusterNHits_isr.pdf Graphic file (type pdf)
+<use nbar_cocktail/images/final_clusterNHits_isr.pdf>
+Package pdftex.def Info: nbar_cocktail/images/final_clusterNHits_isr.pdf  used 
+on input line 456.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 )
 
-[84 <./nbar_cocktail/images/topo_uubar_010.png> <./nbar_cocktail/images/topoana
-_nog_010_qqbar.png>]
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[85 <./nbar_cocktail/images/topo_ddbar_010.png> <./nbar_cocktail/images/topo_ss
-bar_010.png> <./nbar_cocktail/images/topo_ccbar_010.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[94 <./nbar_cocktail/images/recoil_mass_sidebands_isr.pdf, page is rotated 90 d
+egrees>]
+
+[95 <./nbar_cocktail/images/sidebands_clusterE_nog.pdf, page is rotated 90 degr
+ees> <./nbar_cocktail/images/sidebands_clusterE1E9_nog.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/sidebands_clusterE9E21_nog.pdf, page is rotate
+d 90 degrees> <./nbar_cocktail/images/sidebands_clusterLAT_nog.pdf, page is rot
+ated 90 degrees> <./nbar_cocktail/images/sidebands_clusterSecondMoment_nog.pdf,
+ page is rotated 90 degrees> <./nbar_cocktail/images/sidebands_clusterAbsZernik
+eMoment40_nog.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/sideband
+s_clusterAbsZernikeMoment51_nog.pdf, page is rotated 90 degrees> <./nbar_cockta
+il/images/sidebands_clusterNHits_nog.pdf, page is rotated 90 degrees>]
+
+[96 <./nbar_cocktail/images/final_clusterE_nog.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterE1E9_nog.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterE9E21_nog.pdf, page is rotated 90 degrees
+> <./nbar_cocktail/images/final_clusterLAT_nog.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterSecondMoment_nog.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/final_clusterAbsZernikeMoment40_nog.pdf, page 
+is rotated 90 degrees> <./nbar_cocktail/images/final_clusterAbsZernikeMoment51_
+nog.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/final_clusterNHits
+_nog.pdf, page is rotated 90 degrees>]
+
+[97 <./nbar_cocktail/images/clusterE_isr_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterE1E9_isr_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterE9E21_isr_qqbar.pdf, page is rotated 90 degrees
+> <./nbar_cocktail/images/clusterLAT_isr_qqbar.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/clusterSecondMoment_isr_qqbar.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/clusterAbsZernikeMoment40_isr_qqbar.pdf, page 
+is rotated 90 degrees> <./nbar_cocktail/images/clusterAbsZernikeMoment51_isr_qq
+bar.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/clusterNHits_isr_q
+qbar.pdf, page is rotated 90 degrees>]
+
+[98 <./nbar_cocktail/images/sidebands_clusterE_isr.pdf, page is rotated 90 degr
+ees> <./nbar_cocktail/images/sidebands_clusterE1E9_isr.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/sidebands_clusterE9E21_isr.pdf, page is rotate
+d 90 degrees> <./nbar_cocktail/images/sidebands_clusterLAT_isr.pdf, page is rot
+ated 90 degrees> <./nbar_cocktail/images/sidebands_clusterSecondMoment_isr.pdf,
+ page is rotated 90 degrees> <./nbar_cocktail/images/sidebands_clusterAbsZernik
+eMoment40_isr.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/sideband
+s_clusterAbsZernikeMoment51_isr.pdf, page is rotated 90 degrees> <./nbar_cockta
+il/images/sidebands_clusterNHits_isr.pdf, page is rotated 90 degrees>]
+
+[99 <./nbar_cocktail/images/final_clusterE_isr.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterE1E9_isr.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterE9E21_isr.pdf, page is rotated 90 degrees
+> <./nbar_cocktail/images/final_clusterLAT_isr.pdf, page is rotated 90 degrees>
+ <./nbar_cocktail/images/final_clusterSecondMoment_isr.pdf, page is rotated 90 
+degrees> <./nbar_cocktail/images/final_clusterAbsZernikeMoment40_isr.pdf, page 
+is rotated 90 degrees> <./nbar_cocktail/images/final_clusterAbsZernikeMoment51_
+isr.pdf, page is rotated 90 degrees> <./nbar_cocktail/images/final_clusterNHits
+_isr.pdf, page is rotated 90 degrees>] (./nbar_data/nbar_data_eng.tex
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5 \subsection{Recoil mass in data (NO ISR case)}
+                                                  
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 5.
+
+<nbar_DATA/images/recoil_mass_data_precut.pdf, id=8139, 569.12625pt x 387.4475p
+t>
+File: nbar_DATA/images/recoil_mass_data_precut.pdf Graphic file (type pdf)
+<use nbar_DATA/images/recoil_mass_data_precut.pdf>
+Package pdftex.def Info: nbar_DATA/images/recoil_mass_data_precut.pdf  used on 
+input line 10.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+<nbar_DATA/images/proton_costheta_p.pdf, id=8141, 569.12625pt x 387.4475pt>
+File: nbar_DATA/images/proton_costheta_p.pdf Graphic file (type pdf)
+<use nbar_DATA/images/proton_costheta_p.pdf>
+Package pdftex.def Info: nbar_DATA/images/proton_costheta_p.pdf  used on input 
+line 20.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+
+
+[100
+
+ <./nbar_DATA/images/recoil_mass_data_precut.pdf, page is rotated 90 degrees>]
+<nbar_DATA/images/recoil_mass_data_postcut.pdf, id=8192, 569.12625pt x 387.4475
+pt>
+File: nbar_DATA/images/recoil_mass_data_postcut.pdf Graphic file (type pdf)
+<use nbar_DATA/images/recoil_mass_data_postcut.pdf>
+Package pdftex.def Info: nbar_DATA/images/recoil_mass_data_postcut.pdf  used on
+ input line 37.
+(pdftex.def)             Requested size: 276.00105pt x 187.89998pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[101 <./nbar_DATA/images/proton_costheta_p.pdf, page is rotated 90 degrees>]
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 \subsection{Data/MC agreement in NO ISR case}
+                                                  
+<nbar_data/images/data_clusterE_nog.pdf, id=8243, 569.12625pt x 387.4475pt>
+File: nbar_data/images/data_clusterE_nog.pdf Graphic file (type pdf)
+<use nbar_data/images/data_clusterE_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterE_nog.pdf  used on input 
+line 63.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterE1E9_nog.pdf, id=8244, 569.12625pt x 387.4475pt>
+File: nbar_data/images/data_clusterE1E9_nog.pdf Graphic file (type pdf)
+<use nbar_data/images/data_clusterE1E9_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterE1E9_nog.pdf  used on inp
+ut line 64.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterE9E21_nog.pdf, id=8245, 569.12625pt x 387.4475pt>
+
+File: nbar_data/images/data_clusterE9E21_nog.pdf Graphic file (type pdf)
+<use nbar_data/images/data_clusterE9E21_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterE9E21_nog.pdf  used on in
+put line 65.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterLAT_nog.pdf, id=8246, 569.12625pt x 387.4475pt>
+File: nbar_data/images/data_clusterLAT_nog.pdf Graphic file (type pdf)
+<use nbar_data/images/data_clusterLAT_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterLAT_nog.pdf  used on inpu
+t line 66.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterSecondMoment_nog.pdf, id=8247, 569.12625pt x 387.
+4475pt>
+File: nbar_data/images/data_clusterSecondMoment_nog.pdf Graphic file (type pdf)
+
+<use nbar_data/images/data_clusterSecondMoment_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterSecondMoment_nog.pdf  use
+d on input line 67.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterAbsZernikeMoment40_nog.pdf, id=8248, 569.12625pt 
+x 387.4475pt>
+File: nbar_data/images/data_clusterAbsZernikeMoment40_nog.pdf Graphic file (typ
+e pdf)
+<use nbar_data/images/data_clusterAbsZernikeMoment40_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterAbsZernikeMoment40_nog.pd
+f  used on input line 68.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterAbsZernikeMoment51_nog.pdf, id=8249, 569.12625pt 
+x 387.4475pt>
+File: nbar_data/images/data_clusterAbsZernikeMoment51_nog.pdf Graphic file (typ
+e pdf)
+<use nbar_data/images/data_clusterAbsZernikeMoment51_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterAbsZernikeMoment51_nog.pd
+f  used on input line 69.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+<nbar_data/images/data_clusterNHits_nog.pdf, id=8250, 569.12625pt x 387.4475pt>
+
+File: nbar_data/images/data_clusterNHits_nog.pdf Graphic file (type pdf)
+<use nbar_data/images/data_clusterNHits_nog.pdf>
+Package pdftex.def Info: nbar_data/images/data_clusterNHits_nog.pdf  used on in
+put line 70.
+(pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 ...ection{Summary of Signal Channel Analysis}
+                                                  
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 79.
+
+
+
+[102 <./nbar_DATA/images/recoil_mass_data_postcut.pdf, page is rotated 90 degre
+es>])
+
+[103]
+
+[104 <./nbar_data/images/data_clusterE_nog.pdf, page is rotated 90 degrees> <./
+nbar_data/images/data_clusterE1E9_nog.pdf, page is rotated 90 degrees> <./nbar_
+data/images/data_clusterE9E21_nog.pdf, page is rotated 90 degrees> <./nbar_data
+/images/data_clusterLAT_nog.pdf, page is rotated 90 degrees> <./nbar_data/image
+s/data_clusterSecondMoment_nog.pdf, page is rotated 90 degrees> <./nbar_data/im
+ages/data_clusterAbsZernikeMoment40_nog.pdf, page is rotated 90 degrees> <./nba
+r_data/images/data_clusterAbsZernikeMoment51_nog.pdf, page is rotated 90 degree
+s> <./nbar_data/images/data_clusterNHits_nog.pdf, page is rotated 90 degrees>]
 (./appendix/appendix_eng.tex
-<appendix/images/dec_file.png, id=5633, 763.85374pt x 76.285pt>
+<appendix/images/dec_file.png, id=8657, 763.85374pt x 76.285pt>
 File: appendix/images/dec_file.png Graphic file (type png)
 <use appendix/images/dec_file.png>
 Package pdftex.def Info: appendix/images/dec_file.png  used on input line 22.
 (pdftex.def)             Requested size: 345.0pt x 34.4548pt.
 
 
-[86
+[105
 
  <./appendix/images/dec_file.png>]
-<appendix/images/gen_file.png, id=5639, 709.65125pt x 388.45125pt>
+<appendix/images/gen_file.png, id=8663, 709.65125pt x 388.45125pt>
 File: appendix/images/gen_file.png Graphic file (type png)
 <use appendix/images/gen_file.png>
 Package pdftex.def Info: appendix/images/gen_file.png  used on input line 48.
 (pdftex.def)             Requested size: 345.0pt x 188.84909pt.
 
+Overfull \hbox (35.01656pt too wide) in paragraph at lines 52--55
+\OT1/cmr/m/n/10 sig-nal from the de-cay file is added (row 18), with \OT1/cmr/b
+x/n/10 add[]phokhara[]evtgen[]combination
+ []
 
-[87 <./appendix/images/gen_file.png>]
-<nbar_MC/images/clusterE_isr_ancestor.pdf, id=5649, 569.12625pt x 387.4475pt>
+
+
+[106 <./appendix/images/gen_file.png>]
+<nbar_MC/images/clusterE_isr_ancestor.pdf, id=8671, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_isr_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_isr_ancestor.pdf  used on inpu
-t line 58.
+t line 59.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_isr_ancestor.pdf, id=5650, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterE1E9_isr_ancestor.pdf, id=8672, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterE1E9_isr_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_isr_ancestor.pdf  used on i
-nput line 59.
+nput line 60.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_isr_ancestor.pdf, id=5651, 569.12625pt x 387.4475p
+<nbar_MC/images/clusterE9E21_isr_ancestor.pdf, id=8673, 569.12625pt x 387.4475p
 t>
 File: nbar_MC/images/clusterE9E21_isr_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_isr_ancestor.pdf  used on 
-input line 60.
+input line 61.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_isr_ancestor.pdf, id=5652, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_isr_ancestor.pdf, id=8674, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterLAT_isr_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_isr_ancestor.pdf  used on in
-put line 61.
+put line 62.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf, id=5653, 569.12625pt x 38
+<nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf, id=8675, 569.12625pt x 38
 7.4475pt>
 File: nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf Graphic file (type pd
 f)
 <use nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_isr_ancestor.pdf  u
-sed on input line 62.
+sed on input line 63.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf, id=5654, 569.12625p
+<nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf, id=8676, 569.12625p
 t x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf Graphic file (t
 ype pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.
-pdf  used on input line 63.
+pdf  used on input line 64.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf, id=5655, 569.12625p
+<nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf, id=8677, 569.12625p
 t x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf Graphic file (t
 ype pdf)
 <use nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.
-pdf  used on input line 64.
+pdf  used on input line 65.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_isr_ancestor.pdf, id=5656, 569.12625pt x 387.4475p
+<nbar_MC/images/clusterNHits_isr_ancestor.pdf, id=8678, 569.12625pt x 387.4475p
 t>
 File: nbar_MC/images/clusterNHits_isr_ancestor.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_isr_ancestor.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterNHits_isr_ancestor.pdf  used on 
-input line 65.
+input line 66.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[88]
+[107]
 
-[89]
+[108]
 Overfull \vbox (3.50558pt too high) has occurred while \output is active []
 
 
 
-[90 <./nbar_MC/images/clusterE_isr_ancestor.pdf, page is rotated 90 degrees> <.
-/nbar_MC/images/clusterE1E9_isr_ancestor.pdf, page is rotated 90 degrees> <./nb
-ar_MC/images/clusterE9E21_isr_ancestor.pdf, page is rotated 90 degrees> <./nbar
-_MC/images/clusterLAT_isr_ancestor.pdf, page is rotated 90 degrees> <./nbar_MC/
-images/clusterSecondMoment_isr_ancestor.pdf, page is rotated 90 degrees> <./nba
-r_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf, page is rotated 90 degr
-ees> <./nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf, page is rota
-ted 90 degrees> <./nbar_MC/images/clusterNHits_isr_ancestor.pdf, page is rotate
-d 90 degrees>]
-<nbar_MC/images/clusterE_hitscut_isr.pdf, id=6014, 569.12625pt x 387.4475pt>
+[109 <./nbar_MC/images/clusterE_isr_ancestor.pdf, page is rotated 90 degrees> <
+./nbar_MC/images/clusterE1E9_isr_ancestor.pdf, page is rotated 90 degrees> <./n
+bar_MC/images/clusterE9E21_isr_ancestor.pdf, page is rotated 90 degrees> <./nba
+r_MC/images/clusterLAT_isr_ancestor.pdf, page is rotated 90 degrees> <./nbar_MC
+/images/clusterSecondMoment_isr_ancestor.pdf, page is rotated 90 degrees> <./nb
+ar_MC/images/clusterAbsZernikeMoment40_isr_ancestor.pdf, page is rotated 90 deg
+rees> <./nbar_MC/images/clusterAbsZernikeMoment51_isr_ancestor.pdf, page is rot
+ated 90 degrees> <./nbar_MC/images/clusterNHits_isr_ancestor.pdf, page is rotat
+ed 90 degrees>]
+<nbar_MC/images/clusterE_hitscut_isr.pdf, id=9036, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterE_hitscut_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE_hitscut_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE_hitscut_isr.pdf  used on input
  line 74.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE1E9_hitscut_isr.pdf, id=6015, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterE1E9_hitscut_isr.pdf, id=9037, 569.12625pt x 387.4475pt>
 
 File: nbar_MC/images/clusterE1E9_hitscut_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE1E9_hitscut_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE1E9_hitscut_isr.pdf  used on in
 put line 75.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterE9E21_hitscut_isr.pdf, id=6016, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterE9E21_hitscut_isr.pdf, id=9038, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterE9E21_hitscut_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterE9E21_hitscut_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterE9E21_hitscut_isr.pdf  used on i
 nput line 76.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterLAT_hitscut_isr.pdf, id=6017, 569.12625pt x 387.4475pt>
+<nbar_MC/images/clusterLAT_hitscut_isr.pdf, id=9039, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/clusterLAT_hitscut_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterLAT_hitscut_isr.pdf>
 Package pdftex.def Info: nbar_MC/images/clusterLAT_hitscut_isr.pdf  used on inp
 ut line 77.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf, id=6018, 569.12625pt x 387
+<nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf, id=9040, 569.12625pt x 387
 .4475pt>
 File: nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf Graphic file (type pdf
 )
@@ -2192,7 +2953,7 @@ File: nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf Graphic file (type pdf
 Package pdftex.def Info: nbar_MC/images/clusterSecondMoment_hitscut_isr.pdf  us
 ed on input line 78.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment40_hitscut_isr.pdf, id=6019, 569.12625pt
+<nbar_MC/images/clusterAbsZernikeMoment40_hitscut_isr.pdf, id=9041, 569.12625pt
  x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment40_hitscut_isr.pdf Graphic file (ty
 pe pdf)
@@ -2200,7 +2961,7 @@ pe pdf)
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment40_hitscut_isr.p
 df  used on input line 79.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf, id=6020, 569.12625pt
+<nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf, id=9042, 569.12625pt
  x 387.4475pt>
 File: nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf Graphic file (ty
 pe pdf)
@@ -2208,7 +2969,7 @@ pe pdf)
 Package pdftex.def Info: nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.p
 df  used on input line 80.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/clusterNHits_hitscut_isr.pdf, id=6021, 569.12625pt x 387.4475pt
+<nbar_MC/images/clusterNHits_hitscut_isr.pdf, id=9043, 569.12625pt x 387.4475pt
 >
 File: nbar_MC/images/clusterNHits_hitscut_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/clusterNHits_hitscut_isr.pdf>
@@ -2217,17 +2978,17 @@ nput line 81.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 )
 
-[91 <./nbar_MC/images/clusterE_hitscut_isr.pdf, page is rotated 90 degrees> <./
-nbar_MC/images/clusterE1E9_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar
-_MC/images/clusterE9E21_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_MC
-/images/clusterLAT_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_MC/imag
-es/clusterSecondMoment_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_MC/
-images/clusterAbsZernikeMoment40_hitscut_isr.pdf, page is rotated 90 degrees> <
-./nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf, page is rotated 90 
-degrees> <./nbar_MC/images/clusterNHits_hitscut_isr.pdf, page is rotated 90 deg
-rees>] (./Zanusso_MSc.bbl
+[110 <./nbar_MC/images/clusterE_hitscut_isr.pdf, page is rotated 90 degrees> <.
+/nbar_MC/images/clusterE1E9_hitscut_isr.pdf, page is rotated 90 degrees> <./nba
+r_MC/images/clusterE9E21_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_M
+C/images/clusterLAT_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_MC/ima
+ges/clusterSecondMoment_hitscut_isr.pdf, page is rotated 90 degrees> <./nbar_MC
+/images/clusterAbsZernikeMoment40_hitscut_isr.pdf, page is rotated 90 degrees> 
+<./nbar_MC/images/clusterAbsZernikeMoment51_hitscut_isr.pdf, page is rotated 90
+ degrees> <./nbar_MC/images/clusterNHits_hitscut_isr.pdf, page is rotated 90 de
+grees>] (./Zanusso_MSc.bbl
 
-[92
+[111
 
 ]
 Underfull \hbox (badness 1917) in paragraph at lines 178--184
@@ -2249,24 +3010,24 @@ in1049e . pdf$[]\OT1/cmr/m/n/10 ,
 
 
 
-[93])
+[112])
 
-[94] (./Zanusso_MSc.aux)
+[113] (./Zanusso_MSc.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Zanusso_MSc.out' has not changed.
-(rerunfilecheck)             Checksum: DF4E29FCF47957FFBA2950BEF0EDC191;12742.
+(rerunfilecheck)             Checksum: 063E8436B739A743111B8BF9E0C50BE0;14191.
  ) 
 Here is how much of TeX's memory you used:
- 15538 strings out of 473190
- 283597 string characters out of 5715800
- 653051 words of memory out of 5000000
- 38316 multiletter control sequences out of 15000+600000
- 568770 words of font info for 74 fonts, out of 8000000 for 9000
+ 16140 strings out of 473190
+ 315017 string characters out of 5715800
+ 665176 words of memory out of 5000000
+ 38858 multiletter control sequences out of 15000+600000
+ 570016 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1038b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1251b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -2275,25 +3036,30 @@ sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/tex
-live/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
-025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/te
-xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Zanusso_MSc.pdf (98 pages, 7830394 bytes).
+r/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Zanusso_MSc.pdf (118 pages, 8924227 bytes).
 PDF statistics:
- 6550 PDF objects out of 7423 (max. 8388607)
- 3282 compressed objects within 33 object streams
- 282 named destinations out of 1000 (max. 500000)
- 1288 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9605 PDF objects out of 10688 (max. 8388607)
+ 4645 compressed objects within 47 object streams
+ 335 named destinations out of 1000 (max. 500000)
+ 1684 words of extra memory for PDF output out of 10000 (max. 10000000)
 

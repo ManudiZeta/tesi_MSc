@@ -448,20 +448,25 @@ In the forward and backward regions, the two peaks located at the TOP edges disa
 
 
 \subsection{Kinematic Fit effects}
-A \textbf{Kinematic Fit} is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
+A \textbf{Kinematic Fit} (KF) is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
 $\\$
-A one constraint \textbf{1C Kinematic Fit} has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The obtained residuals are shown  in Fig.~\ref{fig:kin_fit}.
+A one constraint \textbf{1C Kinematic Fit} has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The comparison of the residual distributions with and without the kinematic fit is shown in Fig.~\ref{fig:kin_fit}.
 \begin{figure}[H]
     \centering
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_rec.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_mc.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_rec.pdf}
-     \caption{Momentum and $\theta$ angle residuals distribution between recoil system and anti-neutron candidate, after the 1C Kinematic Fit procedure}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc_nog.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_mc_nog.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc_isr.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_p_mc_isr.pdf}
+     \caption{Momentum and $\theta$ angle residuals distribution between recoil system and anti-neutron candidate. Blue: before the application of the Kinematic Fit. Red: after the application of the Kinematic Fit.}
      \label{fig:kin_fit}
 \end{figure}
 
-No significant improvement in recoil momentum resolution was observed post 1C Kinematic Fit compared to the unconstrained baseline ~\ref{fig:residuals_distros} . This confirms that the recoil system was already optimally reconstructed in the signal sample Monte Carlo. Further kinematic fit studies using a Monte Carlo cocktail are discussed in the next section.
+Based on standard deviation value, an improvement can be observed due to the application of the kinematic fit. 
+$\\$
+In the ISR case, a 5\% improvement is observed in the recoil $\theta$ resolution, while a 9\% improvement is observed in the recoil momentum resolution. 
+In the NO ISR case, a 2\% improvement is observed in the recoil $\theta$ resolution, while a 9\% improvement is observed in the recoil momentum resolution. 
+$\\$
+Therefore, the kinematic fit, by constraining the recoil mass, refines the resolution of the recoil kinematic variables.
 
 \subsection{Shower shape variables in the signal sample}
 The following paragraph introduces the analysis of the \textbf{shower shape variables} of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
@@ -601,23 +606,3 @@ The obtained cluster variables in NO ISR case are shown below:
      \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates in different ECL regions. Blue: forward region. Red: barrel region. Green: backward region. The distributions are normalized to unit value}
       \label{fig:cluster_region}
 \end{figure}
-
-\subsection{Summary of Signal Channel Analysis}
-The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied, with both ISR and NO ISR emission. 
-$\\$
-$\\$
-The recoil system $p\pi^-(\gamma_{ISR})$ is correctly reconstructed by the analysis, as evidenced by the peak above the anti-neutron mass in the recoil mass distribution. Furthermore, the kinematic distributions ($p$ and $\theta$) of the recoil system are consistent with those of generator-level $\bar{n}$ candidates, in both ISR and NO ISR cases. At reconstructed level, good agreement is observed in the $\theta$ distribution, while the reconstructed $\bar{n}$ candidate momentum shows underestimation and poor resolution compared to the recoil system momentum, as observed in correlations and residuals distributions. Furthermore, a low-momentum value structure is observed in reconstructed and generated momentum of $\bar{n}$ candidates compared to the recoil system momentum.
-$\\$
-$\\$
-Therefore, energy loss occurs within ECL clusters, suggesting leakage processes such as cluster split-off and/or pre-showering effects. Ancestor studies reveal that photons related to $\bar{n}$ particles are often misidentified as main $\bar{n}$ candidates, accounting for the low-momentum structure observed. In fact, the ancestors momentum can be partially recovered when good Monte Carlo associations occur, showing good agreement with the recoil system momentum as well. A study of $\bar{n}$ production reveals that candidates with $\bar{n}$ ancestors are generated far from the IP, before the ECL (pre-showering) and within the ECL (cluster split-off).
-$\\$
-$\\$
-Furthermore, a one-constraint (1C) Kinematic Fit was tested, revealing no significant improvement in the reconstructed recoil momentum and confirming that the recoil system was already optimally reconstructed by the analysis. 
-$\\$
-$\\$
-Eventually, the reconstructed cluster variables associated with $\bar{n}$ candidates -such as cluster energy, lateral momentum, Zernike moments, etc.- were studied in the Monte Carlo signal sample. Similar structures to those observed in the momentum distributions were identified, particularly in the cluster energy and number of hits distributions.Therefore, ancestor studies confirm the momentum distribution observations: sub-clusters from secondary particles with $\bar{n}$ ancestry produce small-sized, low-energy structures in the cluster distributions.
-$\\$
-$\\$
-In particular, a cut on the cluster number of hits yields reconstructed cluster variables closer to those expected from Monte Carlo $\bar{n}$ candidate selection, in both ISR and NO ISR cases.
-
-

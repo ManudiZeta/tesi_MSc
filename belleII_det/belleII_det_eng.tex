@@ -3,23 +3,23 @@
 The following sections introduce the \textbf{SuperKEKB} \cite{akai2018} collider, describing its technical setup briefly. Then the \textbf{Belle II} \cite{BelleIIPhysicsBook2019} detector is presented, discussing it sub-detector by sub-detector. Afterwards, the Belle II Analysis Software Framework (\textbf{basf2}) and \textbf{TopoAna} program are briefly described, with attention to the role of Monte Carlo methods in collider experiment simulation and reconstruction.
 
 \subsection{The SuperKEKB collider}
-\textbf{SuperKEKB} \cite{akai2018} is an asymmetric $e^+ e^-$ double-ring collider, located at KEK (The High Energy Accelerator Research Organization), in Tsukuba, Japan. It is the upgrade of the previous collider KEKB. It has a circumference of $3016$ m and collides bunches of electrons with bunches of positrons, respectively of energy 7 GeV (High Energy Ring -HER-) and 4 GeV (Low Energy Ring -LER-). Fig.~\ref{fig:superkekb_scheme} is a schematic image of the SuperKEKB design:
-
+\textbf{SuperKEKB} \cite{akai2018} is an asymmetric $e^+ e^-$ double-ring collider, located at KEK (The High Energy Accelerator Research Organization), in Tsukuba, Japan. It is the upgrade of the previous collider KEKB. It has a circumference of $3016$ m and collides bunches of electrons with bunches of positrons, respectively of energy 7 GeV (High Energy Ring -HER-) and 4 GeV (Low Energy Ring -LER-). Fig.~\ref{fig:superkekb_scheme} shows a schematic image of the SuperKEKB design.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{belleII_det/images/superkekb.png}
     \caption{SuperKEKB design, where the Interaction Point (IP) is located in Tsukuba surrounded by the Belle II detector.}
     \label{fig:superkekb_scheme}
 \end{figure}
+$\\$
 It is noteworthy that the positron damping ring reduces the $e^+$ beam emittance, as positrons are obtained from a rotating tungsten target subjected. Electrons, by contrast, are injected directly from the linac since a controlled $e^-$ beam can easily be obtained \cite{kikuchi2005}.
 $\\$
-The resulting center-of-mass enrgy $\sqrt{s}$ in the IP can be modulated, but most of the data are acquired at the $\Upsilon(4S)$ resonance (10.58 GeV), an excited quarkonium state of $b \bar{b}$, which mainly decays into an entangled couple of $B\bar{B}$ ($\sim 100\%$). The $\Upsilon(4S)$ mass is just 20 MeV above the $B\bar{B}$ threshold, then the mesons are produced nearly in the rest frame. Since the lifetime of neutral B-mesons is short ($\tau = 1.510$ ps) and they are produced with low velocities, their path before decaying is short, making tough to separate the decays of the two produced mesons. The explicit asymmetry of bunches results in a relativistic forward Lorentz boost of the center-of-mass, where the decay length of the mesons is longer in the LAB frame, allowing the observation of the produced B mesons. Due to the huge amount of produced B mesons, SuperKEKB is regarded as an example of so-called (super) \textbf{B-factory}. 
+The resulting center-of-mass energy $\sqrt{s}$ in the Interaction Point (IP) can be modulated, but most of the data are acquired at the $\Upsilon(4S)$ resonance (10.58 GeV), an excited quarkonium state of $b \bar{b}$, which mainly decays into an entangled couple of $B\bar{B}$ ($\sim 100\%$). The $\Upsilon(4S)$ mass is just 20 MeV above the $B\bar{B}$ threshold, then the mesons are produced nearly in the rest frame. Since the lifetime of neutral B-mesons is short ($\tau = 1.510$ ps) and they are produced with low velocities, their path before decaying is short, making tough to separate the decays of the two produced mesons. The explicit asymmetry of bunches results in a relativistic forward Lorentz boost of the center-of-mass, where the decay length of the mesons is longer in the LAB frame, allowing the observation of the produced B mesons. Due to the huge amount of produced B mesons, SuperKEKB is regarded as an example of so-called (super) \textbf{B-factory}. 
 $\\$
 SuperKEKB has been running since 2018 and it achieved the world’s highest instantaneous luminosity ($5.244 \times 10^{34} cm^{-2} s^{-1}$ ) in March 19, 2026. The design luminosity of SuperKEKB  $ 8 \times 10^{35} cm^{-2} s^{-1}$, 40 times higher than Belle's one, with the goal to accumulate data corresponding to an integrated luminosity of 50 $ab^{-1}$. The March 19, 2026 SuperKEKB 24-Hour Operation Summary is shown in Fig. ~\ref{fig:SuperKEKB 24-Hour Operation Summary}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{belleII_det/images/SuperKEKB_operation.png}
+    \includegraphics[width=0.9\textwidth]{belleII_det/images/SuperKEKB_operation.png}
 \caption{SuperKEKB operating parameters on March 18-19, 2026. From top to bottom: HER and LER ring currents (first two panels), instantaneous and integrated luminosity (bottom two panels).}
 \label{fig:SuperKEKB 24-Hour Operation Summary}
 \end{figure}
@@ -33,19 +33,19 @@ The detector is composed of several sub-detectors arranged cylindrically, reflec
 $\\$
 The Belle II detector consists of the following sub-detectors, arranged radially outward from the IP:
 \begin{enumerate}[label=(\alph*)]
-\item Beam Pipe made of Beryllium (Be),
-\item Two layers of silicon Pixel Detector (PXD),
-\item Four layers of double-sided silicon strip detector (SVD),
-\item The Central Drift Chamber for tracking the charged particle (CDC), 
-\item Time of Propagation (TOP) Cherenkov counter in the barrel  + Cherenkov ring imaging (ARICH) in the front end-cap region,
-\item The Electromagnetic Calorimeter (ECL) to detect photons and to identify charged particles, 
-\item The superconductive magnet which provides 1.5 T axial magnetic field in order to bend charged particle, 
+\item Beam Pipe made of Beryllium (Be);
+\item Two layers of silicon Pixel Detector (PXD);
+\item Four layers of double-sided silicon strip detector (SVD);
+\item The Central Drift Chamber for tracking the charged particle (CDC);
+\item Time of Propagation (TOP) Cherenkov counter in the barrel  + Cherenkov ring imaging (ARICH) in the front end-cap region;
+\item The Electromagnetic Calorimeter (ECL) to detect photons and to identify charged particles;
+\item The superconductive magnet which provides 1.5 T axial magnetic field in order to bend charged particle;
 \item The $K_L$ and Muon detector (KLM) to track muons and $K_L$. 
 \end{enumerate}
-
+$\\$
 The electromagnetic calorimeter (ECL) has a central role in this elaborate since neutral ECL clusters associated to anti-neutron candidates are studied.
 $\\$
-A Belle II scheme is shown in Fig. ~\ref{fig:belleii_artistic}.
+A Belle II scheme is shown in Fig.~\ref{fig:belleii_artistic}.
 
 \begin{figure}[H]
     \centering

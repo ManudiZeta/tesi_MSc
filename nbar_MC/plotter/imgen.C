@@ -217,8 +217,8 @@ void kin()
     TFile *myf_1 = nullptr;
     TFile *myf_2 = nullptr;
     
-    in_1 = "../../../../vpho_isr_ranked_kin.root";
-    in_2 = "../../../../vpho_nog_ranked_kin.root";
+    in_1 = "../../../../vpho_isr_ranked.root";
+    in_2 = "../../../../vpho_isr_ranked_kin.root";
     
     ifstream in_f1(in_1);
     ifstream in_f2(in_2);
@@ -241,8 +241,8 @@ void kin()
     
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
     
-    tree_1->Draw("vpho_r_pRecoil-nbar_mcP>>histo1(100,-0.2,0.2)","nbar_mcPDG == -2112","goff");
-    tree_2->Draw("vpho_r_pRecoil-nbar_mcP>>histo2(100,-0.2,0.2)","nbar_mcPDG == -2112","goff");
+    tree_1->Draw("vpho_r_pRecoilTheta-nbar_mcTheta>>histo1(100,-0.2,0.2)","nbar_mcPDG == -2112","goff");
+    tree_2->Draw("vpho_r_pRecoilTheta-nbar_mcTheta>>histo2(100,-0.2,0.2)","nbar_mcPDG == -2112","goff");
     
     delete c1;
     
@@ -276,10 +276,10 @@ void kin()
     histo1->SetLineColor(kBlue);
     histo2->SetLineColor(kRed);
     
-    histo1->SetXTitle("#Delta p [#frac{GeV}{c}]");
+    histo1->SetXTitle("#Delta #theta [rad]");
     histo1->SetYTitle("counts");
     
-    TString title = "p recoil - p #bar{n} MC ";
+    TString title = "Residual #Delta #theta (ISR) ";
     histo1->SetTitle(title);
     
     
@@ -287,8 +287,8 @@ void kin()
     cout<<"NEntries_2 = "<<histo2->GetEntries()<<endl;
     
     TLegend *leg = new TLegend(0.6,0.6,0.78,0.78);
-    leg->AddEntry(histo1,"ISR","l");
-    leg->AddEntry(histo2,"NO ISR","l");
+    leg->AddEntry(histo1,"NO KF","l");
+    leg->AddEntry(histo2,"KF","l");
     
     TCanvas *tela = new TCanvas("tela", "tela");
     
@@ -298,12 +298,12 @@ void kin()
     
     tela->Update();
     
-    tela->SaveAs("../images/kin_delta_p_mc.pdf");
+    tela->SaveAs("../images/kin_delta_theta_mc_isr.pdf");
         
 }
 
 
-void recoil_vs_n (TString file_1 = "../../../../vpho_nog_ranked.root")
+void recoil_vs_n (TString file_1 = "../../../../vpho_nog_ranked_nog.root")
 {
     gStyle->SetOptStat(0);
     //gStyle->SetOptStat(1110);

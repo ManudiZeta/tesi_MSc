@@ -1,0 +1,96 @@
+\setcounter{subsection}{0} 
+\part{Data - Monte Carlo comparison}
+This thesis concludes with a comparison of the obtained $\bar{n}$ candidates cluster variables against those obtained from data. The dataset is the latest available from Belle II data production, corresponding to an integrated luminosity of $358.27 fb^{-1}$. The same selections achieved in $q\bar{q}$ are applied, in both ISR and NO ISR cases. Since the goal is to assess Data/MC agreement for cluster variables from the analysis -rather than maximize signal selection efficiency- these variables are compared within the signal region [0.8, 1.2] GeV, without sideband subtraction.
+
+\subsection{Recoil mass in data (NO ISR case)}
+First, the recoil mass distribution in data is studied by analyzing the angular distributions of reconstructed protons. The resulting distribution (no ISR case) is shown in Fig.~\ref{fig:recM_nog_data_pre}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{nbar_DATA/images/recoil_mass_data_precut}
+    \caption{Recoil mass distribution in data, NO ISR case.}
+    \label{fig:recM_nog_data_pre}
+\end{figure}
+
+Unlike the Monte Carlo simulation, in data no signal peak is observed at the anti-neutron mass.A completely different behavior is observed, with a prominent structure at low recoil mass values, suggesting that some particles in the recoil system $p \pi^-$ are not properly reconstructed.
+$\\$
+Since the proton has the strictest selection criteria ($protonID > 90\%$), it is now investigated in detail. To properly select the signal in the recoil mass distribution, the 2D distribution $\cos(\theta)$ vs momentum for reconstructed protons is studied.Several background sources not included in the Monte Carlo $q\bar{q}$ cocktail could arise. The obtained distribution is shown in Fig.~\ref{fig:proton_costheta_p}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{nbar_DATA/images/proton_costheta_p}
+    \caption{2D $\cos(\theta)$ vs momentum distribution in data, NO ISR case.}
+    \label{fig:proton_costheta_p}
+\end{figure}
+
+Two structures are observed in the backward region ($cos(\theta) < -0.45$): one at proton momentum $p < 2$ GeV/c and one at $p \sim 3{-}4$ GeV/c. Furthermore, a strip structure is observed in the forward region ($cos(\theta) > 0.85$) across the full proton momentum range.
+$\\$
+Even if a strong selection on proton list has been performed, such as that on \emph{protonID}, insufficient coverage in the backward and deep forward regions prevents proper proton selection, allowing multiple background sources to arise. For example background sources like the following one:
+
+\begin{center}
+$e^+ e^- \rightarrow e^+ e^-$ \hspace{2cm} $e^+ e^- \rightarrow \pi^+ \pi^-$,
+\end{center}
+where the positive track could be misidentified as the reconstructed proton in the backward-forward regions. 
+$\\$
+Therefore, a further selection can be performed on reconstructed proton $cos(\theta)$ variable, such as that $-0.45<cos(\theta)<0.85$, in order to exclude the structures observed in Fig.~\ref{fig:proton_costheta_p}. The following recoil mass distribution is shown in Fig.~\ref{fig:recM_nog_data_post}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{nbar_DATA/images/recoil_mass_data_postcut}
+    \caption{Recoil mass distribution in data, NO ISR case. Cut $-0.45<cos(\theta)<0.85$ applied, on the reconstructed protons.}
+    \label{fig:recM_nog_data_post}
+\end{figure}
+A structure at the anti-neutron mass is now observed, confirming that the discussed structures caused incorrect reconstruction of the recoil system. 
+$\\$
+Therefore, the event selections adopted for the remaining data analysis are as follows:
+\begin{enumerate}
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
+\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
+\item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm and $-0.45<cos(\theta)<0.85$;
+\item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm; 
+\item $\alpha <0.10$ rad $\sim 5.73^\circ$;
+\item No further charged particles in the Rest of Event (ROE).
+\end{enumerate}
+
+\subsection{Data/MC agreement in NO ISR case}
+The discussed $\bar{n}$ candidates cluster variables obtained in $q\bar{q}$ can be compared to those obtained from data. In order to perform the Data/MC agreement, the \textbf{pull variable} is adopted. It is a standardized metric used in high-energy physics to quantify discrepancies between observed data and Monte Carlo simulations. For a histogram i-th bin, the pull is defined as:
+\begin{center}
+$pull_i = \frac{N_{i,data} - N_{i,MC}}{\sqrt{\sigma^2_{i,data} + \sigma^2_{i,MC}}}$,
+\end{center}
+where $N_{i,\mathrm{data}}$ and $N_{i,\mathrm{MC}}$ represent the number of entries in the $i$-th bin, and $\sigma^2_{i,\mathrm{data}}$ and $\sigma^2_{i,\mathrm{MC}}$ are the corresponding uncertainties. With this definition, the pull variable corresponds to the difference between data and MC counts, weighted by the propagated uncertainty. 
+
+The resulting distributions are shown in Fig.~\ref{fig:data_clus_vars}.
+ \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE1E9_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE9E21_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterLAT_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterSecondMoment_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterAbsZernikeMoment40_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterAbsZernikeMoment51_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterNHits_nog.pdf}
+   
+     \caption{Reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case. Data.}
+     \label{fig:data_clus_vars}
+\end{figure}
+
+
+\setcounter{subsection}{0} 
+\part{Conclusion}
+\subsection{Summary of Signal Channel Analysis}
+The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied, with both ISR and NO ISR emission. 
+$\\$
+$\\$
+The recoil system $p\pi^-(\gamma_{ISR})$ is correctly reconstructed by the analysis, as evidenced by the peak above the anti-neutron mass in the recoil mass distribution. Furthermore, the kinematic distributions ($p$ and $\theta$) of the recoil system are consistent with those of generator-level $\bar{n}$ candidates, in both ISR and NO ISR cases. At reconstructed level, good agreement is observed in the $\theta$ distribution, while the reconstructed $\bar{n}$ candidate momentum shows underestimation and poor resolution compared to the recoil system momentum, as observed in correlations and residuals distributions. Furthermore, a low-momentum value structure is observed in reconstructed and generated momentum of $\bar{n}$ candidates compared to the recoil system momentum.
+$\\$
+$\\$
+Therefore, energy loss occurs within ECL clusters, suggesting leakage processes such as cluster split-off and/or pre-showering effects. Ancestor studies reveal that photons related to $\bar{n}$ particles are often misidentified as main $\bar{n}$ candidates, accounting for the low-momentum structure observed. In fact, the ancestors momentum can be partially recovered when good Monte Carlo associations occur, showing good agreement with the recoil system momentum as well. A study of $\bar{n}$ production reveals that candidates with $\bar{n}$ ancestors are generated far from the IP, before the ECL (pre-showering) and within the ECL (cluster split-off).
+$\\$
+$\\$
+Furthermore, a one-constraint (1C) Kinematic Fit was tested, revealing improvements in the recoil kinematic variables resolution.
+$\\$
+$\\$
+Eventually, the reconstructed cluster variables associated with $\bar{n}$ candidates -such as cluster energy, lateral momentum, Zernike moments, etc.- were studied in the Monte Carlo signal sample. Similar structures to those observed in the momentum distributions were identified, particularly in the cluster energy and number of hits distributions. Therefore, ancestor studies confirm the momentum distribution observations: sub-clusters from secondary particles with $\bar{n}$ ancestry produce small-sized, low-energy structures in the cluster distributions.
+$\\$
+$\\$
+In particular, a cut on the cluster number of hits yields reconstructed cluster variables closer to those expected from Monte Carlo $\bar{n}$ candidate selection, in both ISR and NO ISR cases.
+

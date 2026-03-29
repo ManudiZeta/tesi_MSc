@@ -3,12 +3,20 @@
 \paragraph{The anti-neutron in physics:} the Chapter 1 describes the properties of the anti-neutron and its detection techniques in the high-energy physics (HEP) context. Its primary interactions -such as annihilation and hadronic shower production- are then exploited, discussing some hadronic models very quickly. The MANTRA (Measuring Anti-Neutron: Tagging and Reconstruction Algorithm) project is then described as a method to measure anti-neutron energies up to 10 GeV using an electromagnetic calorimeter.
 
 \paragraph{The Belle II experiment:} the Chapter 2 provides an overview of the SuperKEKB accelerator and Belle II detector. In the context of $\bar{n}$ studies, the Electromagnetic Calorimeter (ECL) plays a key role in hadron detection; a detailed discussion about the ECL is thus provided, covering the description of its inorganic crystals and the explanation of the clustering algorithm. The ECL performance are then discussed.
-$\\$
-Then the Belle II Analysis Software Framework (basf2) is introduced, providing an overview of its operation method and its role in the Monte Carlo simulation and reconstruction processes at Belle II experiment. Afterwards, the Topology Analysis (TopoAna) independent software is described.
 
-\paragraph{Study of the signal sample channel:} the Chapter 3 is devoted to the study of the kinematic variables of anti-neutrons $\bar{n}$, including momentum, angular distributions and related observables. The analysis follows a semi-exclusive approach over the selected channel $e^+ e^- \rightarrow p \pi^-  \bar{n}$, studying both cases with and without Initial State Radiation (ISR) reconstruction, where the recoil system is made of  $p  \pi^-  (\gamma_{ISR})$. Therefore, the recoil system variables are compared to those of the anti-neutrons candidates, studying the response of a Kinematic Fit as well. 
+
+\paragraph{The Belle II Analysis Software Framework:} the Chapter 3 introduces the the Belle II Analysis Software Framework (basf2), providing an overview of its operation method and its role in the Monte Carlo simulation and reconstruction processes at Belle II experiment. Then, the Topology Analysis (TopoAna) independent software is described, concluding with the introduction of the Belle II Grid.
+
+
+\paragraph{ECL characteristics and cluster variables:} the Chapter 4 provides a detailed description of the ECL clustering algorithm and analyzes ECL energy performance, followed by the definition of shower cluster variables.
+
+\paragraph{Study of the signal sample channel:} the Chapter 5 is devoted to the study of the kinematic variables of anti-neutrons $\bar{n}$, including momentum, angular distributions and related observables. The analysis follows a semi-exclusive approach over the selected channel $e^+ e^- \rightarrow p \pi^-  \bar{n}$, studying both cases with and without Initial State Radiation (ISR) reconstruction, where the recoil system is made of  $p  \pi^-  (\gamma_{ISR})$. Therefore, the recoil system variables are compared to those of the anti-neutrons candidates, studying the response of a Kinematic Fit as well. 
 $\\$
-Cluster split-off and pre-showering effects are investigated using studying anti-neutrons relatives chain. Several neutral cluster variables associated to anti-neutron candidates are then described and studied for both ISR and NO ISR cases, including the analysis of their relatives contributions.
+Cluster split-off and pre-showering effects are investigated studying anti-neutrons relatives chain. Several neutral cluster variables associated to anti-neutron candidates are then described and studied for both ISR and NO ISR cases, including the analysis of their relatives contributions.
+
+\paragraph{Study of the Monte Carlo cocktail production:} the Chapter 6 introduces the study of the channel of interest within the entire $q\bar{q}$ cocktail production. First, the possible Belle II processes are introduced, along with the typical cross sections that characterize them, and their contributions to the recoil mass distribution are discussed. Further selections from the previous analysis are then discussed, including a stricter selection on the reconstructed $\bar{n}$ direction based on a Performance Metric figure-of-merit study. Subsequently, the sideband method is applied to the reconstructed $\bar{n}$ cluster variables, evaluating the feasibility of subtracting the background contribution from the signal.
+
+\paragraph{Data - Monte Carlo comparison:} the Chapter 7 finalizes the analysis by performing a Data/MC agreement between the cluster variables obtained from the $q\bar{q}$ cocktail and those from real data.
 
 \newpage
 \setcounter{subsection}{0} 
@@ -44,7 +52,7 @@ The anti-neutron $\bar{n}$ plays a key role in several physics measurements, bot
 $\\$
 For example, the measurement of the neutron electromagnetic form factor in the time-like region is strongly affected by the performance of the $\bar{n}$ detection. The BESIII experiment has shown \cite{ablikim2021} an oscillating behaviour in the electromagnetic structure of the neutron in the study of the $e^+e^- \rightarrow n\bar{n}$ annihilation process, where the two neutral hadrons in the final state were reconstructed using the well-known two-body kinematics. Direct detection of the $\bar{n}$ would further refine this analysis by enabling a more proper identification of the final state.
 $\\$
-Another example, where an improved direct measurement of the $\bar{n}$ would significantly enhance the studies, is the analysis of hyperon decay channels at B-factories (and beyond). Some possible decay channels where the $\bar{n}$ is the only un-reconstructed particle in the final state are shown below:
+Another example, where an improved direct measurement of the $\bar{n}$ would significantly enhance the studies, is the analysis of hyperon decay channels at B-factories (and beyond). Some possible decay channels where the $\bar{n}$ is the only unreconstructed particle in the final state are shown below:
 
 	\begin{center}
 		$\bar{\Lambda}^0 \rightarrow \pi^0 + \bar{n}$, \hspace{1cm} $\bar{\Sigma}^- \rightarrow \pi^- + \bar{n}$, \hspace{1cm} $\bar{\Lambda}_c \rightarrow  K_s^0 + \pi^0 +\bar{n} $
@@ -55,7 +63,7 @@ $\\$
 A deeper knowledge on anti-neutrons kinematic and interaction would improve also Monte Carlo GEANT4 models of the hadronization process. GEANT4 is the main toolkit designed for simulating the passage of particles through matter \cite{geant4_cds}. It finds applications across high-energy, nuclear and accelerator physics, as well as in medical and space science research. 
 
 \subsubsection{Anti-neutron interactions in physics}
-Due to isospin symmetry, it was believed that anti-neutrons strong interaction with nucleons (\emph{N}) and matter would not provided much more informations than those obtained by anti-protons, for which obtaining proper beams was much easier.
+Due to isospin symmetry, it was believed that anti-neutrons strong interaction with nucleons (\emph{N}) and matter would not provide much more informations than those obtained by anti-protons, for which obtaining proper beams was much easier.
 $\\$
 The experimental landscape underwent a significant transformation in the mid-1980s with the development of dedicated anti-neutron beams, which enabled the observation of unique $\bar{n}$ characteristics, such as:
 
@@ -149,11 +157,11 @@ $b_1 = (0.8 + 0.1i)$ fm$^3$ and $R_1 = (0.2 - 0.4 i)$ fm for P-wave
 \end{center}
 
 \subsubsection{Electromagnetic and hadronic showers}
-In energy scenario beyond 10 MeV, Bremsstrahlung and pair production are the main processes which respectively involve photons and electrons/positrons, leading to the development of \textbf{electromagnetic showers} within the material. Therefore, to detect such phenomena, HEP experiments employ \textbf{electromagnetic calorimeters}. The electromagnetic calorimeter is a device whose size and density are designed to fully contain the electromagnetic shower, producing a signal proportional -or at least correlated- to the energy of the incident particle that initiated the shower. Since the radiation length $X_0$ determines the size of the electromagnetic shower, the typical longitudinal size for these detectors is of the order of 10-20 $X_0$ ($\sim 30-40$cm).
+In energy scenario beyond 10 MeV, Bremsstrahlung and pair production are the main processes which respectively involve electrons/positrons and photons, leading to the development of \textbf{electromagnetic showers} within the material. Therefore, to detect such phenomena, HEP experiments employ \textbf{electromagnetic calorimeters}. The electromagnetic calorimeter is a device whose size and density are designed to fully contain the electromagnetic shower, producing a signal proportional -or at least correlated- to the energy of the incident particle that initiated the shower. Since the radiation length $X_0$ determines the size of the electromagnetic shower, the typical longitudinal size for these detectors is of the order of 10-20 $X_0$ ($\sim 30-40$cm).
 $\\$
-Furthermore, \textbf{hadronic showers} can be originate from strong interactions of high energy (beyond $\sim GeV$) hadrons, such as protons, neutrons and pions, with the material, as well. To detect this kind of shower, an \textbf{hadronic calorimeter} may be employed; since the interaction length $\lambda$ determines the hadronic shower size and $\lambda >> X_0$, hadronic showers are larger and longer than electromagnetic ones, requiring hadronic calorimeters to be significantly bigger than electromagnetic calorimeters. Therefore, homogeneous calorimeters cannot be used for hadronic calorimetry as they are for electromagnetic calorimetry. Instead, the sampling calorimeter technique is mandatory, employing alternating layers of passive, dense absorber material and active detection material.
+Furthermore, \textbf{hadronic showers} can be originated from strong interactions of high energy (beyond $\sim GeV$) hadrons, such as protons, neutrons and pions, with the material. To detect this kind of shower, an \textbf{hadronic calorimeter} may be employed; since the interaction length $\lambda$ determines the hadronic shower size and $\lambda >> X_0$, hadronic showers are larger and longer than electromagnetic ones, requiring hadronic calorimeters to be significantly bigger than electromagnetic calorimeters. Therefore, homogeneous calorimeters cannot be used for hadronic calorimetry as they are for electromagnetic calorimetry. Instead, the sampling calorimeter technique is mandatory, employing alternating layers of passive, dense absorber material and active detection material.
 $\\$
-For example, approximately 95\% of a hadronic shower is contained within a cylinder of radius equal to the hadronic interaction length ($\lambda_{had} \simeq 44.1$ cm, in CsI(Tl)). In contrast, about 90\% of an electromagnetic shower is contained within a cylinder defined by the Molière radius ($R_M \simeq 3.6$ cm in CsI(Tl)). Therefore, there is an order of magnitude difference between the two values. A shape comparison between these two type of shower can be observed in ~\ref{fig:shower_comp}.
+For example, approximately 95\% of a hadronic shower is contained within a cylinder of radius equal to the hadronic interaction length ($\lambda_{had} \simeq 44.1$ cm, in CsI(Tl)). In contrast, about 90\% of an electromagnetic shower is contained within a cylinder defined by the Molière radius ($R_M \simeq 3.6$ cm in CsI(Tl)). Therefore, there is an order of magnitude difference between the two values. A shape comparison between these two type of shower can be observed in Fig.~\ref{fig:shower_comp}.
 
 \begin{figure}[H]
     \centering
@@ -167,7 +175,7 @@ The $\bar{n}$ primarily interacts via the strong nuclear force, annihilating wit
 		$\bar{n} + p/n \rightarrow \pi^{\pm}, \pi^0 ..$
 	\end{center}
 	
-The $\pi^0$ mesons mainly ($\sim 98.8 \%$) decays into a couple $\gamma \gamma$, producing electromagnetic showers that are fully contained in the calorimeter.
+The $\pi^0$ meson mainly ($\sim 98.8 \%$) decays into a couple $\gamma \gamma$, producing electromagnetic showers that are fully contained in the calorimeter.
 $\\$
 While charged pions $\pi^+$ and $\pi^-$ undergo both electromagnetic and hadronic interactions, producing final products that are not fully contained within the calorimeter volume, this leads to a lack in the energy deposited in the detector. Both forward and backward directions are then involved, according to the reaction kinematics.
 
@@ -176,9 +184,7 @@ It may be challenging for general-purpose experiments to directly identify and r
 $\\$
 Since anti-neutron kinematics have so far been measured via missing mass methods or isospin symmetry with anti-protons, a direct anti-neutron reconstruction would be highly  desirable, especially in studying processes with neutral hadrons, such as $B^+ \rightarrow K^+ n \bar{n}$ or $J/\Psi \rightarrow p \pi^- \bar{n}$.
 $\\$
-This thesis fits in the larger context of the \textbf{MANTRA} (Measuring Anti-Neutron: Tagging and Reconstruction Algorithm) PRIN2022 project, an inter-university (University of Turin, University of Ferrara and INFN) effort aimed at developing a method to improve the reconstruction of anti-neutron in existing high-energy physics experiments. It provides a general approach to measure the energy of \textbf{anti-neutrons} $\bar{n}$ up to 10~GeV using an electromagnetic calorimeter.
-$\\$
-The main idea is to combine the information from a high time-resolution time of flight detector (TOP and TOF in the Belle II and in the BESIII experiments, respectively) with that from an electromagnetic calorimeter (ECL and EMC in the Belle II and in the BESIII experiments, respectively), where the anti-neutrons annihilation occurs.
+This thesis fits in the larger context of the \textbf{MANTRA} (Measuring Anti-Neutron: Tagging and Reconstruction Algorithm) PRIN2022 project, an inter-university (University of Turin and University of Ferrara) and INFN effort aimed at developing a method to improve the reconstruction of anti-neutron in existing high-energy physics experiments. It provides a general approach to measure the energy of \textbf{anti-neutrons} $\bar{n}$ up to 10~GeV using an electromagnetic calorimeter. The main idea is to combine the information from a high time-resolution time of flight detector (TOP and TOF in the Belle II and in the BESIII experiments, respectively) with that from an electromagnetic calorimeter (ECL and EMC in the Belle II and in the BESIII experiments, respectively), where the anti-neutrons annihilation occurs.
 $\\$
 Due to its neutral charge and its immediate annihilation, tagging $\bar{n}$ can be very challenging. However, the annihilation can produce self-contained light mesons, mostly made of high-energy pions ($\pi^-, \pi^0, \pi^+$) and soft nuclear fragments. These can be detected in the Electromagnetic Calorimeter (detailed examination on next chapter), where charged pions can produce hadronic showers, while neutral pions immediately decay into two photons which produce electromagnetic showers in the calorimeter volume. The comparison of the cluster energy deposition patterns, the so called shower shapes variables, left in the ECL by anti-neutrons and other neutral particles, such as photons, can improve the characterization of neutral particles.
 $\\$

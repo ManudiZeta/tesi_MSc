@@ -14,8 +14,11 @@
 #include "TLatex.h"
 #include "TGraphErrors.h"
 
-static TString file_str_1= "../../../../160326_nog_uubar_chunk1234_tot.root";
-//static TString file_str_1= "180326_nog_qqbar_tot.root";
+TString caso = "isr";
+
+//static TString file_str_1= "../../../../160326_nog_uubar_chunk1234_tot.root";
+//static TString file_str= "../../../../180326_nog_qqbar.root";
+static TString file_str= "../../../../260326_isr_qqbar.root";
 
 void sidebands()
 {
@@ -27,8 +30,8 @@ void sidebands()
     double alpha_num = 0.10;
     TString alpha_str= "0.10";
     
-    TString signal = "(recoil_mass>=0.8 && recoil_mass<=1.2)";
-    TString sidebands = "((recoil_mass >=0.3 && recoil_mass<=0.7) || (recoil_mass>=1.3 && recoil_mass<=1.7))";
+    TString signal = "(recoil_mass>=0.8 && recoil_mass<=1.4)";
+    TString sidebands = "((recoil_mass >=0.2 && recoil_mass<=0.8) || (recoil_mass>=1.4 && recoil_mass<=2.0))";
     
     tree->Draw("recoil_mass>>mtot(100,0,2)","alpha<" + alpha_str,"goff");
     tree->Draw("recoil_mass>>msig(100,0,2)",signal +  "&& alpha<" + alpha_str,"goff");
@@ -43,14 +46,15 @@ void sidebands()
     msig->SetLineColor(kRed);
     mbkg->SetLineColor(kBlue);
     
-    mtot->GetXaxis()->SetTitle("recoil mass #frac{GeV}{c^{2}}");
+    mtot->GetXaxis()->SetTitle("recoil mass [#frac{GeV}{c^{2}}]");
     mtot->GetYaxis()->SetTitle("counts");
+    mtot->SetTitle("");
 
     
-    TLegend *leg = new TLegend(0.1,0.8,0.38,0.9);
+    TLegend *leg = new TLegend(0.1,0.7,0.38,0.9);
     leg->AddEntry(mtot,"all","l");
-    leg->AddEntry(msig,"signal region","l");
-    leg->AddEntry(mbkg,"sidebands","l");
+    leg->AddEntry(msig,"signal region [0.8, 1.4] GeV","l");
+    leg->AddEntry(mbkg,"sidebands [0.2, 0.8] U [1.4, 2.0] GeV","l");
     
     TCanvas *canv = new TCanvas("tela", "tela");
     
@@ -59,11 +63,95 @@ void sidebands()
     mbkg->DrawCopy("SAME");
     leg->Draw("SAME");
     
-    TString title_out = "recoil_mass_"+ alpha_str + ".pdf";
+    TString title_out = "../images/recoil_mass_sidebands_" + caso + ".pdf";
     canv->SaveAs(title_out);
     
     TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
-    TString lim [8] = {"(100,0,3)","(256,0,1)","(512,0,80)","(512,0,40)","(256,0,1)","(256,0,1)","(256,0,1.2)","(256,0,1.7)"};
+    TString lim [8] = {"(100,0,3)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
+    TString um [8] = {" [GeV]","","","","","","",""};
+
+    
+    for(int i = 0; i<8; i++)
+    {
+        TCanvas *c1 = new TCanvas("c1", "c1",800,600);
+        
+        tree->Draw("nbar_" + var[i] + ">>h1" + lim[i],signal + " && alpha<" + alpha_str ,"goff");
+        tree->Draw("nbar_" + var[i] + ">>h2" + lim[i],sidebands + " && alpha<" + alpha_str,"goff");
+        
+        
+        TH1 *h1 = (TH1*)gDirectory->Get("h1");
+        TH1 *h2 = (TH1*)gDirectory->Get("h2");
+        h2->Scale(0.5);
+        cout<<"h1 entries: "<<h1->GetEntries()<<endl;
+        cout<<"h2 entries: "<<h2->GetEntries()<<endl;
+        
+        delete c1;
+        
+        //h1->Add(h2, -1.0);
+        h1->SetLineColor(kBlue);
+        h2->SetLineColor(kRed);
+        h1->SetLineWidth(2);
+        h2->SetLineWidth(2);
+        
+        //f->SetLineColor(kRed);
+        
+        h1->GetXaxis()->SetTitle(var[i] + um[i]);
+        h1->GetYaxis()->SetTitle("counts");
+        h1->SetTitle("");
+        
+
+        
+        TLegend *leg;
+        
+        if (var[i] == "clusterSecondMoment" ||var[i] ==  "clusterAbsZernikeMoment51" ||var[i] ==  "clusterNHits")
+        {
+            leg = new TLegend(0.65, 0.75, 0.90, 0.90);
+        }
+        else
+        {
+            leg = new TLegend (0.10, 0.75, 0.35, 0.90);
+        }
+        
+        leg->AddEntry(msig,"[0.8, 1.4] GeV","l");
+        leg->AddEntry(mbkg,"[0.2, 0.8] U [1.4, 2.0] GeV","l");
+        leg->SetTextSize(0.025);
+        
+        
+        TCanvas *tela = new TCanvas("tela", "tela");
+        
+        h1->SetMinimum(0);
+        h1->DrawCopy("HISTO");
+        h2->DrawCopy("HISTO SAME");
+        //f->Draw("SAME");
+        leg->Draw("SAME");
+        
+        TString title_out = "../images/sidebands_" + var[i] + "_" + caso + ".pdf";
+        tela->SaveAs(title_out);
+        
+        delete tela;
+        delete h1;
+        delete h2;
+        
+        
+    }
+    
+}
+
+void sidebands_subtracted()
+{
+    
+    gStyle->SetOptStat(0);
+    TFile *myf_1 = new TFile(file_str);
+    TTree *tree = (TTree*)myf_1->Get("tree");
+    
+    double alpha_num = 0.10;
+    TString alpha_str= "0.10";
+    
+    TString signal = "(recoil_mass>=0.8 && recoil_mass<=1.2)";
+    TString sidebands = "((recoil_mass >=0.3 && recoil_mass<=0.7) || (recoil_mass>=1.3 && recoil_mass<=1.7))";
+    
+    TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
+    TString lim [8] = {"(100,0,3)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
     TString um [8] = {" [GeV]","","","","","","",""};
 
     
@@ -85,30 +173,22 @@ void sidebands()
         
         h1->Add(h2, -1.0);
         h1->SetLineColor(kGreen);
-        //h2->SetLineColor(kRed);
+        h1->SetLineWidth(2);
+        
+        
         //f->SetLineColor(kRed);
         
         h1->GetXaxis()->SetTitle(var[i] + um[i]);
         h1->GetYaxis()->SetTitle("counts");
-        
-        
-        TString title = "cut alpha < " + alpha_str;
-        h1->SetTitle(title);
-        
-        TLegend *leg = new TLegend(0.1,0.8,0.38,0.9);
-        leg->AddEntry(h1,"Central - sidebands","l");
-        //leg->AddEntry(h2,"(0-0.8) U (1.2-2) GeV","l");
-        
-        
+        h1->SetTitle("");
+                
         TCanvas *tela = new TCanvas("tela", "tela");
         
         h1->SetMinimum(0);
         h1->DrawCopy("HISTO");
-        //h2->DrawCopy("HISTO SAME");
         //f->Draw("SAME");
-        leg->Draw("SAME");
-        
-        TString title_out = "sidebands_" + var[i] + "_" + alpha_str + "_subtract.pdf";
+
+        TString title_out = "../images/final_" + var[i] + "_" + caso + ".pdf";
         tela->SaveAs(title_out);
         
         delete tela;
@@ -119,6 +199,7 @@ void sidebands()
     }
     
 }
+
 
 void recoil_mass()
 {
@@ -468,6 +549,47 @@ void roc()
     double auc = gr->Integral();
     cout<<"AUC: "<<auc;
     
+    
+}
+
+void pure_cluster()
+{
+    gStyle->SetOptStat(0);
+    TFile *myf_1 = new TFile(file_str);
+    TTree *tree_1 = (TTree*)myf_1->Get("tree");
+                
+    TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
+    TString lim [8] = {"(100,0,3)","(128,0,1)","(80,-0.5,79.5)","(512,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
+    TString um [8] = {" [GeV]","","","","","","",""};
+    
+    for(int i = 0; i<8; i++)
+    {
+        TCanvas *c1 = new TCanvas("c1", "c1",800,600);
+        
+        tree_1->Draw("nbar_" + var[i] + ">>hdata" + lim[i]);
+    
+        TH1 *hdata = (TH1*)gDirectory->Get("hdata");
+        
+        delete c1;
+    
+        hdata->SetLineColor(kBlue);
+    
+        hdata->GetXaxis()->SetTitle(var[i] + um[i]);
+        hdata->GetYaxis()->SetTitle("counts");
+        hdata->SetTitle("");
+     
+        TCanvas *tela = new TCanvas("tela", "tela");
+        
+        hdata->DrawCopy("HISTO");
+        
+        TString title_out = "../images/" + var[i] + "_" + caso + "_qqbar.pdf";
+        tela->SaveAs(title_out);
+        
+        delete tela;
+        delete hdata;
+    
+    }
+     
     
 }
 

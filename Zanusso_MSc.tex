@@ -18,11 +18,11 @@
 
 \pagestyle{fancy}
 \fancyhead[RO]{}
-\fancyhead[LO]{\scriptsize  {Hadronic Shower Characterization in the Belle II Electromagnetic Calorimeter - Emanuele Zanusso}}
+\fancyhead[LO]{{\fontsize{6pt}{7pt}\selectfont Characterization of Hadronic Shower in the Belle II Electromagnetic Calorimeter -- Emanuele Zanusso}}
 
-\title{\textbf {Hadronic Shower Characterization in the Belle II Electromagnetic Calorimeter}}
+\title{\textbf {Characterization of Hadronic Shower in the Belle II Electromagnetic Calorimeter}}
 \author{\textbf{Emanuele Zanusso} \\  \\ Dipartimento di Fisica di Torino \\ Master of Science in Physics Thesis \\ \\ Supervisor: Professor Stefano Spataro }
-\date{April 2026}
+\date{April 14, 2026}
 \renewcommand*\contentsname{Index}
 \renewcommand{\thepart}{\arabic{part}}     % Numerazione araba: 1, non I
 \renewcommand{\partname}{Chapter}          % "Chapter" invece di "Part"
@@ -51,12 +51,42 @@
 
 \thispagestyle{empty}
 \begin{abstract}
-% INSERISCI TESTO ABSTRACT (200-300 parole)
+The reconstruction of neutral hadrons and the measurement of their associated quantities represent one of the most complex challenges in HEP experiments. This is particularly true for experiments lacking a dedicated hadronic calorimeter, which must rely solely on the electromagnetic calorimeter for neutral hadron detection, as is the case in Belle II. Anti-neutrons with GeV-scale energies favor annihilation processes in matter, producing multiple final-state particles that escape the detector volume. Since anti-neutrons are copiously produced in contemporary physics processes -from hyperon decays to cosmological dark matter studies- their accurate reconstruction would enable a more complete analysis of diverse fundamental processes. The PRIN2022 MANTRA project develops an algorithm for direct anti-neutron energy measurement up to 10\,GeV, thereby improving their identification. This approach requires detailed integration of information from surrounding detectors, overcoming limitations imposed by the lack of a hadronic calorimeter.$\\$
+Furthermore, the GEANT4 physical models simulation of anti-neutron hadronic interactions -and especially the annihilation process- rely on isospin symmetry with anti-protons. This may potentially introduce discrepancies between Monte Carlo simulations and experimental reality.
+$\\$
+$\\$
+This thesis, developed within the PRIN2022 MANTRA project, presents a study on the accuracy of Belle II software simulation of anti-neutron hadronic interactions. To this end, the channel $e^+ e^- \to p \pi^- \bar{n}$ is analyzed, measuring anti-neutron associated quantities through its calorimeter clusters. The anti-neutron is identified via a semi-exclusive technique based on the recoil mass of the other particles, with or without Initial State Radiation.
+$\\$
+The first part analysis on a pure signal Monte Carlo production demonstrates that recoil mass correctly reconstructs anti-neutron kinematics. However, its momentum is not properly reconstructed from ECL clusters, mainly due to fragmentation of the primary annihilation cluster. This also affects shower shape variables, which exhibit structures typical of electromagnetic showers.
+$\\$
+Then, the full $q\bar{q}$ cocktail Monte Carlo production, corresponding to an integrated luminosity of $1429.23 fb^{-1}$ of data, is analyzed. Using a performance metrics based approach, a more stringent selection on reconstructed anti-neutrons is obtained via the figure of merit $\frac{S}{\sqrt{S+B}}$. Additionally, the sidebands technique on recoil mass extracts shower shape variables in the signal region, subtracting residual background due to other $q\bar{q}$ channels.
+$\\$
+Finally, Data/MC agreement studies are performed on $\bar{n}$ candidate cluster variables.
+
+
 \end{abstract}
+
 \clearpage
+\
+\thispagestyle{empty}
+\clearpage
+%Abstract
+\clearpage
+
 \thispagestyle{empty}
 \begin{abstract}
-% INSERISCI TESTO ABSTRACT (200-300 parole)
+La ricostruzione degli adroni neutri e la misurazione delle relative grandezze rappresentano una delle sfide più complesse negli esperimenti di fisica delle alte energie. Questo è particolarmente vero per esperimenti sprovvisti di calorimetro adronico dedicato, che sfruttano il calorimetro elettromagnetico come unico strumento per rilevare determinati adroni neutri, come nel caso di Belle II. Gli anti-neutroni con energia dell'ordine del GeV prediligono processi di annichilazione nella materia, producendo particelle multiple nello stato finale che sfuggono al volume del rivelatore. Poiché l'anti-neutrone è prodotto in numerosi processi della fisica contemporanea -dai decadimenti degli iperoni allo studio della materia oscura su scala cosmologica- una sua ricostruzione accurata consentirebbe l'analisi completa di diversi processi fondamentali. Il progetto PRIN2022 MANTRA sviluppa un algoritmo per misurare direttamente l'energia degli anti-neutroni fino a 10 GeV, migliorandone l'identificazione. Tale approccio richiede l'integrazione dettagliata delle informazioni dai rivelatori circostanti il calorimetro elettromagnetico, superando le limitazioni dovute all'assenza di un calorimetro adronico.
+$\\$
+Inoltre, i modelli fisici alla base della simulazione GEANT4 dell'interazione adronica degli anti-neutroni, e soprattutto del processo di annichilazione, si basano sulla simmetria di isospin con gli anti-protoni. Questo potrebbe potenzialmente comportare una discrepanza tra i modelli utilizzati dalle simulazioni Monte Carlo e la realtà.
+$\\$
+$\\$
+Questa tesi, che si inserisce all'interno del progetto PRIN2022 MANTRA, presenta uno studio sulla correttezza della simulazione dell'interazione adronica degli anti-neutroni da parte del software di Belle II. A tal fine, si studia il canale $e^+ e^- \to p \pi^- \bar{n}$, misurando le grandezze associate all'anti-neutrone tramite i cluster da esso prodotti nel calorimetro. L'anti-neutrone viene identificato con una tecnica semi-esclusiva basata sul recoil mass delle altre particelle, considerando o meno l'emissione di Initial State Radiation.
+$\\$
+La prima parte di analisi svolta su una produzione Monte Carlo di solo segnale dimostra come il recoil descriva propriamente la cinematica dell'anti-neutrone, evidenziando, tuttavia, come il momento di quest'ultimo non sia correttamente ricostruito a partire dalla misura ottenuta dal calorimetro, principalmente a causa dalla frammentazione del cluster primario prodotto dall'annichilazione dell'anti-neutrone. Questo si riversa anche sulle grandezze di sciame ricostruite, che presentano diverse strutture tipiche degli sciami elettromagnetici.
+$\\$
+Dopodiché si studia l'intera produzione Monte Carlo del cocktail $q\bar{q}$, corrispondente a una luminosità di $1429.23 fb^{-1}$. Utilizzando delle metriche di performance, si decreta un selezione più stringente sull'anti-neutrone ricostruito, basato sull'ottimizzazione della figura di merito $\frac{S}{\sqrt{S + B}}$. Inoltre, viene impiegata la tecnica delle sidebands sulla recoil mass, per ottenere le grandezze di sciame relative alla regione di segnale, annullando in buona misura il contributo residuo  proveniente del background prodotto dagli altri canali in $q\bar{q}$.
+$\\$
+Si conclude svolgendo un confronto dati e Monte Carlo per quanto riguarda le variabili di sciami ricostruite per i candidati anti-neutroni.
 \end{abstract}
 \clearpage
 
@@ -80,6 +110,8 @@
 \input{nbar_MC/nbar_MC_eng.tex}
 \clearpage
 \input{nbar_cocktail/nbar_cocktail_eng.tex}
+\clearpage
+\input{nbar_data/nbar_data_eng.tex}
 \clearpage
 
 
