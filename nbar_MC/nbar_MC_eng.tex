@@ -1,21 +1,18 @@
 \setcounter{subsection}{0} 
 \part{Study of the Monte Carlo signal channel}
  
-The first part of the present work aims to characterize the kinematics of the $\bar{n}$, using a Monte Carlo signal sample generated specifically for the selected reference channel:  
+The first part of the present work aims to characterize the kinematics of the $\bar{n}$, using a Monte Carlo signal sample generated specifically for the selected reference channels:  
 
 \begin{center}
 $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} \  (+ \ \gamma_{\rm ISR})$
 \end{center}
 
-This is selected because it features simple kinematics, with the $\bar{n}$ as the only missing particle, enabling a semi-exclusive analysis. 
-$\\$
-The Feynman diagram for this process, without and with ISR emission, is shown in Fig.~\ref{fig:diag_F}.
-
+This is selected because it features simple kinematics, with the $\bar{n}$ as the only missing particle, enabling a semi-exclusive analysis. The ISR gamma is a pre-interaction radiation emitted by the $e^+$ and/or $e^-$. The recoil system is made of $p \pi^- (\gamma_{ISR})$. The Feynman diagrams for these processes, without and with ISR emission, are shown in Fig.~\ref{fig:diag_F}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_MC/images/channel_art}
-    \caption{Feynman Diagram of the channel of interest. The ISR gamma is a pre-interaction radiation emitted by the $e^+$ and/or $e^-$. The recoil system is made of $p \pi^- (\gamma_{ISR})$.}
+    \caption{Feynman Diagrams of the channels of interest.}
     \label{fig:diag_F}
 \end{figure}
 
@@ -23,9 +20,9 @@ In particular, the kinematic relation between the $\bar{n}$ and the recoil syste
 $\\$
 Then, the effect of a one constraint (1C) kinematic fit over the recoil mass will be discussed, in order to obtain a higher recoil momentum resolution.
 $\\$
-In total, 100000 events are generated and to perform the event generation and the analysis,  \textbf{basf2} is employed. Script code highlights for this section are shown in Appendix~\hyperref[app:A]{\ref*{app:A}}, where the decay file, MC generation file, and steering file are explained in detail.
+In total, 100000 events are generated and to perform the event generation and the analysis, basf2 is employed. Script code highlights for this section are shown in Appendix.
 $\\$
-The basf2 \textbf{Phokhara\_evtgen\_combination} generator has been adopted. It is made of two generators: \textbf{Phokhara} and \textbf{EvtGen}.
+The basf2 Phokhara\_evtgen\_combination generator has been adopted. It is made of two generators: Phokhara and EvtGen.
 $\\$
 Phokhara is a Monte Carlo event generator that simulates $e^+e^-$ annihilation into hadrons at next-to-leading order (NLO) accuracy. This includes virtual and soft photon corrections to single-photon events, plus double hard photon emission. 
 $\\$
@@ -36,10 +33,10 @@ Therefore, these two generators have been adopted as depicted in Fig.~\ref{fig:d
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_MC/images/channel_art_colors}
-    \caption{Feynman diagram of the channel of interest. \textit{Phokhara} handles the initial hard photon emission (red), while \textit{EvtGen} simulates the decay to final-state particles (blue).}
+    \caption{Feynman diagrams of the channels of interest. \textit{Phokhara} handles the initial hard photon emission (red), while \textit{EvtGen} simulates the decay to final-state particles (blue).}
     \label{fig:diag_F_colors}
 \end{figure}
-Importantly, the Phokhara\_evtgen\_combination generator produces both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}.
+The Phokhara\_evtgen\_combination generator produces both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}.
 $\\$
 A $vpho$ (virtual photon) is now introduced as a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (evt\_gen) the selected decay channel, approaching the following scheme:
 
@@ -55,16 +52,16 @@ $vpho \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ (EvtGen generator)
 
 
 \subsection{Kinematic variables comparison}
-Two scenarios can be studied. If the reconstructed final state particles are a proton ($p$), a negative pion ($\pi^-$) and an anti-neutron ($\bar{n}$), it is referred to as the \textbf{NO ISR case}. If the ISR photon ($\gamma_\text{ISR}$) is also reconstructed, it is referred to as the \textbf{ISR case}. Therefore, in the NO ISR case, the recoil system is defined as the $p\pi^-$ system, while in the ISR case it is defined as the $p\pi^-\gamma_\text{ISR}$ system. 
+Two scenarios can be studied. If the reconstructed final state particles are a proton ($p$), a negative pion ($\pi^-$) and an anti-neutron ($\bar{n}$), it is referred to as the NO ISR case. If the ISR photon ($\gamma_\text{ISR}$) is also reconstructed, it is referred to as the ISR case. Therefore, in the NO ISR case, the recoil system is defined as the $p\pi^-$ system, while in the ISR case it is defined as the $p\pi^-\gamma_\text{ISR}$ system. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_MC/images/topoana_100k}
-    \caption{Topology Analysis (TopoAna) output of the generated 100k events. The fourth column is the unambiguous decay tree index associated to the correspondent channel, the fifth the number of entries per channel, and the last the cumulative number of entries.}
+    \caption{Topology Analysis (TopoAna) output of the generated 100k events. iDcyTr is the unambiguous decay tree index associated to the correspondent channel, nEtr is the number of entries per channel and nCEtr is the cumulative number of entries.}
     \label{fig:topo_signal0}
 \end{figure}
 
-As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$. In parallel, the neutral $\bar{n}$ cluster candidate is reconstructed and its properties are compared to those from the recoil, comparing different kinematic variables. Through the recoil analysis, the antineutron can be identified as the missing particle in the final state.
+As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$. In parallel, the neutral $\bar{n}$ cluster candidate is reconstructed and its properties are compared to those from the recoil, using different kinematic variables. Through the recoil analysis, the antineutron can be identified as the missing particle in the final state.
 $\\$
 The first three contributes in Fig.~\ref{fig:topo_signal0} shows that events without ISR emission are the most frequently generated ($\sim 35\%$), followed by those with two ($\gamma^I\gamma^I$) ($\sim 23\%$) and one ($\gamma^I$) ISR photon ($\sim 19\%$). 
 $\\$
@@ -78,7 +75,7 @@ Therefore, the energy E and $\theta$ distributions of ISR radiation are shown if
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_energy.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/ISR_theta.pdf}
-    \caption{(a) ISR energy distribution. (b) ISR $\theta$ distribution. Both distributions are shown on a logarithmic $y$-axis scale.}
+    \caption{(left) ISR energy distribution. (right) ISR $\theta$ distribution. Both distributions are shown on a logarithmic $y$-axis scale.}
     \label{fig:isr_distro}
 \end{figure}
 
@@ -92,8 +89,7 @@ The 2D energy E and $\theta$ distribution of ISR radiation are shown if Fig.~\re
 
 In the ISR energy distribution, two peaks are observed slightly below 4 GeV and 7 GeV, corresponding to the energies of the $e^+$ and $e^-$ beams, respectively. The angular distribution present a U-shape, indicating that forward and backward directions are the most probable. 
 $\\$
-Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher the energy of the ISR radiation, the closer $|cos(\theta)|$ is to 1, indicating that high-energy $\gamma_{ISR}$ photons are emitted preferentially in the forward and backward directions. In fact, peaks are observed at $\sim 7$\,GeV for $\theta \sim 0$ rad ($e^-$ beam direction) 
-and at $\sim 4$\,GeV for $\theta \sim \pi$ rad ($e^+$ beam direction).
+Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher the energy of the ISR radiation, the closer $|cos(\theta)|$ is to 1, indicating that high-energy $\gamma_{ISR}$ photons are emitted preferentially in the forward and backward directions. In fact, peaks are observed at $\sim 7$\,GeV for $cos(\theta) \sim 1$ rad ($e^-$ beam direction) and at $\sim 4$\,GeV for $cos(\theta) \sim -1$ rad ($e^+$ beam direction).
 
 \subsubsection{Event selections}
 In the ISR case, the final state $p\pi^-\bar{n}\gamma_\text{ISR}$ is reconstructed; the recoil of $p\pi^-\gamma_{ISR}$ is then built. In the NO ISR case, the final state $p\pi^-\bar{n}$ is reconstructed; the recoil of $p\pi^-$ is then built. Therefore, the $\bar{n}$ can be identified through the recoil mass peak at the anti-neutron mass. 
@@ -121,7 +117,7 @@ where $L_p$ is the likelihood for the proton hypothesis, $L_{\pi}$ is the likeli
 $\\$
 The cuts on $dr$ and $|dz|$ select only tracks originating from the interaction point (IP) area, where $dr$ is defined as the transverse distance with respect to IP and $dz$ is defined as the axial distance, along the z-axis, with respect to IP.
 $\\$
-Since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 \textbf{rankByLowest} method. It allows to select only the highest rank candidates, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
+Since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 rankByLowest method. It allows to select only the highest rank candidates, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
 $\\$
 Using spherical coordinate system, after some algebraic steps, the 3D angle $\alpha$ between the two vectors can be obtained:
 
@@ -129,7 +125,7 @@ Using spherical coordinate system, after some algebraic steps, the 3D angle $\al
 $\alpha = arcos[sin(\theta_1)sin(\theta_2)cos(\phi_1 - \phi_2) + cos(\theta_1)cos(\theta_2) ]$
 \end{center}
 
-Here vector \textbf{1} denotes the recoil vector and the vector \textbf{2} denotes the $\bar{n}$ direction vector. The respective $\alpha$ distributions, before and after the aforementioned selection, are shown in Fig.~\ref{fig:alpha_pre_post}, in both ISR and NO ISR cases:
+Here vector 1 denotes the recoil vector and the vector 2 denotes the $\bar{n}$ direction vector. The respective $\alpha$ distributions, before and after the aforementioned selection, are shown in Fig.~\ref{fig:alpha_pre_post}, in both ISR and NO ISR cases:
 
 \begin{figure}[H]
     \centering
@@ -181,7 +177,7 @@ By selecting events around the peak, $\bar{n}$ candidates events can be identifi
 \subsubsection{The recoil kinematic}
 Before analyzing the recoil kinematic distribution, the reconstructed momentum and $cos(\theta)$ distributions of each particle composing the recoil system is examined. For particles with MC association, the MC variables can be studied for a given list of candidates as well. 
 $\\$
-For example, considering the proton candidate list, both the \textbf{reconstructed} momentum and the Monte Carlo (\textbf{generated}) momentum of the proton list -which is not affected by the reconstruction process- are available. The latter will be referred to as the "generated" momentum.
+For example, considering the proton candidate list, both the reconstructed momentum and the Monte Carlo (generated) momentum of the proton list -which is not affected by the reconstruction process- are available. The latter will be referred to as the "generated" momentum.
 $\\$
 Since a candidate list is the result of the reconstruction process, it also contains particles that have been mis-identified as the main particle (for example, $\pi^+$ mis-identified as $p$ or $\gamma$ mis-identified as $\bar{n}$).
 $\\$
@@ -252,7 +248,7 @@ The $\bar{n}$ momentum distribution are shown in Fig.~\ref{fig:nbar_mom}.
 
 Notably, the reconstructed $\bar{n}$ momentum is systematically underestimated compared to the generator-level one, indicating missing energy within neutral clusters. This topic will be addressed in detail below through the momentum residual distributions.
 $\\$
-Both the reconstructed and the generator-level distributions exhibit two structures, indicating two contributions within $\bar{n}$ candidate neutral clusters. To investigate this, the reconstructed recoil momentum is compared with the generator-level momentum of all $\bar{n}$ candidates, using MC truth matching. Since the $\bar{n}$ PDG code is \textbf{-2112}, the neutral clusters associated to $\bar{n}$ list can be matched to \textbf{true} (truth = 1) $\bar{n}$ particles, using Monte Carlo PDG $= -2112$, or to \textbf{false} (truth = 0) candidates with Monte Carlo PDG $\ne -2112$. The obtained result is shown in ~\ref{fig:pRecoil_nmcP}.
+Both the reconstructed and the generator-level distributions exhibit two structures, indicating two contributions within $\bar{n}$ candidate neutral clusters. To investigate this, the reconstructed recoil momentum is compared with the generator-level momentum of all $\bar{n}$ candidates, using MC truth matching. Since the $\bar{n}$ PDG code is -2112, the neutral clusters associated to $\bar{n}$ list can be matched to true (truth = 1) $\bar{n}$ particles, using Monte Carlo PDG $= -2112$, or to false (truth = 0) candidates with Monte Carlo PDG $\ne -2112$. The obtained result is shown in ~\ref{fig:pRecoil_nmcP}.
 
 \begin{figure}[H]
     \centering
@@ -331,12 +327,12 @@ One of the secondary particles from $\bar{n}$ annihilation can be detected as th
 \subsubsection{The basf2 ancestor variables}
 Since $\bar{n}$ particles are selected along the recoil direction, there are ECL clusters in that direction that are not associated with $\bar{n}$ by MC matching. Their origin is studied, considering the possibility that $\bar{n}$ interacted with material. 
 $\\$
-In order to study the decay chain and kinship degree of the neutral cluster associated to $\bar{n}$ candidates detected in the ECL, the basf2 \textbf{ancestor} variables are used. These identify whether a given particle originates from the decay of another particle or a subsequent decay chain. The following ancestor variables are employed:
+In order to study the decay chain and kinship degree of the neutral cluster associated to $\bar{n}$ candidates detected in the ECL, the basf2 ancestor variables are used. These identify whether a given particle originates from the decay of another particle or a subsequent decay chain. The following ancestor variables are employed:
 
 \begin{itemize}
-\item \textbf{varForFirstMCAncestorOfType(type, variable)}: this metavariable returns the requested \textbf{variable} of the first ancestor of the given \textbf{type}  -a specific particle- found in a certain point of the chain
+\item varForFirstMCAncestorOfType(type, variable): this metavariable returns the requested variable of the first ancestor of the given type -a specific particle- found in a certain point of the chain
 
-\item \textbf{hasAncestor(PDG, abs)}: this metavariable returns a positive integer if an ancestor -a certain relatives in the chain- with the given \textbf{PDG} code is found, 0 otherwise. It means thats 1 = first mother, 2 = grandmother, etc. Second argument \textbf{abs} is optional: 1 means that the sign of the PDG code is taken into account, default is 0
+\item hasAncestor(PDG, abs): this metavariable returns a positive integer if an ancestor -a certain relatives in the chain- with the given PDG code is found, 0 otherwise. It means thats 1 = first mother, 2 = grandmother, etc. Second argument abs is optional: 1 means that the sign of the PDG code is taken into account, default is 0
 \end{itemize}
 
 A typical scenarios of $\bar{n}$ as ancestor could  be the following:
@@ -345,7 +341,7 @@ A typical scenarios of $\bar{n}$ as ancestor could  be the following:
 0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in ECL (pions produced) $\rightarrow$ 2) pions detected
 \end{center}
 
-The variables \textbf{varForFirstMCAncestorOfType(anti-n0, p)} and \textbf{hasAncestor(-2112, 1)} of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution is shown in Fig. ~\ref{fig:hasAncestor}.
+The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution is shown in Fig. ~\ref{fig:hasAncestor}.
 
  \begin{figure}[H]
     \centering
@@ -355,7 +351,7 @@ The variables \textbf{varForFirstMCAncestorOfType(anti-n0, p)} and \textbf{hasAn
 \end{figure}
 From the distribution in Fig. ~\ref{fig:hasAncestor}, it is evident that the majority of candidates do not have a neutron ancestor, lacking an $\bar{n}$ in their relative chain (has\_Ancestor=0), suggesting they are the primary $\bar{n}$ themselves. The second contribution is made of $\bar{n}$ candidates having $\bar{n}$ as mother etc. 
 $\\$
-In order to directly study the contribution of each term, the Monte Carlo truth is accessed via the corresponding \textbf{mc\_PDG}. This is the PDG code of the selected candidates as associated by the Monte Carlo. 
+In order to directly study the contribution of each term, the Monte Carlo truth is accessed via the corresponding mc\_PDG. This is the PDG code of the selected candidates as associated by the Monte Carlo. 
 $\\$
 Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncestor contribution. The obtained distributions are shown in Fig.~\ref{fig:mc_pdg_hasAncestor}.
 
@@ -371,13 +367,13 @@ Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncest
 \end{figure}
 
 \begin{itemize}
-\item \textbf{hasAncestor = 0} clearly shows that $\bar{n}$ candidates without an $\bar{n}$ as relatives are mainly true anti-neutrons, as their Monte Carlo PDG code is primarily -2112. This is expected since the anti-neutron comes from the IP and it is directly detected in the ECL through its own annihilation.
-\item \textbf{hasAncestor = 1}  shows that the $\bar{n}$ candidates with an $\bar{n}$ as mother are predominately gammas (Monte Carlo PDG = 22), suggesting they result from $\bar{n}$ interactions prior to $\bar{n}$ candidate  ECL cluster formation.
-\item \textbf{hasAncestor = 2} suggests that the $\bar{n}$ candidates with an $\bar{n}$ as grandmother are mainly gammas, with some spurious pions (-211 \& +211) and electrons or positrons (+11 \& -11). The case with hasAncestor = 3 yields analogous results.
+\item hasAncestor = 0 clearly shows that $\bar{n}$ candidates without an $\bar{n}$ as relatives are mainly true anti-neutrons, as their Monte Carlo PDG code is primarily -2112. This is expected since the anti-neutron comes from the IP and it is directly detected in the ECL through its own annihilation.
+\item hasAncestor = 1  shows that the $\bar{n}$ candidates with an $\bar{n}$ as mother are predominately gammas (Monte Carlo PDG = 22), suggesting they result from $\bar{n}$ interactions prior to $\bar{n}$ candidate  ECL cluster formation.
+\item hasAncestor = 2 suggests that the $\bar{n}$ candidates with an $\bar{n}$ as grandmother are mainly gammas, with some spurious pions (-211 \& +211) and electrons or positrons (+11 \& -11). The case with hasAncestor = 3 yields analogous results.
 \end{itemize}
 
 \subsubsection{Ancestor momentum}
-The figure Fig. ~\ref{fig:pRecoil_nmcP} can be updated, by including the momentum of the ancestors obtained with \textbf{varForFirstMCAncestorOfType(anti-n0, p)}. The idea is to check whether the information from the momentum of the ancestors is consistent with that obtained from the primary $\bar{n}$. The obtained distributions are shown in Fig.~\ref{fig:momentum_ancestors}.
+The figure Fig. ~\ref{fig:pRecoil_nmcP} can be updated, by including the momentum of the ancestors obtained with varForFirstMCAncestorOfType(anti-n0, p). The idea is to check whether the information from the momentum of the ancestors is consistent with that obtained from the primary $\bar{n}$. The obtained distributions are shown in Fig.~\ref{fig:momentum_ancestors}.
 
  \begin{figure}[H]
     \centering
@@ -412,7 +408,7 @@ This can be summarized using the meta-variable (mcErrors), which encodes as a bi
     \caption{Monte Carlo Error code. 0 corresponds to a perfectly reconstructed particle, while 512 corresponds to a non valid MC match.}
     \label{fig:mcErrors}
 \end{figure}
-where the first peak is on the code \textbf{0}, which means that "\emph{This particle and all its daughters are perfectly reconstructed}", while the second peak is on the code \textbf{512}, which confirms that "\emph{There was an error in MC matching. Not a valid match. Might indicate fake/background track or cluster}", as expected.
+where the first peak is on the code0, which means that "\emph{This particle and all its daughters are perfectly reconstructed}", while the second peak is on the code 512, which confirms that "\emph{There was an error in MC matching. Not a valid match. Might indicate fake/background track or cluster}", as expected.
 
 \subsubsection{$\bar{n}$ production vertex}
 To verify the $\bar{n}$ production position, the Monte Carlo production vertex of the $\bar{n}$ is studied. To address it, the radial production distance $\rho$ is introduced, defined as follows:
@@ -448,9 +444,9 @@ In the forward and backward regions, the two peaks located at the TOP edges disa
 
 
 \subsection{Kinematic Fit effects}
-A \textbf{Kinematic Fit} (KF) is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
+A Kinematic Fit (KF) is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
 $\\$
-A one constraint \textbf{1C Kinematic Fit} has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The comparison of the residual distributions with and without the kinematic fit is shown in Fig.~\ref{fig:kin_fit}.
+A one constraint 1C Kinematic Fit has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The comparison of the residual distributions with and without the kinematic fit is shown in Fig.~\ref{fig:kin_fit}.
 \begin{figure}[H]
     \centering
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc_nog.pdf}
@@ -469,7 +465,7 @@ $\\$
 Therefore, the kinematic fit, by constraining the recoil mass, refines the resolution of the recoil kinematic variables.
 
 \subsection{Shower shape variables in the signal sample}
-The following paragraph introduces the analysis of the \textbf{shower shape variables} of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
+The following paragraph introduces the analysis of the shower shape variables of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
 
 \subsubsection{Anti-neutrons ECL cluster variables}
 To isolate the contribution of neutral clusters correctly associated with $\bar{n}$ particles (selected using Monte Carlo PDG = $-2112$) from all $\bar{n}$ candidates, the two distributions are overlaid for each cluster variable.
