@@ -92,32 +92,35 @@ $\\$
 Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher the energy of the ISR radiation, the closer $|cos(\theta)|$ is to 1, indicating that high-energy $\gamma_{ISR}$ photons are emitted preferentially in the forward and backward directions. In fact, peaks are observed at $\sim 7$\,GeV for $cos(\theta) \sim 1$ rad ($e^-$ beam direction) and at $\sim 4$\,GeV for $cos(\theta) \sim -1$ rad ($e^+$ beam direction).
 
 \subsubsection{Event selections}
-In the ISR case, the final state $p\pi^-\bar{n}\gamma_\text{ISR}$ is reconstructed; the recoil of $p\pi^-\gamma_{ISR}$ is then built. In the NO ISR case, the final state $p\pi^-\bar{n}$ is reconstructed; the recoil of $p\pi^-$ is then built. Therefore, the $\bar{n}$ can be identified through the recoil mass peak at the anti-neutron mass. 
-$\\$
-To properly select the signal in the recoil mass distribution, several cuts are applied in the steering file as follows:
+The event is selected by identifying the $p$, $\pi^-$ (and $\gamma_{ISR}$ for ISR case) candidates in the final state and measuring their recoil (the recoil system). 
+Then the following selections are applied to $p$, $\pi^-$ and recoil system:
+\begin{itemize}
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
+\item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
+\item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm.
+\end{itemize}
 
-\begin{enumerate}
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance
-\item $\bar{n}$: neutral clusters from ECL
-\item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm 
-\item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm 
-\end{enumerate}
-
-The first one is a cut that selects the region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the antineutron mass ($\sim 939,56$ $MeV/c^2$), requiring that the recoil vector lies within the ECL acceptance.
+The first one is a cut that selects a quite broad region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the antineutron mass ($\sim 939,56$ $MeV/c^2$), requiring that the recoil direction lies within the ECL acceptance.
 $\\$
-To analyze only $\bar{n}$ signals from the calorimeter, the second selection requires that the neutral $\bar{n}$ cluster candidates are reconstructed within the electromagnetic calorimeter (ECL), avoiding the $\bar{n}$ candidates from other detectors (mainly from KLM).
-$\\$
-The third and fourth criteria are standard selections recommended by the basf2 framework. The ID requirement imposes a constraint on the protonID or pionID based on a maximum likelihood criterion as follows:
+The second and the third criteria are standard selections recommended by the basf2 framework. The ID requirement imposes a constraint on the protonID or pionID based on a maximum likelihood criterion as follows:
 \begin{center}
-$protonID = \frac{L_p}{L_e + L{\mu} + L{\pi} +L_K + L_d }$
+$protonID = \frac{L_p}{L_e + L{\mu} + L{\pi} +L_K + L_d }$;
 \hspace{0.3cm}
-$pionID = \frac{L_\pi}{L_e + L{\mu} + L{p} +L_K + L_d }$,
+$pionID = \frac{L_\pi}{L_e + L{\mu} + L{p} +L_K + L_d }$;
 \end{center}
 where $L_p$ is the likelihood for the proton hypothesis, $L_{\pi}$ is the likelihood for the pion hypothesis, and so on.
 $\\$
 The cuts on $dr$ and $|dz|$ select only tracks originating from the interaction point (IP) area, where $dr$ is defined as the transverse distance with respect to IP and $dz$ is defined as the axial distance, along the z-axis, with respect to IP.
 $\\$
-Since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 rankByLowest method. It allows to select only the highest rank candidates, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
+The $p$, $\pi^-$ (and $\gamma_{ISR}$) candidates can be identified through the recoil mass peak at the anti-neutron mass. 
+$\\$
+Parallel to the recoil system reconstruction, neutral ECL cluster $\bar{n}$ candidates are reconstructed. To analyze only $\bar{n}$ signals from the calorimeter, the following selection on $\bar{n}$ candidates is applied:
+\begin{itemize}
+\item $\bar{n}$: neutral candidates from the ECL;
+\end{itemize}
+this selection requires that the neutral $\bar{n}$ cluster candidates are reconstructed within the electromagnetic calorimeter (ECL), avoiding the $\bar{n}$ candidates from other detectors (mainly from KLM).
+$\\$
+Furthermore, since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the $\bar{n}$ candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 rankByLowest method. It allows to select only the highest rank candidate, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
 $\\$
 Using spherical coordinate system, after some algebraic steps, the 3D angle $\alpha$ between the two vectors can be obtained:
 
@@ -135,16 +138,15 @@ Here vector 1 denotes the recoil vector and the vector 2 denotes the $\bar{n}$ d
     \label{fig:alpha_pre_post}
 \end{figure}
 
-To select the most probable $\bar{n}$ candidates, only those with $\alpha < 0.35$ ($\sim 20^\circ$) are stored.
+To select the most probable $\bar{n}$ candidates, only those with $\alpha < 0.35$ ($\sim 20^\circ$) are stored. Therefore, the event is selected.
 $\\$
 The efficiency $\epsilon$  is defined as follows:
 \begin{center}
   $\epsilon = \frac{n^{\circ} \ of \ reconstructed \ candidates}{n^{\circ}  \ of \ generated \ events} $
 \end{center}
-
-Referring to Fig.~\ref{fig:topo_signal0}, 46969 events are generated without ISR emission ($iDcyTr \in {0,3,7,9,14,13}$) and 53031 with ISR emission ($iDcyTr \in {2,1,6,4,8,5,12,10,11,15,16}$) .
+Referring to Fig.~\ref{fig:topo_signal0}, 35291 events are generated without $\gamma$ emission ($iDcyTr \in {0}$)and 41706 with ISR emission ($iDcyTr = 1,2$; only the first two contributions are considered).
 $\\$
-Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 53\%$ and $38\%$ can be observed.
+Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 71\%$ and $48\%$ can be observed.
 Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is slightly lower than in the NO ISR case.
 
 \subsubsection{Recoil mass distribution}
