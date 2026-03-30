@@ -35,9 +35,21 @@ void dataMC_nosidebands()
     TTree *tree_2 = (TTree*)myf_2->Get("tree");
 
     TString meet_cut = "cos(p_theta) > -0.45 && cos(p_theta) < 0.85";
+    TString signal;
+    
+    if (caso == "isr")
+    {
+        signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.4)";
+    }
+    
+    if (caso == "nog")
+    {
+        signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.2)";
+    }
+      
     
     //TString fullcut  = meet_cut + signal;
-    TString fullcut = meet_cut;
+    TString fullcut = meet_cut + signal;
 
     TString var[8] = {
         "clusterE", "clusterLAT", "clusterNHits", "clusterSecondMoment",
@@ -621,7 +633,7 @@ void recoil_mass ()
     TFile *myf_1 = new TFile(datafile);
     TTree *tree_1 = (TTree*)myf_1->Get("tree");
     TString extra_cut = "cos(p_theta) > -0.45 && cos(p_theta) < 0.85 ";
-    
+    //TString extra_cut = "";
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
     tree_1->Draw("recoil_mass>>histo1(100,0,2)",extra_cut);
     
@@ -642,7 +654,7 @@ void recoil_mass ()
     
     histo1->DrawCopy("HIST");
     
-    TString title_out = "../images/recoil_mass_data_postcut.pdf";
+    TString title_out = "../images/recoil_mass_data_postcut" + caso + ".pdf";
     tela->SaveAs(title_out);
     
 }
@@ -657,7 +669,7 @@ void protons_distro ()
     TString extra_cut = "";
     
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
-    tree_1->Draw("p_p:cos(p_theta)>>histo1(300,-1,+1,300,0,7)","");
+    tree_1->Draw("p_p:cos(p_theta)>>histo1(500,-1,+1,500,0,7)","");
     
        
     
@@ -675,7 +687,7 @@ void protons_distro ()
     
     histo1->DrawCopy("HIST");
     
-    TString title_out = "../images/proton_costheta_p.pdf";
+    TString title_out = "../images/proton_costheta_p_isr.pdf";
     tela->SaveAs(title_out);
     
 }
