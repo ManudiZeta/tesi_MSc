@@ -66,9 +66,9 @@
 \contentsline {part}{7\hspace {1em}Data - Monte Carlo comparison}{100}{part.7}%
 \contentsline {subsection}{\numberline {7.1}Recoil mass in data (NO ISR case)}{100}{subsection.1.1}%
 \contentsline {subsection}{\numberline {7.2}Data/MC agreement in NO ISR case}{102}{subsection.1.2}%
-\contentsline {part}{8\hspace {1em}Conclusion}{102}{part.8}%
-\contentsline {subsection}{\numberline {8.1}Summary of Signal Channel Analysis}{103}{subsection.1.1}%
-\contentsline {part}{9\hspace {1em}Appendix}{105}{part.9}%
-\contentsline {section}{\numberline {A}Signal sample analysis scripts}{105}{appendix.A}%
-\contentsline {subsection}{\numberline {9.1}The decay file and the generation steering file}{105}{subsection.A.1}%
-\contentsline {section}{\numberline {B}Cluster variables in ISR case}{109}{appendix.B}%
+\contentsline {part}{8\hspace {1em}Conclusion}{107}{part.8}%
+\contentsline {subsection}{\numberline {8.1}Summary of Signal Channel Analysis}{107}{subsection.1.1}%
+\contentsline {part}{9\hspace {1em}Appendix}{108}{part.9}%
+\contentsline {section}{\numberline {A}Signal sample analysis scripts}{108}{appendix.A}%
+\contentsline {subsection}{\numberline {9.1}The decay file and the generation steering file}{108}{subsection.A.1}%
+\contentsline {section}{\numberline {B}Cluster variables in ISR case}{112}{appendix.B}%

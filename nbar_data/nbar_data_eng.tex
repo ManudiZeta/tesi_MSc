@@ -57,21 +57,69 @@ $pull_i = \frac{N_{i,data} - N_{i,MC}}{\sqrt{\sigma^2_{i,data} + \sigma^2_{i,MC}
 \end{center}
 where $N_{i,\mathrm{data}}$ and $N_{i,\mathrm{MC}}$ represent the number of entries in the $i$-th bin, and $\sigma^2_{i,\mathrm{data}}$ and $\sigma^2_{i,\mathrm{MC}}$ are the corresponding uncertainties. With this definition, the pull variable corresponds to the difference between data and MC counts, weighted by the propagated uncertainty. 
 
-The resulting distributions are shown in Fig.~\ref{fig:data_clus_vars}.
- \begin{figure}[h]
+The resulting distributions, without sidebands subtraction , are shown in Fig.~\ref{fig:dataMC_isr_nosid} (ISR case) and in Fig.~\ref{fig:dataMC_nog_nosid} (NO ISR case). Those with sidebands subtraction are shown in Fig.~\ref{fig:dataMC_isr_sid} (ISR case) and in Fig.~\ref{fig:dataMC_nog_sid} (NO ISR case).
+
+ \begin{figure}[H]
     \centering
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE1E9_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterE9E21_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterLAT_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterSecondMoment_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterAbsZernikeMoment40_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterAbsZernikeMoment51_nog.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/data_clusterNHits_nog.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull.pdf}
    
-     \caption{Reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case. Data.}
-     \label{fig:data_clus_vars}
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case.}
+     \label{fig:dataMC_isr_nosid}
 \end{figure}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_nog_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_nog_pull.pdf}
+   
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case.}
+     \label{fig:dataMC_nog_nosid}
+\end{figure}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull_subtracted.pdf}
+   
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case. Sidebands technique applied. Signal region: [0.8, 1.4] GeV; sidebands region: [0.2, 0.8] U [1.4, 2.0] GeV.}
+     \label{fig:dataMC_isr_sid}
+\end{figure}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_nog_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_nog_pull_subtracted.pdf}
+   
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case. Sidebands technique applied. Signal region: [0.8, 1.2] GeV; sidebands region: [0.3, 0.7] U [1.3, 1.7] GeV.}
+     \label{fig:dataMC_nog_sid}
+\end{figure}
+
+
 
 
 \setcounter{subsection}{0} 
