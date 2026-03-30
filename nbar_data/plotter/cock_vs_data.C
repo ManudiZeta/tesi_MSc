@@ -14,18 +14,18 @@
 #include "TLatex.h"
 #include "TGraphErrors.h"
 
-static TString caso = "nog";
+static TString caso = "isr";
 
-static TString datafile = "../../../../200326_nog_data.root";
-static TString cockfile = "../../../../180326_nog_qqbar.root";
+//static TString datafile = "../../../../200326_nog_data.root";
+//static TString cockfile = "../../../../180326_nog_qqbar.root";
 
-//static TString datafile = "../../../../260326_isr_data.root";
-//static TString cockfile = "../../../../260326_isr_qqbar.root";
+static TString datafile = "../../../../260326_isr_data.root";
+static TString cockfile = "../../../../260326_isr_qqbar.root";
 
 void dataMC_nosidebands()
 {
     gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(5);  // Barre errore più visibili [web:27]
+    gStyle->SetEndErrorSize(3);  // Barre errore più visibili [web:27]
     TH1::SetDefaultSumw2();      // Errori propagati automaticamente [web:20]
 
     TFile *myf_1 = new TFile(datafile);
@@ -35,7 +35,7 @@ void dataMC_nosidebands()
     TTree *tree_2 = (TTree*)myf_2->Get("tree");
 
     TString meet_cut = "cos(p_theta) > -0.45 && cos(p_theta) < 0.85";
-    TString signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.2)";
+    
     //TString fullcut  = meet_cut + signal;
     TString fullcut = meet_cut;
 
@@ -201,18 +201,31 @@ void dataMC_nosidebands()
 void dataMC_sidebands()
 {
     gStyle->SetOptStat(0);
-    gStyle->SetEndErrorSize(5);  // Barre errore più visibili [web:27]
-    TH1::SetDefaultSumw2();      // Errori propagati automaticamente [web:20]
+    gStyle->SetEndErrorSize(3);  // Barre errore più visibili
+    TH1::SetDefaultSumw2();      // Errori propagati automaticamente
 
     TFile *myf_1 = new TFile(datafile);
     TFile *myf_2 = new TFile(cockfile);
 
     TTree *tree_1 = (TTree*)myf_1->Get("tree");
     TTree *tree_2 = (TTree*)myf_2->Get("tree");
-
+    
     TString meet_cut = "cos(p_theta) > -0.45 && cos(p_theta) < 0.85";
-    TString signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.2)";
-    TString sidebands = "&& ((recoil_mass >=0.3 && recoil_mass<=0.7) || (recoil_mass>=1.3 && recoil_mass<=1.7))";
+    TString signal;
+    TString sidebands;
+    
+    if (caso == "isr")
+    {
+        signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.4)";
+        sidebands = "&& ((recoil_mass >=0.2 && recoil_mass<=0.8) || (recoil_mass>=1.4 && recoil_mass<=2.0))";
+    }
+    
+    if (caso == "nog")
+    {
+        signal   = "&& (recoil_mass>=0.8 && recoil_mass<=1.2)";
+        sidebands = "&& ((recoil_mass >=0.3 && recoil_mass<=0.7) || (recoil_mass>=1.3 && recoil_mass<=1.7))";
+    }
+        
     
     //TString fullcut  = meet_cut + signal;
     TString sig_cut = meet_cut + signal;
