@@ -10,7 +10,7 @@
 #include "TLine.h"
 #include "TPaveText.h"
 
-void una_grand (TString file_1 = "../../../../vpho_nog_ranked.root" , TString file_2 = "../../../../vpho_nog_ranked.root")
+void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString file_2 = "../../../../vpho_isr_ranked.root")
 {
     //gStyle->SetOptStat(0);
     gStyle->SetOptStat(0);
@@ -65,10 +65,10 @@ void una_grand (TString file_1 = "../../../../vpho_nog_ranked.root" , TString fi
     TString title_x = "p [#frac{GeV}{c}]";
     histo1->GetXaxis()->SetTitle(title_x);
     histo1->GetYaxis()->SetTitle("counts");
-    TString title = "NO ISR CASE";
+    TString title = "ISR CASE";
     histo1->SetTitle(title);
     
-    TLegend *leg = new TLegend(0.3,0.7,0.48,0.88);
+    TLegend *leg = new TLegend(0.3,0.6,0.6,0.88);
     leg->AddEntry(histo1,"From generator","l");
     leg->AddEntry(histo2,"From reconstruction","l");
     
@@ -78,7 +78,7 @@ void una_grand (TString file_1 = "../../../../vpho_nog_ranked.root" , TString fi
     histo2->DrawCopy("HIST SAMES");
     leg->Draw("SAME");
     
-    TString title_out = "../images/nbar_p_nog_conf.pdf";
+    TString title_out = "../images/nbar_p_isr_conf.pdf";
     tela->SaveAs(title_out);
     
 }
