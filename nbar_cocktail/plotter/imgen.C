@@ -63,34 +63,39 @@ void clusE (TString file_1 = "../../../15012026_nog.root")
     TString var = "nbar_clusterE";
     
     tree_1->Draw("nbar_clusterE>>histo1(100,0,7)",base_cuts + "&& alpha<0.20 && nbar_clusterNHits > 10 && nROE_Charged__bo__bc == 0 && nbar_mcISR !=1");
-    tree_1->Draw("nbar_clusterE>>histo2(100,0,7)",base_cuts + "&& alpha<0.20 && nbar_clusterNHits > 10 && nROE_Charged__bo__bc == 0 && nbar_mcISR ==1");
+    tree_1->Draw("nbar_clusterE>>histo2(100,0,7)",base_cuts + "&& alpha<0.20 && nbar_clusterNHits > 10 && nROE_Charged__bo__bc == 0 && nbar_mcISR !=1 && nbar_mcPDG == -2112");
+    tree_1->Draw("nbar_clusterE>>histo3(100,0,7)",base_cuts + "&& alpha<0.20 && nbar_clusterNHits > 10 && nROE_Charged__bo__bc == 0 && nbar_mcISR ==1");
        
     
     delete c1;
     
     TH1D *histo1 = (TH1D*)gDirectory->Get("histo1");
     TH1D *histo2 = (TH1D*)gDirectory->Get("histo2");
+    TH1D *histo3 = (TH1D*)gDirectory->Get("histo3");
     
     histo1->SetLineColor(kBlue);
     histo2->SetLineColor(kRed);
+    histo3->SetLineColor(kGreen);
     
     TString title_x = "cluster energy [GeV]";
-    histo2->GetXaxis()->SetTitle(title_x);
-    histo2->GetYaxis()->SetTitle("counts");
+    histo3->GetXaxis()->SetTitle(title_x);
+    histo3->GetYaxis()->SetTitle("counts");
     TString title = "";
-    histo2->SetTitle(title);
+    histo3->SetTitle(title);
     
-    TLegend *leg = new TLegend(0.6,0.6,0.78,0.78);
+    TLegend *leg = new TLegend(0.10,0.55,0.55,0.85);
     leg->AddEntry(histo1,"#bar{n} candidates flagged as no #gamma_{ISR} ","l");
-    leg->AddEntry(histo2,"#bar{n} candidates flagged as #gamma_{ISR} ","l");
+    leg->AddEntry(histo2,"True #bar{n} candidates","l");
+    leg->AddEntry(histo3,"#bar{n} candidates flagged as #gamma_{ISR} ","l");
     
     TCanvas *tela = new TCanvas("tela", "tela");
     
-    histo2->DrawCopy("HIST");
+    histo3->DrawCopy("HIST");
+    histo2->DrawCopy("SAME");
     histo1->DrawCopy("SAME");
     leg->Draw("SAME");
     
-    TString title_out = "../images/clusterEnergy.pdf";
+    TString title_out = "../images/clusterEnergy_isr.pdf";
     tela->SaveAs(title_out);
     
 }

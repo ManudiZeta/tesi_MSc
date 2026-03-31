@@ -52,40 +52,33 @@ To follow the same approach as used in the signal sample analysis, the recoil ma
 \begin{enumerate}
 \item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm;
-\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
+\item $\bar{n}$: neutral clusters from ECL;
 \item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$;
+\item $\alpha <0.35$ rad $\sim 20 ^{\circ}$;
+\end{enumerate}
+Furthermore, the following four additional cuts are applied beyond those used for the signal sample.
+\begin{enumerate}
+\item $\bar{n}$: Number of hits $> 10$ and energy $<3$ GeV;
 \item $\alpha <0.20$ rad $\sim 11.5 ^{\circ}$;
 \item No further charged particles in the Rest of Event (ROE).
 \end{enumerate}
+The cut on the number of hits arises from observations in the previous chapter; to achieve a proper selection of neutral clusters -reducing cluster split-off and pre-showering contributes- a requirement on the number of lighted crystals is applied. 
 $\\$
-Four additional cuts are applied beyond those used for the signal sample, such as cluster number of hits $> 10$ GeV, $\alpha <0.20$ rad, the request of no further charged particles in the Rest of Event (ROE) and the energy of the neutral cluster associated to $\bar{n}$ candidates must be less then 3 GeV.
+The stricter cut on $\alpha$ allows a better selection of anti-neutron candidates through a smaller $\alpha$ angle. $\alpha$ is defined as the 3D angle between the recoil vector direction and the neutral cluster associated with the $\bar{n}$. As will be explained later, this threshold can be lowered further.
 $\\$
-The first cut arises from observations in the previous chapter; to achieve a proper selection of neutral clusters associated with anti-neutron candidates -reducing cluster split-off and pre-showering contributes- a requirement on the number of lighted crystals is applied. 
+The concept of Rest of Event (ROE) is now introduced. The ROE is built around the reconstructed target particles and consists of all other additional particles in the Rest of the Event. In the present case, the reconstructed particles are $p, \pi^-, \bar{n}$ (and $\gamma_{ISR}$); therefore, the ROE includes all particles outside this reconstructed system. With the selection criterion in the ROE, it is required that no charged particles -i.e. tracks associated with charged particles- are present in the Rest Of Event, since no other charged tracks are expected. 
 $\\$
-The second cut allows a stricter selection of anti-neutron candidates through a smaller $\alpha$ angle. $\alpha$ is defined as the 3D angle between the recoil vector direction and the neutral cluster associated with the $\bar{n}$. As will be explained later, this threshold can be lowered further.
-$\\$
-To explain the third cut, the concept of \textbf{Rest of Event} (ROE) must first be introduced. The ROE is built around the reconstructed target particles and consists of all other particles in the Rest of Event. In the present case, the reconstructed particles are $p, \pi^-, \bar{n}$ (and $\gamma_{ISR}$); therefore, the ROE includes all particles outside this reconstructed system. Consequently, the third selection criterion requires that no charged particles -i.e. tracks associated with charged particles- be present in the Rest Of Event, providing a cleaner event reconstruction. A Feynman diagram with ROE is shown in Fig.\ref{fig:ROE_feynman}.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.45\textwidth]{nbar_cocktail/images/ROE_diag}
-    \caption{Feynman diagram of the channel of interest, with the Rest of Event ROE made of a variable amount of particles.}
-    \label{fig:ROE_feynman}
-\end{figure}
-
-The fourth cut arises from cluster energy studies performed on the first chunk of $u\bar{u}$ cocktail production, corresponding to $\sim 215 fb^{-1}$. The $\bar{n}$ list can be affected by several mis-identified $\gamma_\text{ISR}$. In order to study this phenomenon, the Monte Carlo ISR flag (\textbf{mcISR}) can be used to separate the two contributions in reconstructed $\bar{n}$ list. The mcISR variable is a Monte Carlo flag that indicates whether a particle is an ISR particle or not;
-if mcISR = 0, the reconstructed particle is not an ISR photon; if mcISR = 1, the reconstructed particle is an ISR photon mis-identified as an anti-neutron. The obtained cluster energy distribution for $\bar{n}$ candidates, in $u\bar{u}$ chunk1 cocktail production, is shown in figure ~\ref{fig:E_isr_uubar_c1}.
+The cut on the cluster Energy arises from cluster energy studies performed on the first MC sample of $u\bar{u}$ cocktail production. The list of the $\bar{n}$ candidates list can be contaminated by the presence of several mis-identified photons from ISR. In order to study this phenomenon, the Monte Carlo ISR flag can be used to separate the two contributions in the reconstructed $\bar{n}$ list, distinguishing the contributions of $\bar{n}$ candidates that are ISR particles from those that are not. The obtained cluster energy distribution for $\bar{n}$ candidates is shown in figure ~\ref{fig:E_isr_uubar_c1}.
 $\\$
 Two structures, at $\sim 4$ GeV and $\sim 6$ GeV, due to $\gamma_{ISR}$ mis-identified as anti-neutrons, arise. In order to remove them, a cut on cluster energy, such as those discussed, is mandatory.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/clusterEnergy_isr}
-    \caption{Cluster energy distribution of $\bar{n}$ candidates, divided by the Monte Carlo ISR flag (\texttt{mcISR}), in $u\bar{u}$ chunk1 cocktail production. If \texttt{mcISR} = 0 (blue), the reconstructed particle is not an ISR photon. If \texttt{mcISR} = 1 (red), the reconstructed particle is an ISR photon. \texttt{mcISR} is a Monte Carlo information.}
+    \caption{Cluster energy distribution of $\bar{n}$ candidates. Green: $\bar{n}$ candidates that are a $\gamma_{ISR}$; Blue: $\bar{n}$ candidates that are not a $\gamma_{ISR}$; Red: $\bar{n}$ candidates associated to $\bar{n}$ by the Monte Carlo. }
     \label{fig:E_isr_uubar_c1}
 \end{figure}
 $\\$
-However, $\gamma$ radiation represents one of the most abundant produced particles in HEP experiments such as Belle II, making a major contribution to the background. In addition to the ISR ($E \sim 10$ MeV - $5$ GeV, Fig.~\ref{fig:isr_distro}) and FSR ($E< 10$ MeV) radiation described above, bremsstrahlung ($E < 50$ MeV) and secondary photons -such as those from $\pi^0 \rightarrow \gamma \gamma$ decays  ($E < 400$ MeV)- are also present. Therefore, NO ISR channel where the recoil system is made of  $p, \pi^-$ should represents a cleaner system to reconstruct than the ISR one where the recoil system is made of  $p, \pi^-, \gamma$, since several background $\gamma$'s can be mis-identified as the ISR photon, which must be accounted for in the recoil system.
-$\\$
+Additionally, $\gamma$ represents one of the most abundant produced particles in HEP experiments such as Belle II, making a major contribution to the background. In addition to the ISR ($E \sim 10$ MeV - $5$ GeV, Fig.~\ref{fig:isr_distro}) and FSR ($E< 10$ MeV) radiation described above, secondary photons -such as those from $\pi^0 \rightarrow \gamma \gamma$ decays  ($E < 400$ MeV)- are also present. Therefore, the NO ISR channel where, the recoil system is made of  $p, \pi^-$, should represents a cleaner system to reconstruct than the ISR one, where the recoil system is made of  $p, \pi^-, \gamma$, since several background $\gamma$'s can be mis-identified as the ISR photon, which must be accounted for in the recoil system.
 In order to compare the feasibility of selecting the channel in both ISR and NO ISR cases separately, the recoil mass distribution must be first studied using the same selection criteria. The better the selection of the signal from the background, the more consistent the shower shape variables will be for neutral clusters associated with $\bar{n}$ candidates.
 
 \subsection{Recoil mass in $u\bar{u}$ cocktail production (NO ISR case)}
