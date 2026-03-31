@@ -7,8 +7,8 @@
 #include "TLegend.h"
 #include "TStyle.h"
 #include "TString.h"
-static TString nome = "nog";
-static TString file_str = "../../../../vpho_nog_ranked.root";
+static TString nome = "isr";
+static TString file_str = "../../../../vpho_isr_ranked.root";
 
 void cluster()
 {
@@ -20,7 +20,7 @@ void cluster()
     TString alpha_str [10] = {"0.35","0.30","0.25","0.20","0.15","0.10","0.075","0.05","0.04","0.03"};
     
     TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
-    TString lim [8] = {"(100,0,6)","(256,0,1)","(512,0,80)","(512,0,40)","(256,0,1)","(256,0,1)","(256,0,1.2)","(256,0,1.7)"};
+    TString lim [8] = {"(100,0,6)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
     TString names[8] = {"E","Lateral Momentum","N Hits","Second Moment","E1E9","E9E21","Zernike Moment 51","Zernike Moment 40"};
     TString um [8] = {" [GeV]","","","","","","",""};
     TFile *myf_1 = new TFile(file_str);
@@ -86,7 +86,7 @@ void ancestor_cluster()
     TString alpha_str [10] = {"0.35","0.30","0.25","0.20","0.15","0.10","0.075","0.05","0.04","0.03"};
     
     TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
-    TString lim [8] = {"(100,0,6)","(256,0,1)","(80,-0.5,79.5)","(512,0,40)","(256,0,1)","(256,0,1)","(256,0,1.2)","(256,0,1.7)"};
+    TString lim [8] = {"(100,0,6)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
     TString names[8] = {"E","Lateral Momentum","N Hits","Second Moment","E1E9","E9E21","Zernike Moment 51","Zernike Moment 40"};
     TString um [8] = {" [GeV]","","","","","","",""};
     TFile *myf_1 = new TFile(file_str);
@@ -178,7 +178,8 @@ void NHits_cluster()
     TString alpha_str [10] = {"0.35","0.30","0.25","0.20","0.15","0.10","0.075","0.05","0.04","0.03"};
     
     TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
-    TString lim [8] = {"(100,0,6)","(256,0,1)","(80,-0.5,79.5)","(512,0,40)","(256,0,1)","(256,0,1)","(256,0,1.2)","(256,0,1.7)"};
+    TString lim [8] = {"(100,0,6)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
+    //TString lim [8] = {"(100,0,6)","(256,0,1)","(80,-0.5,79.5)","(512,0,40)","(256,0,1)","(256,0,1)","(256,0,1.2)","(256,0,1.7)"};
     TString names[8] = {"E","Lateral Momentum","N Hits","Second Moment","E1E9","E9E21","Zernike Moment 51","Zernike Moment 40"};
     TString um [8] = {" [GeV]","","","","","","",""};
     TFile *myf_1 = new TFile(file_str);

@@ -83,7 +83,7 @@ The 2D energy E and $\theta$ distribution of ISR radiation are shown if Fig.~\re
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.70\textwidth]{nbar_MC/images/ISR_energy_vs_theta.pdf}
-    \caption{2D energy E and $\theta$ distribution of ISR radiation.}
+    \caption{2D energy E and $cos(\theta$) distribution of ISR radiation.}
     \label{fig:isr_distro_conj}
 \end{figure}
 
@@ -92,15 +92,15 @@ $\\$
 Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher the energy of the ISR radiation, the closer $|cos(\theta)|$ is to 1, indicating that high-energy $\gamma_{ISR}$ photons are emitted preferentially in the forward and backward directions. In fact, peaks are observed at $\sim 7$\,GeV for $cos(\theta) \sim 1$ rad ($e^-$ beam direction) and at $\sim 4$\,GeV for $cos(\theta) \sim -1$ rad ($e^+$ beam direction).
 
 \subsubsection{Event selections}
-The event is selected by identifying the $p$, $\pi^-$ (and $\gamma_{ISR}$ for ISR case) candidates in the final state and measuring their recoil (the recoil system). 
-Then the following selections are applied to $p$, $\pi^-$ and recoil system:
+To identify the event, the $p$, $\pi^-$ (and $\gamma_{ISR}$ for the ISR case) candidates are first identified in the final state, and their recoil mass (recoil system) is measured.
+The following selections are applied to $p$, $\pi^-$ and recoil system:
 \begin{itemize}
 \item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
 \item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm.
 \end{itemize}
 
-The first one is a cut that selects a quite broad region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the antineutron mass ($\sim 939,56$ $MeV/c^2$), requiring that the recoil direction lies within the ECL acceptance.
+The first one is a cut that selects a quite broad region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the anti-neutron mass ($\sim 939,56$ $MeV/c^2$), requiring that the recoil direction lies within the ECL acceptance.
 $\\$
 The second and the third criteria are standard selections recommended by the basf2 framework. The ID requirement imposes a constraint on the protonID or pionID based on a maximum likelihood criterion as follows:
 \begin{center}
@@ -114,7 +114,7 @@ The cuts on $dr$ and $|dz|$ select only tracks originating from the interaction 
 $\\$
 The $p$, $\pi^-$ (and $\gamma_{ISR}$) candidates can be identified through the recoil mass peak at the anti-neutron mass. 
 $\\$
-Parallel to the recoil system reconstruction, neutral ECL cluster $\bar{n}$ candidates are reconstructed. To analyze only $\bar{n}$ signals from the calorimeter, the following selection on $\bar{n}$ candidates is applied:
+Parallel to the recoil system reconstruction, neutral ECL cluster $\bar{n}$ candidates are identificated. To analyze only $\bar{n}$ signals from the calorimeter, the following selection on $\bar{n}$ candidates is applied:
 \begin{itemize}
 \item $\bar{n}$: neutral candidates from the ECL;
 \end{itemize}
@@ -125,7 +125,7 @@ $\\$
 Using spherical coordinate system, after some algebraic steps, the 3D angle $\alpha$ between the two vectors can be obtained:
 
 \begin{center}
-$\alpha = arcos[sin(\theta_1)sin(\theta_2)cos(\phi_1 - \phi_2) + cos(\theta_1)cos(\theta_2) ]$
+$\alpha (\theta_1,\theta_2) = arcos[sin(\theta_1)sin(\theta_2)cos(\phi_1 - \phi_2) + cos(\theta_1)cos(\theta_2) ]$
 \end{center}
 
 Here vector 1 denotes the recoil vector and the vector 2 denotes the $\bar{n}$ direction vector. The respective $\alpha$ distributions, before and after the aforementioned selection, are shown in Fig.~\ref{fig:alpha_pre_post}, in both ISR and NO ISR cases:
@@ -138,7 +138,7 @@ Here vector 1 denotes the recoil vector and the vector 2 denotes the $\bar{n}$ d
     \label{fig:alpha_pre_post}
 \end{figure}
 
-To select the most probable $\bar{n}$ candidates, only those with $\alpha < 0.35$ ($\sim 20^\circ$) are stored. Therefore, the event is selected.
+To select the most probable $\bar{n}$ candidates, only those with $\alpha < 0.35$ ($\sim 20^\circ$) are stored. The event is therefore fully defined after applying the discussed selection criteria.
 $\\$
 The efficiency $\epsilon$  is defined as follows:
 \begin{center}
@@ -146,18 +146,18 @@ The efficiency $\epsilon$  is defined as follows:
 \end{center}
 Referring to Fig.~\ref{fig:topo_signal0}, 35291 events are generated without $\gamma$ emission ($iDcyTr \in {0}$)and 41706 with ISR emission ($iDcyTr = 1,2$; only the first two contributions are considered).
 $\\$
-Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 71\%$ and $48\%$ can be observed.
-Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is slightly lower than in the NO ISR case.
+Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 48\%$ and $71\%$ can be observed.
+Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is lower than in the NO ISR case.
 
 \subsubsection{Recoil mass distribution}
-To select events with anti-neutron, the recoil system $p \pi^- (\gamma_{ISR})$ is studied through the recoil mass. Specifically, the recoil mass should peak at the nominal anti-neutron mass, since no background channels are present in this sample. The only background consists of secondary particles produced during the propagation of primary particles through the detectors. 
+To select events with anti-neutrons, the recoil system $p \pi^- (\gamma_{ISR})$ is studied through the recoil mass. Specifically, the recoil mass should peak at the nominal anti-neutron mass, since no background channels are present in this sample. The background mainly consists of secondary particles produced during primary particle propagation through the detectors, combinatorial background, and incorrectly reconstructed $\gamma$.
 $\\$
 The recoil mass is defined as follows:
 \begin{center}
 recoil mass $= \sqrt{\left( p_{e^+e^-} - p_{\text{sum}} \right)^2}$
 
 \end{center}
-where $p_{e^+e^-}$ is the total four-momentum of the initial $e^+e^-$ system at the $\Upsilon(4S)$ resonance, and $p_{sum}$ is the sum of 4-momenta of $p\pi^- (\gamma_{ISR})$.
+where $p_{e^+e^-}$ is the total four-momentum of the initial $e^+e^-$ system at the $\Upsilon(4S)$ resonance, and $p_{sum}$ is the sum of the 4-momenta of $p\pi^- (\gamma_{ISR})$.
 $\\$
 The recoil mass distribution, for both ISR and NO ISR cases, is shown in Fig.~\ref{fig:recMass_distro_isr_noisr}.
 
@@ -170,22 +170,25 @@ The recoil mass distribution, for both ISR and NO ISR cases, is shown in Fig.~\r
 
 The recoil mass distribution peaks on the $\bar{n}$ mass ($\sim 939.56$ MeV), indicating that the the recoil mass is well reconstructed in both ISR ($p \ \pi^-  \ \gamma_{ISR}$) and NO ISR ($p \ \pi^-$) cases. Therefore, the variables associated with the $\bar{n}$ clusters can be compared with the reconstructed recoil variables ($p, \ \theta$).
 $\\$
-In the event simulation the generator produces more than one $\gamma_{ISR}$ per event, reflecting into the obtained recoil mass distribution; the one obtained in ISR case shows more entries in the left tail, since only the most energetic gamma is considered in the recoil reconstruction, while the others are not considered. 
+In the event simulation the generator produces more than one $\gamma_{ISR}$ per event, reflecting into the obtained recoil mass distribution; the one obtained in ISR case shows more entries in the left tail, since only one $\gamma_{ISR}$ is reconstructed in the recoil, while the others are not considered. 
 $\\$
-The distribution obtained in the NO ISR case exhibits a higher peak as the recoil system reconstruction consists only of $p\pi^-$, allowing better resolution than the ISR case, since fewer tracks are considered.
+The distribution obtained in the NO ISR case exhibits a higher peak as the recoil system reconstruction consists only of $p\pi^-$, leading to a higher efficiency than ISR case.
 $\\$
 By selecting events around the peak, $\bar{n}$ candidates events can be identified. The recoil direction is expected to provide a good estimate of the $\bar{n}$ momentum.
 
 \subsubsection{The recoil kinematic}
 Before analyzing the recoil kinematic distribution, the reconstructed momentum and $cos(\theta)$ distributions of each particle composing the recoil system is examined. For particles with MC association, the MC variables can be studied for a given list of candidates as well. 
 $\\$
-For example, considering the proton candidate list, both the reconstructed momentum and the Monte Carlo (generated) momentum of the proton list -which is not affected by the reconstruction process- are available. The latter will be referred to as the "generated" momentum.
+For example, considering the proton candidate list, both the reconstructed momentum and the Monte Carlo (generated) momentum of the proton list -which is not affected by the reconstruction process- are available. The latter will be referred to as the "generated" momentum. Since a candidate list is the result of the reconstruction process, it also contains particles that have been mis-identified as the main particles (for example, $\pi^+$ mis-identified as $p$ or $\gamma$ mis-identified as $\bar{n}$). For example, after reconstruction, several misidentified $\gamma$ may be present in the $\bar{n}$ list:
+\begin{center}
+$\bar{n}$ list = $(\bar{n},\bar{n},\gamma,\bar{n},...)$.
+
+\end{center}
+Therefore, the "generated momentum'' of this list returns the generator-level momentum for each member of the reconstructed list. This differs from using Monte Carlo values for a generator-level particle list containing only the selected particle type -in this case, anti-neutrons.
 $\\$
-Since a candidate list is the result of the reconstruction process, it also contains particles that have been mis-identified as the main particle (for example, $\pi^+$ mis-identified as $p$ or $\gamma$ mis-identified as $\bar{n}$).
+Therefore, the term "generated variable", in the following discussion, refers to the Monte Carlo value of a variable for a given reconstructed particle list, as stressed in the example above.
 $\\$
-Therefore, the considered "generated" variables represent the Monte Carlo values for a given reconstructed particle list, which differs from the Monte Carlo values for a generator-level particle list that contains only the selected particle type.
-$\\$
-The relative reconstructed momentum and $cos(\theta)$ distributions of proton and pion are shown in Fig.~\ref{fig:rec_p_pi_mom}, while the generated one are shown in in Fig.~\ref{fig:mc_p_pi_mom}.
+The relative reconstructed momentum and $cos(\theta)$ distributions of protons and pions are shown in Fig.~\ref{fig:rec_p_pi_mom}, while the generated one are shown in in Fig.~\ref{fig:mc_p_pi_mom}.
 
 \begin{figure}[H]
     \centering
@@ -207,7 +210,8 @@ The relative reconstructed momentum and $cos(\theta)$ distributions of proton an
     \label{fig:mc_p_pi_mom}
 \end{figure}
 
-The distributions clearly exhibit the typical phase-space shapes, as expected from the adopted generator model. The $cos(\theta)$ distribution of protons presents low counts before $\theta$ value such as at $cos(\theta) \lesssim -0.6$. In this region, proton identification performance is insufficient for effective selection, failing the protonID selection. This occurs especially for protons with momentum higher than 2 GeV/$c$, as shown in Fig.~\ref{fig:proton_p_costheta}.
+The distributions clearly exhibit the typical phase-space shapes, as expected from the adopted generator model. The $cos(\theta)$ distribution of protons presents low counts at $cos(\theta) \lesssim -0.6$. In this region, the lack of proper detector coverage results in insufficient proton identification performance for effective selection, failing the protonID 
+cut. This effect is particularly pronounced for protons with momentum below 2 GeV/$c$, as shown in Fig.~\ref{fig:proton_p_costheta}.
 
 \begin{figure}[H]
     \centering
@@ -229,16 +233,17 @@ The recoil momentum distributions can be obtained in both ISR and NO ISR cases, 
     \caption{Momentum distribution of the recoil system, in both ISR and NO ISR cases.}
     \label{fig:recoil_mom_rec}
 \end{figure}
-
-Since the recoil system is well reconstructed through the recoil mass, this distribution can be compared with that of the $\bar{n}$, both from reconstruction and from generator level. 
+Since fewer candidates were reconstructed in the ISR case than in the NO ISR case, the recoil momentum shows lower structure in the ISR case.
 $\\$
-The $\bar{n}$ candidate list originates from neutral clusters detected in the ECL. Therefore, since the calorimeter measures the energy of the clusters, the $\bar{n}$ momentum $p_{\bar{n}}$ can be defined as follows:
+These distribution can be compared with that of the $\bar{n}$ candidate, both from reconstruction and from generator level. 
+$\\$
+The $\bar{n}$ candidate list originates from neutral clusters detected in the ECL. The software assumes that all shower energy is confined within the ECL. Therefore, since the calorimeter measures the energy of the clusters, the $\bar{n}$ momentum $p_{\bar{n}}$ can be defined as follows:
 \begin{center}
 $p_{\bar{n}}^2 = E_{ECL}^2 - m_{\bar{n}}^2$,
 \end{center}
 where $E_{\text{ECL}}$ is the energy of the $\bar{n}$ candidate cluster measured by the calorimeter and $m_{\bar{n}}$ is the mass of the anti-neutron.
 $\\$
-The $\bar{n}$ momentum distribution are shown in Fig.~\ref{fig:nbar_mom}.
+The $\bar{n}$ momentum distribution is shown in Fig.~\ref{fig:nbar_mom}.
 
 \begin{figure}[H]
     \centering
@@ -248,67 +253,67 @@ The $\bar{n}$ momentum distribution are shown in Fig.~\ref{fig:nbar_mom}.
      \label{fig:nbar_mom}
 \end{figure}
 
-Notably, the reconstructed $\bar{n}$ momentum is systematically underestimated compared to the generator-level one, indicating missing energy within neutral clusters. This topic will be addressed in detail below through the momentum residual distributions.
+Notably, the reconstructed $\bar{n}$ momentum is systematically underestimated compared to the generator-level one, indicating missing energy within neutral clusters. In fact, the reconstructed momentum distribution lies within [0, 5] GeV/c, showing a first structure at low momentum values in both the ISR and NO ISR cases. In the 
+generator-level case, the distribution extends to [0, 6.5] GeV/c, with the same structure extending beyond 1 GeV/c.
 $\\$
-Both the reconstructed and the generator-level distributions exhibit two structures, indicating two contributions within $\bar{n}$ candidate neutral clusters. To investigate this, the reconstructed recoil momentum is compared with the generator-level momentum of all $\bar{n}$ candidates, using MC truth matching. Since the $\bar{n}$ PDG code is -2112, the neutral clusters associated to $\bar{n}$ list can be matched to true (truth = 1) $\bar{n}$ particles, using Monte Carlo PDG $= -2112$, or to false (truth = 0) candidates with Monte Carlo PDG $\ne -2112$. The obtained result is shown in ~\ref{fig:pRecoil_nmcP}.
+Therefore, both the reconstructed and the generator-level distributions exhibit two structures, indicating two contributions within $\bar{n}$ candidate neutral clusters. To investigate this, the reconstructed recoil momentum is compared with the generator-level momentum of all $\bar{n}$ candidates, using MC truth matching. The neutral clusters associated to $\bar{n}$ list can be matched to true (truth = 1) $\bar{n}$ particles or to false (truth = 0) $\bar{n}$ particles. The obtained result is shown in ~\ref{fig:pRecoil_nmcP}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/pRecoil_nmcP_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/pRecoil_nmcP_nog.pdf}
-    \caption{Recoil momentum and generated $\bar{n}$ list momentum. The blue distribution shows the recoil momentum, the red distribution corresponds to the generated $\bar{n}$ with MC PDG $= -2112$ (associated to $\bar{n}$ by MC matching), while the green distribution corresponds to the generated $\bar{n}$ with MC PDG $\neq -2112$ (associated to no $\bar{n}$ by MC matching).}
+    \caption{Recoil momentum and generated $\bar{n}$ list momentum. The blue distribution shows the recoil momentum, the red distribution corresponds to the generated particle associated to $\bar{n}$ by MC matching, while the green distribution corresponds to the generated particle associated to no $\bar{n}$ by MC matching.}
     \label{fig:pRecoil_nmcP} 
 \end{figure}
     
-The low-momentum structure corresponds to candidates not associated to $\bar{n}$ by the Monte Carlo truth, exhibiting significant deviation from the recoil momentum. This is likely due to cluster split-off and/or pre-showering effects as will be discussed later. Furthermore, the distribution corresponding to the generated $\bar{n}$ with MC PDG $= -2112$ has less entries than the recoil momentum distribution, suggesting that several anti-neutrons are not correctly reconstructed. All these aspects will be discussed in the next section through analysis of $\bar{n}$ relatives (ancestors).      
+The low-momentum structure corresponds to candidates not associated to $\bar{n}$ by the Monte Carlo truth, exhibiting significant deviation from the recoil momentum. This is likely due to cluster split-off and/or pre-showering effects, as will be discussed later. Furthermore, the distribution corresponding to the generated $\bar{n}$ has less entries than the recoil momentum distribution, suggesting that several anti-neutrons are not correctly reconstructed. All these aspects will be discussed in the next section through analysis of $\bar{n}$ relatives (ancestors).      
 $\\$
-To obtain a measure of the recoil momentum and recoil $\theta$ resolution, these variables can be compared with those of the Monte Carlo matched $\bar{n}$ (truth = 1), in both reconstructed and generated cases. To address this comparison, the linear correlation coefficient $\rho$ is studied, defined as:
+To obtain a measure of the recoil momentum and recoil $\theta$ resolution, these variables can be compared with those of the Monte Carlo matched $\bar{n}$ (truth = 1) candidates. The linear correlation coefficient $\rho$ is studied, defined as:
 
 \begin{center}
 $\rho_{x,y} = \frac{cov[x,y]}{\sigma_x \sigma_y} $ \hspace{0.5cm} where $cov[x,y] = E[xy] - E[x]E[y]$
 \end{center}
 
-Therefore, the correlations in $\theta$ and in momentum are shown in Fig. ~\ref{fig:pRecoil-nP}, remembering that the momentum is obtained starting from the energy of the cluster as follow:
-\begin{center}
-$p_{rec}^2 = E_{ECL}^2 - m_{\bar{n}}^2$
-\end{center}
-where $E_{\text{ECL}}$ is the energy of the $\bar{n}$ candidate cluster measured by the calorimeter and $m_{\bar{n}}$ is the mass of the anti-neutron.
-$\\$
-A good correlation can be highlighted between the two $\theta$ distributions in both reconstructed and generator-level cases, indicating that the anti-neutron $\theta$ direction is properly described. 
+The correlations in $\theta$ and in momentum are shown in Fig.~\ref{fig:pRecoil-nP_mc} (generated) and in Fig.~\ref{fig:pRecoil-nP_rec} (reconstructed).
+\begin{figure}[h]
+    \centering
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_p_corr_isr.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_p_corr_nog.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_theta_corr_isr.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_theta_corr_nog.pdf}
+           \caption{Obtained momentum and $\theta$ correlation distributions between recoil system and anti-neutron candidate, in generated case, in both ISR and NO ISR cases.}
+      \label{fig:pRecoil-nP_mc}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+      \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_theta_corr_isr.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_theta_corr_nog.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_p_corr_isr.pdf}
+     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_p_corr_nog.pdf}
+      \caption{Obtained momentum and $\theta$ correlation distributions between recoil system and anti-neutron candidate, in reconstructed case, in both ISR and NO ISR cases.}
+      \label{fig:pRecoil-nP_rec}
+\end{figure}
+A good correlation is evident between the two $\theta$ distributions in both reconstructed and generator-level cases, indicating that the anti-neutron $\theta$ direction is properly described. 
 $\\$
 A good correlation can be observed between the reconstructed recoil momentum and the generated $\bar{n}$ one, confirming how the first is properly describing the $\bar{n}$ kinematic.
 $\\$
 However, a poor resolution is observed in reconstructed $\bar{n}$ momentum, in both ISR and NO ISR cases, presenting an underestimation of the reconstructed $\bar{n}$ momentum as well. 
-
-\begin{figure}[H]
-    \centering
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_theta_corr_isr.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_theta_corr_nog.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_theta_corr_isr.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_theta_corr_nog.pdf}
-
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_p_corr_isr.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_mc_p_corr_nog.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_p_corr_isr.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/gen_rec_p_corr_nog.pdf}
-      \caption{Obtained momentum and $\theta$ correlation distributions between recoil system and anti-neutron candidate, in both reconstructed and generated case, in both ISR and NO ISR cases.}
-      \label{fig:pRecoil-nP}
-\end{figure}
-
-In order to directly study the observed poor resolution in reconstructed $\bar{n}$ momentum, the momentum residual distributions can be analyzed in Fig. ~\ref{fig:residuals_distros}.
+$\\$
+The momentum residual distributions are shown in Fig.~\ref{fig:residuals_distros}.
 \begin{figure}[H]
     \centering
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/diff_thetaREC_ntheta_mc.pdf}
-     \includegraphics[width=0.49\textwidth]{nbar_MC/images/diff_thetaREC_ntheta_rec.pdf}
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/diff_pREC_np_mc.pdf}
+          \includegraphics[width=0.49\textwidth]{nbar_MC/images/diff_thetaREC_ntheta_rec.pdf}
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/diff_pREC_np_rec.pdf}
      \caption{Momentum and $\theta$ angle residual distributions between recoil system and anti-neutron candidate, in both ISR and NO ISR cases.}
      \label{fig:residuals_distros}
 \end{figure}
 
-Besides exhibiting poor resolution, the reconstructed momentum of the $\bar{n}$ is underestimated as the residuals distributions show, suggesting a missing energy in the shower. Therefore, the $\bar{n}$ momentum is poorly reconstructed using only the ECL information. Most of anti-neutrons undergo in annihilation with hadrons such as $\bar{n} n$ and $\bar{n} p$, producing pions which escape the calorimeter. Therefore, the reconstructed momentum (or energy) in the calorimeter is not directly comparable with that of anti-neutrons, making the reconstructed $\bar{n}$ momentum an unreliable variable.
+Therefore, using only the ECL information, the $\bar{n}$ momentum is poorly reconstructed and is underestimated, as shown by the residual distributions, suggesting missing energy in the shower. Most of the anti-neutrons undergo in annihilation with nucleons such as $\bar{n} n$ and $\bar{n} p$, producing pions which escape the calorimeter. Therefore, the reconstructed momentum (or energy) in the calorimeter is not directly comparable with that of anti-neutrons, making the reconstructed $\bar{n}$ momentum an unreliable variable.
 $\\$
-Furthermore, considering only the $\theta$ residual distributions and those obtained with the Monte Carlo momentum of the $\bar{n}$, the distributions in the NO ISR case exhibit higher resolution, explicitly confirming what was noted for the recoil mass distribution in Fig.~\ref{fig:recMass_distro_isr_noisr}.
+The $\theta$ distributions show good agreement, in both reconstructed and generator-level cases, suggesting that the $\bar{n}$ candidate direction is properly described by the recoil. Furthermore, considering only the $\theta$ residual distributions, the distributions in the NO ISR case exhibit higher resolution, explicitly confirming what was noted for the recoil mass distribution in Fig.~\ref{fig:recMass_distro_isr_noisr}.
 
 \subsection{The $\bar{n}$ relatives analysis}
 The origin of ECL clusters that are reconstructed as $\bar{n}$ candidates but are associated with other particles according to MC truth information is investigated in this part.
@@ -320,7 +325,7 @@ Since the ISR and NO ISR results are analogous, only the ISR case is analyzed on
  \begin{figure}[H]
     \centering
      \includegraphics[width=0.55\textwidth]{nbar_MC/images/spoff_pshow}
-     \caption{A representation displaying cluster split-off and pre-showering effects following $\bar{n}$ annihilation.}
+     \caption{A representation displaying cluster split-off and pre-showering effects following $\bar{n}$ annihilation. Figure not to scale.}
      \label{fig:spoff_preshow}
 \end{figure}
 
@@ -329,7 +334,7 @@ One of the secondary particles from $\bar{n}$ annihilation can be detected as th
 \subsubsection{The basf2 ancestor variables}
 Since $\bar{n}$ particles are selected along the recoil direction, there are ECL clusters in that direction that are not associated with $\bar{n}$ by MC matching. Their origin is studied, considering the possibility that $\bar{n}$ interacted with material. 
 $\\$
-In order to study the decay chain and kinship degree of the neutral cluster associated to $\bar{n}$ candidates detected in the ECL, the basf2 ancestor variables are used. These identify whether a given particle originates from the decay of another particle or a subsequent decay chain. The following ancestor variables are employed:
+In order to study the decay chain and relationsip degree of the neutral cluster associated to $\bar{n}$ candidates detected in the ECL, the basf2 ancestor variables are used. These identify whether a given particle originates from the decay of another particle or a subsequent decay chain. The following ancestor variables are employed:
 
 \begin{itemize}
 \item varForFirstMCAncestorOfType(type, variable): this metavariable returns the requested variable of the first ancestor of the given type -a specific particle- found in a certain point of the chain
@@ -343,7 +348,7 @@ A typical scenarios of $\bar{n}$ as ancestor could  be the following:
 0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in ECL (pions produced) $\rightarrow$ 2) pions detected
 \end{center}
 
-The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution is shown in Fig. ~\ref{fig:hasAncestor}.
+The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution of the selected $\bar{n}$ candidates is shown in Fig.~\ref{fig:hasAncestor}.
 
  \begin{figure}[H]
     \centering
@@ -351,7 +356,7 @@ The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) 
      \caption{Distribution of the relative degree of anti-neutron candidates with an anti-neutron present in their ancestry chain.}
      \label{fig:hasAncestor}
 \end{figure}
-From the distribution in Fig. ~\ref{fig:hasAncestor}, it is evident that the majority of candidates do not have a neutron ancestor, lacking an $\bar{n}$ in their relative chain (has\_Ancestor=0), suggesting they are the primary $\bar{n}$ themselves. The second contribution is made of $\bar{n}$ candidates having $\bar{n}$ as mother etc. 
+From the distribution in Fig.~\ref{fig:hasAncestor}, it is evident that the majority of candidates do not have a neutron ancestor, lacking an $\bar{n}$ in their relative chain (has\_Ancestor=0), suggesting they are the primary $\bar{n}$ themselves. The second contribution is made of $\bar{n}$ candidates having $\bar{n}$ as mother etc. 
 $\\$
 In order to directly study the contribution of each term, the Monte Carlo truth is accessed via the corresponding mc\_PDG. This is the PDG code of the selected candidates as associated by the Monte Carlo. 
 $\\$
@@ -375,23 +380,19 @@ Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncest
 \end{itemize}
 
 \subsubsection{Ancestor momentum}
-The figure Fig. ~\ref{fig:pRecoil_nmcP} can be updated, by including the momentum of the ancestors obtained with varForFirstMCAncestorOfType(anti-n0, p). The idea is to check whether the information from the momentum of the ancestors is consistent with that obtained from the primary $\bar{n}$. The obtained distributions are shown in Fig.~\ref{fig:momentum_ancestors}.
+The figure Fig.~\ref{fig:pRecoil_nmcP} can be updated, by including the momentum of the ancestors obtained with varForFirstMCAncestorOfType(anti-n0, p). The ancestor is the primary $\bar{n}$, from which the secondary particle -mistaken for the primary- originates. The idea is to check whether the momentum information from the ancestors is 
+consistent with that from the successfully detected primary $\bar{n}$. The obtained distributions are shown in Fig.~\ref{fig:momentum_ancestors}.
 
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{nbar_MC/images/momentum_ancestors.pdf}
-    \caption{Distribution comparison of: recoil momentum (blue), generated momentum of $\bar{n}$ candidates associated to $\bar{n}$ by the Monte Carlo matching (red), generated momentum of $\bar{n}$ candidates associated to no $\bar{n}$ by the Monte Carlo matching (green) and generated momentum of $\bar{n}$ ancestors associated to $\bar{n}$ by the Monte Carlo matching (yellow). The black distribution is the sum of the second and fourth contributions.The recoil vector is the only reconstructed variable, while the others are obtained from Monte Carlo truth selection.}
+    \caption{Distribution comparison of: recoil momentum (blue), generated momentum of $\bar{n}$ candidates associated to $\bar{n}$ by the Monte Carlo matching (red), generated momentum of $\bar{n}$ candidates associated to no $\bar{n}$ by the Monte Carlo matching (green) and generated momentum of $\bar{n}$ ancestors associated to $\bar{n}$ by the Monte Carlo matching (yellow). The black distribution is the sum of the second and fourth contributions. The recoil vector is the only reconstructed variable, while the others are obtained from Monte Carlo truth selection.}
     \label{fig:momentum_ancestors}
 \end{figure}
-
-\begin{itemize}
-\item The recoil momentum is made of 20146 entries (blue),
-\item the momentum distribution of $\bar{n}$ associated is made of 7203 entries (red),
-\item the momentum distribution of no $\bar{n}$ associated is made of 6308 entries (green),
-\item the momentum distribution of ancestors is made of 6173 entries (yellow),
-\item the distribution of the sum of the second and fourth contributions if is made of 13376 entries (black).
-\end{itemize}
-This indicates that 98\% of the first structure shown in Fig.~\ref{fig:pRecoil_nmcP}  relates to ancestor momentum, suggesting that phenomena prior to the neutral cluster associated with $\bar{n}$ candidates can occur, such as cluster split-off and pre-showering. The quality of the ancestor momentum can be discussed by studying the residual distribution with respect to the reconstructed recoil momentum. The obtained distribution is shown in Fig.~\ref{fig:deltaP_ancestors}.
+$\\$
+The recoil momentum is made of 20146 entries, corresponding with the total amount of candidates. The momentum distribution of $\bar{n}$ associated is made of 7203 entries, corresponding to 36\% of total amount of candidates. The momentum distribution of no $\bar{n}$ associated is made of 6308 entries, corresponding to 31\% of total amount of candidates. The momentum distribution of ancestors is made of 6173 entries, corresponding to 31\% of total amount of candidates. The distribution of the sum of the second and fourth is made of 13376 entries.
+$\\$
+This indicates that $\frac{6173}{6308} \times 100 \sim 98\%$ of the first structure shown in Fig.~\ref{fig:pRecoil_nmcP} is due secondary $\bar{n}$ candidates, namely particles that have a primary $\bar{n}$ as ancestor, suggesting that phenomena prior to the neutral cluster associated with $\bar{n}$ candidates can occur, such as cluster split-off and pre-showering. The quality of the ancestor momentum can be discussed by studying the residual distribution with respect to the reconstructed recoil momentum. The obtained distribution is shown in Fig.~\ref{fig:deltaP_ancestors}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{nbar_MC/images/deltaP_ancestors.pdf}
@@ -399,9 +400,9 @@ This indicates that 98\% of the first structure shown in Fig.~\ref{fig:pRecoil_n
     \label{fig:deltaP_ancestors}
 \end{figure}
 
-Therefore, the reconstructed recoil momentum is a good estimator of the primary $\bar{n}$ (ancestor) momentum as well, confirming that cluster split-off or pre-showering may occur prior the ECL cluster formation.
+The reconstructed recoil momentum is a good estimator of the primary $\bar{n}$ (ancestor) momentum as well, confirming that cluster split-off or pre-showering may occur prior the ECL cluster formation.
 $\\$
-Furthermore, clusters not associated with either primary $\bar{n}$ or their decay products lack PDG codes, indicating that the MC association has failed for these candidates. They are associated with a Not a Number (NaN) particle by the Monte Carlo matching. Referring to the recoil momentum (20146 entries) and the sum of the second and fourth contributions (13376 entries), their difference equals 6779 entries, which exactly matches the number of $\bar{n}$ candidates associated with a NaN value. These are particles that did not receive a correct Monte Carlo association during MC truth matching, then they cannot be recovered. 
+Furthermore, clusters not associated with either primary $\bar{n}$ or their decay products lack PDG codes, indicating that the MC association has failed for these candidates. They are associated with a Not a Number (NaN) particle by the Monte Carlo matching. These are particles that did not receive a correct Monte Carlo association during MC truth matching, then they cannot be recovered. 
 $\\$
 This can be summarized using the meta-variable (mcErrors), which encodes as a bit code the reason why the Monte Carlo matching fails. This variable explicitly illustrates the behaviour shown in Fig.~\ref{fig:mcErrors},
  \begin{figure}[h]
@@ -410,7 +411,7 @@ This can be summarized using the meta-variable (mcErrors), which encodes as a bi
     \caption{Monte Carlo Error code. 0 corresponds to a perfectly reconstructed particle, while 512 corresponds to a non valid MC match.}
     \label{fig:mcErrors}
 \end{figure}
-where the first peak is on the code0, which means that "\emph{This particle and all its daughters are perfectly reconstructed}", while the second peak is on the code 512, which confirms that "\emph{There was an error in MC matching. Not a valid match. Might indicate fake/background track or cluster}", as expected.
+where the first peak is at code 0, indicating perfect reconstruction of the particle and all its daughters, while the second peak is at code 512, confirming an MC matching error due to incorrect reconstruction of the relatives chain.
 
 \subsubsection{$\bar{n}$ production vertex}
 To verify the $\bar{n}$ production position, the Monte Carlo production vertex of the $\bar{n}$ is studied. To address it, the radial production distance $\rho$ is introduced, defined as follows:
@@ -428,11 +429,11 @@ The distribution is splitted in two parts: the left part -close to the IP- ($\rh
     \label{fig:mcDistance}
 \end{figure}
 
-The correctly associated anti-neutrons overlay the $\bar{n}$ candidates without an anti-neutron ancestor $\bar{n}$ ancestor = 0), originating from the interaction point (left panel). This distribution is not centered around zero because the generator uses a default non-zero starting radial distance.
+The correctly associated anti-neutrons overlay the $\bar{n}$ candidates without an anti-neutron ancestor, originating from the interaction point (left panel). This distribution is not centered around zero because the generator uses a default non-zero starting radial distance.
 $\\$
 The $\bar{n}$ candidates with an $\bar{n}$ mother particle -that are mainly photons (Fig.~\ref{fig:mc_pdg_hasAncestor})- are produced throughout the Belle II detector.
 $\\$
-The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster split-off and pre-showering events occur in the events. In fact, $\bar{n}$ candidates with $\bar{n}$ as mother particle ($\bar{n}$ ancestor = 1), may be produced before the ECL (pre-showering) or within the ECL (split-off).
+The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster pre-showering events occur in the events. Furthermore, an extended structure can be observed for $125\,\text{cm} < \rho < 162\,\text{cm}$, confirming that cluster split-off effects occur within the ECL volume. Therefore, $\bar{n}$ candidates with $\bar{n}$ as mother particle ($\bar{n}$ ancestor = 1), may be produced before the ECL (pre-showering) or within the ECL (split-off).
 $\\$
 The production vertex variable is now examined, dividing each contribute from the different ECL regions; backward region, barrel region and forward region. The obtained result is shown in Fig.~\ref{fig:mcDistance_region}.
  \begin{figure}[H]
@@ -448,7 +449,7 @@ In the forward and backward regions, the two peaks located at the TOP edges disa
 \subsection{Kinematic Fit effects}
 A Kinematic Fit (KF) is a constrained optimization technique used in particle physics to refine the measured four-momenta (or other kinematic quantities) of particles by imposing known physical constraints, such as energy-momentum conservation or recoil mass. Measured quantities like track momenta, energies from calorimeters, or decay vertices come with limited resolution from detectors. The fit adjusts these within their uncertainties to best satisfy the imposed constraint.
 $\\$
-A one constraint 1C Kinematic Fit has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ GeV) and then studying the response on the recoil kinematic variables resolution versus the anti-neutron candidate ones. The comparison of the residual distributions with and without the kinematic fit is shown in Fig.~\ref{fig:kin_fit}.
+A one constraint 1C Kinematic Fit has been applied, constraining the recoil mass to the value of the anti-neutron mass ($\sim 0.9385$ $GeV/c^2$) and then studying the consequence on the recoil kinematic variables resolution. The comparison of the residual distributions with and without the kinematic fit is shown in Fig.~\ref{fig:kin_fit}.
 \begin{figure}[H]
     \centering
      \includegraphics[width=0.49\textwidth]{nbar_MC/images/kin_delta_theta_mc_nog.pdf}
@@ -466,14 +467,11 @@ In the NO ISR case, a 2\% improvement is observed in the recoil $\theta$ resolut
 $\\$
 Therefore, the kinematic fit, by constraining the recoil mass, refines the resolution of the recoil kinematic variables.
 
-\subsection{Shower shape variables in the signal sample}
-The following paragraph introduces the analysis of the shower shape variables of neutral ECL clusters associated with anti-neutron candidates. Since the final goal is to assess Data/MC agreement for these variables, the shower shape variables are first studied in a MC signal sample with no background channels present. The main idea is that particle identification can be achieved by studying the shower shapes and their characteristics.
-
-\subsubsection{Anti-neutrons ECL cluster variables}
-To isolate the contribution of neutral clusters correctly associated with $\bar{n}$ particles (selected using Monte Carlo PDG = $-2112$) from all $\bar{n}$ candidates, the two distributions are overlaid for each cluster variable.
+\subsection{Anti-neutron candidates ECL cluster variables}
+To isolate the contribution of neutral clusters correctly associated with $\bar{n}$ particles by the Monte Carlo association from all $\bar{n}$ candidates, the two distributions are overlaid for each cluster variable.
 
 \newpage
-The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_1}:
+The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_1}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_isr.pdf}
@@ -485,12 +483,12 @@ The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_isr.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates (blue) with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (red), in ISR case.}
+     \caption{Distribution of the reconstructed cluster variables for all candidates (blue) and for clusters associated to $\bar{n}$ by MC truth, for ISR events.}
      \label{fig:clus_vars_1}
 \end{figure}
 
 \newpage
-The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_2}:
+The obtained cluster variables in NO ISR case are shown in Fig.~\ref{fig:clus_vars_2}.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_nog.pdf}
@@ -502,22 +500,22 @@ The obtained cluster variables in ISR case are shown in Fig.~\ref{fig:clus_vars_
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates (blue) with $\bar{n}$ particles by Monte Carlo truth Monte Carlo PDG = -2112 (red), in NO ISR case.}
+    \caption{Distribution of the reconstructed cluster variables for all candidates (blue) and for clusters associated to $\bar{n}$ by MC truth, for NO ISR events.}
      \label{fig:clus_vars_2}
 
 \end{figure}
 
 \newpage
-The ISR and NO ISR distributions carry the same information, suggesting no distinction between the two cases. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively. Therefore, only the NO ISR case will be discussed in the rest of the chapter.
+The ISR and NO ISR cluster variables distributions presents the same information. Indeed, the measurement of cluster variables is independent of the recoil system, which could be made of either $p \pi^- \gamma_{ISR}$ or $p \pi^-$ respectively. Therefore, only the NO ISR case will be discussed in the rest of the chapter.
 $\\$
-The cluster variable distributions of all candidates show peculiar structures compared to those correctly associated with $\bar{n}$ particles. For example, the reconstructed cluster energy for all $\bar{n}$ candidates exhibits a first structure at low energy values that resembles those discussed for the anti-neutron momentum distributions. Another structure is also evident in the second moment distribution, where a structure at low values is clearly visible. The most prominent difference appears in the number of hits ($N \ Hit$) distribution, where a distinct structure at $N \ Hit < 10$ is evident.
+The cluster variable distributions of all candidates show peculiar structures compared to those correctly associated with $\bar{n}$ particles. For example, the reconstructed cluster energy for all candidates exhibits a first structure at low energy values that resembles those discussed for the anti-neutron momentum distributions. Another structure is also evident in the second moment distribution, where a structure at low values is clearly visible. The most prominent difference appears in the number of hits ($N \ Hit$) distribution, where a distinct structure at $N \ Hit < 10$ is evident.
 $\\$
-The nature of these characteristic structures is analyzed in the following sub-paragraph.
+The nature of these structures is analyzed in the following paragraph.
 
 \subsubsection{Study of cluster structures with ancestor variable}
-The nature of these structures is now investigated using the same approach as before, namely by studying the ancestor contributions. This allows to determine whether a specific structure originates directly from primary $\bar{n}$ annihilation or from its annihilation products.
+The nature of the structures not observed in the cluster variables of $\bar{n}$ associated candidates is now investigated, studying the ancestor contributions. This allows to determine whether a specific structure originates directly from primary $\bar{n}$ annihilation or from its annihilation products.
 $\\$ 
-The shower shapes with the following selections are compared:
+The shower shape variables with the following candidate selections are compared:
 \begin{itemize}
 \item $\bar{n}$ Monte Carlo PDG = -2112 (neutral clusters correctly associated with $\bar{n}$ particles),
 \item $\bar{n}$ Monte Carlo PDG = NaN (neutral clusters not associated with any particles),
@@ -525,16 +523,16 @@ The shower shapes with the following selections are compared:
 \item $\bar{n}$ hasAncestor != 0 (neutral clusters with $\bar{n}$ as relative).
 \end{itemize}
 
-Referring to figures ~\ref{fig:cluster_NOISR} and ~\ref{fig:cluster_ISR} (ISR case in appendix) the neutral clusters correctly associated with $\bar{n}$ particles carry the same information of those without $\bar{n}$ as relative, in both ISR and NO ISR cases.
+Referring to figures ~\ref{fig:cluster_NOISR} and ~\ref{fig:cluster_ISR} (ISR case in appendix), the clusters correctly associated with $\bar{n}$ particles carry the same information of those without $\bar{n}$ as relative, in both ISR and NO ISR cases.
 $\\$
 Furthermore, reconstructed neutral clusters not associated with any particles by the Monte Carlo and those with $\bar{n}$ as relative are primarily responsible for the structures observed at low values of energy, second moment, and number of crystals.
 $\\$
-A further selection on number of crystals ($clusterNHits > 10$) can be performed to study the corresponding cluster variables. The result is shown in figure  ~\ref{fig:cluster_NOISR_NHits} and ~\ref{fig:cluster_ISR_NHits} (ISR case in appendix).
+A further selection on number of crystals ($clusterNHits > 10$) can be performed to study the corresponding cluster variables, since no $\bar{n}$ signal in present below that value from Monte Carlo. The result is shown in figure  ~\ref{fig:cluster_NOISR_NHits} and ~\ref{fig:cluster_ISR_NHits} (ISR case in appendix).
 $\\$
-As observed, these structures arise from small-sized clusters produced by $\bar{n}$ particles that undergo phenomena -such as cluster split-off and pre-showering- prior to neutral cluster formation for $\bar{n}$ candidates, as confirmed by ancestor studies. The requirement of at least 10 crystals eliminates these structures,  without reducing the signal.
+These structures arise from small-sized clusters produced by $\bar{n}$ particles that undergo phenomena -such as cluster split-off and pre-showering- prior to neutral cluster formation for $\bar{n}$ candidates, as confirmed by ancestor studies. The requirement of at least 10 crystals eliminates these structures, without substantially reducing the signal.
 
 \newpage
-The obtained cluster variables in NO ISR case are shown below:
+
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_nog_ancestor.pdf}
@@ -546,13 +544,13 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog_ancestor.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog_ancestor.pdf}
    
-     \caption{\footnotesize{Comparison of reconstructed cluster variables for $\bar{n}$ candidates with different ancestor selection (no ISR case). Red: $\bar{n}$ candidates associated with true $\bar{n}$ by Monte Carlo matching; blue: $\bar{n}$ candidates not associated with any particle (NaN); green: $\bar{n}$ candidates without $\bar{n}$ relatives; yellow: $\bar{n}$ candidates with $\bar{n}$ relative. The third contribution (green) is barely visible as it lies beneath the first distribution (red). NO ISR case.}}
+     \caption{\footnotesize{Comparison of reconstructed cluster variables for $\bar{n}$ candidates with different ancestor selection (NO ISR case). Red: $\bar{n}$ candidates associated with true $\bar{n}$ by Monte Carlo matching; blue: $\bar{n}$ candidates not associated with any particle (NaN); green: $\bar{n}$ candidates without $\bar{n}$ relatives; yellow: $\bar{n}$ candidates with $\bar{n}$ relative. The third contribution (green) is barely visible as it lies beneath the first distribution (red).}}
      \label{fig:cluster_NOISR}
 
 \end{figure}
 
 \newpage
-The obtained cluster variables in NO ISR case are shown below:
+
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterE_hitscut_nog.pdf}
@@ -601,24 +599,24 @@ The obtained cluster variables in NO ISR case are shown below:
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterAbsZernikeMoment51_nog_region.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_MC/images/clusterNHits_nog_region.pdf}
    
-     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates in different ECL regions. Blue: forward region. Red: barrel region. Green: backward region. The distributions are normalized to unit value}
+     \caption{Comparison of reconstructed cluster variables for all $\bar{n}$ candidates in different ECL regions. Blue: forward region. Red: barrel region. Green: backward region. The distributions are normalized to unit value.}
       \label{fig:cluster_region}
 \end{figure}
 
 \subsection{Summary of Signal Channel Analysis}
-The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied, with both ISR and NO ISR emission. 
+The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied.
 $\\$
 $\\$
-The recoil system $p\pi^-(\gamma_{ISR})$ is correctly reconstructed by the analysis, as evidenced by the peak above the anti-neutron mass in the recoil mass distribution. Furthermore, the kinematic distributions ($p$ and $\theta$) of the recoil system are consistent with those of generator-level $\bar{n}$ candidates, in both ISR and NO ISR cases. At reconstructed level, good agreement is observed in the $\theta$ distribution, while the reconstructed $\bar{n}$ candidate momentum shows underestimation and poor resolution compared to the recoil system momentum, as observed in correlations and residuals distributions. Furthermore, a low-momentum value structure is observed in reconstructed and generated momentum of $\bar{n}$ candidates compared to the recoil system momentum.
+The recoil system $p\pi^-(\gamma_{ISR})$ is correctly reconstructed by the analysis, as evidenced by the peak above the anti-neutron mass in the recoil mass distribution. Furthermore, the kinematic distributions ($p$ and $\theta$) of the recoil system are consistent with those of generator-level $\bar{n}$ candidates, in both ISR and NO ISR cases. At reconstructed level, good agreement is observed in the $\theta$ distribution, while the reconstructed $\bar{n}$ candidate momentum shows underestimation and poor resolution compared to the recoil system momentum, as observed in correlations and residuals distributions, due to loss of energy leakage. Furthermore, a low-momentum structure is observed in reconstructed and generated momentum of $\bar{n}$ candidates compared to the recoil system momentum.
 $\\$
 $\\$
-Therefore, energy loss occurs within ECL clusters, suggesting leakage processes such as cluster split-off and/or pre-showering effects. Ancestor studies reveal that photons related to $\bar{n}$ particles are often misidentified as main $\bar{n}$ candidates, accounting for the low-momentum structure observed. In fact, the ancestors momentum can be partially recovered when good Monte Carlo associations occur, showing good agreement with the recoil system momentum as well. A study of $\bar{n}$ production reveals that candidates with $\bar{n}$ ancestors are generated far from the IP, before the ECL (pre-showering) and within the ECL (cluster split-off).
+Energy leakages occur within ECL clusters, suggesting processes such as cluster split-off and/or pre-showering effects. Ancestor studies reveal that photons related to $\bar{n}$ annihilation are often misidentified as main $\bar{n}$ candidates, accounting for the low-momentum structure observed. In fact, the ancestors momentum can be partially recovered when correct Monte Carlo associations occur, showing good agreement with the recoil system momentum as well. A study of $\bar{n}$ production reveals that candidates with $\bar{n}$ ancestors are generated far from the IP, before the ECL (pre-showering) and within the ECL (cluster split-off).
 $\\$
 $\\$
-Furthermore, a one-constraint (1C) Kinematic Fit was tested, revealing improvements in the recoil kinematic variables resolution.
+Furthermore, a one-constraint (1C) Kinematic Fit was tested, revealing improvements in the recoil kinematic variables, such as the momentum and $\theta$, resolution.
 $\\$
 $\\$
-Eventually, the reconstructed cluster variables associated with $\bar{n}$ candidates -such as cluster energy, lateral momentum, Zernike moments, etc.- were studied in the Monte Carlo signal sample. Similar structures to those observed in the momentum distributions were identified, particularly in the cluster energy and number of hits distributions. Therefore, ancestor studies confirm the momentum distribution observations: sub-clusters from secondary particles with $\bar{n}$ ancestry produce small-sized, low-energy structures in the cluster distributions.
+The reconstructed cluster variables associated with $\bar{n}$ candidates -such as cluster Energy, Lateral Momentum, Second Moment, etc.- were studied in the Monte Carlo signal sample. Similar structures to those observed in the momentum distributions were identified, particularly in the cluster Energy and Number of Hits distributions. Ancestor studies confirm the momentum distribution observations: sub-clusters from secondary particles -with $\bar{n}$ as relative- produce small-sized, low-energy structures in the cluster distributions.
 $\\$
 $\\$
 In particular, a cut on the cluster number of hits yields reconstructed cluster variables closer to those expected from Monte Carlo $\bar{n}$ candidate selection, in both ISR and NO ISR cases.

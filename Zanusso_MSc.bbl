@@ -1,15 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{dover1992}
-C.~B. Dover et~al.
-\newblock Antinucleon-nucleon interactions and annihilation.
-\newblock {\em Progress in Particle and Nuclear Physics}, 29:87--175, 1992.
-
-\bibitem{ueda1979}
-T.~Ueda.
-\newblock Theoretical study of $\bar{N}n$ interactions.
-\newblock {\em Progress of Theoretical Physics}, 72(6):1670--1682, 1979.
-
 \bibitem{nedilko2009}
 S~G Nedilko et~al.
 \newblock Properties of scintillators.
@@ -91,6 +81,16 @@ P.~S. Eastman et~al.
 Tullio Bressani and A.~Filippi.
 \newblock Antineutron physics.
 \newblock {\em Physics Reports}, 383(3-6):213--297, 2003.
+
+\bibitem{dover1992}
+C.~B. Dover et~al.
+\newblock Antinucleon-nucleon interactions and annihilation.
+\newblock {\em Progress in Particle and Nuclear Physics}, 29:87--175, 1992.
+
+\bibitem{ueda1979}
+T.~Ueda.
+\newblock Theoretical study of $\bar{N}n$ interactions.
+\newblock {\em Progress of Theoretical Physics}, 72(6):1670--1682, 1979.
 
 \bibitem{armstrong1987}
 T.~Armstrong et~al.
@@ -192,6 +192,25 @@ Leo Piilonen.
 T.~Kuhr, C.~Pulvermacher, M.~Ritter, T.~Hauth, and N.~Braun.
 \newblock The belle {II} core software.
 \newblock {\em Computing and Software for Big Science}, 3(1), 11 2018.
+
+\bibitem{Bierlich2022}
+Christian~Bierlich et~al.
+\newblock A comprehensive guide to the physics and usage of {PYTHIA} 8.3.
+\newblock 2022.
+\newblock Available at \url{https://arxiv.org/abs/2203.11601}.
+
+\bibitem{EvtGenGuide}
+Anders Ryd, David Lange, Natalia Kuznetsova, Sophie Versille, Marcello Rotondo,
+  David Kirkby, Frank Wuerthwein, and Akimasa Ishikawa.
+\newblock {EvtGen: A Monte Carlo Generator for B-Physics}.
+\newblock Technical report, EvtGen Collaboration, 2004.
+\newblock EvtGen User Guide, version V00-11-06.
+
+\bibitem{Ping2013}
+Rong-Gang Ping.
+\newblock Exclusive event generator for $e^+e^-$ scan experiments.
+\newblock 2013.
+\newblock Available at \url{https://arxiv.org/pdf/1309.3932}.
 
 \bibitem{denuccio2019}
 Michael De~Nuccio et~al.

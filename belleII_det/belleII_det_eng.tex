@@ -1,45 +1,45 @@
 \setcounter{subsection}{0} 
 \part{The Belle II experiment}
-The following sections introduce the \textbf{SuperKEKB} \cite{akai2018} collider, describing its technical setup briefly. Then the \textbf{Belle II} \cite{BelleIIPhysicsBook2019} detector is presented, discussing it sub-detector by sub-detector. Afterwards, the Belle II Analysis Software Framework (\textbf{basf2}) and \textbf{TopoAna} program are briefly described, with attention to the role of Monte Carlo methods in collider experiment simulation and reconstruction.
+The following sections introduce the SuperKEKB \cite{akai2018} collider, describing its technical setup briefly. Then the Belle II \cite{BelleIIPhysicsBook2019} experiment is presented, discussing it detector by detector. Afterwards, the Belle II Analysis Software Framework (basf2) and TopoAna package are briefly described, with attention to the role of Monte Carlo methods in collider experiment simulation.
 
 \subsection{The SuperKEKB collider}
-\textbf{SuperKEKB} \cite{akai2018} is an asymmetric $e^+ e^-$ double-ring collider, located at KEK (The High Energy Accelerator Research Organization), in Tsukuba, Japan. It is the upgrade of the previous collider KEKB. It has a circumference of $3016$ m and collides bunches of electrons with bunches of positrons, respectively of energy 7 GeV (High Energy Ring -HER-) and 4 GeV (Low Energy Ring -LER-). Fig.~\ref{fig:superkekb_scheme} shows a schematic image of the SuperKEKB design.
+SuperKEKB \cite{akai2018} is an asymmetric $e^+ e^-$ double-ring collider, located at KEK (The High Energy Accelerator Research Organization), in Tsukuba, Japan. It is the upgrade of the previous collider KEKB. It has a circumference of $3016$ m and collides bunches of electrons with bunches of positrons, respectively of energy 7 GeV (High Energy Ring -HER-) and 4 GeV (Low Energy Ring -LER-). Fig.~\ref{fig:superkekb_scheme} shows a schematic image of the SuperKEKB design.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{belleII_det/images/superkekb.png}
-    \caption{SuperKEKB design, where the Interaction Point (IP) is located in Tsukuba surrounded by the Belle II detector.}
+    \caption{SuperKEKB design, where the Interaction Point (IP) is located in Tsukuba Hall, surrounded by the Belle II detector.}
     \label{fig:superkekb_scheme}
 \end{figure}
 $\\$
-It is noteworthy that the positron damping ring reduces the $e^+$ beam emittance, as positrons are obtained from a rotating tungsten target subjected. Electrons, by contrast, are injected directly from the linac since a controlled $e^-$ beam can easily be obtained \cite{kikuchi2005}.
+It is noteworthy that the positron damping ring reduces the $e^+$ beam emittance, as positrons are obtained from a rotating tungsten target target bombarded by an electron beam. Electrons, by contrast, are injected directly from the linac since a controlled $e^-$ beam can be easily obtained with a Linear Accelerator (LINAC) \cite{kikuchi2005}.
 $\\$
-The resulting center-of-mass energy $\sqrt{s}$ in the Interaction Point (IP) can be modulated, but most of the data are acquired at the $\Upsilon(4S)$ resonance (10.58 GeV), an excited quarkonium state of $b \bar{b}$, which mainly decays into an entangled couple of $B\bar{B}$ ($\sim 100\%$). The $\Upsilon(4S)$ mass is just 20 MeV above the $B\bar{B}$ threshold, then the mesons are produced nearly in the rest frame. Since the lifetime of neutral B-mesons is short ($\tau = 1.510$ ps) and they are produced with low velocities, their path before decaying is short, making tough to separate the decays of the two produced mesons. The explicit asymmetry of bunches results in a relativistic forward Lorentz boost of the center-of-mass, where the decay length of the mesons is longer in the LAB frame, allowing the observation of the produced B mesons. Due to the huge amount of produced B mesons, SuperKEKB is regarded as an example of so-called (super) \textbf{B-factory}. 
+The resulting center-of-mass energy $\sqrt{s}$ in the Interaction Point (IP) can be modulated, but most of the data are acquired at the $\Upsilon(4S)$ resonance (10.58 GeV), an excited quarkonium state of $b \bar{b}$, which mainly decays into an entangled couple of $B\bar{B}$ ($\sim 100\%$). The $\Upsilon(4S)$ mass is just 20 MeV above the $B\bar{B}$ threshold, then the mesons are produced nearly in the rest frame. Since the lifetime of neutral B-mesons is short ($\tau = 1.510$ ps) and they are produced with low velocities, their path before decaying is short, making tough to separate the decays of the two produced mesons. The explicit asymmetry of bunches results in a relativistic forward Lorentz boost of the center-of-mass, where the decay length of the mesons is longer in the LAB frame, allowing the observation of the B mesons separately. Due to the huge amount of produced B mesons, SuperKEKB is by definition an example of so-called (super) B-factory. 
 $\\$
-SuperKEKB has been running since 2018 and it achieved the world’s highest instantaneous luminosity ($5.244 \times 10^{34} cm^{-2} s^{-1}$ ) in March 19, 2026. The design luminosity of SuperKEKB  $ 8 \times 10^{35} cm^{-2} s^{-1}$, 40 times higher than Belle's one, with the goal to accumulate data corresponding to an integrated luminosity of 50 $ab^{-1}$. The March 19, 2026 SuperKEKB 24-Hour Operation Summary is shown in Fig. ~\ref{fig:SuperKEKB 24-Hour Operation Summary}.
+SuperKEKB has been running since 2018 and it achieved the world’s highest instantaneous luminosity ($5.244 \times 10^{34} cm^{-2} s^{-1}$ ) in March 19, 2026. The design luminosity of SuperKEKB is $ 8 \times 10^{35} cm^{-2} s^{-1}$, 40 times higher than the Belle's one, with the goal to accumulate data corresponding to an integrated luminosity of 50 $ab^{-1}$, 50 times the Belle data sample. The March 19, 2026 SuperKEKB 24-Hour Operation Summary is shown in Fig. ~\ref{fig:SuperKEKB 24-Hour Operation Summary}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{belleII_det/images/SuperKEKB_operation.png}
+    \includegraphics[width=0.95\textwidth]{belleII_det/images/SuperKEKB_operation.png}
 \caption{SuperKEKB operating parameters on March 18-19, 2026. From top to bottom: HER and LER ring currents (first two panels), instantaneous and integrated luminosity (bottom two panels).}
 \label{fig:SuperKEKB 24-Hour Operation Summary}
 \end{figure}
 
 \subsection{The Belle II detector}
-The only interaction point of SuperKEKB is surrounded by the \textbf{Belle II} detector \cite{BelleIIPhysicsBook2019}, a general purpose high-energy particle layered detector with almost $4 \pi$ of solid angle coverage. It presents a cylindrical shape to cover the $e^+ e^-$ collisions, composed of a barrel and two end-caps located along the z-axis. 
+The only interaction point of SuperKEKB is surrounded by the Belle II detector \cite{BelleIIPhysicsBook2019}, a general purpose high-energy particle layered spectrometer with almost $4 \pi$ of solid angle coverage. It presents a cylindrical shape to cover the $e^+ e^-$ collisions, composed of a barrel and two end-caps located along the z-axis. 
 $\\$
-The Belle II detector measures 8 m in both width and height, with a total weight of approximately 1400 tons. With the exception of the KLM, all its subsystems are immersed in a 1.5 T magnetic field. 
+The Belle II spectrometer measures 8 m in both width and height, with a total weight of approximately 1400 tons. With the exception of the KLM, all its subsystems are immersed in a 1.5 T magnetic field. 
 $\\$
-The detector is composed of several sub-detectors arranged cylindrically, reflecting the asymmetric distribution of the final state particles. The cylindrical structure of the detector is the \emph{barrel}, while the bases are made of the forward end-cap (along the direction of the $e^-$ beam) and the backward end-cap (along the direction of the $e^+$ beam). 
+The spectrometer is composed of several detectors arranged cylindrically, reflecting the asymmetric distribution of the final state particles. The cylindrical structure of the detector is the \emph{barrel}, while the caps are made of the forward end-cap (along the direction of the $e^-$ beam) and the backward end-cap (along the direction of the $e^+$ beam). 
 $\\$
-The Belle II detector consists of the following sub-detectors, arranged radially outward from the IP:
+The Belle II spectrometer consists of the following detectors, arranged radially outward from the IP:
 \begin{enumerate}[label=(\alph*)]
-\item Beam Pipe made of Beryllium (Be);
-\item Two layers of silicon Pixel Detector (PXD);
-\item Four layers of double-sided silicon strip detector (SVD);
-\item The Central Drift Chamber for tracking the charged particle (CDC);
-\item Time of Propagation (TOP) Cherenkov counter in the barrel  + Cherenkov ring imaging (ARICH) in the front end-cap region;
-\item The Electromagnetic Calorimeter (ECL) to detect photons and to identify charged particles;
-\item The superconductive magnet which provides 1.5 T axial magnetic field in order to bend charged particle;
+\item The Beam Pipe made of Beryllium (Be),
+\item Two layers of silicon Pixel Detector (PXD),
+\item Four layers of double-sided silicon strip detector (SVD),
+\item The Central Drift Chamber for tracking the charged particle (CDC),
+\item The Time of Propagation (TOP) Cherenkov counter in the barrel  and the Cherenkov ring imaging (ARICH) in the front end-cap region,
+\item The Electromagnetic Calorimeter (ECL) to detect photons and to identify charged particles,
+\item The superconductive magnet which provides 1.5 T axial magnetic field in order to bend charged particle,
 \item The $K_L$ and Muon detector (KLM) to track muons and $K_L$. 
 \end{enumerate}
 $\\$
@@ -55,9 +55,9 @@ A Belle II scheme is shown in Fig.~\ref{fig:belleii_artistic}.
 \end{figure}
 
 \subsubsection{The vertex detector VXD}
-Immediately following the beryllium beam pipe, which does not play a detection role, the innermost layer is the Vertex Detector (\textbf{VXD}). 
+Immediately following the beryllium beam pipe, which does not play a detection role, the innermost layer is the Vertex Detector (VXD). 
 $\\$
-It consists of two devices: the Silicon Pixel Detector (\textbf{PXD} - 2 layers) \cite{YE2021164875} and the Silicon Vertex Detector (\textbf{SVD} - 4 layers) \cite{ZANI2022166952} . Overall there are six layers, of whose the first two ($r_1=14 mm, \ r_2=22 mm$) are pixelated sensors of the DEPFET type and the remaining four ($r_3=38 mm, \ r_4=88 mm, \ r_5=115 mm,\ r_6=140 mm$) are double-sided silicon strip sensors. 
+It consists of two devices: the Silicon Pixel Detector (PXD - 2 layers) \cite{YE2021164875} and the Silicon Vertex Detector (SVD - 4 layers) \cite{ZANI2022166952} . Overall there are six layers, of whose the first two ($r_1=14 mm, \ r_2=22 mm$) are pixelated sensors of the DEPFET type and the remaining four ($r_3=38$ mm, $r_4=88$ mm,  $r_5=115$ mm, $r_6=140$ mm) are double-sided silicon strip sensors. 
 $\\$
 The VXD provides coverage of $17^\circ < \theta < 150^\circ$ and full azimuthal coverage in $\phi$, where $\theta$ is the polar angle relative to the $z$-axis -aligned with the $e^-$ beam direction- and $\phi$ is the azimuthal angle in the $xy$ plane using cylindrical coordinates. A scheme of the VXD is shown in Fig. ~\ref{fig:vxd_scheme}.
 
@@ -68,14 +68,14 @@ The VXD provides coverage of $17^\circ < \theta < 150^\circ$ and full azimuthal 
     \label{fig:vxd_scheme}
 \end{figure}
 
-The VXD purpose is to reconstruct the position of the primary vertex, the vertex of B-mesons decay which are directly produced by the decay of the $\Upsilon(4S)$, improving the resolution of the tracking system as well.
+The VXD purpose is to reconstruct the position of the primary vertex, the vertex of the B-mesons decay which are directly produced by the decay of the $\Upsilon(4S)$, improving the resolution of the tracking system as well.
 
 \subsubsection{The Central Drift Chamber (CDC)}
-The Central Drift Chamber (\textbf{CDC}) \cite{Taniguchi_2017} is a large volume composed of small drift cells and it is the main tracking system of the Belle II detector. The CDC reconstructs charged-particle tracks by measuring the hit positions, allowing the determination of their momenta. Furthermore, the specific energy loss $dE/dx$ measurement provides PID (Particle IDentification) information, complemented by the 1.5~T magnetic field that enables charge separation. 
+The Central Drift Chamber (CDC) \cite{Taniguchi_2017} is a large volume composed of small drift cells and it is the main tracking system of the Belle II detector. The CDC reconstructs charged-particle tracks by measuring the hit positions, allowing the determination of their momenta. Furthermore, the specific energy loss $dE/dx$ measurement provides PID (Particle IDentification) information, complemented by the 1.5~T magnetic field that enables charge separation. 
 $\\$
-The CDC has an internal radius of 16 cm and an external radius of 113 cm and it contains 14339 wires in total distributed in 56 layers, either parallel (axial orientation) or skewed (stereo orientation) to the magnetic field direction. Combining their information, it is possible to reconstruct a full tridimensional helix track. Inside the cell, the average drift velocity is $3.3 cm/\mu s$. 
+The CDC has an internal radius of 16 cm and an external radius of 113 cm and it contains 14339 wires in total distributed in 56 layers, either parallel (axial orientation) or skewed (stereo orientation) to the magnetic field direction. Combining their information, it is possible to reconstruct a full tridimensional helix track. Inside the cell, the average drift velocity is 3.3 $cm/\mu s$. 
 $\\$
-The CDC has the same VXD angular ($\theta$, $\phi$) coverage and, in order to increase the acceptance at forward angles, it is implemented asymmetrically along the z axis. It is filled with a mixture of helium ($He$) and ethane ($C_2H_6$), which represents a proper trade-off between momentum resolution for tracking and $dE/dx$ resolution for the PID. A schematic view of the CDC is shown in Fig. ~\ref{fig:CDC_scheme}:
+The CDC has the same VXD angular ($\theta$, $\phi$) coverage and, in order to increase the acceptance at forward angles, it is implemented asymmetrically along the z axis. It is filled with a mixture of helium ($He$) and ethane ($C_2H_6$), which represents a proper trade-off between momentum resolution for tracking and $dE/dx$ resolution for the PID. A schematic view of the CDC is shown in Fig. ~\ref{fig:CDC_scheme}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{belleII_det/images/CDC}
@@ -84,15 +84,15 @@ The CDC has the same VXD angular ($\theta$, $\phi$) coverage and, in order to in
 \end{figure}
 
 \subsubsection{PID systems: TOP and ARICH}
-Particles crossing a Cherenkov radiator material at speeds exceeding the phase velocity of light in that medium ($\beta > 1/n$, where $n$ is the refractive index) emit photons at the Cherenkov angle $\theta_c = \arccos(1/\beta n)$. Particles with identical momentum but different masses produce Cherenkov radiation at distinct angles, enabling Particle IDentification (PID).
+Particles crossing a material at speeds exceeding the phase velocity of light in that medium ($\beta > 1/n$, where $n$ is the refractive index) emit photons at the Cherenkov angle $\theta_c = \arccos(1/\beta n)$. Particles with identical momentum but different masses produce Cherenkov radiation at distinct angles, enabling Particle IDentification (PID).
 $\\$
-For particle identification in the barrel region, a Time of Propagation (\textbf{TOP}) \cite{Horii:2013ndq} counter -a novel Cherenkov detector- is employed. In total, there are 16 modules, each consisting of a 45 cm wide and 2 cm thick quartz bar with a small expansion volume of about 10 cm long at the sensor end. There is an expansion wedge that behaves as a lens and improves the spatial resolution of the Cherenkov photon imaging. At the exit window of the wedge, two rows of sixteen fast multi-anode photon detectors are mounted.
+For particle identification in the barrel region, a Time of Propagation (TOP) \cite{Horii:2013ndq} counter -a novel Cherenkov detector- is employed. In total, there are 16 modules, each consisting of a 45 cm wide and 2 cm thick quartz bar with a small expansion volume of about 10 cm long at the sensor end. There is an expansion wedge that behaves as a lens and improves the spatial resolution of the Cherenkov photon imaging. At the exit window of the wedge, two rows of sixteen fast multi-anode photon detectors are mounted.
 $\\$
 Within the 2.6 m-long quartz, the particle produces Cherenkov radiation that travels via total internal reflection to the mirror. Then the radiation is reflected towards the photon detectors at the backward end, where a small prism is located, acting as a volume expansion and a light guide. The time of arrival and the impact position of the Cherenkov photons provide the PID information. 
 $\\$
 The hit distributions differ according to the particle species and their masses: different particles exhibit distinct Cherenkov angles, resulting in different photon paths. Consequently, they are detected at different positions within the PhotoMulTiplier (PMT) array and at different times.
 $\\$
-A scheme of TOP counter module is illustrated in Fig.~\ref{fig:top_module} and a side view of the TOP counter in Fig.~\ref{fig:top_counter}.
+A scheme of the TOP counter module is illustrated in Fig.~\ref{fig:top_module} and a side view of the TOP counter in Fig.~\ref{fig:top_counter}.
 
 
 \begin{figure}[h]
@@ -108,23 +108,23 @@ A scheme of TOP counter module is illustrated in Fig.~\ref{fig:top_module} and a
     \caption{Representation of the side view of the TOP counter with internal reflection of the Cherenkov radiation.}
     \label{fig:top_counter}
 \end{figure}
-Thanks to a 16-channel Micro Channel Plate PhotoMultiplier (MCP-PMT), TOP counters are equipped with photosensors that provide a time resolution of about 100 ps.
+The TOP counters are equipped with photosensors, that provide a time resolution of about 100 ps, made of 16-channel Micro Channel Plate PhotoMultiplier (MCP-PMT).
 $\\$
-The Aerogel Ring Imaging CHerenkov (\textbf{ARICH}) \cite{Yusa:2013cao} is located in the forward end-cap region of the Belle II detector and is thus complementary to the aforementioned TOP. Its main goal is to separate kaons $K$ from pions $\pi$ across the full kinematic range of the experiment, from 0.5 to 4.0 $GeV/c$.
+The Aerogel Ring Imaging CHerenkov (ARICH) \cite{Yusa:2013cao} is located in the forward end-cap region of the Belle II detector and thus complements the aforementioned TOP. Its main goal is to separate kaons $K$ from pions $\pi$ across the full kinematic range of the experiment, from 0.5 to 4.0 $GeV/c$.
 $\\$
 It consists of two 2~cm thick aerogel layers ($n_{up} = 1.045$, $n_{down} = 1.055$), which increase the photon yield without degrading the Cherenkov angle resolution compared to using a single aerogel type~\cite{Abe2006}. A scheme of the ARICH working principle and an example of a ring produced by a cosmic-ray muon are shown in Fig.~\ref{fig:mesh2}.
 \begin{figure}[H]
     \centering
     \includegraphics[width= 0.49\textwidth]{belleII_det/images/ARICH}
     \includegraphics[width= 0.49\textwidth]{belleII_det/images/mu_ring}    
-    \caption{(a) Working principle of the ARICH. (b) Ring produced by a cosmic-ray muon.}
+    \caption{(left) Working principle of the ARICH. (right) Ring produced by a cosmic-ray muon.}
     \label{fig:mesh2}
 \end{figure}
 
 \subsubsection{The Electromagnetic Calorimeter (ECL)}
-The Electromagnetic CaLorimeter (\textbf{ECL}) \cite{KUZMIN2020162235} plays a central role in this thesis, since the neutral ECL clusters associated to anti-neutron candidates are studied. 
+The Electromagnetic CaLorimeter (ECL) \cite{KUZMIN2020162235} plays a central role in this thesis, since it is aimed at the study of the reconstruction clusters associated to anti-neutron candidates. 
 $\\$
-The primary purpose of the ECL is to detect photons and electrons, providing precise measurements of their energy and position ($E$, $\vec{x}$), studying the produced electromagnetic shower. The ECL contributes to identifying neutral particles -such as photons and neutral hadrons- as well as separate the charged particles, primarily electrons and pions. Anti-neutrons can be detected through its annihilation products (mainly pions). A typical shape of an ECL shower caused by a 7 GeV photon in shown in Fig.~\ref{fig:shower_arts}.
+The primary purpose of the ECL is to detect photons and electrons, providing precise measurements of their energy and the position the produced electromagnetic shower ($E$, $\vec{x}$). The ECL contributes to identify neutral particles -such as photons and neutral hadrons- as well as to separate the charged particles, primarily electrons and pions. Anti-neutrons can be detected through its annihilation products (mainly pions). A typical shape of an ECL shower caused by a 7 GeV photon is shown in Fig.~\ref{fig:shower_arts}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.95\textwidth]{belleII_det/images/shower_ECL}
@@ -142,16 +142,16 @@ $R_m = \frac{21 MeV}{E_c} \times X_0$
 
 \paragraph{CsI(Tl) crystals}
 $\\$
-The thallium-doped caesium iodide \textbf{CsI(Tl)} crystals have $X_0$ = 1.860 cm and $R_m$ = 3.53 cm. This material is one of the brightest known scintillator, providing a light yield Y of  $\sim 52000$ photons/MeV, with a photon emission spectrum at $\sim 550$ nm, ideal for photodiode readout. Properties of typical inorganic scintillators used in calorimetry are shown in ~\ref{fig:crys_prop}.
+The thallium-doped caesium iodide CsI(Tl) crystals have $X_0$ = 1.860 cm and $R_m$ = 3.53 cm. This material is one of the brightest known scintillators, providing a light yield Y of  $\sim 52000$ photons/MeV, with a photon emission spectrum peaked at $\sim 550$ nm, ideal for photodiode readout. Properties of typical scintillators used in calorimetry are shown in Fig.~\ref{fig:crys_prop}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{belleII_det/images/Properties-of-scintillators}
-    \caption{Properties of inorganic scintillators used in calorimetry \cite{nedilko2009}.}
+    \caption{Properties of scintillators used in calorimetry \cite{nedilko2009}.}
     \label{fig:crys_prop}
 \end{figure}
 
-The ECL is composed of 8736 array of \textbf{CsI(Tl)} crystals. Each is a truncated pyramid with dimension 6x6x30 $cm^3$, where the radial length is around 16.2$X_0$. Each crystal is wrapped with a layer of 200  $\mu m$ thick Gore-Tex porous teflon and then covered with a 50 $ \mu m$ thick aluminized polyethylene.
+The ECL is composed of 8736 array of CsI(Tl) crystals. Each is a truncated pyramid with dimension 6x6x30 $cm^3$, where the radial length is around 16.2$X_0$. Each crystal is wrapped with a layer of 200  $\mu m$ thick Gore-Tex porous teflon and then covered with a 50 $ \mu m$ thick aluminized polyethylene.
 $\\$
 Assuming the $z$-axis is aligned with the $e^-$ beam momentum direction, with $z=0$ coinciding with the nominal IP position, the ECL is made of a 3 m long barrel section and the end-caps at $z = 2.0$ m (forward) and $z = -1.0$ m (backward). An ECL scheme is shown in Fig.~\ref{fig:ECL_scheme}:
 
@@ -162,9 +162,9 @@ Assuming the $z$-axis is aligned with the $e^-$ beam momentum direction, with $z
     \label{fig:ECL_scheme}
 \end{figure}
 
-It covers about 90\% of the solid angle in the center-of-mass system (polar coverage: $12^{\circ} \le \theta \le 155^{\circ}$); there is a $\sim1^{\circ}$ gap between barrel and each end-cap.
+It covers about 90\% of the solid angle in the center-of-mass system (polar coverage: $12^{\circ} \le \theta \le 155^{\circ}$); there is a $\sim1^{\circ}$ gap between the barrel and each end-cap.
 $\\$
-An image showing the ECL $\theta$ coverage and segmentation for each region is shown in Fig.~\ref{fig:ECL_coverage}.
+A table showing the ECL $\theta$ coverage and segmentation for each region is shown in Fig.~\ref{fig:ECL_coverage}.
 
 \begin{figure}[H]
     \centering
@@ -173,18 +173,18 @@ An image showing the ECL $\theta$ coverage and segmentation for each region is s
     \label{fig:ECL_coverage}
 \end{figure}
 
-Light from each crystal is detected by two $10 \times 20$\,mm$^2$ \emph{Hamamatsu S2744-08 photodiodes} \cite{hamamatsu_s2744_08}, glued to the rear surface of the crystal and coupled to charge-sensitive preamplifiers.
+Light from each crystal is detected by two $10 \times 20$\,mm$^2$ Hamamatsu S2744-08 photodiodes \cite{hamamatsu_s2744_08}, glued to the rear surface of the crystal and coupled to charge-sensitive preamplifiers.
 \subsubsection{The solenoid and iron structure} 
-After the ECL, an axial magnetic field of 1.5T is generated by a 23 tons superconducting solenoid. The curvature of charged-particle trajectories (Larmor radius) allows the determination of their momentum and charge, which, when combined with additional detector information, enables particle identification.
+Externally to the ECL are the spires of the 23-ton superconducting solenoid that generates the 1.5 T axial magnetic field. The curvature of charged-particle trajectories (Larmor radius) allows the determination of their momentum and charge, enabling particle identification when combined with additional detector information.
 $\\$
-The magnet is made of niobium-titanium-copper (NbTi/Cu) alloy and is cooled by a liquid helium cryostat to achieve superconducting conditions.
+The magnet coils are made of niobium-titanium-copper (NbTi/Cu) alloy and is cooled by a liquid helium cryostat to achieve superconducting conditions.
 
 \subsubsection{The $K_L$ and Muon Detector (KLM)}
-The $K_L$ and Muon Detector (\textbf{KLM})~\cite{2016APS} represents the outermost layer of Belle II and it is dedicated to the detection of $K_L$ mesons and muons, which are very penetrating particles. It is composed of alternating layers of 4.7 cm thick iron plates and active detector elements; the former acts as a return yoke for the magnetic flux. The alternating layers provide at least 3.9 interaction lengths (compared to 0.8 in the ECL), allowing the $K_L$ to interact and produce hadronic showers.
+The $K_L$ and Muon Detector (KLM)~\cite{2016APS} represents the outermost layer of Belle II and it is dedicated to the detection of $K_L$ mesons and muons, which are very penetrating particles. It is composed of alternating layers of 4.7 cm thick iron plates and active detector elements; the former acts as a return yoke for the magnetic flux. The alternating layers provide at least 3.9 interaction lengths (compared to 0.8 in the ECL), allowing the $K_L$ to interact and produce hadronic showers.
 $\\$
-KLM covers the barrel region (15 layers) and the end-caps regions (forward 14 layers and backward 12 layers). The two inner barrel layers and the entire end-caps are instrumented with scintillator strips, while the 13 outer barrel layers are instrumented with Resistive Plate Chambers (RPC). 
+The KLM covers the barrel region (15 layers) and the end-caps regions (forward 14 layers and backward 12 layers). The two inner barrel layers and the entire end-caps are instrumented with scintillator strips, while the 13 outer barrel layers are instrumented with Resistive Plate Chambers (RPC). 
 $\\$
-As compared to charged hadrons, muons travel longer distances and with smaller deflections inside the KLM, which allows discrimination between the two.
+As compared to charged hadrons, muons travel longer distances and with smaller deflections inside the KLM, which allows discrimination between them.
 
 \newpage
 \setcounter{subsection}{0} 
@@ -194,24 +194,24 @@ As compared to charged hadrons, muons travel longer distances and with smaller d
     \includegraphics[width=0.4\textwidth]{belleII_det/images/b2logo}
 \end{figure}
 
-To perform the simulations, reconstruction and the analyses of this thesis, the Belle II Analysis Software Framework (\textbf{basf2}) \cite{Kuhr_2018} has been employed. It is the primary software used in all aspects of the data-processing chain at Belle II, such as generating simulated data, unpacking raw data, performing reconstruction (tracking, clustering) and carrying out high-level analysis. The final analysis steps (as histogramming, fitting distributions, etc.) are usually performed in other frameworks as well, such as \textbf{ROOT} or the Matplotlib Python library.
+To perform the simulations, reconstruction and the analyses of this thesis, the Belle II Analysis Software Framework (basf2) \cite{Kuhr_2018} has been used. It is the primary software used in all aspects of the data-processing chain at Belle II, such as generating simulated data, unpacking raw data, performing reconstruction (tracking, clustering) and carrying out high-level analysis. The final analysis steps (as histogramming, fitting distributions, etc.) are usually performed in other frameworks as well, such as ROOT or the Matplotlib Python library.
 
 \subsection{Monte Carlo simulation and reconstruction}
 The Monte Carlo method is a technique used to compute probabilities and related quantities by exploiting sequences of pseudo-random numbers. These sequences are "pseudo-random" because sequences of random numbers possess meaning, not individual ones -though the latter are frequently referenced. Randomness characterizes the sequence, not single numbers. 
 $\\$
-Monte Carlo methods are widely used in HEP physics for tasks such as \textbf{event generation} and \textbf{detector simulation}. The first one regards the production and the decays of particles with a certain set of properties, while the second one concerns the simulation of the particle interactions during the path in the detector materials. 
+Monte Carlo methods are widely used in HEP physics for tasks such as event generation and detector simulation. The first one regards the production and the decays of particles with a certain set of properties, while the second one concerns the simulation of the particle interactions during the path in the detector materials. 
 $\\$
-In Belle II, electron-positron collisions produce a certain amount of particles, according to the adopted physics model, which may follows the Standard Model or alternatives such as supersymmetry or dark matter production. Example of a physics generator is \emph{PYTHIA} for the generation of high-energy physics collision events, \emph{EvtGen} which simulates the decays of particles, primarily B and D mesons, and \emph{Phokhara} which simulates the leptonic and hadronic final states at the next-to-leading order (NLO) accuracy, namely simulating Initial State Radiation (\textbf{ISR}), which has a primary role in the analysis, and so forth.
+In Belle II, electron-positron collisions produce a certain amount of particles, according to the adopted physics model, which may be based on the Standard Model or alternatives such as supersymmetry or dark matter production. Example of a physics generator is \emph{PYTHIA} \cite{Bierlich2022} for the generation of high-energy physics collision events, \emph{EvtGen} \cite{EvtGenGuide} which simulates the decays of particles and \emph{Phokhara} \cite{Ping2013} which simulates the leptonic and hadronic final states at the next-to-leading order (NLO) accuracy, namely simulating Initial State Radiation (ISR), which has a primary role in the analysis, and so forth.
 $\\$
-After the generation, the particles are propagated through the detector, accounting for their interactions with material and the effects of the magnetic field, using GEANT4. This is an open source software which performs the interaction between particles and the detector systems.
+After the generation, the particles are propagated through the detector, accounting for their interactions with material and the effects of the magnetic field, using GEANT4 \cite{geant4_cds}. This is an open source software which simulates the interaction between particles and the detector systems.
 $\\$
-The \textbf{reconstruction} represents the process in which particles are measured and identified. The closer the reconstructed quantities (such as initial positions and four-momenta) are to the generated-level information, the better the reconstruction performance in simulated MC and real data. Since several products of $e^+ e^-$ collisions are short living particles, it is necessary to reconstruct them indirectly via their daughter particles. Furthermore, intrinsic noise must be taken into account, as it may generate spurious random signals unrelated to actual particles. Interactions between beam electrons or positrons, either with each other or with other accelerator components -known as beam background- must be considered.
-The same reconstruction algorithms are employed in data and MC, in order to obtain the same reconstruction. To test the correct response of the reconstruction, generator-level Monte Carlo truth of the simulated data pool is use (the so called \textbf{MC truth}). The Monte Carlo matching (MC-matching) procedure identifies the generator-level particle responsible for a reconstructed candidate, crucial for understanding reconstruction effects and backgrounds. This corresponds to the association of reconstructed particles with MC particles in Belle II nomenclature.
+The reconstruction represents the process in which particles are measured and identified. The closer the reconstructed quantities (such as initial positions and four-momenta) are to the generated-level information, the better the reconstruction performance in simulated MC and real data. Since several products of $e^+ e^-$ collisions are short living particles, it is necessary to reconstruct them indirectly via their daughter particles. Furthermore, intrinsic noise must be taken into account, as it may generate spurious random signals unrelated to actual particles. Interactions between beam electrons or positrons, either with each other or with other accelerator components -known as beam background- must be considered.
+The same reconstruction algorithms are employed in data and MC, in order to obtain the same condition. To test the correct response of the reconstruction, generator-level Monte Carlo truth of the simulated data is used (the so called MC truth). The Monte Carlo matching (MC-matching) procedure associates the generator-level particle responsible for a reconstructed candidate, crucial for understanding reconstruction effects and backgrounds.
 
 \subsection{basf2 modules and path}
-A \textbf{basf2 module} is the smallest building block of the framework and it is a script, usually written in C++, designed to process a specific unit of data. A typical data chain consists of a linear arrangement of modules. All the work is done in modules, including reading and writing data to and from disk or more complex operations such as full detector simulation.
+A basf2 module is the smallest building block of the framework and it is a script, usually written in C++, designed to process a specific unit of data. A typical data chain consists of a linear arrangement of modules. All the work is done in modules, including reading and writing data to and from disk or more complex operations such as full detector simulation.
 $\\$
-Modules are linearly arranged in a \textbf{path}, which is a container for them. The linear order depends on the specific task defined by the user. Therefore, the modules are executed one at a time, in the same order they were added into the path, from the first to the last. A schematic view of processing flow is shown in Fig.~\ref{fig:proc_flow}.
+Modules are linearly arranged in a path, which is a container for them. The linear order depends on the specific task defined by the user. Therefore, the modules are executed one at a time, in the same order they are added into the path, from the first to the last. A schematic view of the processing flow is shown in Fig.~\ref{fig:proc_flow}.
 
 \begin{figure}[H]
     \centering
@@ -221,46 +221,46 @@ Modules are linearly arranged in a \textbf{path}, which is a container for them.
     \label{fig:proc_flow}
 \end{figure}
 
-The modules process data stored in the DataStore, with each module having access to read from and write to it. There are also non-event data, the so called conditions, which are loaded from a central conditions database, the DBStore. These databases store the information about the specific detector conditions at each run of the experiment. 
-
-A \textbf{package} is a logical collection of code in basf2, consisting of several modules and python scripts that configure paths to do common things. The packages have meaningful names related to their specific operation (tracking, reconstruction, ecl, klm, etc...). All the packages are stored in the Belle II GitLab repository. The most used package in this thesis is the \textbf{analysis package}, which contains python functions and C++ basf2 modules, such as modularAnalysis.
+The modules process data stored in the DataStore, with each module having access to read from and write to it. There are also non-event data, the so called conditions, which are loaded from a central conditions database, the DBStore. This database stores the information about the specific detector conditions at each run of the experiment. 
 $\\$
-The \textbf{steering file} is the core script in which analysis and data-processing tasks are performed, with a path being declared and modules added to it. Some highlights of the steering files used are provided in the appendix.
+A package is a logical collection of code in basf2, consisting of several modules and python scripts that configure paths to do common things. The packages have meaningful names related to their specific operation (tracking, reconstruction, ecl, klm, etc...). All the packages are stored in the Belle II GitLab repository. The most used package in this thesis is the analysis package, which contains python functions and C++ basf2 modules, such as modularAnalysis.
+$\\$
+The steering file is the core script in which analysis and data-processing tasks are performed, with a path being declared and modules added to it. Some highlights of the used steering files are provided in the appendix.
 
 \subsection{TopoAna: Topology Analysis}
-In high-energy physics data analysis, a comprehensive understanding of Monte Carlo samples is crucial to select signals with higher efficiency while suppressing backgrounds. This is exactly the case of the present elaborate. 
+In high-energy physics data analysis, a comprehensive understanding of Monte Carlo samples is crucial to select signals with high efficiency while suppressing backgrounds. This is exactly the case of the present elaborate. 
 $\\$
-Knowledge of the physics processes enables identification of the main backgrounds. Selection criteria can then be further optimized by analyzing differences between these backgrounds and the signal. An example of topology diagram is provided in ~\ref{fig:proc_flow}.
+Understanding the physics processes enables identification of the main backgrounds. Selection criteria can then be further optimized by analyzing differences between the background and the signal. An example of topology diagram is provided in ~\ref{fig:topoproc}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width= 0.95\textwidth]{belleII_det/images/topology_diagrams}
-    \caption{Topology diagrams of (a) $e^+e^-\rightarrow J/\psi$ and (b) $ e^+e^-\rightarrow \Upsilon(4S)\to B^0 \bar{B}^0$, two typical processes at $e^+ e^-$ colliders, such as Belle II and BESIII.}
+    \caption{Topology diagrams of (a) $e^+e^-\rightarrow J/\psi$ and (b) $ e^+e^-\rightarrow \Upsilon(4S)\to B^0 \bar{B}^0$, two typical processes at $e^+ e^-$ colliders, such as BESIII and Belle II.}
     \label{fig:topoproc}
 \end{figure}
 
-The \textbf{TopoAna} program, developed in C++ and ROOT, provides a convenient interface for verifying Monte Carlo topology information beyond raw data inspection.
+The TopoAna program \cite{2020topoana}, developed in C++ and ROOT, provides a convenient interface for verifying Monte Carlo topology information beyond scratch inspection.
 $\\$
-The program input consists of one or more ROOT files containing a \textbf{TTree} with raw topology truth information from the MC samples.This TTree stores the processes that occurred in each event, including particle multiplicity (number of final state occurrences), PDG codes and mother indices (parent-daughter relationships).
+The program input consists of one or more ROOT files containing a TTree -a column‑oriented data structure used to store large sets of events or entries- with raw topology truth information from the MC samples. This TTree stores the processes that occurred in each event, including particle multiplicity (number of final state occurrences), PDG codes and mother indices (parent-daughter relationships).
 $\\$
-TopoAna is an offline tool independent of basf2. It extracts human-readable topology information from raw MC truth data. Examples of raw MC information (Fig.~\ref{fig:topoproc_a}) and human-readable MC information (Fig.~\ref{fig:topoproc_b}) are shown, both depicting the topology diagram in Fig.~\ref{fig:topoproc} (b).
+TopoAna is an offline tool independent of basf2. It extracts human-readable topology information from raw MC truth data. Examples of MC information (Fig.~\ref{fig:topoproc_a}) and human-readable MC information (Fig.~\ref{fig:topoproc_b}) are shown, both depicting the topology diagram in Fig.~\ref{fig:topoproc} (b).
 
 \begin{figure}[H]
     \centering
      \includegraphics[width= 0.55\textwidth]{belleII_det/images/topology_diagrams_2}
-    \caption{Raw MC information example from ~\ref{fig:topoproc} b.}
+    \caption{Raw MC information example from Fig.~\ref{fig:topoproc} b.}
     \label{fig:topoproc_a}
 \end{figure}
 
 \begin{figure}[H]
     \centering
      \includegraphics[width= 0.80\textwidth]{belleII_det/images/topology_diagrams_3}
-    \caption{Highly readable MC information example from ~\ref{fig:topoproc} b, as presented by the TopoAna program.}
+    \caption{Highly readable MC information example from Fig.~\ref{fig:topoproc} b, as presented by the TopoAna program.}
      \label{fig:topoproc_b}
 \end{figure}
 
 \subsection{Introduction to the Belle II Distributed Computing}
-Belle II datasets are categorized into two main types: \textbf{Data} and \textbf{Monte Carlo}. The Data are obtained from calibrated collision events processed by the experiment. Monte Carlo samples are generated using the Monte Carlo method according to various event generators, as discussed in Chapter 2. These are further classified into \textbf{Signal MC}- a specific process generated with a dedicated decay file upon analyst request (as in the previous chapter)- and \textbf{Generic MC}, or "cocktail'', containing all processes expected in data with their correct relative fractions (as in the present chapter). These are usually in mdst (Mini Data Summary Table) format. There is cdst (Calibration Data Summary Table) as well, but it is used mainly to address calibration tasks.
+Belle II datasets are categorized into two main types: Data and Monte Carlo. The Data are obtained from calibrated collision events processed by the experiment. Monte Carlo samples are generated using the Monte Carlo method according to various event generators, as discussed in Chapter 2. These are further classified into Signal MC- a specific process generated with a dedicated decay file upon analyst request (as in the previous chapter)- and Generic MC, or "cocktail'', containing all processes expected in data with their correct relative fractions (as in the present chapter). These are usually in mdst (Mini Data Summary Table) format. There is cdst (Calibration Data Summary Table) as well, but it is used mainly to address calibration tasks.
 $\\$
 Data and Monte Carlo samples can be ``skimmed'' by applying analysis-dependent offline pre-selections called ``skims''. Skims reduce data volume by selecting events of interest for specific analyses and retaining only the necessary information, producing smaller, more manageable datasets.
 $\\$
@@ -275,7 +275,7 @@ A scheme of the Belle II Data Model is shown in Fig. ~\ref{fig:datafiles_fig}.
     \label{fig:datafiles_fig}
 \end{figure}
 
-Belle II Data and Monte Carlo samples are distributed across numerous storage sites worldwide. This Distributed Computing System, known as \textbf{the Grid}, consists of a network of loosely coupled computers with varying local conditions (operating systems, resources, etc.). 
+Belle II Data and Monte Carlo samples are distributed across numerous storage sites worldwide. This Distributed Computing System, known as the Grid, consists of a network of loosely coupled computers with varying local conditions (operating systems, resources, etc.). 
 $\\$
 Two full copies of the raw data are maintained at dedicated data centers. Raw data is processed, skimmed, and distributed over other storage sites. A scheme of the Belle II Distributed Computing (The Grid) is shown in Fig. ~\ref{fig:grid_fig}
 
@@ -286,6 +286,6 @@ Two full copies of the raw data are maintained at dedicated data centers. Raw da
     \label{fig:grid_fig}
 \end{figure}
 
-Each site interact with \textbf{DIRAC}, an interware that manages interactions between Belle II and its computing resources. \textbf{BelleDIRAC} is an extension that enables users to interact with DIRAC for job submission, data placement, monitoring, and other tasks.
+Each site interact with DIRAC, an interware that manages interactions between Belle II and its computing resources. BelleDIRAC is an extension that enables users to interact with DIRAC for job submission, data placement, monitoring, and other tasks.
 
 
