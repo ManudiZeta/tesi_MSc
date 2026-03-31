@@ -82,14 +82,13 @@ Additionally, $\gamma$ represents one of the most abundant produced particles in
 In order to compare the feasibility of selecting the channel in both ISR and NO ISR cases separately, the recoil mass distribution must be first studied using the same selection criteria. The better the selection of the signal from the background, the more consistent the shower shape variables will be for neutral clusters associated with $\bar{n}$ candidates.
 
 \subsection{Recoil mass in $u\bar{u}$ cocktail production (NO ISR case)}
-The recoil mass distribution obtained from the $u\bar{u}$ cocktail is first studied in NO ISR case. If the recoil system $p, \pi^-$ is properly reconstructed among all possible background channels, then a peak should be observed at the anti-neutron rest mass ($939.5$~MeV/$c^2$). The obtained result is shown in Fig.~\ref{fig:mRec_nog_020}.
+The recoil mass distribution obtained from the $u\bar{u}$ cocktail is first studied in NO ISR case. If the recoil system $p, \pi^-$ is properly reconstructed among all possible background channels, then a peak should be observed at the anti-neutron rest mass. The obtained result, with the discussed selections, is shown in Fig.~\ref{fig:mRec_nog_020}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/recoil_mass_nog_020}
     \caption{Reconstructed $p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, NO ISR case.}
     \label{fig:mRec_nog_020}
 \end{figure}
-
 A distinct structure is observed above the $\bar{n}$ mass value, suggesting that the selected channel is properly reconstructed. For a cleaner comparison between the signal channel and background components, the TopoAna output can be consulted in Fig.~\ref{fig:topo_nog_020}. TopoAna does not account for particle-matter interactions; thus, all displayed particles originate directly from the $e^+e^-$ collision at the IP.
 \begin{figure}[h]
     \centering
@@ -97,22 +96,19 @@ A distinct structure is observed above the $\bar{n}$ mass value, suggesting that
     \caption{First 10 channels of the TopoAna output in $u\bar{u}$ Monte Carlo cocktail, showing the different channel contributes, NO ISR case.}
     \label{fig:topo_nog_020}
 \end{figure}
-
-Accessing the Monte Carlo information from TopoAna, the main contribution comes from the signal channel with $p \pi^- \bar{n}$ in the final state, immediately followed by the one with $p \pi^- \bar{n} \pi^0$ in the final state. Further contribution arise from $p \pi^- \bar{n} \gamma_{ISR}$, which could be interpreted as signal, even if, in NO ISR case, the $\gamma_{ISR}$ is not explicitly reconstructed within the recoil system. The fourth contribute is due to the one with $p \pi^- \bar{n} \pi^0 \gamma_{ISR}$ and so on. The contributions are sorted from most to least abundant.
+The main contribution comes from the signal channel with $p \pi^- \bar{n}$ in the final state, immediately followed by the one with $p \pi^- \bar{n} \pi^0$ in the final state. Further contribution arise from $p \pi^- \bar{n} \gamma_{ISR}$, which could be interpreted as signal, even if, in NO ISR case, the $\gamma_{ISR}$ is not explicitly reconstructed within the recoil system. The fourth contribution is due to the one with $p \pi^- \bar{n} \pi^0 \gamma_{ISR}$ and so on. The contributions are sorted from most to least abundant.
 
 \subsubsection{Recoil mass components analysis}
-The recoil mass distribution components can be studied by correlating the ntuple information obtained from the steering file with that produced by the TopoAna program. 
-$\\$
-Each channel is identified by its own \texttt{iDcyTr} (index of the decay tree), which allows one to represent the contribution of a given channel (or a combination of channels) to a specific variable, such as the recoil mass of the system $p \pi^-$.
+In TopoAna, each channel is identified by its own \texttt{iDcyTr} (index of the decay tree), which allows to identify clearly which decay channel has produced the selected candidate.
 $\\$
 The components are therefore denoted as follows:
-\begin{enumerate}
-\item $e^+ e^- \rightarrow \pi^- \bar{n} p$ (iDcyTr == 24);
-\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p$ (iDcyTr == 2);
-\item $e^+ e^- \rightarrow \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 16);
-\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 6);
+\begin{itemize}
+\item $e^+ e^- \rightarrow \pi^- \bar{n} p$ (iDcyTr == 24),
+\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p$ (iDcyTr == 2),
+\item $e^+ e^- \rightarrow \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 16),
+\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 6),
 \item $e^+ e^- \rightarrow$ other.
-\end{enumerate}
+\end{itemize}
 The obtained stacked component to the recoil mass are shown in figure ~\ref{fig:mRecComps_nog_020}.
 \begin{figure}[h]
     \centering
@@ -120,24 +116,26 @@ The obtained stacked component to the recoil mass are shown in figure ~\ref{fig:
     \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
     \label{fig:mRecComps_nog_020}
 \end{figure}
-Defining the \emph{Signal Region} as the interval $[0.8, 1.2]$ GeV, it can be observed that contributions from the channel with iDcyTr = 2 predominantly lie to the right of the signal region. This is expected, as the recoil system computation excludes the $\pi^0$, leading to a higher recoil mass. Same conclusions can be made for the with iDcyTr = 6. 
+Defining the \emph{Signal Region} as the interval $[0.8, 1.2]$ GeV, it can be observed that contributions from the channel with $\pi^0 \pi^- \bar{n} p$ in the final state predominantly lie to the right of the signal region. This is expected, as the recoil system computation does not take into account the $\pi^0$, resulting in a higher recoil mass. Same conclusions can be made for the channel with $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ in the final state. 
 $\\$
-The signal channel (iDcyTr = 24) predominantly populates the signal region. The $\pi^- \bar{n} p \gamma_{ISR}$ channel (iDcyTr = 16) also mainly populates the signal region, indicating that the $\gamma_{ISR}$ is negligible and has minimal impact on the recoil mass, as shown by the ISR energy distribution in Fig.~\ref{fig:isr_distro}. This can be directly observed from the single contribute from these two channels displayed in Fig.~\ref{fig:mRecComps_nog_020_0e3}. The contributions from the remaining channels represent a flat background without discernible structures.
+The signal channel ($\pi^- \bar{n} p$ in the final state) predominantly populates the signal region. The $\pi^- \bar{n} p \gamma_{ISR}$ channel ($\pi^- \bar{n} p \gamma_{ISR}$) also mainly populates the same region, indicating that the energy of the $\gamma_{ISR}$ is negligible and has minimal impact on the recoil mass, as shown by the ISR energy distribution in Fig.~\ref{fig:isr_distro}. This can be directly observed from the single contribution from these two channels displayed in Fig.~\ref{fig:mRecComps_nog_020_0e3}. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/recoilM_comp0_nog_020}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/recoilM_comp3_nog_020}
-    \caption{ (green) $p, \pi^-$ recoil mass and (red) $p, \pi^-, \gamma_{ISR}$ recoil mas distribution in $u\bar{u}$ Monte Carlo cocktail.}
+    \caption{ The $p, \pi^-$ recoil mass for the channel with $\pi^- \bar{n} p$ in the final state (green) and for the channel with $\pi^- \bar{n} p \gamma_{ISR}$ in the finale state (red).}
     \label{fig:mRecComps_nog_020_0e3}
 \end{figure}
 $\\$
-Thus, despite the $\gamma_{ISR}$ not being directly reconstructed, the $\pi^- \bar{n} p \gamma_{ISR}$ channel (iDcyTr = 16) can be considered a signal channel. This leads to the recoil mass composition shown in Fig.~\ref{fig:mRecComps_nog_020_0+3}.
+Thus, despite the $\gamma_{ISR}$ not being directly reconstructed, the $\pi^- \bar{n} p \gamma_{ISR}$ channel can be considered as a signal channel. This leads to the recoil mass composition shown in Fig.~\ref{fig:mRecComps_nog_020_0+3}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.90\textwidth]{nbar_cocktail/images/recoilM_comps_nog_020_0+3}
     \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ and $\pi^- \bar{n} p \gamma_{ISR}$ channels. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
     \label{fig:mRecComps_nog_020_0+3}
 \end{figure}
+$\\$
+The contributions from the remaining channels represent a flat background without discernible structures.
 $\\$
 To further suppress the background, a tighter $\alpha$ cut can be studied. Therefore, the Performance Metrics and their usage are investigated to find the most appropriate cut in $\alpha$.
 
@@ -160,7 +158,7 @@ SIGNAL and BACKGROUND are defined as follows:
  \end{itemize}
 SIGNAL($\alpha$) + BACKGROUND ($\alpha$) = TOTAL($\alpha$), the total  amount of entries.
 $\\$
-Assuming the signal region corresponds to the interval $[0.8, 1.2]$ GeV, the FOM characterizes the statistical significance of the applied threshold, namely the selected cut on $\alpha$. The higher the FOM, the more signal is selected over the background (the figure is maximized). For each possible cut value of $\alpha$, the Figure of Merit (FOM) is computed and the cut corresponding to the maximum FOM (or to a stable plateau) is selected. A higher FOM indicates a better trade-off between signal efficiency and background rejection, so the selection is optimized when the FOM is maximized. The obtained FOM is shown in Fig.~\ref{fig:fom_alpha020}.
+Assuming the signal region corresponds to the interval $[0.8, 1.2]$ $GeV/c^2$, the FOM characterizes the statistical significance of the applied threshold, namely the selected cut on $\alpha$. For each possible cut value of $\alpha$, the Figure of Merit (FOM) is computed and the cut corresponding to the maximum FOM (or to a stable plateau) is selected. A higher FOM indicates a better trade-off between signal efficiency and background rejection, so the selection is optimized when the FOM is maximized. The obtained FOM is shown in Fig.~\ref{fig:fom_alpha020}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.70\textwidth]{nbar_cocktail/images/fom_alpha}
@@ -168,13 +166,13 @@ Assuming the signal region corresponds to the interval $[0.8, 1.2]$ GeV, the FOM
     \label{fig:fom_alpha020}
 \end{figure}
 $\\$
-One $\alpha$ value corresponding to the plateau can be chosen in order to maximize the FOM. The value $\alpha < 0.1$ rad ($\sim 5.73^\circ$) is therefore chosen, corresponding to FOM = 43.4185
+One $\alpha$ value corresponding to the plateau can be chosen in order to maximize the FOM. The value $\alpha < 0.1$ rad ($\sim 5.73^\circ$) is therefore chosen, corresponding to FOM = 43.4185.
 $\\$
 Furthermore, the signal efficiency $\epsilon_{sig}$ and the background efficiency $\epsilon_{bkg}$ performance metrics can be adopted to study the Receiver Operating Characteristic (ROC), a curve that shows how well a binary classifier distinguishes signal from background as the decision threshold ($\alpha$ cut) is varied.
 Each point on the curve corresponds to a different threshold (a cut on the $\alpha$ angle). The Area Under the ROC Curve (AUC/ROC-AUC) is a single number summarizing the overall performance: 1.0 indicates perfect discrimination, while 0.5 corresponds to no better performance than random. The obtained ROC is shown in Fig.~\ref{fig:roc_alpha020}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.70\textwidth]{nbar_cocktail/images/roc_alpha_true}
+    \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/roc_alpha_true}
     \caption{Receiver Operating Characteristic (ROC) curve constructed from the signal efficiency ($\epsilon_{sig}$) and the Background Efficiency ($\epsilon_{bkg}$), where each point corresponds to a different cut value on the $\alpha$ angle. The labels are shown only for $\alpha < 0.10$ rad.}
     \label{fig:roc_alpha020}
 \end{figure}
@@ -192,7 +190,7 @@ The obtained $\epsilon_{sig}$ vs $Purity$ is shown in Fig.~\ref{fig:eff_alpha020
     \caption{ $\epsilon_{sig}$ vs $Purity$ curve for the $u\bar{u}$ Monte Carlo cocktail.}
     \label{fig:eff_alpha020}
 \end{figure}
-Following the described optimization, the recoil mass channel components distribution can now be analyzed using the cut $\alpha < 0.10$ rad.
+Following the optimization described above, the components in the recoil mass distribution can now be analyzed using the cut $\alpha < 0.10$ rad.
 $\\$
 The obtained stacked component to the recoil mass are shown in Fig.~\ref{fig:mRecComps_nog_010}.
 \begin{figure}[h]
@@ -202,9 +200,9 @@ The obtained stacked component to the recoil mass are shown in Fig.~\ref{fig:mRe
     \label{fig:mRecComps_nog_010}
 \end{figure}
 
-As observed in the performance metrics study, the signal is more prominent relative to the background than in the previous case. Background components containing $\pi^0$ peak outside the signal region $[0.8,1.2]$ GeV on the right side, while other sources exhibit a lower, flat distribution across the recoil mass spectrum.
+As observed in the performance metrics study, the signal is more prominent relative to the background than in the previous case. Background components containing $\pi^0$ lie outside the signal region $[0.8,1.2]$ $GeV/c^2$ on the right side, while other sources exhibit a lower, flat distribution across the recoil mass distribution.
 $\\$
-The first 5 channels of $u\bar{u}$ TopoAna output with the $\alpha<$ 10 rad cut is shown in ~\ref{fig:topo_nog_010_uubar}.
+The first 5 channels of $u\bar{u}$ TopoAna output with the $\alpha<$ 10 rad cut is shown in Fig.~\ref{fig:topo_nog_010_uubar}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
@@ -212,10 +210,10 @@ The first 5 channels of $u\bar{u}$ TopoAna output with the $\alpha<$ 10 rad cut 
     \label{fig:topo_nog_010_uubar}
 \end{figure}
 
-After applying the $\alpha < 0.10$ rad cut, the dominant contribution remains from the signal channel $p \pi^- \bar{n}$, now immediately followed by $p \pi^- \bar{n} \gamma_{\text{ISR}}$. Both contributions can be identified as signal since they fall within the signal region $[0.8,1.2]$ GeV.
+After applying the $\alpha < 0.10$ rad cut, the dominant contribution remains from the signal channel $p \pi^- \bar{n}$, now immediately followed by $p \pi^- \bar{n} \gamma_{\text{ISR}}$. As discussed, both contributions can be identified as signal since they fall within the signal region $[0.8,1.2]$ GeV.
 
 \subsection{$q\bar{q}$ cocktail production (NO ISR case)}
-In order to fully characterize the Monte Carlo simulation, all $q\bar{q}$ continuum components are studied. The Run 1 Monte Carlo productions for $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ are therefore analyzed.
+In order to fully characterize the Monte Carlo simulation, all $q\bar{q}$ continuum components are studied. The Monte Carlo productions for $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ are therefore analyzed. Each of them corresponds to an integrated luminosity of $\sim 1429.23$ $fb^{-1}$ of data, 4 times the collected statistics in data.
 $\\$
 For a cleaner comparison between the signal channel and background components, the TopoAna output can be consulted in Fig.~\ref{fig:topo_nog_010_qqbar}.
 \begin{figure}[H]
@@ -226,16 +224,17 @@ For a cleaner comparison between the signal channel and background components, t
 \end{figure}
 The TopoAna output reveals that the dominant contribution is from the signal channel $p \pi^- \bar{n}$ in the $q\bar{q}$ continuum. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}$, which could be treated as signal despite the $\gamma_{\text{ISR}}$ not being explicitly reconstructed. The next contribution comes from $p \pi^- \bar{n} \pi^0$ in the final state. The fourth contribution is due to $p \pi^- \bar{n} \pi^0 \gamma_{\text{ISR}}$, and so on. The situation is very similar to that observed in the $u\bar{u}$ case.
 $\\$
-The individual TopoAna outputs separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples are now discussed. The first 5 contributes for each sample are shown in ~\ref{fig:topo_nog_010_qqbar_singles}.
+The individual TopoAna outputs, separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples, are now discussed. The first 5 contributes for each sample are shown in ~\ref{fig:topo_nog_010_qqbar_singles}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ddbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ssbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ccbar_010}
-    \caption{Top 5 channels from the TopoAna output respectively for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). NO ISR case. The \texttt{iDcyTr} index values may differ across samples, since each TopoAna output is produced independently from its corresponding ROOT ntuples.}
+    \caption{Top 5 channels from the TopoAna output for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). NO ISR case. The \texttt{iDcyTr} index values may differ across samples, since each TopoAna output is produced independently from its corresponding ROOT ntuples.}
     \label{fig:topo_nog_010_qqbar_singles}
 \end{figure}
+
 The main contributions to the final signal state are from the $u\bar{u}$ and $d\bar{d}$ cocktails, as expected, since no $p\pi^-\bar{n}$ system can be obtained from an $s\bar{s}$ state. A contribution from a $c\bar{c}$ state could have been expected from the following channel:
 
 \begin{center}
