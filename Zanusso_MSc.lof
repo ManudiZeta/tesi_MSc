@@ -10,7 +10,7 @@
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Representation of the side view of the TOP counter with internal reflection of the Cherenkov radiation.}}{27}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces (left) Working principle of the ARICH. (right) Ring produced by a cosmic-ray muon.}}{27}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Typical ECL shower caused by a 7 GeV photon.}}{28}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Properties of scintillators used in calorimetry \cite {nedilko2009}.}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Properties of scintillators used in calorimetry.}}{28}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces A scheme of the Belle II ECL detector.}}{29}{figure.caption.25}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces ECL coverage and segmentation for each ECL region.}}{29}{figure.caption.26}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Scheme of the processing chain in basf2.}}{33}{figure.caption.28}%
@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Description of ECL clustering process: (left) Step 0; (right) Step 1.}}{37}{figure.caption.34}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Description of ECL clustering process: (left) Step 2; (right) Step 3.}}{38}{figure.caption.35}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Connected regions obtained in the example (threshold: 0.1 MeV).}}{38}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The energy resolution as a function of incident photon energy for the (a) 3Y3 and (b) 5Y5 matrix with total energy sum. The error bars are not statistical but are the rms of four measurements taken with the crystals (3,3), (3,4), (4,3) and (4,4) into the photon beam \cite {ikeda2000belle}.}}{39}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The energy resolution as a function of incident photon energy for the (a) 3Y3 and (b) 5Y5 matrix with total energy sum. The error bars are not statistical but are the rms of four measurements taken with the crystals (3,3), (3,4), (4,3) and (4,4) into the photon beam.}}{39}{figure.caption.37}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Ideal representation of a cluster pattern, consisting of a 5×5 matrix in which each cell corresponds to a single crystal.}}{40}{figure.caption.38}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of $E1/E9$ and $E9/E_{21}$ distributions for different particle species.}}{41}{figure.caption.39}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of Lateral Momentum (\emph {clusterLAT}) distributions for electrons and charged pions with $E/p > 0.8$, from BaBar experiment.}}{42}{figure.caption.40}%
@@ -60,7 +60,7 @@
 \contentsline {figure}{\numberline {5.30}{\ignorespaces Different ECL regions contribution in neutral cluster associated to $\bar {n}$ candidates, where 1 is the forward region, 2 is the barrel region and 3 is the backward region. The barrel region is the most involved.}}{72}{figure.caption.72}%
 \contentsline {figure}{\numberline {5.31}{\ignorespaces Comparison of reconstructed cluster variables for all $\bar {n}$ candidates in different ECL regions. Blue: forward region. Red: barrel region. Green: backward region. The distributions are normalized to unit value.}}{73}{figure.caption.73}%
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Tree level Feynman diagram of $e^+ e^- \to q \bar {q}$}}{75}{figure.caption.74}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Cross section of $e^+ e^- \rightarrow Hadrons$, in $\Upsilon $ resonances energy region \cite {BelleIIPhysicsBook2019}. $\Upsilon (1S)$ resonance is very narrow, while $\Upsilon (4S)$ one is broader and lower.}}{76}{figure.caption.76}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Cross section of $e^+ e^- \rightarrow Hadrons$, in $\Upsilon $ resonances energy region. $\Upsilon (1S)$ resonance is very narrow, while $\Upsilon (4S)$ one is broader and lower.}}{76}{figure.caption.76}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Feynman diagram of the channel of interest, with the Rest of Event ROE made of a variable amount of particles.}}{77}{figure.caption.77}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Cluster energy distribution of $\bar {n}$ candidates, divided by the Monte Carlo ISR flag (\texttt {mcISR}), in $u\bar {u}$ chunk1 cocktail production. If \texttt {mcISR} = 0 (blue), the reconstructed particle is not an ISR photon. If \texttt {mcISR} = 1 (red), the reconstructed particle is an ISR photon. \texttt {mcISR} is a Monte Carlo information.}}{78}{figure.caption.78}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Reconstructed $p, \pi ^-$ recoil mass distribution in $u\bar {u}$ Monte Carlo cocktail, NO ISR case.}}{79}{figure.caption.79}%
