@@ -1,8 +1,8 @@
 \setcounter{subsection}{0} 
 \part{Study of the Monte Carlo cocktail production}
-The second part of the analysis of this thesis is devoted to the study of \textbf{Belle II Monte Carlo cocktail simulations}. A Belle II "cocktail" MC production (typically generated with Pythia8) simulates all relevant physics channels simultaneously. Therefore, the analyzed channel $e^+e^- \rightarrow p\pi^-\bar{n}\,(\gamma_\text{ISR})$ is now embedded within all other background channels in the cocktail; the first task is to correctly reconstruct it amidst the surrounding backgrounds, studying the recoil mass distribution.
+This chapter is devoted to the study of Belle II Monte Carlo cocktail simulations. A Belle II "cocktail" MC production (typically generated with Pythia8) simulates all relevant physics channels simultaneously. Therefore, the analyzed channel $e^+e^- \rightarrow p\pi^-\bar{n}\,(\gamma_\text{ISR})$ is now embedded within all other background channels in the cocktail; the first task is to correctly reconstruct it amidst the surrounding backgrounds, studying the recoil mass distribution.
 $\\$
-To achieve this, a first attempt uses the complete RUN1 $u\bar{u}$ cocktail production. Building on the signal sample discussed in the last chapter, further optimal cuts and selection criteria are developed to properly isolate the signal in the recoil mass distribution. 
+To achieve this, a first attempt uses the $u\bar{u}$ cocktail production. Further selection criteria are developed to properly isolate the signal in the recoil mass distribution.
 $\\$
 Afterwards, the full Belle II $q\bar{q}$ ($u\bar{u}$, $d\bar{d}$, $c\bar{c}$, $s\bar{s}$) production is analyzed, discussing the corresponding $\bar{n}$ candidates cluster variables.
 $\\$
@@ -18,10 +18,9 @@ The Feynman diagram of $e^+e^- \rightarrow q \bar{q}$ is shown in Fig.~\ref{fig:
 \subsection{Types of processes at the Belle experiment enviroment}
 Many processes can occur during an $e^+e^-$ collision. These may mimic the selected signal and be accidentally reconstructed as signal events, though they represent background processes.
 $\\$
-The types of processes present depend on if beams collide on-resonance or off-resonance in reference to the $\Upsilon(4S)$ resonance. $\Upsilon(4S)$ production occurs at $\sqrt{s} = 10.58$ GeV, yielding 
-$\Upsilon(4S) \rightarrow BB$ processes. The $B^+B^-$ and $B^0 \bar{B}^0$ final states  are referred to as charged and neutral $B \bar{B}$ pairs, respectively.
+The $\Upsilon(4S)$ production occurs at $\sqrt{s} = 10.58$ GeV, yielding $\Upsilon(4S) \rightarrow BB$ processes. The $B^+B^-$ and $B^0 \bar{B}^0$ final states  are referred to as charged and neutral $B \bar{B}$ pairs, respectively.
 $\\$
-The $e^+e^- \to q\bar{q}$ ($q = u,d,s,c$) processes, known as continuum production, also occur. The cross section distribution \cite{BelleIIPhysicsBook2019} of $e^+ e^- \rightarrow Hadrons$ process is shown in Fig.\ref{fig:belleii_processes}.
+The $e^+e^- \to q\bar{q}$ ($q = u,d,s,c$) processes, known as continuum production, also occur. There are $e^+e^- \to l^+l^- (\gamma)$ and $e^+e^- \to l^+l^-l^-l^+$, with $l = (e,\mu,\tau)$, that are low multiplicity processes. The cross section distribution \cite{BelleIIPhysicsBook2019} of $e^+ e^- \rightarrow hadrons$ process is shown in Fig.\ref{fig:belleii_processes}.
 
 \begin{table}[h]
 \centering
@@ -44,17 +43,17 @@ $e^+e^- \to e^+e^-\mu^+\mu^-$ & 18.9 \\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{nbar_cocktail/images/BelleII_processes}
-    \caption{Cross section of $e^+ e^- \rightarrow Hadrons$, in $\Upsilon$ resonances energy region. $\Upsilon(1S)$ resonance is very narrow, while $\Upsilon(4S)$ one is broader and lower.}
+    \caption{Cross section of $e^+ e^- \rightarrow hadrons$, in $\Upsilon$ resonances energy region. The $\Upsilon(1S)$ resonance is very narrow, while the $\Upsilon(4S)$ one is broader and lower.}
     \label{fig:belleii_processes}
 \end{figure}
 
-\subsection{Event selections}
+\subsection{Selections criteria}
 To follow the same approach as used in the signal sample analysis, the recoil mass is first studied using the complete $u\bar{u}$ cocktail production, which corresponds to an integrated luminosity of $\sim 1429.23 \ fb^{-1}$. The following event selections have been applied:
 \begin{enumerate}
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
-\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
 \item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm;
+\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$;
 \item $\alpha <0.20$ rad $\sim 11.5 ^{\circ}$;
 \item No further charged particles in the Rest of Event (ROE).
 \end{enumerate}
