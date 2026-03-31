@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  31 MAR 2026 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.1.19)  31 MAR 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1199,15 +1199,17 @@ File: nbar_MC/images/pRecoil.pdf Graphic file (type pdf)
 <use nbar_MC/images/pRecoil.pdf>
 Package pdftex.def Info: nbar_MC/images/pRecoil.pdf  used on input line 232.
 (pdftex.def)             Requested size: 241.49895pt x 164.40584pt.
-<nbar_MC/images/nbar_p.pdf, id=1839, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/nbar_p.pdf Graphic file (type pdf)
-<use nbar_MC/images/nbar_p.pdf>
-Package pdftex.def Info: nbar_MC/images/nbar_p.pdf  used on input line 250.
+<nbar_MC/images/nbar_p_isr_conf.pdf, id=1839, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/nbar_p_isr_conf.pdf Graphic file (type pdf)
+<use nbar_MC/images/nbar_p_isr_conf.pdf>
+Package pdftex.def Info: nbar_MC/images/nbar_p_isr_conf.pdf  used on input line
+ 250.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
-<nbar_MC/images/nbar_mcP.pdf, id=1840, 569.12625pt x 387.4475pt>
-File: nbar_MC/images/nbar_mcP.pdf Graphic file (type pdf)
-<use nbar_MC/images/nbar_mcP.pdf>
-Package pdftex.def Info: nbar_MC/images/nbar_mcP.pdf  used on input line 251.
+<nbar_MC/images/nbar_p_nog_conf.pdf, id=1840, 569.12625pt x 387.4475pt>
+File: nbar_MC/images/nbar_p_nog_conf.pdf Graphic file (type pdf)
+<use nbar_MC/images/nbar_p_nog_conf.pdf>
+Package pdftex.def Info: nbar_MC/images/nbar_p_nog_conf.pdf  used on input line
+ 251.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
@@ -1226,10 +1228,10 @@ e 264.
 (pdftex.def)             Requested size: 169.0519pt x 115.08821pt.
 
 
-[55 <./nbar_MC/images/nbar_p.pdf, page is rotated 90 degrees> <./nbar_MC/images
-/nbar_mcP.pdf, page is rotated 90 degrees> <./nbar_MC/images/pRecoil_nmcP_isr.p
-df, page is rotated 90 degrees> <./nbar_MC/images/pRecoil_nmcP_nog.pdf, page is
- rotated 90 degrees>]
+[55 <./nbar_MC/images/nbar_p_isr_conf.pdf, page is rotated 90 degrees> <./nbar_
+MC/images/nbar_p_nog_conf.pdf, page is rotated 90 degrees> <./nbar_MC/images/pR
+ecoil_nmcP_isr.pdf, page is rotated 90 degrees> <./nbar_MC/images/pRecoil_nmcP_
+nog.pdf, page is rotated 90 degrees>]
 <nbar_MC/images/gen_mc_p_corr_isr.pdf, id=2070, 569.12625pt x 387.4475pt>
 File: nbar_MC/images/gen_mc_p_corr_isr.pdf Graphic file (type pdf)
 <use nbar_MC/images/gen_mc_p_corr_isr.pdf>
@@ -3300,7 +3302,7 @@ Package rerunfilecheck Info: File `Zanusso_MSc.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16363 strings out of 473190
- 329420 string characters out of 5715800
+ 329532 string characters out of 5715800
  669858 words of memory out of 5000000
  39070 multiletter control sequences out of 15000+600000
  570016 words of font info for 79 fonts, out of 8000000 for 9000
@@ -3334,7 +3336,7 @@ s/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Zanusso_MSc.pdf (123 pages, 9663926 bytes).
+Output written on Zanusso_MSc.pdf (123 pages, 9662898 bytes).
 PDF statistics:
  10846 PDF objects out of 12825 (max. 8388607)
  5177 compressed objects within 52 object streams

@@ -10,7 +10,7 @@
 #include "TLine.h"
 #include "TPaveText.h"
 
-void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString file_2 = "../../../../vpho_nog_ranked.root")
+void una_grand (TString file_1 = "../../../../vpho_nog_ranked.root" , TString file_2 = "../../../../vpho_nog_ranked.root")
 {
     //gStyle->SetOptStat(0);
     gStyle->SetOptStat(0);
@@ -37,9 +37,8 @@ void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString fi
     
     TCanvas *c1 = new TCanvas("c1", "c1",800,600);
 
-    TString var = "cos(pi_mcTheta)";
-    TString drawExpr1 = var + ">>histo1(100,-1,1)";
-    TString drawExpr2 = var + ">>histo2(100,-1,1)";
+    TString drawExpr1 = "nbar_mcP>>histo1(70,0,7)";
+    TString drawExpr2 = "nbar_p>>histo2(70,0,7)";
     tree_1->Draw(drawExpr1,"");
     tree_2->Draw(drawExpr2,"");
        
@@ -50,8 +49,8 @@ void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString fi
     TH1D *histo1 = (TH1D*)gDirectory->Get("histo1");
     TH1D *histo2 = (TH1D*)gDirectory->Get("histo2");
     
-    histo1->SetLineColor(kBlue);
-    histo2->SetLineColor(kRed);
+    histo1->SetLineColor(kRed);
+    histo2->SetLineColor(kBlue);
     
     double max1 = histo1->GetBinContent(histo1->GetMaximumBin());
     cout<<"max1 = "<<max1<<endl;
@@ -63,15 +62,15 @@ void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString fi
     histo1->SetMaximum(max + 0.1*max);
     histo2->SetMaximum(max + 0.1*max);
     
-    TString title_x = "cos(#theta)";
+    TString title_x = "p [#frac{GeV}{c}]";
     histo1->GetXaxis()->SetTitle(title_x);
     histo1->GetYaxis()->SetTitle("counts");
-    TString title = "Generated #pi^{-} cos(#theta) ";
+    TString title = "NO ISR CASE";
     histo1->SetTitle(title);
     
     TLegend *leg = new TLegend(0.3,0.7,0.48,0.88);
-    leg->AddEntry(histo1,"ISR","l");
-    leg->AddEntry(histo2,"NO ISR","l");
+    leg->AddEntry(histo1,"From generator","l");
+    leg->AddEntry(histo2,"From reconstruction","l");
     
     TCanvas *tela = new TCanvas("tela", "tela");
     
@@ -79,7 +78,7 @@ void una_grand (TString file_1 = "../../../../vpho_isr_ranked.root" , TString fi
     histo2->DrawCopy("HIST SAMES");
     leg->Draw("SAME");
     
-    TString title_out = "../images/pi_mcTheta.pdf";
+    TString title_out = "../images/nbar_p_nog_conf.pdf";
     tela->SaveAs(title_out);
     
 }
