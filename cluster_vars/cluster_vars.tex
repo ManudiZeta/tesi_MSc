@@ -1,37 +1,41 @@
 \setcounter{subsection}{0}
-\part{ECL chracteristics and cluster variables}
-The following chapter describes the main features of the Electromagnetic Calorimeter, including the ECL reconstruction algorithm and its energy performance.
+\part{The ECL reconstruction}
+This chapter describes the main software features of the Electromagnetic Calorimeter, including the ECL reconstruction algorithm and its energy performance.
 $\\$
-Then, the cluster variables are introduced. These play a central role in this work, since the final goal is to assess the Data/MC agreement for these variables.
+Then, the cluster variables are introduced. These play a central role in this work, since the final goal is to assess the Data/MC agreement for the cluster variables.
 
 \subsection{The ECL reconstruction algorithm} 
-For each ECL crystal, a 32-bit word is recorded as the digitized output from the electronics. This 32-bit word, referred to as \textbf{ECLDigit}, encodes: 
+For each ECL crystal, a 32-bit word is recorded as the digitized output from the electronics. This 32-bit word, referred to as ECLDigit, encodes: 
 \begin{itemize}
 \item energy information as Flash Analog-to-Digital Converter (FADC) counts (18 bits),
-\item time information in clock ticks (12 bits),
+\item time information in clock units (12 bits),
 \item 2 status bits (signal quality flags).
 \end{itemize}
-To reconstruct the shower, an algorithm processes the ECLDigit objects into two new data objects: 
+To reconstruct the shower, an algorithm processes the ECLDigit objects into two new data objects that contain the combined information from adjacent crystals.: 
 \begin{itemize}
-\item \textbf{ECLShowers}, an ECL-internal object containing additional  debug information,
-\item \textbf{ECLClusters}, the primary analysis object.
+\item ECLShowers, an ECL-internal object containing additional  debug information,
+\item ECLClusters, the primary analysis object.
 \end{itemize}
 Only ECLShowers with $E > 20$\ MeV are converted to ECLClusters.
 $\\$
-The first step identifies \textbf{connected regions}, which rapidly reduces the combinatorial complexity. These are specific cell collections determined by a dedicated clustering procedure. 
-$\\$
-An example of this procedure is shown in Fig.~\ref{fig:ECL_clustering_proc}.
+The first step identifies connected regions, which rapidly reduces the combinatorial complexity. These are specific cell collections determined by a dedicated clustering procedure. An example of this procedure is shown in Fig.~\ref{fig:ECL_clustering_proc1} and in Fig.~\ref{fig:ECL_clustering_proc2}.
 
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=1\textwidth]{belleII_det/images/ECL_algo}
-  \caption{Description of ECL clustering process: (a) Step 0; (b) Step 1; (c) Step 2; (d) Step 3.}
-  \label{fig:ECL_clustering_proc}
+    \includegraphics[width=0.6\textwidth]{belleII_det/images/ECL_algo_1}
+  \caption{Description of ECL clustering process: (left) Step 0; (right) Step 1.}
+  \label{fig:ECL_clustering_proc1}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{belleII_det/images/ECL_algo_2}
+  \caption{Description of ECL clustering process: (left) Step 2; (right) Step 3.}
+  \label{fig:ECL_clustering_proc2}
 \end{figure}
 
 Each cell represents one ECLDigit, with its value corresponding to the deposited energy in MeV. Empty cells indicate ECLDigit values below the readout threshold (0.1\,MeV in this example). 
 $\\$
-In step 1, every ECLDigit above 10 MeV is selected. In step 2, any neighbors above 0.5 MeV are attached to the highest-energy seed found in step 1. Sometimes two seeds compete for the same neighbor, and sometimes clusters have no neighbors (i.e. 93.0). In step 3, overlapping neighbor regions trigger a merge. Additionally, any cells above 1.5 MeV recruit their next neighbors iteratively.
+The step 0 corresponds to the initial condition. In step 1, every ECLDigit above 10 MeV is selected. In step 2, any neighbors above 0.5 MeV are attached to the highest-energy seed found in step 1. Sometimes two seeds compete for the same neighbor, and sometimes clusters have no neighbors (i.e. 93.0). In step 3, overlapping neighbor regions trigger a merge. Additionally, any cells above 1.5 MeV recruit their next neighbors iteratively.
 $\\$
 After this process, the connected regions are obtained, as shown in Fig.~\ref{fig:c_region}.
 \begin{figure}[H]
@@ -47,7 +51,7 @@ $\\$
 Connected regions are used to minimize the number of times the computationally intensive splitting procedure must be performed.
 
 \subsection{ECL performance}
-The observed ECL \textbf{energy resolution} can be written as follow:
+The observed ECL energy resolution can be written as follows:
 \begin{center}
 $\frac{\sigma_E}{E} = \sqrt{ \left( \frac{0.81\%}{\sqrt[4]{E}} \right)^2 + \left( \frac{0.066\%}{E} \right)^2 + (1.34\%)^2 }$,
 \end{center}
@@ -64,16 +68,14 @@ For example, $\frac{\sigma_E}{E} = 4\%$ at 100 MeV and $\frac{\sigma_E}{E} = 1.4
 
 
 \subsection{ECL cluster variables}
-The characteristics of a shower can be identified through various variables derived from calorimeter information. For example, electrons and charged hadrons exhibit different shower shapes, allowing their distinction. Electromagnetic showers are contained within a small number of crystals, whereas hadronic showers exhibit a broader spatial and energy distribution. Different cluster variables are now examined and discussed.
+The characteristics of a shower can be identified through various variables derived from the calorimeter information. For example, electrons and charged hadrons exhibit different shower shapes, allowing their distinction. Electromagnetic showers are contained within a small number of crystals, whereas hadronic showers exhibit a broader spatial and energy distribution. Different cluster variables are now examined and discussed.
 
 \subsubsection{Cluster Energy}
-$\\$
 The Cluster Energy (\emph{clusterE} in the basf2 software) represents the total energy within the cluster associated with a given candidate particle. To avoid disk saturation, the basf2 reconstruction software stores only clusters with energy above 20 MeV, producing physics-ready ECLShower objects.
 
 
 \subsubsection{Cluster E1E9 and E9E21}
-$\\$
-Cluster E1E9 and cluster E9E21 variables (respectively \emph{clusterE1E9} and \emph{clusterE9E21} in the basf2 software) are defined as follow:
+Cluster E1E9 and cluster E9E21 variables (respectively \emph{clusterE1E9} and \emph{clusterE9E21} in the basf2 software) are defined as follows:
 \begin{center}
 $E1E9 = \frac{E_1}{\sum_{i=1}^{9} E_i}$ \hspace{0.2cm} $E9E21 = \frac{\sum_{j=1}^{9} E_j}{\sum_{j=10}^{25} E_j}$, with $j \ne 10,14,18,22$
 \end{center}
@@ -86,25 +88,23 @@ Referring to Fig.~\ref{fig:E1E9_E9E21}, the first variable returns the ratio of 
      \label{fig:E1E9_E9E21}
 \end{figure}
 
-These ratios are always less than 1 and tend toward larger values for photons and smaller values for hadrons, as the latter produce more spread-out showers. These variables are dimensionless and are included within the range $[0,1]$.
+These ratios are always less than 1 and tend toward larger values for photons and smaller values for hadrons, since the latter produce more spread-out showers. These variables are dimensionless and are included within the range $[0,1]$.
 $\\$
-An example of these variables distribution for different particles is provided in Fig.~\ref{fig:E1E9example}.
+An example of these variables distributions for different particles is provided in Fig.~\ref{fig:E1E9example}.
 \begin{figure}[H]
     \centering
      \includegraphics[width=1\textwidth]{nbar_MC/images/E1E9example}
     \caption{Comparison of $E1/E9$ and $E9/E_{21}$ distributions for different particle species.}
     \label{fig:E1E9example}
 \end{figure}
+Photons have higher values of E1E9 compared to hadrons, indicating that photons produce more compact clusters. This difference is more explicit in the E9E21 distribution. It can be also noted that anti‑neutrons produce more spread‑out clusters compared to other particles.
 
 \subsubsection{Lateral Momentum}
-$\\$
-The cluster Lateral Momentum (or Lateral Energy) distribution (\emph{clusterLAT} in the basf2 software framework) characterizes the spatial energy deposition pattern transverse to the shower axis. It is defined as follow:
+The cluster Lateral Momentum (or Lateral Energy) distribution (\emph{clusterLAT} in the basf2 software framework) characterizes the spatial energy deposition pattern transverse to the shower longitudinal direction. It is defined as follows:
 \begin{center}
 $C_{LM} = \frac{ \sum\limits_{i=2}^n E_i r_i^2} {  E_0 r_0^2 + E_1 r_0^2+ \sum\limits_{i=2}^n E_i r_i^2}$, 
 \end{center}
-with $r_0 \simeq 5$ cm (average distance between two crystals centres).  
-$\\$
-$n$ is the number of crystals associated to the shower, $E_i = (E_0,E_1,...)$  are the crystal energies sorted by descending energy and $r_i$ is the distance of the i-th digit to the shower center projected onto a plane perpendicular to the shower axis. For radially-symmetric electromagnetic showers, this variable peaks at $\sim 0.3$, where it is larger for hadronic particles. This variable is dimensionless and it is included within the range $[0,1]$.
+with $r_0 \simeq 5$ cm (average distance between two crystals centres), $n$ is the number of crystals associated to the shower, $E_i = (E_0,E_1,...)$  are the crystal energies sorted by descending energy and $r_i$ is the distance of the i-th crystal to the shower center projected onto a plane perpendicular to the shower axis. For radially-symmetric electromagnetic showers, this variable peaks at $\sim 0.3$, where it is larger for hadronic particles. This variable is dimensionless and it is included within the range $[0,1]$.
 $\\$
 An example of Lateral Momentum distribution for electrons and charged pions with $E/p > 0.8$, from BaBar experiment \cite{babar_introduction}, is shown in Fig.~\ref{fig:LATBabar}.
 \begin{figure}[H]
@@ -115,8 +115,7 @@ An example of Lateral Momentum distribution for electrons and charged pions with
 \end{figure}
 
 \subsubsection{Second Moment}
-$\\$
-The cluster Second Moment (\emph{clusterSecondMoment} in the basf2 software) characterizes the longitudinal development of a shower. It quantifies the "width" or "compactness" of the energy deposit within a cluster. It is defined as follow:
+The cluster Second Moment (\emph{clusterSecondMoment} in the basf2 software) characterizes the longitudinal development of a shower. It quantifies the "width" or "compactness" of the energy deposit within a cluster. It is defined as follows:
 
 \begin{center}
 $C_{SM} = \frac{1}{S_0}\frac{ \sum\limits_{i=0}^n  E_i r_i^2} { \sum\limits_{i=0}^n E_i}$,
@@ -130,10 +129,9 @@ An example of Second Moment distribution for different particles is provided in 
     \caption{Comparison of \emph{Second Moment} distribution for different particle species.}
     \label{fig:SMexample}
 \end{figure}
-
+The Second Moment of photons is lower than that of hadrons, suggesting that photons have a smaller longitudinal development. In the example, anti‑neutrons have the highest value of the second moment, indicating that their shower is more extended than those of the other particles.
 
 \subsubsection{Zernike Moments}
-$\\$
 The Zernike Moments (Zernike Polynomials) are a set of orthogonal functions which are defined on the unit disk. Since each moment represents a specific pattern shape, they are widely used to represent smooth, two‑dimensional functions (especially wavefronts) over circular apertures. 
 $\\$
 On the unit disk parametrized by polar coordinates $(\rho,\phi)$ with $0 \le \rho \le 1$, the Zernike modes are usually written as:
@@ -164,9 +162,7 @@ $Z^0_4$ and $Z^1_5$ represent the most effective Zernike moments for electron id
 
 
 \subsubsection{Number of Crystals hit}
-$\\$
-The variable Number of Crystals hit (\emph{clusterNhits} in the basf2 software) indicates the number of crystals that contributed to the cluster. It returns the sum of the weights $w_i$, with $w_i \le 1$, of all the crystals in the cluster. For non-overlapping clusters this is equal to the number of crystals in the cluster. However, in the case of overlapping clusters, where individual crystal energies are split among them, this can be a non-integer value.
-$\\$
-In the following analysis,the selected variables are: the \textbf{cluster energy}, the \textbf{E1E9} variable, the \textbf{E9E21} variable, \textbf{Lateral Momentum}, \textbf{Second Moment}, \textbf{Zernike Moments} (50 and 41), and \textbf{Number of Hits}. 
+The variable Number of Crystals hit (\emph{clusterNhits} in the basf2 software) indicates the number of crystals that contributed to the cluster. It returns the sum of the weights $w_i$, with $w_i \le 1$, of all the crystals in the cluster. For non-overlapping clusters this is equal to the number of crystals in the cluster. However, in the case of overlapping clusters, where individual crystal energies are split among them, this can be a non-integer value. 
+
 
 
