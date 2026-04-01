@@ -14,11 +14,11 @@
 #include "TLatex.h"
 #include "TGraphErrors.h"
 
-TString caso = "isr";
+TString caso = "nog";
 
 //static TString file_str_1= "../../../../160326_nog_uubar_chunk1234_tot.root";
-//static TString file_str= "../../../../180326_nog_qqbar.root";
-static TString file_str= "../../../../260326_isr_qqbar.root";
+static TString file_str= "../../../../180326_nog_qqbar.root";
+//static TString file_str= "../../../../260326_isr_qqbar.root";
 
 void sidebands()
 {
@@ -172,7 +172,7 @@ void sidebands_subtracted()
         delete c1;
         
         h1->Add(h2, -1.0);
-        h1->SetLineColor(kGreen);
+        h1->SetLineColor(kGreen+3);
         h1->SetLineWidth(2);
         
         
@@ -559,7 +559,7 @@ void pure_cluster()
     TTree *tree_1 = (TTree*)myf_1->Get("tree");
                 
     TString var[8] = {"clusterE","clusterLAT","clusterNHits","clusterSecondMoment","clusterE1E9","clusterE9E21","clusterAbsZernikeMoment51","clusterAbsZernikeMoment40"};
-    TString lim [8] = {"(100,0,3)","(128,0,1)","(80,-0.5,79.5)","(512,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
+    TString lim [8] = {"(100,0,3)","(128,0,1)","(80,-0.5,79.5)","(256,0,40)","(128,0,1)","(128,0,1)","(128,0,1.2)","(128,0,1.7)"};
     TString um [8] = {" [GeV]","","","","","","",""};
     
     for(int i = 0; i<8; i++)

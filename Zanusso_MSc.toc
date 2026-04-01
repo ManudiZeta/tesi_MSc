@@ -57,13 +57,13 @@
 \contentsline {subsection}{\numberline {6.1}Types of processes at the Belle experiment enviroment}{74}{subsection.1.1}%
 \contentsline {subsection}{\numberline {6.2}Selections criteria}{75}{subsection.1.2}%
 \contentsline {subsection}{\numberline {6.3}Recoil mass in $u\bar {u}$ cocktail production (NO ISR case)}{77}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Recoil mass components analysis}{78}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics study on $\alpha $ cut}{79}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.1}Recoil mass channels analysis}{78}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics study on $\alpha $ cut}{80}{subsubsection.1.3.2}%
 \contentsline {subsection}{\numberline {6.4}$q\bar {q}$ cocktail production (NO ISR case)}{84}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Cluster variables in $q\bar {q}$ cocktail}{86}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Sidebands technique in $q\bar {q}$ cocktail}{89}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {6.5}$q\bar {q}$ cocktail production (ISR case)}{90}{subsection.1.5}%
-\contentsline {subsection}{\numberline {6.6}Summary of Monte Carlo cocktail Analysis}{93}{subsection.1.6}%
+\contentsline {subsubsection}{\numberline {6.4.1}Cluster variables in $q\bar {q}$ cocktail}{85}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Sidebands subtraction in $q\bar {q}$ cocktail}{88}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {6.5}$q\bar {q}$ cocktail production (ISR case)}{92}{subsection.1.5}%
+\contentsline {subsection}{\numberline {6.6}Summary of the Monte Carlo cocktail analysis}{94}{subsection.1.6}%
 \contentsline {part}{7\hspace {1em}Data - Monte Carlo comparison}{100}{part.7}%
 \contentsline {subsection}{\numberline {7.1}Recoil mass in data}{100}{subsection.1.1}%
 \contentsline {subsection}{\numberline {7.2}Data/MC agreement}{102}{subsection.1.2}%

@@ -1,13 +1,12 @@
 \setcounter{subsection}{0} 
 \part{Study of the Monte Carlo cocktail production}
-This chapter is devoted to the study of Belle II Monte Carlo cocktail simulations. A Belle II "cocktail" MC production (typically generated with Pythia8) simulates all relevant physics channels simultaneously. Therefore, the analyzed channel $e^+e^- \rightarrow p\pi^-\bar{n}\,(\gamma_\text{ISR})$ is now embedded within all other background channels in the cocktail; the first task is to correctly reconstruct it amidst the surrounding backgrounds, studying the recoil mass distribution.
+This chapter is devoted to the study of Belle II Monte Carlo cocktail simulations. A Belle II "cocktail" MC production (typically generated with Pythia8) simulates all relevant physics channels simultaneously. Therefore, the analyzed channel $e^+e^- \rightarrow p\pi^-\bar{n}\,(\gamma_\text{ISR})$ is now embedded within all other background channels in the cocktail; the first task is to correctly reconstruct it amidst the surrounding backgrounds, studying the recoil mass distribution. To achieve this, a first attempt uses the $u\bar{u}$ cocktail production. 
 $\\$
-To achieve this, a first attempt uses the $u\bar{u}$ cocktail production. Further selection criteria are developed to properly isolate the signal in the recoil mass distribution.
+Further selection criteria are developed to properly isolate the signal in the recoil mass distribution. After optimizing the selections, the shower shape variables of neutral cluster associated to anti-neutron candidates are studied.
 $\\$
 Afterwards, the full Belle II $q\bar{q}$ ($u\bar{u}$, $d\bar{d}$, $c\bar{c}$, $s\bar{s}$) production is analyzed, discussing the corresponding $\bar{n}$ candidates cluster variables.
 $\\$
 The Feynman diagram of $e^+e^- \rightarrow q \bar{q}$ is shown in Fig.~\ref{fig:Feynman_qqbar}.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.45\textwidth]{nbar_cocktail/images/qqbar_diag}
@@ -20,7 +19,9 @@ Many processes can occur during an $e^+e^-$ collision. These may mimic the selec
 $\\$
 The $\Upsilon(4S)$ production occurs at $\sqrt{s} = 10.58$ GeV, yielding $\Upsilon(4S) \rightarrow BB$ processes. The $B^+B^-$ and $B^0 \bar{B}^0$ final states  are referred to as charged and neutral $B \bar{B}$ pairs, respectively.
 $\\$
-The $e^+e^- \to q\bar{q}$ ($q = u,d,s,c$) processes, known as continuum production, also occur. There are $e^+e^- \to l^+l^- (\gamma)$ and $e^+e^- \to l^+l^-l^-l^+$, with $l = (e,\mu,\tau)$, that are low multiplicity processes. The cross section distribution \cite{BelleIIPhysicsBook2019} of $e^+ e^- \rightarrow hadrons$ process is shown in Fig.\ref{fig:belleii_processes}.
+The $e^+e^- \to q\bar{q}$ ($q = u,d,s,c$) processes, known as continuum production, also occur. There are $e^+e^- \to l^+l^- (\gamma)$, $e^+e^- \to l^+l^-l^+l^-$, with $l = (e,\mu,\tau)$ and others that are low multiplicity processes.
+$\\$
+The cross section distribution \cite{BelleIIPhysicsBook2019} of $e^+ e^- \rightarrow hadrons$ process is shown in Fig.\ref{fig:belleii_processes}.
 
 \begin{table}[h]
 \centering
@@ -39,11 +40,10 @@ $e^+e^- \to e^+e^-e^+e^-$ & 39.7 \\
 $e^+e^- \to e^+e^-\mu^+\mu^-$ & 18.9 \\
 \end{tabular}
 \end{table}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{nbar_cocktail/images/BelleII_processes}
-    \caption{Cross section of $e^+ e^- \rightarrow hadrons$, in $\Upsilon$ resonances energy region. The $\Upsilon(1S)$ resonance is very narrow, while the $\Upsilon(4S)$ one is broader and lower.}
+    \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/BelleII_processes}
+    \caption{Cross section of $e^+ e^- \rightarrow hadrons$, in the $\Upsilon$ resonances energy region. The $\Upsilon(1S)$ resonance is very narrow, while the $\Upsilon(4S)$ one is broader and lower.}
     \label{fig:belleii_processes}
 \end{figure}
 
@@ -53,10 +53,10 @@ To follow the same approach as used in the signal sample analysis, the recoil ma
 \item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\bar{n}$: neutral clusters from ECL;
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$;
-\item $\alpha <0.35$ rad $\sim 20 ^{\circ}$;
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
+\item $\alpha <0.35$ rad $\sim 20 ^{\circ}$.
 \end{enumerate}
-Furthermore, the following four additional cuts are applied beyond those used for the signal sample.
+Furthermore, in order to reduce the background, the following four additional cuts are applied beyond those used for the signal sample.
 \begin{enumerate}
 \item $\bar{n}$: Number of hits $> 10$ and energy $<3$ GeV;
 \item $\alpha <0.20$ rad $\sim 11.5 ^{\circ}$;
@@ -64,58 +64,51 @@ Furthermore, the following four additional cuts are applied beyond those used fo
 \end{enumerate}
 The cut on the number of hits arises from observations in the previous chapter; to achieve a proper selection of neutral clusters -reducing cluster split-off and pre-showering contributes- a requirement on the number of lighted crystals is applied. 
 $\\$
-The stricter cut on $\alpha$ allows a better selection of anti-neutron candidates through a smaller $\alpha$ angle. $\alpha$ is defined as the 3D angle between the recoil vector direction and the neutral cluster associated with the $\bar{n}$. As will be explained later, this threshold can be lowered further.
+The stricter cut on $\alpha$ allows a better selection of anti-neutron candidates through a smaller $\alpha$ angle. The $\alpha$ angle is defined as the 3D angle between the recoil vector direction and the neutral cluster associated with the $\bar{n}$. As will be explained later, this threshold can be lowered further.
 $\\$
-The concept of Rest of Event (ROE) is now introduced. The ROE is built around the reconstructed target particles and consists of all other additional particles in the Rest of the Event. In the present case, the reconstructed particles are $p, \pi^-, \bar{n}$ (and $\gamma_{ISR}$); therefore, the ROE includes all particles outside this reconstructed system. With the selection criterion in the ROE, it is required that no charged particles -i.e. tracks associated with charged particles- are present in the Rest Of Event, since no other charged tracks are expected. 
+The concept of Rest of Event (ROE) is now introduced. The ROE is built around the reconstructed target particles and consists of all other additional particles in the Rest of the Event. In the present case, the reconstructed particles are $p, \pi^-, \bar{n}$ (and $\gamma_{ISR}$); therefore, the ROE includes all particles outside this reconstructed system. With the selection criterion in the ROE, it is required that no charged particles -i.e. tracks associated with charged particles- are present in the Rest Of Event, since no additional charged tracks are expected. 
 $\\$
-The cut on the cluster Energy arises from cluster energy studies performed on the first MC sample of $u\bar{u}$ cocktail production. The list of the $\bar{n}$ candidates list can be contaminated by the presence of several mis-identified photons from ISR. In order to study this phenomenon, the Monte Carlo ISR flag can be used to separate the two contributions in the reconstructed $\bar{n}$ list, distinguishing the contributions of $\bar{n}$ candidates that are ISR particles from those that are not. The obtained cluster energy distribution for $\bar{n}$ candidates is shown in figure ~\ref{fig:E_isr_uubar_c1}.
-$\\$
+The cut on the cluster Energy arises from cluster energy studies performed on the first MC sample of $u\bar{u}$ cocktail production, corresponding to an integrated luminosity of $\sim 215fb^{-1}$. The list of the $\bar{n}$ candidates list can be contaminated by the presence of several mis-identified photons from ISR. In order to study this phenomenon, the Monte Carlo ISR flag can be used to separate the two contributions in the reconstructed $\bar{n}$ list, distinguishing the contributions of $\bar{n}$ candidates that are ISR particles from those that are not. The obtained cluster energy distribution for $\bar{n}$ candidates is shown in figure ~\ref{fig:E_isr_uubar_c1}.
+$\\$8
 Two structures, at $\sim 4$ GeV and $\sim 6$ GeV, due to $\gamma_{ISR}$ mis-identified as anti-neutrons, arise. In order to remove them, a cut on cluster energy, such as those discussed, is mandatory.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/clusterEnergy_isr}
-    \caption{Cluster energy distribution of $\bar{n}$ candidates. Green: $\bar{n}$ candidates that are a $\gamma_{ISR}$; Blue: $\bar{n}$ candidates that are not a $\gamma_{ISR}$; Red: $\bar{n}$ candidates associated to $\bar{n}$ by the Monte Carlo. }
+    \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/clusterEnergy_isr}
+    \caption{Cluster energy distribution of $\bar{n}$ candidates. Green: $\bar{n}$ candidates that are a $\gamma_{ISR}$; blue: $\bar{n}$ candidates that are not a $\gamma_{ISR}$; red: $\bar{n}$ candidates associated to $\bar{n}$ by the Monte Carlo.}
     \label{fig:E_isr_uubar_c1}
 \end{figure}
-$\\$
-Additionally, $\gamma$ represents one of the most abundant produced particles in HEP experiments such as Belle II, making a major contribution to the background. In addition to the ISR ($E \sim 10$ MeV - $5$ GeV, Fig.~\ref{fig:isr_distro}) and FSR ($E< 10$ MeV) radiation described above, secondary photons -such as those from $\pi^0 \rightarrow \gamma \gamma$ decays  ($E < 400$ MeV)- are also present. Therefore, the NO ISR channel where, the recoil system is made of  $p, \pi^-$, should represents a cleaner system to reconstruct than the ISR one, where the recoil system is made of  $p, \pi^-, \gamma$, since several background $\gamma$'s can be mis-identified as the ISR photon, which must be accounted for in the recoil system.
+
+Additionally, $\gamma$ represents one of the most abundant produced particles in HEP experiments such as Belle II, making a major contribution to the background. In addition to the ISR ($E \sim 10$ MeV - $5$ GeV, Fig.~\ref{fig:isr_distro}) and FSR ($E< 10$ MeV) radiation described above, secondary photons -such as those from $\pi^0 \rightarrow \gamma \gamma$ decays  ($E < 400$ MeV)- are also present. Therefore, the NO ISR channel, where the recoil system is made of  $p, \pi^-$, should represents a cleaner system to reconstruct than the ISR one, where the recoil system is made of  $p, \pi^-, \gamma$, since several background $\gamma$'s can be mis-identified as the ISR photon, which must be accounted for in the recoil system.
 In order to compare the feasibility of selecting the channel in both ISR and NO ISR cases separately, the recoil mass distribution must be first studied using the same selection criteria. The better the selection of the signal from the background, the more consistent the shower shape variables will be for neutral clusters associated with $\bar{n}$ candidates.
 
 \subsection{Recoil mass in $u\bar{u}$ cocktail production (NO ISR case)}
-The recoil mass distribution obtained from the $u\bar{u}$ cocktail is first studied in NO ISR case. If the recoil system $p, \pi^-$ is properly reconstructed among all possible background channels, then a peak should be observed at the anti-neutron rest mass. The obtained result, with the discussed selections, is shown in Fig.~\ref{fig:mRec_nog_020}.
-\begin{figure}[h]
+The recoil mass distribution obtained from the $u\bar{u}$ cocktail is studied in NO ISR case. If the recoil system $p, \pi^-$ is properly reconstructed among all possible background channels, then a peak should be observed at the anti-neutron rest mass. The obtained result, with the discussed selections, is shown in Fig.~\ref{fig:mRec_nog_020}.
+$\\$
+ A distinct structure is observed above the $\bar{n}$ mass value, suggesting that the selected channel is properly reconstructed. For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in table~\ref{fig:topo_nog_020}. TopoAna does not account for particle-matter interactions; thus, all displayed particles originate directly from the $e^+e^-$ collision at the IP.
+$\\$
+The main contribution comes from the signal channel with $p \pi^- \bar{n}$ in the final state, immediately followed by the one with $p \pi^- \bar{n} \pi^0$ in the final state. Further contribution arise from $p \pi^- \bar{n} \gamma_{ISR}$, which could be interpreted as signal, even if, in NO ISR case, the $\gamma_{ISR}$ is not explicitly reconstructed within the recoil system. The fourth contribution is due to the one with $p \pi^- \bar{n} \pi^0 \gamma_{ISR}$ and so on. The contributions are sorted from most to least abundant.
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/recoil_mass_nog_020}
     \caption{Reconstructed $p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, NO ISR case.}
     \label{fig:mRec_nog_020}
 \end{figure}
-A distinct structure is observed above the $\bar{n}$ mass value, suggesting that the selected channel is properly reconstructed. For a cleaner comparison between the signal channel and background components, the TopoAna output can be consulted in Fig.~\ref{fig:topo_nog_020}. TopoAna does not account for particle-matter interactions; thus, all displayed particles originate directly from the $e^+e^-$ collision at the IP.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_nog_020}
     \caption{First 10 channels of the TopoAna output in $u\bar{u}$ Monte Carlo cocktail, showing the different channel contributes, NO ISR case.}
     \label{fig:topo_nog_020}
 \end{figure}
-The main contribution comes from the signal channel with $p \pi^- \bar{n}$ in the final state, immediately followed by the one with $p \pi^- \bar{n} \pi^0$ in the final state. Further contribution arise from $p \pi^- \bar{n} \gamma_{ISR}$, which could be interpreted as signal, even if, in NO ISR case, the $\gamma_{ISR}$ is not explicitly reconstructed within the recoil system. The fourth contribution is due to the one with $p \pi^- \bar{n} \pi^0 \gamma_{ISR}$ and so on. The contributions are sorted from most to least abundant.
 
-\subsubsection{Recoil mass components analysis}
-In TopoAna, each channel is identified by its own \texttt{iDcyTr} (index of the decay tree), which allows to identify clearly which decay channel has produced the selected candidate.
-$\\$
-The components are therefore denoted as follows:
-\begin{itemize}
-\item $e^+ e^- \rightarrow \pi^- \bar{n} p$ (iDcyTr == 24),
-\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p$ (iDcyTr == 2),
-\item $e^+ e^- \rightarrow \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 16),
-\item $e^+ e^- \rightarrow \pi^0 \pi^- \bar{n} p \gamma_{ISR}$ (iDcyTr == 6),
-\item $e^+ e^- \rightarrow$ other.
-\end{itemize}
-The obtained stacked component to the recoil mass are shown in figure ~\ref{fig:mRecComps_nog_020}.
+\subsubsection{Recoil mass channels analysis}
+In TopoAna, each channel is identified by its own \texttt{iDcyTr} (index of the decay tree), which allows to identify clearly which decay channel has produced the selected candidate. The obtained stacked channels to the recoil mass are shown in figure ~\ref{fig:mRecComps_nog_020}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.90\textwidth]{nbar_cocktail/images/recoilM_comps_nog_020}
-    \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
+    \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked channels contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
     \label{fig:mRecComps_nog_020}
 \end{figure}
+
 Defining the \emph{Signal Region} as the interval $[0.8, 1.2]$ GeV, it can be observed that contributions from the channel with $\pi^0 \pi^- \bar{n} p$ in the final state predominantly lie to the right of the signal region. This is expected, as the recoil system computation does not take into account the $\pi^0$, resulting in a higher recoil mass. Same conclusions can be made for the channel with $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ in the final state. 
 $\\$
 The signal channel ($\pi^- \bar{n} p$ in the final state) predominantly populates the signal region. The $\pi^- \bar{n} p \gamma_{ISR}$ channel ($\pi^- \bar{n} p \gamma_{ISR}$) also mainly populates the same region, indicating that the energy of the $\gamma_{ISR}$ is negligible and has minimal impact on the recoil mass, as shown by the ISR energy distribution in Fig.~\ref{fig:isr_distro}. This can be directly observed from the single contribution from these two channels displayed in Fig.~\ref{fig:mRecComps_nog_020_0e3}. 
@@ -126,15 +119,15 @@ The signal channel ($\pi^- \bar{n} p$ in the final state) predominantly populate
     \caption{ The $p, \pi^-$ recoil mass for the channel with $\pi^- \bar{n} p$ in the final state (green) and for the channel with $\pi^- \bar{n} p \gamma_{ISR}$ in the finale state (red).}
     \label{fig:mRecComps_nog_020_0e3}
 \end{figure}
-$\\$
+
 Thus, despite the $\gamma_{ISR}$ not being directly reconstructed, the $\pi^- \bar{n} p \gamma_{ISR}$ channel can be considered as a signal channel. This leads to the recoil mass composition shown in Fig.~\ref{fig:mRecComps_nog_020_0+3}.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.90\textwidth]{nbar_cocktail/images/recoilM_comps_nog_020_0+3}
-    \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ and $\pi^- \bar{n} p \gamma_{ISR}$ channels. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
+    \caption{$p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, displaying each stacked channels contribution, NO ISR case. Green: $\pi^- \bar{n} p$ and $\pi^- \bar{n} p \gamma_{ISR}$ channels. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels.}
     \label{fig:mRecComps_nog_020_0+3}
 \end{figure}
-$\\$
+
 The contributions from the remaining channels represent a flat background without discernible structures.
 $\\$
 To further suppress the background, a tighter $\alpha$ cut can be studied. Therefore, the Performance Metrics and their usage are investigated to find the most appropriate cut in $\alpha$.
@@ -144,7 +137,7 @@ In general, a \textbf{Performance Metric} quantifies how a classification proces
 $\\$
 In this specific HEP context, a performance metric quantifies how well the selection cuts distinguish the signal from the background. In this analysis, the signal can be assumed to be the channel with  $\pi^- \bar{n} p (\gamma_{ISR})$ in the final state, while the background is represented by all the other channels. Therefore, a stricter cut on the $\alpha$ angle is investigated to determine whether it improves signal selection over background.
 $\\$
-To address this kind of analysis, performance metrics such as the \textbf{Figure of Merit} (FOM), the Signal Efficiency ($\epsilon_{sig}$), the Background Efficiency ($\epsilon_{bkg}$) and the \textbf{purity} can be employed. These are defined as follow:
+To address this kind of analysis, performance metrics such as the \textbf{Figure of Merit} (FOM), the Signal Efficiency ($\epsilon_{sig}$), the Background Efficiency ($\epsilon_{bkg}$) and the \textbf{purity} can be employed. These are defined as follows:
 \begin{itemize}
 \item FOM = $\frac{SIGNAL(\alpha)}{\sqrt{SIGNAL(\alpha) + BACKGROUND(\alpha)}}$;
 \item $ \epsilon_{sig}  = \frac{SIGNAL(\alpha)}{SIGNAL(\alpha = 0.20 \ rad)}$;
@@ -165,7 +158,7 @@ Assuming the signal region corresponds to the interval $[0.8, 1.2]$ $GeV/c^2$, t
     \caption{Figure of Merit (FOM) versus $\alpha$ angle for the $u\bar{u}$ cocktail.}
     \label{fig:fom_alpha020}
 \end{figure}
-$\\$
+
 One $\alpha$ value corresponding to the plateau can be chosen in order to maximize the FOM. The value $\alpha < 0.1$ rad ($\sim 5.73^\circ$) is therefore chosen, corresponding to FOM = 43.4185.
 $\\$
 Furthermore, the signal efficiency $\epsilon_{sig}$ and the background efficiency $\epsilon_{bkg}$ performance metrics can be adopted to study the Receiver Operating Characteristic (ROC), a curve that shows how well a binary classifier distinguishes signal from background as the decision threshold ($\alpha$ cut) is varied.
@@ -184,25 +177,25 @@ Therefore, the obtained performance metrics for $\alpha < 0.1$ rad are:
 $FOM = 43.4185$, $\epsilon_{sig}= 90\%$, $\epsilon_{bkg}= 68\%$,  $Purity = 63\%$
 \end{center}
 The obtained $\epsilon_{sig}$ vs $Purity$ is shown in Fig.~\ref{fig:eff_alpha020}.
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.70\textwidth]{nbar_cocktail/images/eff_alpha}
     \caption{ $\epsilon_{sig}$ vs $Purity$ curve for the $u\bar{u}$ Monte Carlo cocktail.}
     \label{fig:eff_alpha020}
 \end{figure}
-Following the optimization described above, the components in the recoil mass distribution can now be analyzed using the cut $\alpha < 0.10$ rad.
+Following the optimization described above, the channels in the recoil mass distribution can now be analyzed using the cut $\alpha < 0.10$ rad.
 $\\$
-The obtained stacked component to the recoil mass are shown in Fig.~\ref{fig:mRecComps_nog_010}.
-\begin{figure}[h]
+The obtained stacked channels to the recoil mass are shown in Fig.~\ref{fig:mRecComps_nog_010}.
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/recoilM_comps_nog_010}
-    \caption{$p, \pi^-$ recoil mass distribution, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels. $\alpha<$ 10 rad cut is applied.}
+    \caption{$p, \pi^-$ recoil mass distribution, displaying each stacked channel contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels. $\alpha<$ 10 rad cut is applied.}
     \label{fig:mRecComps_nog_010}
 \end{figure}
 
-As observed in the performance metrics study, the signal is more prominent relative to the background than in the previous case. Background components containing $\pi^0$ lie outside the signal region $[0.8,1.2]$ $GeV/c^2$ on the right side, while other sources exhibit a lower, flat distribution across the recoil mass distribution.
+As observed in the performance metrics study, the signal is more prominent relative to the background than in the previous case. Background channels containing $\pi^0$ lie outside the signal region $[0.8,1.2]$ $GeV/c^2$ on the right side, while other sources exhibit a lower, flat distribution across the recoil mass distribution.
 $\\$
-The first 5 channels of $u\bar{u}$ TopoAna output with the $\alpha<$ 10 rad cut is shown in Fig.~\ref{fig:topo_nog_010_uubar}.
+The first 5 channels of $u\bar{u}$ TopoAna output, with the $\alpha<$ 10 rad cut, are shown in table~\ref{fig:topo_nog_010_uubar}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
@@ -213,64 +206,71 @@ The first 5 channels of $u\bar{u}$ TopoAna output with the $\alpha<$ 10 rad cut 
 After applying the $\alpha < 0.10$ rad cut, the dominant contribution remains from the signal channel $p \pi^- \bar{n}$, now immediately followed by $p \pi^- \bar{n} \gamma_{\text{ISR}}$. As discussed, both contributions can be identified as signal since they fall within the signal region $[0.8,1.2]$ GeV.
 
 \subsection{$q\bar{q}$ cocktail production (NO ISR case)}
-In order to fully characterize the Monte Carlo simulation, all $q\bar{q}$ continuum components are studied. The Monte Carlo productions for $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ are therefore analyzed. Each of them corresponds to an integrated luminosity of $\sim 1429.23$ $fb^{-1}$ of data, 4 times the collected statistics in data.
+In order to fully characterize the Monte Carlo simulation, all $q\bar{q}$ continuum components are studied. The Monte Carlo productions for $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ are therefore analyzed. Each of them corresponds to an integrated luminosity of $\sim 1429.23$ $fb^{-1}$, 4 times the collected statistics in data.
 $\\$
-For a cleaner comparison between the signal channel and background components, the TopoAna output can be consulted in Fig.~\ref{fig:topo_nog_010_qqbar}.
+For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in table~\ref{fig:topo_nog_010_qqbar}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_nog_010_qqbar}
     \caption{First 10 channels of the TopoAna output in $q\bar{q}$ Monte Carlo cocktail, showing the different channel contributes.}
     \label{fig:topo_nog_010_qqbar}
 \end{figure}
-The TopoAna output reveals that the dominant contribution is from the signal channel $p \pi^- \bar{n}$ in the $q\bar{q}$ continuum. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}$, which could be treated as signal despite the $\gamma_{\text{ISR}}$ not being explicitly reconstructed. The next contribution comes from $p \pi^- \bar{n} \pi^0$ in the final state. The fourth contribution is due to $p \pi^- \bar{n} \pi^0 \gamma_{\text{ISR}}$, and so on. The situation is very similar to that observed in the $u\bar{u}$ case.
-$\\$
-The individual TopoAna outputs, separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples, are now discussed. The first 5 contributes for each sample are shown in ~\ref{fig:topo_nog_010_qqbar_singles}.
-\begin{figure}[h]
+
+The TopoAna output reveals that the dominant contribution is from the signal channel $p \pi^- \bar{n}$ in the $q\bar{q}$ continuum. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}$, which could be treated as signal despite the $\gamma_{\text{ISR}}$ not being explicitly reconstructed, and so on. The situation is very similar to that observed in the $u\bar{u}$ case. The individual TopoAna outputs, separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples, are now discussed. The first 5 contributes for each sample are shown in table~\ref{fig:topo_nog_010_qqbar_singles}.
+
+%while the stacked $q\bar{q}$ components to the recoil mass in Fig.~\ref{fig:single_contr_of_qqbar_nog}.
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ddbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ssbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ccbar_010}
-    \caption{Top 5 channels from the TopoAna output for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). NO ISR case. The \texttt{iDcyTr} index values may differ across samples, since each TopoAna output is produced independently from its corresponding ROOT ntuples.}
+    \caption{Top 5 channels of $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ (from top to bottom). NO ISR case. The \texttt{iDcyTr} index values may differ across samples, since each TopoAna output is produced independently.}
     \label{fig:topo_nog_010_qqbar_singles}
 \end{figure}
+%\begin{figure}[H]
+   % \centering
+    %\includegraphics[width=0.80\textwidth]{nbar_cocktail/images/single_contr_of_qqbar_nog}
+    %\caption{$p, \pi^-$ recoil mass distribution in $q\bar{q}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. (pink) $u\bar{u}$ component; (light blue) $d\bar{d}$ component; (green) $s\bar{s}$ component; (blue) $c\bar{c}$ component.}
+    %\label{fig:single_contr_of_qqbar_nog}
+%\end{figure}
 
-The main contributions to the final signal state are from the $u\bar{u}$ and $d\bar{d}$ cocktails, as expected, since no $p\pi^-\bar{n}$ system can be obtained from an $s\bar{s}$ state. A contribution from a $c\bar{c}$ state could have been expected from the following channel:
-\begin{center}
-$e- \ + \ e^- \rightarrow J/\Psi (c\bar{c}) \rightarrow p \ + \ \pi^- \ + \ \bar{n}$
-\end{center}
-In order to reach the $J/\psi$ resonance ($\sim 3.1$ GeV) in $e^+e^-$ collisions at Belle II, a significant lowering of the center-of-mass energy must occur due to $\gamma_{\rm ISR}$ emission. Since high-energy ISR emission is improbable (Fig.~\ref{fig:isr_distro}), the $c\bar{c}$ channel can be considered negligible for this analysis.
-$\\$
-The obtained stacked components to the recoil mass, in $q\bar{q}$ cocktail, are shown in figure ~\ref{fig:mRecComps_nog_010_qqbar}.
-\begin{figure}[H]
+The main contributions to the final signal state are from the $u\bar{u}$ and $d\bar{d}$ cocktails, as expected, since no $p\pi^-\bar{n}$ system can be obtained from $s\bar{s}$ and $c\bar{c}$. Furthermore, since no significant background contributions are present in the $c\bar{c}$ sample, the potential $b\bar{b}$ contribution to the background can be safely neglected.
+%Furthermore, the amount of each channel in $u\bar{u}$ is $\sim$4 times higher than $d\bar{d}$, as expected by QCD where:
+%\begin{center}
+%$\frac{\sigma{(e^+ e^- \rightarrow u\bar{u})}}{(e^+ e^- \rightarrow d\bar{d})} \propto (\frac{Q_u}{Q_d})^2 = (\frac{2/3}{1/3}))^2 = 4$ 
+%\end{center}
+%$\\$
+The obtained stacked channels to the recoil mass, in $q\bar{q}$ cocktail, are shown in Fig.~\ref{fig:mRecComps_nog_010_qqbar}.
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/recoilM_qqbar_comps_nog_010}
-    \caption{$p, \pi^-$ recoil mass distribution in $q\bar{q}$ Monte Carlo cocktail, displaying each stacked component contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels. $\alpha<$ 10 rad cut is applied.}
+    \caption{$p, \pi^-$ recoil mass distribution in $q\bar{q}$ Monte Carlo cocktail, displaying each stacked channel contribution, NO ISR case. Green: $\pi^- \bar{n} p$ channel. Blue: $\pi^0 \pi^- \bar{n} p$ channel. Red: $\pi^- \bar{n} p \gamma_{ISR}$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels. $\alpha<$ 10 rad cut is applied.}
     \label{fig:mRecComps_nog_010_qqbar}
 \end{figure}
-A similar behaviour to the $u\bar{u}$ cocktail can be observed, where the $p\pi^-\bar{n}$ and $p\pi^-\bar{n}\gamma_{\text{ISR}}$ channels mainly contribute to the signal region [0.8,1.2] GeV. Background components containing the $\pi^0$ peak appear outside the signal region [0.8,1.2] GeV on the right side, while a flat background is present from other background channels.
+
+A similar behaviour to the $u\bar{u}$ cocktail can be observed, where the $p\pi^-\bar{n}$ and $p\pi^-\bar{n}\gamma_{\text{ISR}}$ channels mainly contribute to the signal region [0.8,1.2] GeV/$c^2$. Background channels containing the $\pi^0$ peak appear outside the signal region [0.8,1.2] GeV/$c^2$ on the right side, while a flat background is present from other background channels.
 
 \subsubsection{Cluster variables in $q\bar{q}$ cocktail}
-The $\bar{n}$ candidates reconstructed cluster variables can now be studied with the following discussed selections:
+The $\bar{n}$ candidates cluster variables can now be studied with the following discussed selections:
 \begin{enumerate}
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
-\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
 \item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
 \item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm; 
+\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
 \item $\alpha <0.10$ rad $\sim 5.73^\circ$;
 \item No further charged particles in the Rest of Event (ROE).
 \end{enumerate}
-The obtained $\bar{n}$ candidates reconstructed cluster variables are shown in Fig.\ref{fig:clus_vars_nog_qqbar}.
+The obtained $\bar{n}$ cluster variables are shown in Fig.~\ref{fig:clus_vars_nog_qqbar}.
 Specific structures can be observed in the cluster variables distributions, compared to those obtained in Fig.~\ref{fig:clus_vars_2}.
 $\\$
-For example, in the E1E9 distribution a second structure can be noted at a value $\sim 0.85$, and at value $\sim 1$ in the E9E21distribution as well. Similar structure appears at values close to 0 in the Second Moment distribuiton, which is partially reflected in the first structure of the N Hits distribution observed at a value of $\sim 10$. Another example can be seen in the Lateral Momentum distribution, where a structure at $\sim 0.3$ can be noted, which is typical reference of electromagnetic shower. 
+For example, in the E1E9 distribution a second structure can be noted at a value $\sim 0.85$, and at value $\sim 1$ in the E9E21distribution as well. A structure appears at values close to 0 in the Second Moment distribution, while one can be observed in the N Hits distribution at a value of $\sim 10$. Another example can be seen in the Lateral Momentum distribution, where a structure at $\sim 0.25 - 0,30$ can be noted, which is a typical signature of electromagnetic shower. 
 $\\$
-Therefore, a contribution from small-sized clusters -as can be seen in the Second Moment and N Hits distributions- and not spread out clusters -as can be seen in the E1E9 and E9E21 distributions- can be observed in $\bar{n}$ candidates reconstructed cluster variables. These shower shape characteristics are typical of the electromagnetic showers. This is further suggested by the structure observed in the Lateral Momentum distribution.
+Therefore, a contribution from small-sized clusters -as can be seen in the Second Moment and N Hits distributions- and not spread out clusters -as can be seen in the E1E9 and E9E21 distributions- can be observed in $\bar{n}$ candidates cluster variables. These shower shape characteristics are typical of the electromagnetic showers. This is further suggested by the structure observed in the Lateral Momentum distribution.
 $\\$
-In order to study the nature of these singular structures, a signal and background study can be performed, isolating the individual contribution of each. If these structures are not produced by the signal, their contribution could be isolated and then removed from the signal one. In order to perform this kind of analysis, the sidebands technique is discussed in the next paragraph.
+In order to study the nature of these singular structures, a signal/background study can be performed, isolating the individual contribution of each. If these structures are not produced by the signal, their contribution could be isolated and then removed from the signal one. In order to perform this kind of analysis, the sidebands technique is discussed in the next paragraph.
 
 \newpage
-The obtained cluster variables distribution in NO ISR case, in q$\bar{q}$ cocktail.
  \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/clusterE_nog_qqbar.pdf}
@@ -281,17 +281,17 @@ The obtained cluster variables distribution in NO ISR case, in q$\bar{q}$ cockta
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/clusterAbsZernikeMoment40_nog_qqbar.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/clusterAbsZernikeMoment51_nog_qqbar.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/clusterNHits_nog_qqbar.pdf}
-     \caption{Reconstructed cluster variables distribution for $\bar{n}$ candidates in the for the recoil mass region [0, 2] GeV, in NO ISR case. q$\bar{q}$ cocktail }
+     \caption{Cluster variables distributions for $\bar{n}$ candidates in the recoil mass region [0, 2] $GeV/c^2$, in NO ISR case. $q\bar{q}$ cocktail }
      \label{fig:clus_vars_nog_qqbar}
 \end{figure}
 
-\subsubsection{Sidebands technique in $q\bar{q}$ cocktail}
+\subsubsection{Sidebands subtraction in $q\bar{q}$ cocktail}
 In order to study separately the signal and background contributions to the cluster variables, the \textbf{sidebands technique} can be adopted. 
 $\\$
 The sidebands technique is a data-driven method used in experimental high-energy physics to estimate and subtract the background from a region of interest. It relies on identifying a discriminating variable -often the invariant mass or the recoil mass, as this case- that separates the signal from the background. 
 $\\$
 The \textbf{signal region} can be defined as the region where the signal appears in the recoil mass distribution. This region contains a mixture of signal and background.
-The \textbf{sidebands regions} consist of two symmetric areas (one before and one after the signal region), which may sometimes overlap, be immediately adjacent, or distant, that are assumed to contain only (or primarily) background. Therefore, in order to obtain the cluster variables distribution for the signal only, the background distribution (sidebands regions) is subtracted from the signal+background distribution (signal region) as follows:
+The \textbf{sidebands regions} consist of two symmetric areas (one before and one after the signal region), which may overlap, be immediately adjacent, or distant, that are assumed to contain only (or primarily) background. Therefore, in order to obtain the cluster variables distribution for the signal only, the background distribution (sidebands regions) is subtracted from the signal+background distribution (signal region) as follows:
 
 \begin{center}
 $N_{signal} = N_{\text{signal  region}} - k \cdot N_{\text{sideband region}}$,
@@ -301,25 +301,24 @@ where:
  $k = \frac{\text{size of the signal region}}{\text{size of the sum of the sidebands regions}}$ 
  \end{center}
 is a normalization factor.
-
 $\\$
-In the present case, the following region have been decided:
+In the present case, the following regions, in the recoil mass, have been decided:
 
 \begin{itemize}
-\item Signal region: [0.8, 1.2] GeV;
-\item Sidebands regions: [0.3, 0.7] U [1.3, 1.7]  GeV;
+\item Signal region: [0.8, 1.2] GeV/$c^2$;
+\item Sidebands regions: [0.3, 0.7] U [1.3, 1.7]  GeV/$c^2$;
 \item $k = \frac{1.2 - 0.8}{(0.7 - 0.3) + (1.7 - 1.3)} = \frac{1}{2}$.
 \end{itemize}
 
-The signal region and sidebands region, in the recoil mass distribution observed in Fig.~\ref{fig:mRecComps_nog_010_qqbar}, are shown in Fig.\ref{fig:recMass_sidebands}.
+The signal region and the sidebands regions, in the recoil mass distribution, are shown in Fig.\ref{fig:recMass_sidebands}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{nbar_cocktail/images/recoil_mass_sidebands_nog}
     \caption{Recoil mass distribution (black), with the signal region (red) and the sidebands regions (blue), in the $q\bar{q}$ Monte Carlo cocktail. NO ISR case.}
     \label{fig:recMass_sidebands}
 \end{figure}
-$\\$
-The single contributions from the signal region and the two sidebands regions to the cluster variable can be compared. Since the two sidebands regions combined are two times larger than the signal region, a scaling factor of $k = 0.5$ has been applied to the cluster variables obtained from the sidebands regions. The obtained cluster variables contribution is shown in Fig.\ref{fig:clus_vars_sidebands_pre}.
+
+The contributions from the signal region and the two sidebands regions to the cluster variable can be compared. Since the two sidebands regions combined are two times larger than the signal region, a scaling factor of $k = 0.5$ has been applied to the histograms obtained from the sidebands regions. The obtained cluster variable contributions are shown in Fig.~\ref{fig:clus_vars_sidebands_pre}.
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterE_nog.pdf}
@@ -330,20 +329,17 @@ The single contributions from the signal region and the two sidebands regions to
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterNHits_nog.pdf}
-     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates in the signal region [0.8, 1.2] GeV (blue) with $\bar{n}$ candidates in the sidebands region [0.3, 0.7] U [1.3, 1.7]  GeV  (red), in NO ISR case. A scaling factor of $k = 0.5$ has been applied to the cluster variables obtained from the sidebands regions. q$\bar{q}$ cocktail.}
+     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates in the signal region [0.8, 1.2] GeV/$c^2$ (blue) with $\bar{n}$ candidates in the sidebands region [0.3, 0.7] U [1.3, 1.7]  GeV/$c^2$  (red), in NO ISR case. A scaling factor of $k = 0.5$ has been applied to the cluster variables obtained from the sidebands regions. q$\bar{q}$ cocktail.}
      \label{fig:clus_vars_sidebands_pre}
 \end{figure}
-$\\$
-The cluster energy distribution shows a flat contribution from the sidebands regions, where no specific structure was observed. The E1E9 distribution shows that the structure observed in $\sim 0.85$ (Fig.~\ref{fig:clus_vars_nog_qqbar}) is mainly caused by background components, such as those coming from the sidebands regions. The same conclusion can be reached for the structure observed close to unity in the E9E21 distribution. 
-$\\$
-Furthermore, the sidebands regions provide the main contribution to the structure observed at low values in the Second Moment distribution, caused by small-sized clusters. 
-$\\$
-The cluster Zernike moment $Z^0_4$ presents a tail around $Z^0_4 \sim 1.2$ caused by sidebands contribution, while $Z^1_5$ presents no discernible structure.
-$\\$
-Afterwards, the structure observed at a value of $\sim 0.3$ in the Lateral Momentum distribution is caused by sidebands contribution.
-$\\$
-Therefore, to obtain the final $\bar{n}$ candidates cluster variables distribution, the sidebands regions contribution (background) is subtracted from the signal region contribution (signal + background). The obtained cluster variables are shown in Fig.\ref{fig:clus_vars_sidebands_post}.
 
+The cluster energy distribution shows a flat contribution from the sidebands regions, where no specific structure was observed. The E1E9 distribution shows that the structure observed in $\sim 0.85$ (Fig.~\ref{fig:clus_vars_nog_qqbar}) was mainly caused by background components. The same conclusion can be reached for the structure observed close to unity in the E9E21 distribution. 
+$\\$
+Furthermore, the background provides the main contribution to the structure observed at low values in the Second Moment distribution, caused by small-sized clusters. The cluster Zernike moments $Z^0_4$ and $Z^1_5$ distributions present no discernible structure.
+$\\$
+The structure observed at a value of $\sim 0.3$ in the Lateral Momentum distribution is mainly caused by the background contribution.
+$\\$
+To remove the contribution from background channels in the final $\bar{n}$ candidates cluster variables distribution, the sidebands regions contribution (background) is subtracted from the signal region contribution (signal + background). The obtained cluster variables are shown in Fig.~\ref{fig:clus_vars_sidebands_post}.
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterE_nog.pdf}
@@ -355,41 +351,51 @@ Therefore, to obtain the final $\bar{n}$ candidates cluster variables distributi
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterAbsZernikeMoment51_nog.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterNHits_nog.pdf}
    
-     \caption{Reconstructed cluster variables for $\bar{n}$ candidates after the application of the sidebands technique, in NO ISR case. q$\bar{q}$ cocktail.}
+     \caption{Reconstructed cluster variables for $\bar{n}$ candidates, after the sidebands subtraction, in NO ISR case. $q\bar{q}$ cocktail.}
      \label{fig:clus_vars_sidebands_post}
 \end{figure}
 
-The obtained cluster variables distributions no longer present the singular structures observed prior to the sidebands technique application. This leads to reconstructed cluster variables more similar to those obtained from the Monte Carlo signal sample analysis (Fig.~\ref{fig:clus_vars_2}). This suggests that the applied selections and the sidebands technique properly separate the signal contribution from the background one, in q$\bar{q}$ cocktail, with no explicit $\gamma_{ISR}$ reconstruction.
+The distributions no longer present the singular structures observed prior to the sidebands subtraction. This leads to reconstructed cluster variables more similar to those obtained from the Monte Carlo signal sample (Fig.~\ref{fig:clus_vars_2}). This suggests that the applied selections and the sidebands subtraction properly separate the signal contribution from the background one, in q$\bar{q}$ cocktail, with no explicit $\gamma_{ISR}$ reconstruction.
 
+\clearpage
 \subsection{$q\bar{q}$ cocktail production (ISR case)}
-Since the same path as the NO ISR case has been followed, in the ISR case the $q\bar{q}$ cocktail is directly analyzed. The same final selections adopted in the NO ISR case have been used.
+Since for the analysis of the ISR channel the same strategy of the NO ISR process has been followed,  as well as the same event selections, in the ISR case the $q\bar{q}$ cocktail is directly analyzed. The same final selections adopted in the NO ISR case have been used.
 $\\$
-The TopoAna output of can be consulted in Fig.~\ref{fig:topo_isr_010_qqbar}.
-\begin{figure}[H]
+The TopoAna output is presented in table~\ref{fig:topo_isr_010_qqbar}.
+\begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_isr_010_qqbar}
-    \caption{First 10 channels of the TopoAna output in $q\bar{q}$ Monte Carlo cocktail, showing the different channel contributes. ISR case.}
+    \caption{First 10 channels of the TopoAna output in $q\bar{q}$ Monte Carlo cocktail, showing the different channel contributions. ISR case.}
     \label{fig:topo_isr_010_qqbar}
 \end{figure}
-The TopoAna output reveals a situation very similar to that obtained in the NO ISR case. In fact, now, the dominant contribution is from the signal channel $p \pi^- \bar{n} \gamma_{ISR}$. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}  \gamma_{ISR}$, which could be treated as signal despite the extra $\gamma_{\text{ISR}}$ not being explicitly reconstructed. The next contribution comes from $p \pi^- \bar{n} \pi^0$ in the final state. The fourth contribution is due to $p \pi^- \bar{n} \pi^0 \gamma_{\text{ISR}}$, and so on. The individual TopoAna outputs from $u\bar{u}$, $d\bar{d}$, $s\bar{s}$ and $c\bar{c}$ are shown in Fig.~\ref{fig:topo_isr_010_qqbar_singles}.
-\begin{figure}[H]
+
+The TopoAna output reveals a situation very similar to what obtained in the NO ISR case. In fact the dominant contribution is from the signal channel $p \pi^- \bar{n} \gamma_{ISR}$. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}  \gamma_{ISR}$, which could be treated as signal despite the extra $\gamma_{\text{ISR}}$ not being explicitly reconstructed, since it has low energy and does not affect substantially the recoil mass. The next contribution comes from $p \pi^- \bar{n} \pi^0$ in the final state. The fourth contribution is due to $p \pi^- \bar{n} \pi^0 \gamma_{\text{ISR}}$, and so on. The individual TopoAna outputs from $u\bar{u}$, $d\bar{d}$, $s\bar{s}$ and $c\bar{c}$ are shown in table~\ref{fig:topo_isr_010_qqbar_singles}.
+\begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ddbar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ssbar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ccbar_isr}
-    \caption{Top 5 channels from the TopoAna output respectively for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). ISR case.}
+    \caption{Top 5 channels from the TopoAna output for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). ISR case.}
     \label{fig:topo_isr_010_qqbar_singles}
 \end{figure}
-As observed in the NO ISR case, the main contributions to the final signal state are from the $u\bar{u}$ and $d\bar{d}$ cocktails in the ISR case as well. The obtained stacked components to the recoil mass, in $q\bar{q}$ cocktail, are shown in figure ~\ref{fig:mRecComps_isr_010_qqbar}.
-\begin{figure}[H]
+
+The only contributions to the signal are from the $u\bar{u}$ and $d\bar{d}$ cocktails, whereas in $s\bar{s}$ and $c\bar{c}$ only background is present. A contribution from a $c\bar{c}$ state could have been expected from the following channel:
+\begin{center}
+$e- \ + \ e^- \rightarrow J/\Psi (c\bar{c}) \rightarrow p \ + \ \pi^- \ + \ \bar{n}$
+\end{center}
+In order to reach the $J/\psi$ resonance ($\sim 3.1$ GeV) in $e^+e^-$ collisions at Belle II, a significant lowering of the center-of-mass energy must occur due to $\gamma_{\rm ISR}$ emission. Since high-energy ISR emission is improbable (Fig.~\ref{fig:isr_distro}), the $c\bar{c}$ channel can be considered negligible for this analysis.
+
+$\\$
+The obtained stacked channels to the recoil mass distribution, in the $q\bar{q}$ cocktail, are shown separately in Fig.~\ref{fig:mRecComps_isr_010_qqbar}.
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/recoilM_qqbar_comps_isr_010}
     \caption{$p, \pi^-$ recoil mass distribution in $q\bar{q}$ Monte Carlo cocktail, displaying each stacked component contribution, ISR case. Green: $\pi^- \bar{n} p \gamma_{ISR}$ channel. Blue: $\pi^- \bar{n} p \gamma_{ISR}$ channel. Red: $\pi^0 \pi^- \bar{n} p$. Yellow: $\pi^0 \pi^- \bar{n} p \gamma_{ISR}$ channel. Cyan: other channels. $\alpha<$ 10 rad cut is applied.}
     \label{fig:mRecComps_isr_010_qqbar}
 \end{figure}
 
-No discernible contributions can be observed, as each channel contributes uniformly across the recoil mass distribution, both inside and outside the signal region [0.8, 1.2] GeV. The obtained $\bar{n}$ candidates reconstructed cluster variables are shown in Fig.\ref{fig:clus_vars_nog_qqbar}. 
+Differently from the NO ISR case, a higher background is present, leading to a more spread‑out and less evident distribution of the signal. The obtained $\bar{n}$ candidates reconstructed cluster variables are shown in Fig.~\ref{fig:clus_vars_isr_qqbar}. 
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/clusterE_isr_qqbar.pdf}
@@ -403,23 +409,23 @@ No discernible contributions can be observed, as each channel contributes unifor
      \caption{Reconstructed cluster variables distribution for $\bar{n}$ candidates in the for the recoil mass region [0, 2] GeV, in ISR case. q$\bar{q}$ cocktail }
      \label{fig:clus_vars_isr_qqbar}
 \end{figure}
-$\\$
-Since substantial background appears to the right of the signal region -suggesting that particles are missing from the recoil reconstruction- the sideband regions are redefined, for the ISR case, as follows:
+
+The sideband regions are redefined, for the ISR case, as follows:
 \begin{itemize}
 \item Signal region: [0.8, 1.4] GeV;
 \item Sidebands regions: [0.2, 0.8] U [1.4, 2.0]  GeV;
 \item $k = \frac{1.4 - 0.8}{(0.8 - 0.2) + (2.0 - 1.4)} = \frac{1}{2}$.
 \end{itemize}
 
-The signal region and sidebands region, in the recoil mass distribution  are shown in Fig.\ref{fig:recMass_sidebands_isr}.
-\begin{figure}[H]
+The signal region and the sidebands region, in the recoil mass distribution, are shown in Fig.~\ref{fig:recMass_sidebands_isr}.
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{nbar_cocktail/images/recoil_mass_sidebands_isr}
     \caption{Recoil mass distribution (black), with the signal region (red) and the sidebands regions (blue), in the $q\bar{q}$ Monte Carlo cocktail. ISR case.}
     \label{fig:recMass_sidebands_isr}
 \end{figure}
 
-The obtained cluster variables contribution is shown in Fig.\ref{fig:clus_vars_sidebands_pre_isr}.
+The obtained cluster variables distributions, separately for the signal and the sideband regions, are shown in Fig.\ref{fig:clus_vars_sidebands_pre_isr}.
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterE_isr.pdf}
@@ -430,10 +436,11 @@ The obtained cluster variables contribution is shown in Fig.\ref{fig:clus_vars_s
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterAbsZernikeMoment40_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterAbsZernikeMoment51_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/sidebands_clusterNHits_isr.pdf}
-     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates in the signal region [0.8, 1.2] GeV (blue) with $\bar{n}$ candidates in the sidebands region [0.3, 0.7] U [1.3, 1.7]  GeV  (red), in NO ISR case. A scaling factor of $k = 0.5$ has been applied to the cluster variables obtained from the sidebands regions. q$\bar{q}$ cocktail. NO ISR case.}
+     \caption{Comparison of reconstructed cluster variables for $\bar{n}$ candidates in the signal region [0.8, 1.2] GeV$c^2$ (blue) with $\bar{n}$ candidates in the sidebands region [0.3, 0.7] U [1.3, 1.7]  GeV/$c^2$  (red), in ISR case. A scaling factor of $k = 0.5$ has been applied to the cluster variables obtained from the sidebands regions. $q\bar{q}$ cocktail.}
      \label{fig:clus_vars_sidebands_pre_isr}
 \end{figure}
-Even though the signal is less evident, the same conclusions as in the NO ISR case hold, observing the same kind of structures in the cluster variables distributions, but with more statistic. Therefore, the sidebands regions contribution is now subtracted from the signal region contribution. The obtained cluster variables are shown in Fig.\ref{fig:clus_vars_sidebands_post_isr}.
+
+Even though the signal is less evident, the same conclusions as in the NO ISR case hold, observing the same kind of structures in the cluster variables distributions, but with more statistics. The sidebands regions contribution is now subtracted from the signal region contribution. The obtained cluster variables distributions are shown in Fig.~\ref{fig:clus_vars_sidebands_post_isr}.
  \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterE_isr.pdf}
@@ -445,26 +452,25 @@ Even though the signal is less evident, the same conclusions as in the NO ISR ca
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterAbsZernikeMoment51_isr.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_cocktail/images/final_clusterNHits_isr.pdf}
    
-     \caption{Reconstructed cluster variables for $\bar{n}$ candidates after the application of the sidebands technique, in ISR case. q$\bar{q}$ cocktail.}
+     \caption{Reconstructed cluster variables for $\bar{n}$ candidates after the application of the sidebands subtraction, in ISR case. $\bar{q}$ cocktail.}
      \label{fig:clus_vars_sidebands_post_isr}
 \end{figure}
-$\\$
-As observed in NO ISR case, the obtained cluster variables distributions no longer present the singular structures observed prior to the sidebands technique application, leading to reconstructed cluster variables more similar to those obtained from the Monte Carlo signal sample. 
-$\\$
-The last step consists in comparing the obtained cluster variables with those obtained from real data, performing the so called \textbf{Data/MC agreement}.
 
-\subsection{Summary of Monte Carlo cocktail Analysis}
+The obtained cluster variables distributions no longer present the singular structures observed before the sidebands subtraction, leading to reconstructed cluster variables more similar to those obtained from the Monte Carlo signal sample. 
+$\\$
+The last step consists in comparing the obtained cluster distributions with those obtained from real data.
+
+\subsection{Summary of the Monte Carlo cocktail analysis}
 The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied, with both ISR and NO ISR emission, in $q\bar{q}$ Monte Carlo cocktail.
 $\\$
 $\\$
-A stricter event selection was applied using the Rest of Event (ROE) approach to exclude additional charged tracks outside the signal final state. Furthermore, the $\bar{n}$ candidates energy range was narrowed to reject the main ISR radiation background.
+A stricter event selection was applied excluding additional charged tracks outside the signal final state. Furthermore, a selection on the energy of the $\bar{n}$ candidates has been applied to reject background from $\gamma_{ISR}$ which could be wrongly associated
 $\\$
 $\\$
-The recoil mass was then studied in the $u\bar{u}$ cocktail, with a components analysis performed using TopoAna output. This shows that both channels with and without explicit $\gamma_{ISR}$ reconstruction mainly populate the signal region. Performance metrics were then evaluated, optimizing the $\alpha$ angle selection to maximize the figure of merit $\frac{S}{\sqrt{S + B}}$, achieving $\epsilon_{sig} = 90\%$ and $\epsilon_{bkg} = 68\%$ signal-background discrimination power.
+The recoil mass distribution was then studied in the $u\bar{u}$ cocktail, with a component analysis performed using the TopoAna output. This shows that both channels with and without explicit $\gamma_{ISR}$ reconstruction mainly populate the signal region. Performance metrics were then evaluated in NO ISR case, optimizing the $\alpha$ angle selection to maximize the figure of merit $\frac{S}{\sqrt{S + B}}$, achieving $\epsilon_{sig} = 90\%$ and $\epsilon_{bkg} = 68\%$ signal-background discrimination power.
 $\\$
 $\\$
-The $q\bar{q}$ cocktail analysis, including recoil mass component decomposition, confirms the findings from the $u\bar{u}$ cocktail. However, in the ISR case, contributions from various channels span the entire recoil mass distribution without specific enhancement in the signal region. Thus, the signal and sideband regions were defined differently than in the NO ISR case.
+The $q\bar{q}$ cocktail analysis, including recoil mass component decomposition, confirms the findings from the $u\bar{u}$ cocktail. However, in the ISR case, the contribution from the signal channel has a larger distribution than in the NO ISR case, thus the signal and sideband regions were defined differently than in the NO ISR case.
 $\\$
 $\\$
-Therefore, the $\bar{n}$ candidate cluster variables were studied before and after sidebands subtraction, showing good agreement with signal sample studies. The sidebands technique effectively excluded unexpected structures by removing 
-background contributions from cluster variables, in the signal region.
+The $\bar{n}$ candidate cluster variables dsitributions were studied before and after sidebands subtraction, the latter showing good agreement with signal sample studies. The sidebands subtraction effectively excluded unexpected structures by removing background contributions from cluster variables.
