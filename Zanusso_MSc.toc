@@ -61,14 +61,14 @@
 \contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics study on $\alpha $ cut}{80}{subsubsection.1.3.2}%
 \contentsline {subsection}{\numberline {6.4}$q\bar {q}$ cocktail production (NO ISR case)}{84}{subsection.1.4}%
 \contentsline {subsubsection}{\numberline {6.4.1}Cluster variables in $q\bar {q}$ cocktail}{85}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Sidebands subtraction in $q\bar {q}$ cocktail}{88}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {6.5}$q\bar {q}$ cocktail production (ISR case)}{92}{subsection.1.5}%
-\contentsline {subsection}{\numberline {6.6}Summary of the Monte Carlo cocktail analysis}{94}{subsection.1.6}%
-\contentsline {part}{7\hspace {1em}Data - Monte Carlo comparison}{100}{part.7}%
-\contentsline {subsection}{\numberline {7.1}Recoil mass in data}{100}{subsection.1.1}%
-\contentsline {subsection}{\numberline {7.2}Data/MC agreement}{102}{subsection.1.2}%
-\contentsline {part}{8\hspace {1em}Conclusion}{108}{part.8}%
-\contentsline {part}{9\hspace {1em}Appendix}{109}{part.9}%
-\contentsline {subsection}{\numberline {9.1}Signal sample analysis scripts}{109}{subsection.Alph0.1}%
-\contentsline {subsection}{\numberline {9.2}The decay file and the generation steering file}{109}{subsection.Alph0.2}%
-\contentsline {subsection}{\numberline {9.3}Cluster variables in ISR case}{113}{subsection.Alph0.3}%
+\contentsline {subsubsection}{\numberline {6.4.2}Sidebands subtraction in $q\bar {q}$ cocktail}{89}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {6.5}$q\bar {q}$ cocktail production (ISR case)}{93}{subsection.1.5}%
+\contentsline {subsection}{\numberline {6.6}Summary of the Monte Carlo cocktail analysis}{95}{subsection.1.6}%
+\contentsline {part}{7\hspace {1em}Data - Monte Carlo comparison}{101}{part.7}%
+\contentsline {subsection}{\numberline {7.1}Recoil mass in data}{101}{subsection.1.1}%
+\contentsline {subsection}{\numberline {7.2}Data/MC agreement}{103}{subsection.1.2}%
+\contentsline {part}{8\hspace {1em}Conclusion}{109}{part.8}%
+\contentsline {part}{9\hspace {1em}Appendix}{110}{part.9}%
+\contentsline {subsection}{\numberline {9.1}Signal sample analysis scripts}{110}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {9.2}The decay file and the generation steering file}{110}{subsection.Alph0.2}%
+\contentsline {subsection}{\numberline {9.3}Cluster variables in ISR case}{114}{subsection.Alph0.3}%
