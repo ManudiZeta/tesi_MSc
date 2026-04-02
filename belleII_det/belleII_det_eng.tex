@@ -262,9 +262,9 @@ The information from Tab.~\ref{tab:topoproc_a} may seem rather non‑intuitive t
 \end{table}
 
 \subsection{The Belle II Distributed Computing}
-The Belle II datasets are categorized into two main types: Data and Monte Carlo. The Data are obtained from calibrated collision events processed by the experiment. The Monte Carlo samples are generated using the Monte Carlo method according to various event generators, as discussed in Chapter 2. These are further classified into Signal MC -a specific process generated with a dedicated decay file upon analyst request- and Generic MC, or "cocktail'', containing all processes expected in data with their correct relative fractions. These are usually in mdst (Mini Data Summary Table) format.
+The Belle II datasets are categorized into two main types: Data and Monte Carlo. The Data are obtained from calibrated collision events processed by the experiment. Monte Carlo samples are generated using the Monte Carlo method according to various event generators, as discussed in Chapter 2. These are further classified into Signal MC -a specific process generated with a dedicated decay file upon analyst request- and Generic MC, or "cocktail'', containing all processes expected in data with their correct relative fractions. These are usually in mdst (Mini Data Summary Table) format.
 $\\$
-The Data and Monte Carlo samples can be filtered by selecting events through analysis‑dependent offline pre‑selections, commonly referred to as skims (i.e., skimmed samples). Skims reduce data volume by selecting events of interest for specific analyses and retaining only the necessary information, producing smaller, more manageable datasets.
+Data and Monte Carlo samples can be filtered by selecting events through analysis‑dependent offline pre‑selections, commonly referred to as skims (i.e., skimmed samples). Skims reduce data volume by selecting events of interest for specific analyses and retaining only the necessary information, producing smaller, more manageable datasets.
 $\\$
 Using these Data and MC collections, analyses are performed via custom steering files with basf2, producing final ROOT ntuples. Subsequent offline analysis is then conducted outside the basf2 framework using ROOT, matplotlib, etc.
 $\\$
