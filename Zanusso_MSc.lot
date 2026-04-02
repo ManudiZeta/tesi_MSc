@@ -1,0 +1,9 @@
+\contentsline {table}{\numberline {1.1}{\ignorespaces Quantum numbers $I^G(J^P)$ on $S$, $P$ e $D$ waves.}}{16}{table.caption.12}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Topology Analysis (TopoAna) output of the generated 100k events. iDcyTr is the unambiguous decay tree index associated to the correspondent channel, nEtr is the number of entries per channel and nCEtr is the cumulative number of entries.}}{47}{table.caption.46}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Typical processes in the Belle II experiment.}}{76}{table.caption.76}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces First 10 channels of the TopoAna output in $u\bar {u}$ Monte Carlo cocktail, showing the different channel contributes, NO ISR case.}}{79}{table.caption.80}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Top 5 channels from the TopoAna output for the $u\bar {u}$ Monte Carlo cocktail. NO ISR case.}}{85}{table.caption.88}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces First 10 channels of the TopoAna output in $q\bar {q}$ Monte Carlo cocktail, showing the different channel contributes.}}{85}{table.caption.89}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Top 5 channels of $u\bar {u}$, $d\bar {d}$, $s\bar {s}$, and $c\bar {c}$ (from top to bottom). NO ISR case. The \texttt {iDcyTr} index values may differ across samples, since each TopoAna output is produced independently.}}{86}{table.caption.90}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces First 10 channels of the TopoAna output in $q\bar {q}$ Monte Carlo cocktail, showing the different channel contributions. ISR case.}}{94}{table.caption.97}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Top 5 channels from the TopoAna output for the $u\bar {u}$, $d\bar {d}$, $s\bar {s}$, and $c\bar {c}$ Monte Carlo cocktails (from top to bottom). ISR case.}}{95}{table.caption.98}%

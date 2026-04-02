@@ -15,7 +15,7 @@ The Feynman diagram of $e^+e^- \rightarrow q \bar{q}$ is shown in Fig.~\ref{fig:
 \end{figure}
 
 \subsection{Types of processes at the Belle experiment enviroment}
-Many processes can occur during an $e^+e^-$ collision. These may mimic the selected signal and be accidentally reconstructed as signal events, though they represent background processes.
+Many processes can occur during an $e^+e^-$ collision (Tab.~\ref{tab:belleii_processes_table}). These may mimic the selected signal and be accidentally reconstructed as signal events, though they represent background processes.
 $\\$
 The $\Upsilon(4S)$ production occurs at $\sqrt{s} = 10.58$ GeV, yielding $\Upsilon(4S) \rightarrow BB$ processes. The $B^+B^-$ and $B^0 \bar{B}^0$ final states  are referred to as charged and neutral $B \bar{B}$ pairs, respectively.
 $\\$
@@ -39,7 +39,10 @@ $e^+e^- \to \gamma \gamma (\gamma)$ & 4.99 \\
 $e^+e^- \to e^+e^-e^+e^-$ & 39.7 \\
 $e^+e^- \to e^+e^-\mu^+\mu^-$ & 18.9 \\
 \end{tabular}
+    \caption{Typical processes in the Belle II experiment.}
+    \label{tab:belleii_processes_table}
 \end{table}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{nbar_cocktail/images/BelleII_processes}
@@ -84,7 +87,7 @@ In order to compare the feasibility of selecting the channel in both ISR and NO 
 \subsection{Recoil mass in $u\bar{u}$ cocktail production (NO ISR case)}
 The recoil mass distribution obtained from the $u\bar{u}$ cocktail is studied in NO ISR case. If the recoil system $p, \pi^-$ is properly reconstructed among all possible background channels, then a peak should be observed at the anti-neutron rest mass. The obtained result, with the discussed selections, is shown in Fig.~\ref{fig:mRec_nog_020}.
 $\\$
- A distinct structure is observed above the $\bar{n}$ mass value, suggesting that the selected channel is properly reconstructed. For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in table~\ref{fig:topo_nog_020}. TopoAna does not account for particle-matter interactions; thus, all displayed particles originate directly from the $e^+e^-$ collision at the IP.
+ A distinct structure is observed above the $\bar{n}$ mass value, suggesting that the selected channel is properly reconstructed. For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in Tab.~\ref{tab:topo_nog_020}. TopoAna does not account for particle-matter interactions; thus, all displayed particles originate directly from the $e^+e^-$ collision at the IP.
 $\\$
 The main contribution comes from the signal channel with $p \pi^- \bar{n}$ in the final state, immediately followed by the one with $p \pi^- \bar{n} \pi^0$ in the final state. Further contribution arise from $p \pi^- \bar{n} \gamma_{ISR}$, which could be interpreted as signal, even if, in NO ISR case, the $\gamma_{ISR}$ is not explicitly reconstructed within the recoil system. The fourth contribution is due to the one with $p \pi^- \bar{n} \pi^0 \gamma_{ISR}$ and so on. The contributions are sorted from most to least abundant.
 \begin{figure}[H]
@@ -93,12 +96,12 @@ The main contribution comes from the signal channel with $p \pi^- \bar{n}$ in th
     \caption{Reconstructed $p, \pi^-$ recoil mass distribution in $u\bar{u}$ Monte Carlo cocktail, NO ISR case.}
     \label{fig:mRec_nog_020}
 \end{figure}
-\begin{figure}[H]
+\begin{table}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_nog_020}
     \caption{First 10 channels of the TopoAna output in $u\bar{u}$ Monte Carlo cocktail, showing the different channel contributes, NO ISR case.}
-    \label{fig:topo_nog_020}
-\end{figure}
+    \label{tab:topo_nog_020}
+\end{table}
 
 \subsubsection{Recoil mass channels analysis}
 In TopoAna, each channel is identified by its own \texttt{iDcyTr} (index of the decay tree), which allows to identify clearly which decay channel has produced the selected candidate. The obtained stacked channels to the recoil mass are shown in figure ~\ref{fig:mRecComps_nog_020}.
@@ -195,37 +198,37 @@ The obtained stacked channels to the recoil mass are shown in Fig.~\ref{fig:mRec
 
 As observed in the performance metrics study, the signal is more prominent relative to the background than in the previous case. Background channels containing $\pi^0$ lie outside the signal region $[0.8,1.2]$ $GeV/c^2$ on the right side, while other sources exhibit a lower, flat distribution across the recoil mass distribution.
 $\\$
-The first 5 channels of $u\bar{u}$ TopoAna output, with the $\alpha<$ 10 rad cut, are shown in table~\ref{fig:topo_nog_010_uubar}.
-\begin{figure}[h]
+The first 5 channels of $u\bar{u}$ TopoAna output, with the $\alpha<$ 10 rad cut, are shown in Tab.~\ref{tab:topo_nog_010_uubar}.
+\begin{table}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
     \caption{Top 5 channels from the TopoAna output for the $u\bar{u}$ Monte Carlo cocktail. NO ISR case.}
-    \label{fig:topo_nog_010_uubar}
-\end{figure}
+    \label{tab:topo_nog_010_uubar}
+\end{table}
 
 After applying the $\alpha < 0.10$ rad cut, the dominant contribution remains from the signal channel $p \pi^- \bar{n}$, now immediately followed by $p \pi^- \bar{n} \gamma_{\text{ISR}}$. As discussed, both contributions can be identified as signal since they fall within the signal region $[0.8,1.2]$ GeV.
 
 \subsection{$q\bar{q}$ cocktail production (NO ISR case)}
 In order to fully characterize the Monte Carlo simulation, all $q\bar{q}$ continuum components are studied. The Monte Carlo productions for $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ are therefore analyzed. Each of them corresponds to an integrated luminosity of $\sim 1429.23$ $fb^{-1}$, 4 times the collected statistics in data.
 $\\$
-For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in table~\ref{fig:topo_nog_010_qqbar}.
-\begin{figure}[H]
+For a cleaner comparison between the signal channel and background channels, the TopoAna output can be consulted in Tab.~\ref{tab:topo_nog_010_qqbar}.
+\begin{table}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_nog_010_qqbar}
     \caption{First 10 channels of the TopoAna output in $q\bar{q}$ Monte Carlo cocktail, showing the different channel contributes.}
-    \label{fig:topo_nog_010_qqbar}
-\end{figure}
+    \label{tab:topo_nog_010_qqbar}
+\end{table}
 
-The TopoAna output reveals that the dominant contribution is from the signal channel $p \pi^- \bar{n}$ in the $q\bar{q}$ continuum. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}$, which could be treated as signal despite the $\gamma_{\text{ISR}}$ not being explicitly reconstructed, and so on. The situation is very similar to that observed in the $u\bar{u}$ case. The individual TopoAna outputs, separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples, are now discussed. The first 5 channels for each sample are shown in table~\ref{fig:topo_nog_010_qqbar_singles}, while the stacked $q\bar{q}$ components to the recoil mass are shown in Fig.~\ref{fig:single_contr_of_qqbar_nog}.
-\begin{figure}[H]
+The TopoAna output reveals that the dominant contribution is from the signal channel $p \pi^- \bar{n}$ in the $q\bar{q}$ continuum. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}$, which could be treated as signal despite the $\gamma_{\text{ISR}}$ not being explicitly reconstructed, and so on. The situation is very similar to that observed in the $u\bar{u}$ case. The individual TopoAna outputs, separately for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ samples, are now discussed. The first 5 channels for each sample are shown in Tab.~\ref{tab:topo_nog_010_qqbar_singles}, while the stacked $q\bar{q}$ components to the recoil mass are shown in Fig.~\ref{fig:single_contr_of_qqbar_nog}.
+\begin{table}[H]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ddbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ssbar_010}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ccbar_010}
     \caption{Top 5 channels of $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ (from top to bottom). NO ISR case. The \texttt{iDcyTr} index values may differ across samples, since each TopoAna output is produced independently.}
-    \label{fig:topo_nog_010_qqbar_singles}
-\end{figure}
+    \label{tab:topo_nog_010_qqbar_singles}
+\end{table}
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/single_contr_of_qqbar_nog}
@@ -358,27 +361,27 @@ The distributions no longer present the singular structures observed prior to th
 
 \clearpage
 \subsection{$q\bar{q}$ cocktail production (ISR case)}
-Since for the analysis of the ISR channel the same strategy of the NO ISR one has been followed, as well as the same event selections, in the ISR case the $q\bar{q}$ cocktail is directly analyzed. The TopoAna output is presented in table~\ref{fig:topo_isr_010_qqbar}.
-\begin{figure}[h]
+Since for the analysis of the ISR channel the same strategy of the NO ISR one has been followed, as well as the same event selections, in the ISR case the $q\bar{q}$ cocktail is directly analyzed. The TopoAna output is presented in Tab.~\ref{tab:topo_isr_010_qqbar}.
+\begin{table}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topoana_isr_010_qqbar}
     \caption{First 10 channels of the TopoAna output in $q\bar{q}$ Monte Carlo cocktail, showing the different channel contributions. ISR case.}
-    \label{fig:topo_isr_010_qqbar}
-\end{figure}
+    \label{tab:topo_isr_010_qqbar}
+\end{table}
 
 The TopoAna output reveals a situation very similar to what obtained in the NO ISR case. In fact the dominant contribution is from the signal channel $p \pi^- \bar{n} \gamma_{ISR}$. A secondary contribution comes from $p \pi^- \bar{n} \gamma_{ISR}  \gamma_{ISR}$, which could be treated as signal despite the extra $\gamma_{\text{ISR}}$ not being explicitly reconstructed, since it has low energy and does not affect substantially the recoil mass. The next contribution comes from $p \pi^- \bar{n} \pi^0$ in the final state. The fourth contribution is due to $p \pi^- \bar{n} \pi^0 \gamma_{\text{ISR}}$, and so on. 
 $\\$
-The individual TopoAna outputs from $u\bar{u}$, $d\bar{d}$, $s\bar{s}$ and $c\bar{c}$ are shown in table~\ref{fig:topo_isr_010_qqbar_singles}, while the stacked $q\bar{q}$ components to the recoil mass are shown in Fig.~\ref{fig:single_contr_of_qqbar_isr}.
+The individual TopoAna outputs from $u\bar{u}$, $d\bar{d}$, $s\bar{s}$ and $c\bar{c}$ are shown in Tab.~\ref{tab:topo_isr_010_qqbar_singles}, while the stacked $q\bar{q}$ components to the recoil mass are shown in Fig.~\ref{fig:single_contr_of_qqbar_isr}.
 
-\begin{figure}[h]
+\begin{table}[h]
     \centering
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_uubar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ddbar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ssbar_isr}
     \includegraphics[width=1\textwidth]{nbar_cocktail/images/topo_ccbar_isr}
     \caption{Top 5 channels from the TopoAna output for the $u\bar{u}$, $d\bar{d}$, $s\bar{s}$, and $c\bar{c}$ Monte Carlo cocktails (from top to bottom). ISR case.}
-    \label{fig:topo_isr_010_qqbar_singles}
-\end{figure}
+    \label{tab:topo_isr_010_qqbar_singles}
+\end{table}
 \begin{figure}[h]
    \centering
     \includegraphics[width=0.80\textwidth]{nbar_cocktail/images/single_contr_of_qqbar_isr}

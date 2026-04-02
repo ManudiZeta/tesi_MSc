@@ -30,6 +30,8 @@
 % Numerazione subsection: part.section (es. 1.1 anche senza section)
 \renewcommand{\thesubsection}{\thepart.\arabic{subsection}}
 \setcounter{tocdepth}{3}  % Includi subsection in TOC
+\counterwithin{table}{part}
+\renewcommand{\thetable}{\thepart.\arabic{table}}
 
 \begin{document}
 
@@ -53,7 +55,6 @@
 \begin{abstract}
 The reconstruction of neutral hadrons and the measurement of their associated quantities represent one of the most complex challenges in HEP experiments. This is particularly true for experiments lacking a dedicated hadronic calorimeter, which must rely solely on the electromagnetic calorimeter for neutral hadron detection, as is the case for the Belle II experiment, in Japan. Anti-neutrons with GeV-scale energies favor annihilation processes in matter, producing multiple final-state particles that escape the detector volume. Since anti-neutrons are copiously produced in physics processes -from hyperon decays to cosmological dark matter studies- their accurate reconstruction would enable a more complete analysis of diverse fundamental processes. The PRIN2022 MANTRA project develops an algorithm for direct anti-neutron energy measurement up to 10\,GeV, thereby improving their identification. This approach requires detailed integration of information from surrounding detectors, overcoming limitations imposed by the lack of a hadronic calorimeter.$\\$
 Furthermore, the GEANT4 physical models simulation of anti-neutron hadronic interactions -and especially the annihilation process- rely on isospin symmetry with anti-protons. This may potentially introduce discrepancies between Monte Carlo simulations and experimental reality.
-$\\$
 $\\$
 This thesis, developed within the PRIN2022 MANTRA project, presents a study on the accuracy of Belle II software simulation of anti-neutron hadronic interactions. To this end, the channel $e^+ e^- \to p \pi^- \bar{n}$ is analyzed, measuring anti-neutron associated quantities through its calorimeter clusters. The anti-neutron is identified via a semi-exclusive technique based on the recoil mass of the other particles, with or without Initial State Radiation.
 $\\$
@@ -79,7 +80,6 @@ La ricostruzione degli adroni neutri e la misurazione delle relative grandezze r
 $\\$
 Inoltre, i modelli fisici alla base della simulazione GEANT4 dell'interazione adronica degli anti-neutroni, e soprattutto del processo di annichilazione, si basano sulla simmetria di isospin con gli anti-protoni. Questo potrebbe potenzialmente comportare una discrepanza tra i modelli utilizzati dalle simulazioni Monte Carlo e la realtà.
 $\\$
-$\\$
 Questa tesi, che si inserisce all'interno del progetto PRIN2022 MANTRA, presenta uno studio sulla correttezza della simulazione dell'interazione adronica degli anti-neutroni da parte del software di Belle II. A tal fine, si studia il canale $e^+ e^- \to p \pi^- \bar{n}$, misurando le grandezze associate all'anti-neutrone tramite i cluster da esso prodotti nel calorimetro. L'anti-neutrone viene identificato con una tecnica semi-esclusiva basata sul recoil mass delle altre particelle, considerando o meno l'emissione di Initial State Radiation.
 $\\$
 La prima parte di analisi svolta su una produzione Monte Carlo di solo segnale dimostra come il recoil descriva propriamente la cinematica dell'anti-neutrone, evidenziando, tuttavia, come il momento di quest'ultimo non sia correttamente ricostruito a partire dalla misura ottenuta dal calorimetro, principalmente a causa dalla frammentazione del cluster primario prodotto dall'annichilazione dell'anti-neutrone. Questo si riversa anche sulle grandezze di sciame ricostruite, che presentano diverse strutture tipiche degli sciami elettromagnetici.
@@ -96,6 +96,8 @@ Si conclude svolgendo un confronto dati e Monte Carlo per quanto riguarda le var
 \tableofcontents
 \clearpage
 \listoffigures
+\clearpage
+\listoftables
 \clearpage
 
 % --- Cambio a numeri arabi per il corpo ---
