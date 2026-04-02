@@ -65,18 +65,17 @@ $\\$
 $\\$
 The Data/MC comparison plots reveal some discrepancies. While discrepancies in the inclusive distributions may arise from an incomplete description of all background processes in the Monte Carlo, after the sideband subtraction only the $\bar{n}$ contribution is expected to be studied, and even in this case not all distributions agree perfectly.
 $\\$
-The cluster energy shows good Data/MC agreement (within $2\sigma$) in both ISR and no-ISR cases across the full energy range, with and without sidebands subtraction.
+The cluster Energy shows good Data/MC agreement (within $2\sigma$) in both ISR and no-ISR cases across the full energy range, with and without sidebands subtraction.
 $\\$
 The cluster E1E9 shows discrepancies ($>2\sigma$) with and without sidebands subtraction, suggesting that more spread shower shapes must be accounted for. This is confirmed by discrepancies in the Zernike moments, indicating different shower shapes in data and simulation.
 $\\$
-The cluster E9E21 shows discrepancies ($>2\sigma$) without sidebands subtraction, but slightly better agreement afterward, confirming the trends observed in E1E9.
-The cluster lateral momentum shows discrepancies before sidebands subtraction but better agreement afterward (within $2\sigma$ uncertainties across nearly the full range), without the structure at 0.3. This confirms the analysis effectively suppresses electromagnetic shower contributions, yielding an acceptable anti-neutron sample, even if the statistic is low.
+The cluster E9E21 shows small discrepancy, in particular for values close to 1, confirming what seen also in E1E9 distributions.
 $\\$
-The same conclusions apply to cluster second moment and N Hits variables, where better agreement is observed after sidebands subtraction, suggesting that small-sized (electromagnetic) clusters are effectively removed.
+Also cluster Lateral Momentum shows slight discrepancies in the shape, before sidebands subtraction but better agreement afterward (within $2\sigma$), without the structure at 0.3. It is notable that, while the inclusive plots show an excess at 0.3 in data compared to MC, due to a higher background contribution from $\gamma$, this structure disappears after the sideband subtraction, confirming the good quality of the background removal procedure.
 $\\$
-Therefore, some discrepancies in Data/MC agreement for $\bar{n}$ candidate cluster variables persist both before and after sidebands subtraction, though with clear improvement afterward. Nevertheless, low statistic -particularly in the NO ISR case- suggests that additional measurements could target different channels, such as multi-pion final states (beyond the scope of this work). 
+The cluster Second Moment distributions show good agreement between data and simulation, while the N Hits distributions do not. A better agreement is observed after the sideband subtraction, indicating that small‑sized (electromagnetic) clusters are effectively removed.
 $\\$
-However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that further studies on GEANT4 Physics lists on anti-neutron showers are needed. 
+In summary, comparing the distributions -even though the data sample has limited statistics- it is possible to conclude that, in general, the Monte Carlo reproduces the experimental distributions. While good agreement is observed for some variables, such as the deposited energy and the second moment, larger discrepancies are present for those more closely related to the shower shape, i.e., to the distribution of the energy deposited in the connected crystals of the clusters. These discrepancies can be attributed to an imperfect description of the $\bar{n}$ interactions by the GEANT4 physics model. 
 
  \begin{figure}[H]
     \centering
@@ -89,7 +88,7 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_nog_pull.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_nog_pull.pdf}
    
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case.}
+     \caption{Data/MC comparison for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case (no sidebands subtraction).}
      \label{fig:dataMC_nog_nosid}
 \end{figure}
 
@@ -104,7 +103,7 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull.pdf}
    
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case.}
+     \caption{Data/MC comparison for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case (no sidebands subtraction).}
      \label{fig:dataMC_isr_nosid}
 \end{figure}
 
@@ -119,7 +118,7 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_nog_pull_subtracted.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_nog_pull_subtracted.pdf}
    
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case. Sidebands technique applied. Signal region: [0.8, 1.2] GeV; sidebands region: [0.3, 0.7] U [1.3, 1.7] GeV.}
+     \caption{Data/MC comparison for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case (sidebands subtraction).}
      \label{fig:dataMC_nog_sid}
 \end{figure}
 
@@ -134,25 +133,26 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull_subtracted.pdf}
     \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull_subtracted.pdf}
    
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case. Sidebands technique applied. Signal region: [0.8, 1.4] GeV; sidebands region: [0.2, 0.8] U [1.4, 2.0] GeV.}
+     \caption{Data/MC comparison for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case (sidebands subtraction).}
      \label{fig:dataMC_isr_sid}
 \end{figure}
 
 \setcounter{subsection}{0} 
 \part{Conclusion}
 
-In this thesis, the $\bar{n}$ hadronic showers have been studied, with particular focus on their simulation by the Belle II software. The analysis targets the channel $e^+ e^- \rightarrow p \pi^- \bar{n}$, considering both ISR and NO ISR cases.
+In this thesis, the shape of the $\bar{n}$ hadronic showers has been studied, with particular focus on their simulation by the Belle II software. The analysis targets the channel $e^+ e^- \rightarrow p \pi^- \bar{n}$, considering both ISR and NO ISR cases.
 $\\$
 $\\$
-The Monte Carlo signal sample study showed good agreement between the recoil kinematic variables and the generator-level $\bar{n}$ quantities, but the reconstructed $\bar{n}$ momentum proved unreliable for estimating the true 
-$\bar{n}$ momentum. Furthermore, a 1C kinematic fit improved the recoil resolution.
+The Monte Carlo signal sample study showed good agreement between the recoil kinematic variables and the generator-level $\bar{n}$ quantities, but the reconstructed $\bar{n}$ momentum proved unreliable for estimating the true $\bar{n}$ momentum. Furthermore, a 1C kinematic fit improved the recoil resolution.
 $\\$
-Energy loss effects in primary $\bar{n}$ candidates -such as cluster split-off within the ECL and pre-showering before the ECL- have been studied. Secondary particles (mainly photons) are often misidentified as primary clusters, creating small-sized clusters that distort cluster variable distributions. The distribution of the radial distance $\rho$ of all $\bar{n}$ candidates was studied, confirming that secondary particles are produced throughout the Belle II detector -particularly in the TOP sub-detector (pre-showering) and ECL sub-detector (cluster split-off).
-$\\$
-$\\$
-The $q\bar{q}$ cocktail study revealed the recoil mass distribution components from all cocktail channels. Therefore, additional cuts were applied, including those on the number of charged tracks in the Rest of Event (ROE) and on the $\alpha$ angle. A performance metric study using the Figure of Merit $\frac{S}{\sqrt{S + B}}$ showed that the optimal upper limit on $\alpha$ is 0.1, achieving $\epsilon_{sig} = 90\%$ and $\epsilon_{bkg} = 68\%$  signal-background discrimination.
-$\\$
-Furthermore, the sidebands technique was applied to obtain the $\bar{n}$ candidate cluster variables from the $q\bar{q}$ cocktail. Before subtraction, several structures -such as those observed in E1E9, E9E21, cluster Lateral Momentum, and cluster Second Moment- were present. These suggested small-sized electromagnetic showers, which were excluded after sidebands subtraction, leading to cluster variables close to those obtained in the signal sample analysis.
+Energy leakages effects in $\bar{n}$ candidates -such as cluster split-off within the ECL and pre-showering before the ECL- have been studied. Secondary particles (mainly photons) are often associated to $\bar{n}$ clusters, creating small-sized clusters that distort cluster variable distributions. The distribution of the radial distance $\rho$ of all $\bar{n}$ candidates was studied, confirming that secondary particles are produced throughout the Belle II detector -particularly in the TOP sub-detector (pre-showering) and ECL sub-detector (cluster split-off).
 $\\$
 $\\$
-In conclusion, Data/MC agreement was assessed using pull methods. Before sidebands subtraction, cluster variable comparisons showed discrepancies beyond $2\sigma$ uncertainties between data and Monte Carlo. After subtraction, improved agreement was observed, though low statistics suggest further studies with more prevalent channels, such as multi-pion final states. The global results agree with other Belle II studies on neutral particle hadronic interactions, suggesting that further investigation of GEANT4 Physics lists for anti-neutron hadronic interactions is needed.
+The $q\bar{q}$ cocktail study showed the recoil mass distribution components from all cocktail channels. To reduce the background from channels not of interest, further cuts were applied, including those on the number of additional charged tracks and on the correlation angle.
+$\\$
+To remove the contribution from background channels still present in the signal region, the sidebands subtraction has been applied to the distributions to obtain the $\bar{n}$ candidate cluster variables from the $q\bar{q}$ cocktail. Before subtraction, several structures -such as those observed in E1E9, E9E21, cluster Lateral Momentum, and cluster Second Moment- were present not connected to the $\bar{n}$ response. These suggested small-sized electromagnetic showers, which were excluded after sidebands subtraction, leading to cluster variables close to those obtained in the signal sample analysis.
+$\\$
+$\\$
+In conclusion, Data/MC comparison was assessed. Before sidebands subtraction, cluster variable comparisons showed discrepancies beyond $2\sigma$ uncertainties between data and Monte Carlo. After subtraction, improved agreement was observed, though low statistics suggest further studies with more channels containing $\bar{n}$ in the final state. These can include $e^+e^- \to p\bar{n}\pi^-(\pi^+\pi^-)$ or channels also involving charged kaons. They may be affected by a less precise recoil mass distribution due to the larger number of charged particles used in the reconstruction, but they could increase the total statistics and allow for more detailed differential studies. The global results agree with other Belle II studies on neutral particle hadronic interactions \cite{SavinoLongo2026}, suggesting that further investigation of GEANT4 Physics lists for anti-neutron hadronic interactions is needed. Indeed, the GEANT4 software provides several physics lists that implement different models for hadronic interactions, and in this thesis the standard list used by the Belle II software has been adopted. A better agreement could potentially be achieved by using alternative physics lists.
+$\\$
+In any case, considering the obtained results, analyses based on the $\bar{n}$ shower shapes are affected by systematic uncertainties that could be reduced with improved Data/MC agreement.
