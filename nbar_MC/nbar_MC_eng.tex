@@ -16,7 +16,7 @@ This is selected because it features simple kinematics, with the $\bar{n}$ as th
     \label{fig:diag_F}
 \end{figure}
 
-In particular, the kinematic relation between the $\bar{n}$ and the recoil system $p \pi^- (\gamma_{ISR})$ will be exploited, considering both configurations: in the presence of Initial State Radiation (ISR) photon emission and in its absence. ISR corresponds to the emission of photons from incoming particles before they collide in high-energy physics experiments. This reduces the effective center-of-mass energy available, which will no longer be $\sim 10.58$ GeV, in the Belle II case. The ISR energy and angle distributions will be discussed in detail, providing a comparison with a simple phase space model emission.
+In particular, the kinematic relation between the $\bar{n}$ and the recoil system $p \pi^- (\gamma_{ISR})$ will be exploited, considering both configurations: in the presence of Initial State Radiation (ISR) photon emission and in its absence (NO ISR). The ISR corresponds to the emission of photons from incoming particles before they collide in high-energy physics experiments. This reduces the effective center-of-mass energy available, which will no longer be $\sim 10.58$ GeV, in the Belle II case. The ISR energy and angle distributions will be discussed in detail, providing a comparison with a simple phase space model emission.
 $\\$
 Then, the effect of a one constraint (1C) kinematic fit over the recoil mass will be discussed, in order to obtain a higher recoil momentum resolution.
 $\\$
@@ -24,9 +24,9 @@ In total, 100000 events are generated and to perform the event generation and th
 $\\$
 The basf2 Phokhara\_evtgen\_combination generator has been adopted. It is made of two generators: Phokhara and EvtGen.
 $\\$
-Phokhara is a Monte Carlo event generator that simulates $e^+e^-$ annihilation into hadrons at next-to-leading order (NLO) accuracy. This includes virtual and soft photon corrections to single-photon events, plus double hard photon emission. 
+Phokhara is a Monte Carlo event generator that simulates $e^+e^-$ annihilation into hadrons at next-to-leading order (NLO) accuracy. This includes virtual and soft photon corrections to single-photon events, including double hard photon emission. 
 $\\$
-EvtGen is a Monte Carlo event generator that simulates decays of heavy-flavor particles, primarily B and D mesons. It includes decay models for intermediate and final states with scalar, vector, and tensor mesons/resonances, as well as leptons, photons, and baryons. Decay amplitudes generate each branch of the full decay tree, accounting for angular and time-dependent correlations to simulate CP-violating processes.
+EvtGen is a Monte Carlo event generator that simulates decays of particles. It includes decay models for intermediate and final states with scalar, vector, and tensor mesons/resonances, as well as leptons, photons, and baryons. Decay amplitudes generate each branch of the full decay tree, accounting for angular and time-dependent correlations to simulate CP-violating processes.
 $\\$
 Therefore, these two generators have been adopted as depicted in Fig.~\ref{fig:diag_F_colors}.
 
@@ -36,14 +36,14 @@ Therefore, these two generators have been adopted as depicted in Fig.~\ref{fig:d
     \caption{Feynman diagrams of the channels of interest. \textit{Phokhara} handles the initial hard photon emission (red), while \textit{EvtGen} simulates the decay to final-state particles (blue).}
     \label{fig:diag_F_colors}
 \end{figure}
-The Phokhara\_evtgen\_combination generator produces both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Fig.~\ref{fig:topo_signal0}.
+The Phokhara\_evtgen\_combination generator produces both events with and without ISR emission, as explicitly illustrated by the TopoAna overview of generated events in Tab.~\ref{tab:topo_signal0}.
 $\\$
-A $vpho$ (virtual photon) is now introduced as a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (evt\_gen) the selected decay channel, approaching the following scheme:
+A $vpho$ (virtual photon) is now introduced as a fictitious particle used by the generator Phokhara to produce ISR photons before the $e^+ e^-$ collisions and then enforce (EvtGen) the selected decay channel, approaching the following scheme:
 
 \begin{center}
 \vspace{0.3cm}
 
-$e^+ \ + \  e^- \rightarrow vpho \ (+ \gamma_{ISR})$ (Phokhara generator)
+$e^+ \ + \  e^- \rightarrow vpho \ (+ \ \gamma_{ISR})$ (Phokhara generator)
 
 \vspace{0.3cm}
 
@@ -61,7 +61,7 @@ Two scenarios can be studied. If the reconstructed final state particles are a p
     \label{tab:topo_signal0}
 \end{table}
 
-As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$. In parallel, the neutral $\bar{n}$ cluster candidate is reconstructed and its properties are compared to those from the recoil, using different kinematic variables. Through the recoil analysis, the antineutron can be identified as the missing particle in the final state.
+As a first step, the kinematic variables are discussed through the recoil system consisting of $p \pi^- (\gamma_{ISR})$. In parallel, the neutral $\bar{n}$ cluster candidate is reconstructed and its properties are compared to those from the recoil, using different kinematic variables. Through the recoil analysis, the anti-neutron can be identified as the missing particle in the final state.
 $\\$
 The first three contributes in Tab.~\ref{tab:topo_signal0} shows that events without ISR emission are the most frequently generated ($\sim 35\%$), followed by those with two ($\gamma^I\gamma^I$) ($\sim 23\%$) and one ($\gamma^I$) ISR photon ($\sim 19\%$). 
 $\\$
@@ -95,9 +95,9 @@ Furthermore, as can be observed in Fig.~\ref{fig:isr_distro_conj}, the higher th
 To identify the event, the $p$, $\pi^-$ (and $\gamma_{ISR}$ for the ISR case) candidates are first identified in the final state, and their recoil mass (recoil system) is measured.
 The following selections are applied to $p$, $\pi^-$ and recoil system:
 \begin{itemize}
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
-\item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm;
-\item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm.
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance,
+\item $p$: $protonID > 0.9$, $dr<1$ cm and $|dz|<3$ cm,
+\item $\pi^-$: $pionID > 0.1$, $dr<1$ cm and $|dz|<3$ cm.
 \end{itemize}
 
 The first one is a cut that selects a quite broad region of interest in the recoil mass distribution, corresponding to the interval [0,2] $GeV/c^2$ around the anti-neutron mass ($\sim 939,56$ $MeV/c^2$), requiring that the recoil direction lies within the ECL acceptance.
@@ -116,9 +116,9 @@ The $p$, $\pi^-$ (and $\gamma_{ISR}$) candidates can be identified through the r
 $\\$
 Parallel to the recoil system reconstruction, neutral ECL cluster $\bar{n}$ candidates are identificated. To analyze only $\bar{n}$ signals from the calorimeter, the following selection on $\bar{n}$ candidates is applied:
 \begin{itemize}
-\item $\bar{n}$: neutral candidates from the ECL;
+\item $\bar{n}$: neutral candidates from the ECL.
 \end{itemize}
-this selection requires that the neutral $\bar{n}$ cluster candidates are reconstructed within the electromagnetic calorimeter (ECL), avoiding the $\bar{n}$ candidates from other detectors (mainly from KLM).
+This selection requires that the neutral $\bar{n}$ cluster candidates are reconstructed within the electromagnetic calorimeter (ECL), avoiding the $\bar{n}$ candidates from other detectors.
 $\\$
 Furthermore, since multiple $\bar{n}$ neutral cluster candidates may exist per event, only the $\bar{n}$ candidate with the smallest angle -defined as $\alpha$- relative to the recoil system is selected. Therefore, a selection is imposed using the basf2 rankByLowest method. It allows to select only the highest rank candidate, based on a specific variable; in this case, the angle between the neutral cluster and the recoil vector.
 $\\$
@@ -144,10 +144,10 @@ The efficiency $\epsilon$  is defined as follows:
 \begin{center}
   $\epsilon = \frac{n^{\circ} \ of \ reconstructed \ candidates}{n^{\circ}  \ of \ generated \ events} $
 \end{center}
-Referring to Fig.~\ref{fig:topo_signal0}, 35291 events are generated without $\gamma$ emission ($iDcyTr \in {0}$)and 41706 with ISR emission ($iDcyTr = 1,2$; only the first two contributions are considered).
+Referring to Tab.~\ref{tab:topo_signal0}, 35291 events are generated without $\gamma$ emission ($iDcyTr \in {0}$) and 41706 with ISR emission ($iDcyTr = 1,2$; only the first two contributions are considered).
 $\\$
 Since 20146 candidates are reconstructed for the ISR case and 25013 for the NO ISR case, an efficiency respectively of $\sim 48\%$ and $71\%$ can be observed.
-Since most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions -where detection coverage is absent- the efficiency in the ISR case is lower than in the NO ISR case.
+Most of the ISR radiation is emitted in the backward ($\theta \sim 180^{\circ}$) and in the forward ($\theta \sim 0^{\circ}$) directions, where detection coverage is absent; the efficiency in the ISR case is lower than in the NO ISR case.
 
 \subsubsection{Recoil mass distribution}
 To select events with anti-neutrons, the recoil system $p \pi^- (\gamma_{ISR})$ is studied through the recoil mass. Specifically, the recoil mass should peak at the nominal anti-neutron mass, since no background channels are present in this sample. The background mainly consists of secondary particles produced during primary particle propagation through the detectors, combinatorial background, and incorrectly reconstructed $\gamma$.
@@ -235,9 +235,9 @@ The recoil momentum distributions can be obtained in both ISR and NO ISR cases, 
 \end{figure}
 Since fewer candidates were reconstructed in the ISR case than in the NO ISR case, the recoil momentum shows lower structure in the ISR case.
 $\\$
-These distribution can be compared with that of the $\bar{n}$ candidate, both from reconstruction and from generator level. 
+These distribution can be compared with those of the $\bar{n}$ candidate, both from reconstruction and from generator level. 
 $\\$
-The $\bar{n}$ candidate list originates from neutral clusters detected in the ECL. The software assumes that all shower energy is confined within the ECL. Therefore, since the calorimeter measures the energy of the clusters, the $\bar{n}$ momentum $p_{\bar{n}}$ can be defined as follows:
+The $\bar{n}$ candidate list originates from neutral clusters detected in the ECL. The software assumes that all the shower energy is deposited within the ECL. Therefore, since the calorimeter measures the energy of the clusters, the $\bar{n}$ momentum $p_{\bar{n}}$ can be defined as follows:
 \begin{center}
 $p_{\bar{n}}^2 = E_{ECL}^2 - m_{\bar{n}}^2$,
 \end{center}
@@ -266,7 +266,7 @@ Therefore, both the reconstructed and the generator-level distributions exhibit 
     \label{fig:pRecoil_nmcP} 
 \end{figure}
     
-The low-momentum structure corresponds to candidates not associated to $\bar{n}$ by the Monte Carlo truth, exhibiting significant deviation from the recoil momentum. This is likely due to cluster split-off and/or pre-showering effects, as will be discussed later. Furthermore, the distribution corresponding to the generated $\bar{n}$ has less entries than the recoil momentum distribution, suggesting that several anti-neutrons are not correctly reconstructed. All these aspects will be discussed in the next section through analysis of $\bar{n}$ relatives (ancestors).      
+The low-momentum structure corresponds to candidates not associated to $\bar{n}$ by the Monte Carlo truth, exhibiting significant deviation from the recoil momentum. This is likely due to cluster split-off and/or pre-showering effects. Furthermore, the distribution corresponding to the generated $\bar{n}$ has less entries than the recoil momentum distribution, suggesting that several anti-neutrons are not correctly reconstructed. All these aspects will be discussed in the next section through analysis of $\bar{n}$ relatives (ancestors).      
 $\\$
 To obtain a measure of the recoil momentum and recoil $\theta$ resolution, these variables can be compared with those of the Monte Carlo matched $\bar{n}$ (truth = 1) candidates. The linear correlation coefficient $\rho$ is studied, defined as:
 
@@ -320,7 +320,7 @@ The origin of ECL clusters that are reconstructed as $\bar{n}$ candidates but ar
 $\\$
 Cluster split-off and/or pre-showering effects can occur distorting the $\bar{n}$ reconstructed distributions. Cluster split-off occurs within the ECL when a portion of the primary shower produces signals in non-contiguous crystals. Pre-showering occurs when the primary interaction takes place in the TOP and its products travel towards the ECL, where they are detected as the primary signal.
 $\\$
-Since the ISR and NO ISR results are analogous, only the ISR case is analyzed on the following section. A representation of cluster split-off and pre-showering is shown in Fig. ~\ref{fig:spoff_preshow}.
+Since the ISR and NO ISR results are analogous, only the ISR case is analyzed on the following section. A representation of cluster split-off and pre-showering is shown in Fig.~\ref{fig:spoff_preshow}.
 
  \begin{figure}[H]
     \centering
