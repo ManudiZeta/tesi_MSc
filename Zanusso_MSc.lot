@@ -1,4 +1,8 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Quantum numbers $I^G(J^P)$ on $S$, $P$ e $D$ waves.}}{16}{table.caption.12}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Properties of scintillators used in calorimetry.}}{28}{table.caption.25}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces ECL coverage and segmentation for each ECL region.}}{29}{table.caption.27}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Raw MC information example from Fig.~\ref {fig:topoproc} (b).}}{34}{table.caption.31}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Highly readable MC information example from Fig.~\ref {fig:topoproc} (b), as presented by the TopoAna program.}}{35}{table.caption.32}%
 \contentsline {table}{\numberline {5.1}{\ignorespaces Topology Analysis (TopoAna) output of the generated 100k events. iDcyTr is the unambiguous decay tree index associated to the correspondent channel, nEtr is the number of entries per channel and nCEtr is the cumulative number of entries.}}{47}{table.caption.46}%
 \contentsline {table}{\numberline {6.1}{\ignorespaces Typical processes in the Belle II experiment.}}{76}{table.caption.76}%
 \contentsline {table}{\numberline {6.2}{\ignorespaces First 10 channels of the TopoAna output in $u\bar {u}$ Monte Carlo cocktail, showing the different channel contributes, NO ISR case.}}{79}{table.caption.80}%
