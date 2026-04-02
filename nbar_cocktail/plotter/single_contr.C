@@ -15,24 +15,24 @@
 #include "TLatex.h"
 #include "TGraphErrors.h"
 
-TString caso = "nog";
+TString caso = "isr";
 
-
-
+static TString file[4] =
+{
+    "../../../../qqbar/isr/270326_isr_uubar_tot.root",
+    "../../../../qqbar/isr/270326_isr_ddbar_tot.root",
+    "../../../../qqbar/isr/270326_isr_ssbar_tot.root",
+    "../../../../qqbar/isr/270326_isr_ccbar_tot.root",
+    
+};
 /*
-static TString file_uu = "../../../../qqbar/isr/260326_isr_uubar_tot.root";
-static TString file_dd = "../../../../qqbar/isr/260326_isr_ddbar_tot.root";
-static TString file_cc = "../../../../qqbar/isr/260326_isr_ssbar_tot.root";
-static TString file_ss = "../../../../qqbar/isr/260326_isr_ccbar_tot.root";
-*/
-
 static TString file[4] ={
     "../../../../qqbar/nog/180326_nog_uubar_tot.root",
     "../../../../qqbar/nog/180326_nog_ddbar_tot.root",
     "../../../../qqbar/nog/180326_nog_ssbar_tot.root",
     "../../../../qqbar/nog/180326_nog_ccbar_tot.root"
 };
-
+*/
 static TString nome[4] ={"u#bar{u}","d#bar{d}","s#bar{s}","c#bar{c}"};
 
 void single_contr()
@@ -65,7 +65,7 @@ void single_contr()
     hs->GetXaxis()->SetTitle("recoil mass [#frac{GeV}{c^{2}}]");
     hs->GetYaxis()->SetTitle("counts");
     gPad->Update();
-    TString title_out = "../images/single_contr_of_qqbar_nog.pdf";
+    TString title_out = "../images/single_contr_of_qqbar_" + caso + ".pdf";
     tela->SaveAs(title_out);
 }
 

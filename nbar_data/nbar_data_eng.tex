@@ -1,70 +1,71 @@
 \setcounter{subsection}{0} 
 \part{Data - Monte Carlo comparison}
-This thesis concludes with a comparison of the obtained $\bar{n}$ candidates cluster variables against those obtained from data. The dataset is the latest available from Belle II data production, corresponding to an integrated luminosity of $358.27 fb^{-1}$. The same selections achieved in $q\bar{q}$ are applied, in both ISR and NO ISR cases. Since the goal is to assess Data/MC agreement for cluster variables from the analysis -rather than maximize signal selection efficiency- these variables are compared within the signal region [0.8, 1.2] GeV, without sideband subtraction.
+In this chapter is presented the comparison of the obtained $\bar{n}$ candidates cluster variables against those obtained from data. The dataset is the latest available from Belle II data production, corresponding to an integrated luminosity of $358.27 fb^{-1}$. The same selections optimized for the $q\bar{q}$ Monte Carlo sample are applied, in both ISR and NO ISR cases. 
 
-\subsection{Recoil mass in data}
-First, the recoil mass distribution in data is studied by analyzing the angular distributions of reconstructed protons. The resulting distribution (no ISR case) is shown in Fig.~\ref{fig:recM_nog_data_pre}.
+\subsection{Recoil mass distribution in data}
+The recoil mass distribution, in both ISR and NO ISR cases, is shown in Fig.~\ref{fig:recM_data_pre}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_DATA/images/recoil_mass_data_precutnog}
         \includegraphics[width=0.49\textwidth]{nbar_DATA/images/recoil_mass_data_precutisr}
     \caption{Recoil mass distribution in data. NO ISR case (left) and ISR case (right).}
-    \label{fig:recM_nog_data_pre}
+    \label{fig:recM_data_pre}
 \end{figure}
 
-Unlike the Monte Carlo simulation, in data no signal peak is observed at the anti-neutron mass.A completely different behavior is observed, with a prominent structure at low recoil mass values, suggesting that some particles in the recoil system $p \pi^-$ are not properly reconstructed.
+Unlike to what seen in the Monte Carlo simulation, in data no signal peak is observed at the anti-neutron mass. A completely different distribution is observed, with a prominent structure at low recoil mass values, suggesting that some additional contribution to the background is present, not included in the $q\bar{q}$ Monte Carlo cocktail. The structure has been associated to mis-identification of the particles in the recoil system $p \pi^-$.
 $\\$
-Since the proton has the strictest selection criteria ($protonID > 90\%$), it is now investigated in detail. To properly select the signal in the recoil mass distribution, the 2D distribution $\cos(\theta)$ vs momentum for reconstructed protons is studied.Several background sources not included in the Monte Carlo $q\bar{q}$ cocktail could arise. The obtained distribution is shown in Fig.~\ref{fig:proton_costheta_p}.
+Hereby, the proton reconstruction, which has the stricter selection criteria, is investigated. Fig.~\ref{fig:proton_costheta_p} shows the 2D distribution of $cos(\theta)$ versus reconstructed momentum of proton, in data. It is possible to see several structures which were not present in the MC $q\bar{q}$ cocktail, and that cannot be associated to the signal $p \pi^- \bar{n}$ channel.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_DATA/images/proton_costheta_p}
      \includegraphics[width=0.49\textwidth]{nbar_DATA/images/proton_costheta_p_isr}
-    \caption{2D $\cos(\theta)$ vs momentum distribution in data. NO ISR case (left) and ISR case (right). Please, zoom in.}
+    \caption{2D $\cos(\theta)$ vs momentum distribution in data. NO ISR case (left) and ISR case (right).}
     \label{fig:proton_costheta_p}
 \end{figure}
 
-Two structures are observed in the backward region ($cos(\theta) < -0.45$): one at proton momentum $p < 2$ GeV/c and one at $p \sim 3{-}4$ GeV/c. Furthermore, a strip structure is observed in the forward region ($cos(\theta) > 0.85$) across the full proton momentum range.
+Two structures are observed in the backward region ($cos(\theta) < -0.45$), one at proton momentum $p < 2$ GeV/c and one at $p \sim 3{-}4$ GeV/c. Furthermore, a structure is observed in the forward region ($cos(\theta) > 0.85$) across the full proton momentum range.
 $\\$
-Even if a strong selection on proton list has been performed, such as that on \emph{protonID}, insufficient coverage in the backward and deep forward regions prevents proper proton selection, allowing multiple background sources to arise. For example background sources like the following one:
+Even if a strong selection on proton list has been performed, insufficient coverage of the PID detectors in the backward and forward regions prevents proper proton selection, allowing misidentification of the protons. Indeed, at such angular regions no TOP and no ARICH detectors contribute to the particle identification, and the PID is based mainly on $dE/dX$ on the CDC and SVD detectors. In particular, at high momenta in practice there is no separation power between different particle species. 
+For example, background sources like the following one:
 
 \begin{center}
-$e^+ e^- \rightarrow e^+ e^-$ \hspace{2cm} $e^+ e^- \rightarrow \pi^+ \pi^-$,
+$e^+ e^- \rightarrow e^+ e^-$ \hspace{2cm} $e^+ e^- \rightarrow \mu^+ \mu^-$,
 \end{center}
-where the positive track could be misidentified as the reconstructed proton in the backward-forward regions. 
+where the positive track could be misidentified as the reconstructed proton in the backward-forward regions, while the $e^{\pm}$ or the $\mu^{\pm}$ could be easily misidentified as a pion since there are no strict selections for them.
 $\\$
 Therefore, a further selection can be performed on reconstructed proton $cos(\theta)$ variable, such as that $-0.45<cos(\theta)<0.85$, in order to exclude the structures observed in Fig.~\ref{fig:proton_costheta_p}. The following recoil mass distribution is shown in Fig.~\ref{fig:recM_nog_data_post}.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_DATA/images/recoil_mass_data_postcutnog}
       \includegraphics[width=0.49\textwidth]{nbar_DATA/images/recoil_mass_data_postcutisr}
-    \caption{Recoil mass distribution in data. NO ISR case (left) and ISR case (right). Cut $-0.45<cos(\theta)<0.85$ applied, on the reconstructed protons.}
+    \caption{Recoil mass distribution in data. NO ISR case (left) and ISR case (right). The selection $-0.45<cos(\theta)<0.85$ is applied on the reconstructed protons.}
     \label{fig:recM_nog_data_post}
 \end{figure}
 A structure at the anti-neutron mass is now observed, confirming that the discussed structures caused incorrect reconstruction of the recoil system. 
 $\\$
-Therefore, the event selections adopted for the remaining data analysis are as follows:
+The event selection criteria adopted for the remaining data analysis are as follows:
 \begin{enumerate}
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
-\item $\bar{n}$: neutral clusters from ECL and number of hits $> 10$ and energy $<3$ GeV;
-\item $p$: $protonID > 0.9$ and $dr<1$ cm and $|dz|<3$ cm and $-0.45<cos(\theta)<0.85$;
-\item $\pi^-$: $pionID > 0.1$ and $dr<1$ cm and $|dz|<3$ cm; 
-\item $\alpha <0.10$ rad $\sim 5.73^\circ$;
+\item $p$: $protonID > 0.9$, $dr<1$ cm and $|dz|<3$ cm, $-0.45<cos(\theta)<0.85$;
+\item $\pi^-$: $pionID > 0.1$, $dr<1$ cm and $|dz|<3$ cm; 
+\item $\bar{n}$: neutral clusters from ECL, number of hits $> 10$, energy $<3$ GeV;
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$, in ECL acceptance;
+\item $\alpha <0.10$ rad ($\sim 5.73^\circ)$;
 \item No further charged particles in the Rest of Event (ROE).
 \end{enumerate}
 
-\subsection{Data/MC agreement}
-The discussed $\bar{n}$ candidates cluster variables obtained in $q\bar{q}$ can be compared to those obtained from data. In order to perform the Data/MC agreement, the \textbf{pull variable} is adopted. It is a standardized metric used in high-energy physics to quantify discrepancies between observed data and Monte Carlo simulations. For a histogram i-th bin, the pull is defined as:
+\subsection{Data/MC comparison}
+The discussed $\bar{n}$ candidates cluster variables obtained in $q\bar{q}$ can be compared to those obtained from data. The resulting distributions, without sidebands subtraction, are shown in Fig.~\ref{fig:dataMC_nog_nosid} (NO ISR case) and in Fig.~\ref{fig:dataMC_isr_nosid} (ISR case). Those with sidebands subtraction are shown in Fig.~\ref{fig:dataMC_nog_sid} (NO ISR case) and in Fig.~\ref{fig:dataMC_isr_sid} (ISR case). The plots show also the pull distribution; for a histogram i-th bin, the pull is defined as:
+
 \begin{center}
 $pull_i = \frac{N_{i,data} - N_{i,MC}}{\sqrt{\sigma^2_{i,data} + \sigma^2_{i,MC}}}$,
 \end{center}
-where $N_{i,\mathrm{data}}$ and $N_{i,\mathrm{MC}}$ represent the number of entries in the $i$-th bin, and $\sigma^2_{i,\mathrm{data}}$ and $\sigma^2_{i,\mathrm{MC}}$ are the corresponding uncertainties. With this definition, the pull variable corresponds to the difference between data and MC counts, weighted by the propagated uncertainty. 
-
-The resulting distributions, without sidebands subtraction , are shown in Fig.~\ref{fig:dataMC_isr_nosid} (ISR case) and in Fig.~\ref{fig:dataMC_nog_nosid} (NO ISR case). Those with sidebands subtraction are shown in Fig.~\ref{fig:dataMC_isr_sid} (ISR case) and in Fig.~\ref{fig:dataMC_nog_sid} (NO ISR case).
+where $N_{i,\mathrm{data}}$ and $N_{i,\mathrm{MC}}$ represent the number of entries in the $i$-th bin, and $\sigma^2_{i,\mathrm{data}}$ and $\sigma^2_{i,\mathrm{MC}}$ are the corresponding uncertainties. 
 $\\$
-The Data/MC agreement plots reveal discrepancies between data distributions and $q\bar{q}$ Monte Carlo simulations. 
 $\\$
-The cluster energy shows good Data/MC agreement (within $2\sigma$ uncertainties) in both ISR and no-ISR cases across the full energy range, with and without sidebands subtraction.
+The Data/MC comparison plots reveal some discrepancies. While discrepancies in the inclusive distributions may arise from an incomplete description of all background processes in the Monte Carlo, after the sideband subtraction only the $\bar{n}$ contribution is expected to be studied, and even in this case not all distributions agree perfectly.
+$\\$
+The cluster energy shows good Data/MC agreement (within $2\sigma$) in both ISR and no-ISR cases across the full energy range, with and without sidebands subtraction.
 $\\$
 The cluster E1E9 shows discrepancies ($>2\sigma$) with and without sidebands subtraction, suggesting that more spread shower shapes must be accounted for. This is confirmed by discrepancies in the Zernike moments, indicating different shower shapes in data and simulation.
 $\\$
@@ -76,21 +77,6 @@ $\\$
 Therefore, some discrepancies in Data/MC agreement for $\bar{n}$ candidate cluster variables persist both before and after sidebands subtraction, though with clear improvement afterward. Nevertheless, low statistic -particularly in the NO ISR case- suggests that additional measurements could target different channels, such as multi-pion final states (beyond the scope of this work). 
 $\\$
 However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that further studies on GEANT4 Physics lists on anti-neutron showers are needed. 
-
- \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull.pdf}
-   
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case.}
-     \label{fig:dataMC_isr_nosid}
-\end{figure}
 
  \begin{figure}[H]
     \centering
@@ -109,17 +95,17 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
 
  \begin{figure}[H]
     \centering
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull_subtracted.pdf}
-    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull.pdf}
    
-     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case. Sidebands technique applied. Signal region: [0.8, 1.4] GeV; sidebands region: [0.2, 0.8] U [1.4, 2.0] GeV.}
-     \label{fig:dataMC_isr_sid}
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case.}
+     \label{fig:dataMC_isr_nosid}
 \end{figure}
 
  \begin{figure}[H]
@@ -135,6 +121,21 @@ However, the obtained results agree with \cite{SavinoLongo2026}, suggesting that
    
      \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in NO ISR case. Sidebands technique applied. Signal region: [0.8, 1.2] GeV; sidebands region: [0.3, 0.7] U [1.3, 1.7] GeV.}
      \label{fig:dataMC_nog_sid}
+\end{figure}
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE1E9_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterE9E21_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterLAT_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterSecondMoment_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment40_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterAbsZernikeMoment51_isr_pull_subtracted.pdf}
+    \includegraphics[width=0.49\textwidth]{nbar_data/images/dataMC_clusterNHits_isr_pull_subtracted.pdf}
+   
+     \caption{Data/MC agreement for reconstructed cluster variables for $\bar{n}$ candidates, in ISR case. Sidebands technique applied. Signal region: [0.8, 1.4] GeV; sidebands region: [0.2, 0.8] U [1.4, 2.0] GeV.}
+     \label{fig:dataMC_isr_sid}
 \end{figure}
 
 \setcounter{subsection}{0} 
