@@ -15,7 +15,7 @@ The recoil mass distribution, in both ISR and NO ISR cases, is shown in Fig.~\re
 
 Unlike to what seen in the Monte Carlo simulation, in data no signal peak is observed at the anti-neutron mass. A completely different distribution is observed, with a prominent structure at low recoil mass values, suggesting that some additional contribution to the background is present, not included in the $q\bar{q}$ Monte Carlo cocktail. The structure has been associated to mis-identification of the particles in the recoil system $p \pi^-$.
 $\\$
-Hereby, the proton reconstruction, which has the stricter selection criteria, is investigated. Fig.~\ref{fig:proton_costheta_p} shows the 2D distribution of $cos(\theta)$ versus reconstructed momentum of proton, in data. It is possible to see several structures which were not present in the MC $q\bar{q}$ cocktail, and that cannot be associated to the signal $p \pi^- \bar{n}$ channel.
+Hereby, the proton reconstruction, which has the stricter selection criteria, is investigated. Fig.~\ref{fig:proton_costheta_p} shows the 2D distribution of $cos(\theta)$ versus reconstructed momentum of proton, in data. It is possible to see several structures which were not present in the MC $q\bar{q}$ cocktail, and that cannot be associated to the signal $p \pi^- \bar{n} (\gamma_{ISR})$ channel.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.49\textwidth]{nbar_DATA/images/proton_costheta_p}
@@ -26,11 +26,11 @@ Hereby, the proton reconstruction, which has the stricter selection criteria, is
 
 Two structures are observed in the backward region ($cos(\theta) < -0.45$), one at proton momentum $p < 2$ GeV/c and one at $p \sim 3{-}4$ GeV/c. Furthermore, a structure is observed in the forward region ($cos(\theta) > 0.85$) across the full proton momentum range.
 $\\$
-Even if a strong selection on proton list has been performed, insufficient coverage of the PID detectors in the backward and forward regions prevents proper proton selection, allowing misidentification of the protons. Indeed, at such angular regions no TOP and no ARICH detectors contribute to the particle identification, and the PID is based mainly on $dE/dX$ on the CDC and SVD detectors. In particular, at high momenta in practice there is no separation power between different particle species. 
+Even if a strong selection on proton list has been performed, insufficient coverage of the PID detectors in the backward and forward regions prevents proper proton selection, allowing misidentification of the protons. Indeed, at such angular regions no TOP and no ARICH detectors contribute to the particle identification, and the PID is based mainly on $dE/dX$ on the CDC and SVD detectors. In particular, at high momenta, in practice, there is no separation power between different particle species. 
 For example, background sources like the following one:
 
 \begin{center}
-$e^+ e^- \rightarrow e^+ e^-$ \hspace{2cm} $e^+ e^- \rightarrow \mu^+ \mu^-$,
+$e^+ e^- \rightarrow e^+ e^-$, \hspace{2cm} $e^+ e^- \rightarrow \mu^+ \mu^-$,
 \end{center}
 where the positive track could be misidentified as the reconstructed proton in the backward-forward regions, while the $e^{\pm}$ or the $\mu^{\pm}$ could be easily misidentified as a pion since there are no strict selections for them.
 $\\$
@@ -46,10 +46,10 @@ A structure at the anti-neutron mass is now observed, confirming that the discus
 $\\$
 The event selection criteria adopted for the remaining data analysis are as follows:
 \begin{enumerate}
-\item $p$: $protonID > 0.9$, $dr<1$ cm and $|dz|<3$ cm, $-0.45<cos(\theta)<0.85$;
+\item $p$: $protonID > 0.9$, $dr<1$ cm, $|dz|<3$ cm and $-0.45<cos(\theta)<0.85$;
 \item $\pi^-$: $pionID > 0.1$, $dr<1$ cm and $|dz|<3$ cm; 
-\item $\bar{n}$: neutral clusters from ECL, number of hits $> 10$, energy $<3$ GeV;
-\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$, in ECL acceptance;
+\item $\bar{n}$: neutral clusters from ECL, number of hits $> 10$ and energy $<3$ GeV;
+\item Recoil system: $0 \ GeV/c^2 <recoil \ mass < 2 \ GeV/c^2$ and in ECL acceptance;
 \item $\alpha <0.10$ rad ($\sim 5.73^\circ)$;
 \item No further charged particles in the Rest of Event (ROE).
 \end{enumerate}
@@ -75,7 +75,9 @@ Also cluster Lateral Momentum shows slight discrepancies in the shape, before si
 $\\$
 The cluster Second Moment distributions show good agreement between data and simulation, while the N Hits distributions do not. A better agreement is observed after the sideband subtraction, indicating that small‑sized (electromagnetic) clusters are effectively removed.
 $\\$
-In summary, comparing the distributions -even though the data sample has limited statistics- it is possible to conclude that, in general, the Monte Carlo reproduces the experimental distributions. While good agreement is observed for some variables, such as the deposited energy and the second moment, larger discrepancies are present for those more closely related to the shower shape, i.e., to the distribution of the energy deposited in the connected crystals of the clusters. These discrepancies can be attributed to an imperfect description of the $\bar{n}$ interactions by the GEANT4 physics model. 
+In summary, comparing the distributions -even though the data sample has limited statistics- it is possible to conclude that, in general, the Monte Carlo reproduces the experimental distributions. While good agreement is observed for some variables, such as the deposited energy and the second moment, larger discrepancies are present for those more closely related to the shower shape, i.e., to the distribution of the energy deposited in the connected crystals of the clusters. Nevertheless, low statistic -particularly in the NO ISR case- suggests that additional measurements could target different channels, such as multi-pion final states  -$e^+e^- \to p\bar{n}\pi^-(\pi^+\pi^-)$ and so on (beyond the scope of this work).
+$\\$
+These discrepancies can be attributed to an imperfect description of the $\bar{n}$ interactions by the GEANT4 physics model. 
 
  \begin{figure}[H]
     \centering

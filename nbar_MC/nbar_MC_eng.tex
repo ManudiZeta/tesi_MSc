@@ -337,18 +337,24 @@ $\\$
 In order to study the decay chain and relationsip degree of the neutral cluster associated to $\bar{n}$ candidates detected in the ECL, the basf2 ancestor variables are used. These identify whether a given particle originates from the decay of another particle or a subsequent decay chain. The following ancestor variables are employed:
 
 \begin{itemize}
-\item varForFirstMCAncestorOfType(type, variable): this metavariable returns the requested variable of the first ancestor of the given type -a specific particle- found in a certain point of the chain
+\item varForFirstMCAncestorOfType(type, variable): this metavariable returns the requested variable of the first ancestor of the given type -a specific particle- found in a certain point of the chain;
 
-\item hasAncestor(PDG, abs): this metavariable returns a positive integer if an ancestor -a certain relatives in the chain- with the given PDG code is found, 0 otherwise. It means thats 1 = first mother, 2 = grandmother, etc. Second argument abs is optional: 1 means that the sign of the PDG code is taken into account, default is 0
+\item hasAncestor(PDG, abs): this metavariable returns a positive integer if an ancestor -a certain relatives in the chain- with the given PDG code is found, 0 otherwise. It means thats 1 = first mother, 2 = grandmother, etc. Second argument abs is optional: 1 means that the sign of the PDG code is taken into account, default is 0.
 \end{itemize}
 
 A typical scenarios of $\bar{n}$ as ancestor could  be the following:
 \begin{center}
-0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in TOP (pions produced) $\rightarrow$ 2) pions detected 
-0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in ECL (pions produced) $\rightarrow$ 2) pions detected
+0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in TOP (pions produced) $\rightarrow$ 2) pions detected;
+0)$\bar{n}$ from IP $\rightarrow$ 1)$\bar{n}$ annihilation in ECL (pions produced) $\rightarrow$ 2) pions detected.
 \end{center}
 
-The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution of the selected $\bar{n}$ candidates is shown in Fig.~\ref{fig:hasAncestor}.
+The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) of $\bar{n}$ cluster candidates are discussed. Given the close similarity between the results, only the ISR case is discussed. The hasAncestor distribution of the selected $\bar{n}$ candidates is shown in Fig.~\ref{fig:hasAncestor}. 
+
+It is evident that the majority of candidates do not have a neutron ancestor, lacking an $\bar{n}$ in their relative chain (has\_Ancestor=0), suggesting they are the primary $\bar{n}$ themselves. The second contribution is made of $\bar{n}$ candidates having $\bar{n}$ as mother etc. 
+$\\$
+In order to directly study the contribution of each term, the Monte Carlo truth is accessed via the corresponding mc\_PDG. This is the PDG code of the selected candidates as associated by the Monte Carlo. 
+$\\$
+Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncestor contribution. The obtained distributions are shown in Fig.~\ref{fig:mc_pdg_hasAncestor}.
 
  \begin{figure}[H]
     \centering
@@ -356,12 +362,6 @@ The variables varForFirstMCAncestorOfType(anti-n0, p) and hasAncestor(-2112, 1) 
      \caption{Distribution of the relative degree of anti-neutron candidates with an anti-neutron present in their ancestry chain.}
      \label{fig:hasAncestor}
 \end{figure}
-From the distribution in Fig.~\ref{fig:hasAncestor}, it is evident that the majority of candidates do not have a neutron ancestor, lacking an $\bar{n}$ in their relative chain (has\_Ancestor=0), suggesting they are the primary $\bar{n}$ themselves. The second contribution is made of $\bar{n}$ candidates having $\bar{n}$ as mother etc. 
-$\\$
-In order to directly study the contribution of each term, the Monte Carlo truth is accessed via the corresponding mc\_PDG. This is the PDG code of the selected candidates as associated by the Monte Carlo. 
-$\\$
-Therefore, the $\bar{n}$ candidates'  mc\_PDG code is studied for each HasAncestor contribution. The obtained distributions are shown in Fig.~\ref{fig:mc_pdg_hasAncestor}.
-
 
  \begin{figure}[H]
     \centering
@@ -433,7 +433,7 @@ The correctly associated anti-neutrons overlay the $\bar{n}$ candidates without 
 $\\$
 The $\bar{n}$ candidates with an $\bar{n}$ mother particle -that are mainly photons (Fig.~\ref{fig:mc_pdg_hasAncestor})- are produced throughout the Belle II detector.
 $\\$
-The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster pre-showering events occur in the events. Furthermore, an extended structure can be observed for $125\,\text{cm} < \rho < 162\,\text{cm}$, confirming that cluster split-off effects occur within the ECL volume. Therefore, $\bar{n}$ candidates with $\bar{n}$ as mother particle ($\bar{n}$ ancestor = 1), may be produced before the ECL (pre-showering) or within the ECL (split-off).
+The first structures are in the vertex detector region ($\rho <$ 16 cm) and the two peaks located at the TOP edges, mainly around 118 cm (where the TOP begins) and 125 cm (where the TOP ends and the ECL starts), explicitly showing how cluster pre-showering events occur in the events. Furthermore, an extended structure can be observed for $125\,\text{cm} < \rho < 162\,\text{cm}$ (ECL region), confirming that cluster split-off effects occur within the ECL volume. Therefore, $\bar{n}$ candidates with $\bar{n}$ as mother particle may be produced before the ECL (pre-showering) or within the ECL (split-off).
 $\\$
 The production vertex variable is now examined, dividing each contribute from the different ECL regions; backward region, barrel region and forward region. The obtained result is shown in Fig.~\ref{fig:mcDistance_region}.
  \begin{figure}[H]
@@ -604,7 +604,7 @@ The obtained cluster variables in NO ISR case are shown below:
 \end{figure}
 
 \subsection{Summary of Signal Channel Analysis}
-The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} $ has been studied.
+The channel $e^+ \ + \  e^- \rightarrow p \ + \ \pi^- \ + \ \bar{n} \ (+ \ \gamma_{ISR}) $ has been studied, with both ISR and NO ISR emission.
 $\\$
 $\\$
 The recoil system $p\pi^-(\gamma_{ISR})$ is correctly reconstructed by the analysis, as evidenced by the peak above the anti-neutron mass in the recoil mass distribution. Furthermore, the kinematic distributions ($p$ and $\theta$) of the recoil system are consistent with those of generator-level $\bar{n}$ candidates, in both ISR and NO ISR cases. At reconstructed level, good agreement is observed in the $\theta$ distribution, while the reconstructed $\bar{n}$ candidate momentum shows underestimation and poor resolution compared to the recoil system momentum, as observed in correlations and residuals distributions, due to loss of energy leakage. Furthermore, a low-momentum structure is observed in reconstructed and generated momentum of $\bar{n}$ candidates compared to the recoil system momentum.
