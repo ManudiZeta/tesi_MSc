@@ -14,11 +14,11 @@
 #include "TLatex.h"
 #include "TGraphErrors.h"
 
-TString caso = "nog";
+TString caso = "isr";
 
 //static TString file_str_1= "../../../../160326_nog_uubar_chunk1234_tot.root";
-static TString file_str= "../../../../180326_nog_qqbar.root";
-//static TString file_str= "../../../../260326_isr_qqbar.root";
+//static TString file_str= "../../../../180326_nog_qqbar.root";
+static TString file_str= "../../../../260326_isr_qqbar.root";
 
 void sidebands()
 {
@@ -43,8 +43,8 @@ void sidebands()
     
     mtot->SetLineColor(kBlack);
     mtot->SetFillColorAlpha(kBlack, 0.3);
-    msig->SetLineColor(kRed);
-    mbkg->SetLineColor(kBlue);
+    msig->SetLineColor(kBlue);
+    mbkg->SetLineColor(kRed);
     
     mtot->GetXaxis()->SetTitle("recoil mass [#frac{GeV}{c^{2}}]");
     mtot->GetYaxis()->SetTitle("counts");
@@ -53,8 +53,8 @@ void sidebands()
     
     TLegend *leg = new TLegend(0.1,0.7,0.38,0.9);
     leg->AddEntry(mtot,"all","l");
-    leg->AddEntry(msig,"signal region [0.8, 1.4] GeV","l");
-    leg->AddEntry(mbkg,"sidebands [0.2, 0.8] U [1.4, 2.0] GeV","l");
+    leg->AddEntry(msig,"signal region [0.8, 1.4] #frac{GeV}{c^{2}}","l");
+    leg->AddEntry(mbkg,"sidebands [0.2, 0.8) U (1.4, 2.0] #frac{GeV}{c^{2}}","l");
     
     TCanvas *canv = new TCanvas("tela", "tela");
     
@@ -112,8 +112,8 @@ void sidebands()
             leg = new TLegend (0.10, 0.75, 0.35, 0.90);
         }
         
-        leg->AddEntry(msig,"[0.8, 1.4] GeV","l");
-        leg->AddEntry(mbkg,"[0.2, 0.8] U [1.4, 2.0] GeV","l");
+        leg->AddEntry(h1,"[0.8, 1.4] #frac{GeV}{c^{2}}","l");
+        leg->AddEntry(h2,"[0.2, 0.8) U (1.4, 2.0] #frac{GeV}{c^{2}}","l");
         leg->SetTextSize(0.025);
         
         
